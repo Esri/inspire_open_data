@@ -1,5 +1,5 @@
 # Streamlined INSPIRE Esri GDB Alternative Encodings
-This is a repository for streamlined INSPIRE Esri Geodatabase (GDB) encodings documented according to INSPIRE Implementing Rules [Article 7 -- Encodings](#art7). This repository provides access to streamlined fGDB templates, publicly available encoding rules used to encode spatial data, and examples.
+This is a repository for streamlined INSPIRE Esri Geodatabase (GDB) encodings documented according to INSPIRE Implementing Rules [Article 7 -- Encodings](#inspire-requirements-for-encoding-rules). This repository provides access to streamlined fGDB templates, publicly available encoding rules used to encode spatial data, and examples.
 
 ## What is Alternative Encoding?
 Streamlined (also referred to as simplified) INSPIRE data, enabled by Implementing Rules on interoperability of spatial data sets and services (Commission Regulation (EU) No 1089/2010, improve interoperablity and ease of use for INSPIRE data within mainstream GIS.
@@ -14,7 +14,7 @@ The INSPIRE-MIF Repository for action 2017.2 on alternative encoings can be foun
 ## INSPIRE Requirements for Encoding Rules
 The Implementing Rules on interoperability of spatial data sets and services (Commission Regulation (EU) No 1089/2010) lays down the following requirements for encoding rules:
 
-[**Article 7 -- Encoding**](#art7)
+[**Article 7 -- Encoding**]
 > Every encoding rule used to encode spatial data shall conform to EN ISO 19118. *In particular, it shall specify schema conversion rules for all spatial object types and all attributes and association roles and the output data structure used.
 > Every encoding rule used to encode spatial data shall be made available.*
 
