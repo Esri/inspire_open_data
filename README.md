@@ -34,7 +34,7 @@ The Implementing Rules on interoperability of spatial data sets and services (Co
 **D2.7** also contains a relevant recommendation:
 > Recommendation 3: Encoding rules should be based on international, preferably open, standards.
 
-# References
+## References
 [1] INSPIRE action 2017.2 on Alternative Encodings https://inspire.ec.europa.eu/sites/default/files/inspire_alternative_encodings.pdf
 
 [2] Action 2017.2 on alternative encodings for INSPIRE data (completed) https://webgate.ec.europa.eu/fpfis/wikis/pages/viewpage.action?pageId=277742184
