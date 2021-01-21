@@ -9,17 +9,16 @@ Importantly, data provided in streamlined INSPIRE Esri GDBs can be used as an al
 ## Why would you want to use alternative encodings? 
 Simply put, streamlined INSPIRE data are easier to create, use, and share. The default encoding for INSPIRE is highly structured complex GML. It is widely recognized that due to complex data structures the consumption of INSPIRE data is not easy.[[1]](#referencees) By applying Alternative Encoding rules, the complex data structures are simplified and flattened, resulting in streamlined INSPIRE data (also referred to as simplified INSPIRE data). Streamlined INSPIRE data have great potential to improve interoperablity and ease of use within mainstream ICT and GIS applications.
 
-Action 2017.2 underthe INSPIRE maintenance and implementation work programme [[2]](#referencees) defined templates, provides guidance and examples for developing alternative encodings. 
+Action 2017.2 underthe INSPIRE maintenance and implementation work programme [[2]](#referencees) defined templates and provides guidance and examples for developing alternative encodings. 
 
 ### This body of work
 During action 2017.2, proposals for alternative encodings rules were collected through an open call on the MIG collaboration platform and prioritised by Member State representatives in a survey. The results of the survey clearly showed support for GeoJSON as a possible alternative encoding. In addition, also simplified GML, database formats (geopackage, PostGIS, ESRI Geodatabase (GDB)) and linked data had significant support.[[3]]
 
-This body of work supports alternative encodings using Esri GDB and contributes to the larger body of work on INSPIRE alternative encodings.[[4]](#referencees)
-Why fGDB...
+This body of work addresses the support for using ESRI Geodatabase (GDB) and contributes to the larger body of work on INSPIRE alternative encodings.[[4]](#referencees)
+
+Why fGDB... benefits and target use case... easy to use and share... for example, make it easy to share on the web as feature layers, GeoJSON, shapefile, GeoPackage, and more...
 
 The INSPIRE-MIF Repository for action 2017.2 on alternative encoings can be found [here](https://github.com/INSPIRE-MIF/2017.2), including [template for Alternative Encodings for INSPIRE Data](https://github.com/INSPIRE-MIF/2017.2/blob/master/template/template.md) used herein. The glossary for terms can be found [here](https://github.com/INSPIRE-MIF/2017.2/blob/master/glossary.md).
-
-Target Use Cases...
 
 ## INSPIRE Requirements for Encoding Rules
 The Implementing Rules on interoperability of spatial data sets and services (Commission Regulation (EU) No 1089/2010) lays down the following requirements for encoding rules:
