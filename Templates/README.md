@@ -1,6 +1,6 @@
 # Streamlined fGDB and hosted Feature layer templates 
 
-What can you do with the INSPIRE Esri GDB Alternative Encodings? Create streamlined INSPIRE data with these templates! Streamlined INSPIRE templates are a way to make creating INSPIRE data easier. They give you a well structured container (or "target" dataset) for you can load your source data.
+What can you do with the INSPIRE Esri GDB Alternative Encodings? Create streamlined INSPIRE data with these templates! Streamlined INSPIRE templates are a way to make creating INSPIRE data easier. They give you a well structured container (or "target" dataset) into which you can load your source data.
 
 We have created a handful of templates to help get you started. This repository welcomes contributions of additional templates following the model transformation rules.
 
