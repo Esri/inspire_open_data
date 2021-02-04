@@ -6,8 +6,6 @@ We have created a handful of templates to help get you started. This repository 
 
 Templates put the Alternative Encodings into action. Following the 'INSPIRE Esri GDB - Alternative Encoding' rules, we've created the Esri GDB (fGDB) and hosted Feature layer templates based on these rules. We've set the pattern by creating file Geodatabse (fGDB) and ArcGIS Online hosted Feature layer templates. Follow the links below for instructions to access and use these free templates.
 
-*Note: Creating streamlined INSPIRE 'hosted Feature layers' requires an ArcGIS Online account. 
-
 ## Streamlined INSPIRE templates 
 
 - Streamlined INSPIRE Addresses [fGDB](link) [hosted Feature layer](link)
