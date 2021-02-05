@@ -35,11 +35,15 @@ The Implementing Rules on interoperability of spatial data sets and services (Co
 
 The important thing is that a complete mapping from the UML conceptual model to the encoding used and made public, as is done in this repository.
 
-## So, Is the Default INSPIRE GML Encoding Still Required?
+## Is the Default INSPIRE GML Encoding Still Required?
 
 Data provided through INSPIRE Alternative Encoding can be used *instead of* the default complex INSPIRE GML encoding, or *in addition to* the default encoding.
 
-It depends on the source data whether an encoding can be considered alternative (or just additional). If the simplification rules lead to information loss from the source data set, it should be considered an "additional encoding" and the default INSPIRE GML encoding should still be used. The alternative encoding should not be used to omit attributes or object types that exist in the source data.
+It depends on the source data whether an encoding can be considered alternative (or just additional). The default encoding is **not required**, so long as the simplification rules do not lead to information loss from the source data set. If the simplification rules lead to information loss from the source data set, it should be considered an "additional encoding" and the default INSPIRE GML encoding should still be used. 
+
+For example <insert example>.
+  
+The alternative encoding should not be used to omit attributes or object types that exist in the source data.
 
 ## References
 [1] INSPIRE action 2017.2 on Alternative Encodings https://inspire.ec.europa.eu/sites/default/files/inspire_alternative_encodings.pdf
