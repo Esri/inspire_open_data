@@ -7,7 +7,7 @@ This is a repository for streamlined INSPIRE Esri Geodatabase (GDB) encodings do
 Importantly, data provided in streamlined INSPIRE Esri GDBs can be used as an alternative to (i.e., instead of) the default complex INSPIRE GML encoding, or in addition to the default encoding.
 
 ## Why would you want to use alternative encodings? 
-Simply put, streamlined INSPIRE data are easier to create, use, and share. The default encoding for INSPIRE is highly structured complex GML. It is widely recognized that due to complex data structures the consumption of INSPIRE data is not easy.[[1]](#referencees) By applying Alternative Encoding rules, the complex data structures are simplified and flattened, resulting in streamlined INSPIRE data (also referred to as simplified INSPIRE data). Streamlined INSPIRE data have great potential to improve interoperablity and ease of use within mainstream ICT and GIS applications.
+For many use cases, streamlined INSPIRE data are easier to create, use, and share. The default encoding for INSPIRE is highly structured complex GML. It is widely recognized that due to complex data structures the consumption of INSPIRE data is not easy.[[1]](#referencees) By applying Alternative Encoding rules, the complex data structures are simplified and flattened, resulting in streamlined INSPIRE data (also referred to as simplified INSPIRE data). Streamlined INSPIRE data have great potential to improve interoperablity and ease of use within mainstream ICT and GIS applications.
 
 INSPIRE Action 2017.2 maintenance and implementation work programme [[2]](#referencees) laid the groundwork for Alternative Encoding by defining documentation templates and providing guidance and examples for developing alternative encodings. 
 
