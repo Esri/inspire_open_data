@@ -48,53 +48,129 @@ ToDO:
 
 
 
-|||featureId|Long|
 
-#### EnvironmentalManagementFacility
+#### EnvironmentalManagementFacilityL
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
+||id|featureId|Long|
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
-|RelatedParty||related_individualName|Text|
-|||related_organisationName|Text|
-|||related_positionName|Text|
-|||related_address|Text|
 |||name|Text|
 |||geometry||
-|||related_contactInstructions|Text|
-|||related_electronicMailAddress|Text|
-|||related_hoursOfService|Text|
-|||related_telephoneFacsimile|Text|
-|||related_telephoneVoice|Text|
-|DateTime|validFrom|validFrom|Date|
-|DateTime|validTo|validTo|Date|
-|DateTime|beginLifespanVersion|beginLifespanVersion|Date|
-|DateTime|endLifespanVersion|endLifespanVersion|Date|
-|||related_website|Text|
-|||related_role|Text|
-|ConditionOfFacilityValue||status|Text|
-|||status_href|Text|
-|PT_FreeText|serviceHours|serviceHours|Text|
-|ActivityComplexDescription|facilityDescription|description|Text|
-|AddressRepresentation||address|Text|
-|AddressRepresentation||contact_address|Text|
-|Contact||contact_contactInstructions|Text|
+|validFrom|DateTime|validFrom|Date|
+|validTo|DateTime|validTo|Date|
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
+|endLifespanVersion|DateTime|endLifespanVersion|Date|
+|serviceHours|PT_FreeText|serviceHours|Text|
+|facilityDescription|ActivityComplexDescription|description|Text|
+||AddressRepresentation|address|Text|
+||AddressRepresentation|contact_address|Text|
+||Contact|contact_contactInstructions|Text|
 |||contact_electronicMailAddress|Text|
 |||contact_hoursOfService|Text|
 |||contact_telephoneFacsimile|Text|
 |||contact_telephoneVoice|Text|
 |||contact_website|Text|
-|||activity_href|Text|
-|||activity|Text|
-|||description|Text|
+||RelatedParty|related_individualName|Text|
+|||related_organisationName|Text|
+|||related_positionName|Text|
+|||related_address|Text|
+|||related_contactInstructions|Text|
+|||related_electronicMailAddress|Text|
+|||related_hoursOfService|Text|
+|||related_telephoneFacsimile|Text|
+|||related_telephoneVoice|Text|
+|||related_website|Text|
+|||related_role|Text|
+||ConditionOfFacilityValue|status|Text|
+|||status_href|Text|
+
+#### EnvironmentalManagementFacilityP
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+||id|featureId|Long|
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|||name|Text|
+|||geometry||
+|validFrom|DateTime|validFrom|Date|
+|validTo|DateTime|validTo|Date|
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
+|endLifespanVersion|DateTime|endLifespanVersion|Date|
+|serviceHours|PT_FreeText|serviceHours|Text|
+|facilityDescription|ActivityComplexDescription|description|Text|
+||AddressRepresentation|address|Text|
+||AddressRepresentation|contact_address|Text|
+||Contact|contact_contactInstructions|Text|
+|||contact_electronicMailAddress|Text|
+|||contact_hoursOfService|Text|
+|||contact_telephoneFacsimile|Text|
+|||contact_telephoneVoice|Text|
+|||contact_website|Text|
+||RelatedParty|related_individualName|Text|
+|||related_organisationName|Text|
+|||related_positionName|Text|
+|||related_address|Text|
+|||related_contactInstructions|Text|
+|||related_electronicMailAddress|Text|
+|||related_hoursOfService|Text|
+|||related_telephoneFacsimile|Text|
+|||related_telephoneVoice|Text|
+|||related_website|Text|
+|||related_role|Text|
+||ConditionOfFacilityValue|status|Text|
+|||status_href|Text|
+
+#### EnvironmentalManagementFacilityS
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+||id|featureId|Long|
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|||name|Text|
+|||geometry||
+|validFrom|DateTime|validFrom|Date|
+|validTo|DateTime|validTo|Date|
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
+|endLifespanVersion|DateTime|endLifespanVersion|Date|
+|serviceHours|PT_FreeText|serviceHours|Text|
+|facilityDescription|ActivityComplexDescription|description|Text|
+||AddressRepresentation|address|Text|
+||AddressRepresentation|contact_address|Text|
+||Contact|contact_contactInstructions|Text|
+|||contact_electronicMailAddress|Text|
+|||contact_hoursOfService|Text|
+|||contact_telephoneFacsimile|Text|
+|||contact_telephoneVoice|Text|
+|||contact_website|Text|
+||RelatedParty|related_individualName|Text|
+|||related_organisationName|Text|
+|||related_positionName|Text|
+|||related_address|Text|
+|||related_contactInstructions|Text|
+|||related_electronicMailAddress|Text|
+|||related_hoursOfService|Text|
+|||related_telephoneFacsimile|Text|
+|||related_telephoneVoice|Text|
+|||related_website|Text|
+|||related_role|Text|
+||ConditionOfFacilityValue|status|Text|
+|||status_href|Text|
 
 #### EnvironmentalManagementFacility_capacity
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
 |||RID|Long|
+|||activity_href|Text|
+|||activity|Text|
+|||description|Text|
 
 #### EnvironmentalManagementFacility_function
 
@@ -111,23 +187,21 @@ ToDO:
 |------|------|------|------|
 |||RID|Long|
 |||parentFacility|Text|
-|||permitted_activity|Text|
-|||dateTo|Date|
-|||related_organisationName|Text|
-|||RID|Long|
 
 #### EnvironmentalManagementFacility_permission
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||permissionId|Long|
-|Permission|permission|thematicId_identifier|Text|
-|||thematicId_identifierScheme|Text|
-|RelatedParty||related_individualName|Text|
 |||RID|Long|
+|||permissionId|Long|
+|permission|Permission|thematicId_identifier|Text|
+|||thematicId_identifierScheme|Text|
+||RelatedParty|related_individualName|Text|
+|||related_organisationName|Text|
 |||related_positionName|Text|
 |||related_address|Text|
 |||related_contactInstructions|Text|
+|||related_electronicMailAddress|Text|
 |||related_hoursOfService|Text|
 |||related_telephoneFacsimile|Text|
 |||related_telephoneVoice|Text|
@@ -136,22 +210,24 @@ ToDO:
 |||relatedParty*|Text|
 |||decisionDate|Date|
 |||dateFrom|Date|
-|||related_electronicMailAddress|Text|
+|||dateTo|Date|
 |||description|Text|
-|EconomicActivityValue||permitted_activity_href|Text|
+||EconomicActivityValue|permitted_activity_href|Text|
+|||permitted_activity|Text|
+|||RID|Long|
 
 #### EnvironmentalManagementFacility_thematicId
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|thematicId|ThematicIdentifier|thematicId_identifier|Text|
 |||RID|Long|
+|thematicId|ThematicIdentifier|thematicId_identifier|Text|
 |||thematicId_identifierScheme|Text|
-|||type||
 
 #### EnvironmentalManagementFacility_type
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|EnvironmentalManagementFacilityTypeValue|type|type_href|Text|
+|type|EnvironmentalManagementFacilityTypeValue|type_href|Text|
+|||type||
 |||RID||

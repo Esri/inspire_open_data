@@ -44,32 +44,66 @@ This section describes which transformation rules with which parameters are appl
 
 
 
-|||featureId||
 
-#### ManagementRestrictionOrRegulationZone
+#### ManagementRestrictionOrRegulationZoneL
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
+|||featureId||
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
 |thematicId|ThematicIdentifer|thematicId_identifier|Text|
 |||thematicId_identifierScheme|Text|
-|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |geometry|GM_Object|geometry||
 |zoneType|ZoneTypeCode|zoneType_href|Text|
 |specialisedZoneType|SpecialisedZoneTypeCode|specialisedZoneType_href|Text|
 |designationPeriod|TM_Period|designationPeriod_begin|Date|
 |||designationPeriod_end||
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|
-|||related_website|Text|
-|||related_role|Text|
-||RelatedParty|RID|Long|
+
+#### ManagementRestrictionOrRegulationZoneP
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+|||featureId||
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|thematicId|ThematicIdentifer|thematicId_identifier|Text|
+|||thematicId_identifierScheme|Text|
+|geometry|GM_Object|geometry||
+|zoneType|ZoneTypeCode|zoneType_href|Text|
+|specialisedZoneType|SpecialisedZoneTypeCode|specialisedZoneType_href|Text|
+|designationPeriod|TM_Period|designationPeriod_begin|Date|
+|||designationPeriod_end||
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
+|endLifespanVersion|DateTime|endLifespanVersion|Date|
+
+#### ManagementRestrictionOrRegulationZoneS
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+|||featureId||
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|thematicId|ThematicIdentifer|thematicId_identifier|Text|
+|||thematicId_identifierScheme|Text|
+|geometry|GM_Object|geometry||
+|zoneType|ZoneTypeCode|zoneType_href|Text|
+|specialisedZoneType|SpecialisedZoneTypeCode|specialisedZoneType_href|Text|
+|designationPeriod|TM_Period|designationPeriod_begin|Date|
+|||designationPeriod_end||
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
+|endLifespanVersion|DateTime|endLifespanVersion|Date|
 
 #### ManagementRestrictionOrRegulationZone_competentAuthority
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
+||RelatedParty|RID|Long|
 |competentAuthority||related_individualName|Text|
 |||related_organisationName|Text|
 |||related_positionName|Text|
@@ -79,27 +113,22 @@ This section describes which transformation rules with which parameters are appl
 |||related_hoursOfService|Text|
 |||related_telephoneFacsimile|Text|
 |||related_telephoneVoice|Text|
-|||environmentalDomain_href|Text|
-|environmentalDomain|EnvironmentalDomain|RID|Text|
+|||related_website|Text|
+|||related_role|Text|
 
 #### ManagementRestrictionOrRegulationZone_environmentalDomain
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
+|environmentalDomain|EnvironmentalDomain|RID|Text|
+|||environmentalDomain_href|Text|
 |||environmentalDomain|Text|
-|||legal_dateRepealed|Date|
-|||legal_level_href|Text|
-|||legal_officialJournalIdentification|Text|
-|||legal_journal_ISSN|Text|
-|||legal_journal_ISBN|Text|
-|||legal_journal_link|Text|
-|||legal_dateEnteredIntoForce|Text|
-|legalBasis|LegislationCitation|RID|Long|
 
 #### ManagementRestrictionOrRegulationZone_legalBasis
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
+|legalBasis|LegislationCitation|RID|Long|
 |||legal_name|Text|
 |||legal_shortName|Text|
 |||legal_date|Date|
@@ -107,23 +136,28 @@ This section describes which transformation rules with which parameters are appl
 |||legal_specificReference|Text|
 |||legal_identificationNumber|Text|
 |||legal_officialDocumentNumber|Text|
-|||RID|Long|
+|||legal_dateEnteredIntoForce|Text|
+|||legal_dateRepealed|Date|
+|||legal_level_href|Text|
+|||legal_officialJournalIdentification|Text|
+|||legal_journal_ISSN|Text|
+|||legal_journal_ISBN|Text|
+|||legal_journal_link|Text|
 
 #### ManagementRestrictionOrRegulationZone_name
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||name_lang|Text|
+|||RID|Long|
 |name|GeographicalName|name|Text|
-|plan|DocumentCitation|RID|Long|
+|||name_lang|Text|
 
 #### ManagementRestrictionOrRegulationZone_plan
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||plan_date|Date|
-|||plan_link|Text|
-|||plan_specificReference|Text|
+|plan|DocumentCitation|RID|Long|
+|||plan_name|Text|
 |||plan_shortName|Text|
 |||plan_date|Date|
 |||plan_link|Text|
@@ -133,17 +167,19 @@ This section describes which transformation rules with which parameters are appl
 |||plan_dateEnteredIntoForce|Text|
 |||plan_dateRepealed|Date|
 |||plan_level_href|Text|
-|||plan_name|Text|
 |||plan_journalCitation_officialJournalIdentification|Text|
 |||plan_journalCitation_ISSN|Text|
 |||plan_journalCitation_ISBN|Text|
 |||plan_journalCitation_linkToJournal|Text|
 |||plan_name|Text|
 |||plan_shortName|Text|
-|relatedZone|ManagementRestrictionOrRegulationZone|RID|Long|
+|||plan_date|Date|
+|||plan_link|Text|
+|||plan_specificReference|Text|
 
 #### ManagementRestrictionOrRegulationZone_relatedZone
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
+|relatedZone|ManagementRestrictionOrRegulationZone|RID|Long|
 |||relatedZone|Text|

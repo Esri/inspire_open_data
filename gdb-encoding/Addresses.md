@@ -37,12 +37,12 @@ This section describes which transformation rules with which parameters are appl
 
 
 
-|||featureId|Long|
 
 #### Address
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
+|||featureId|Long|
 |alternativeIdentifier|String|alternativeIdentifier|Text|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |building|bu-base:AbstractConstruction|building_href|Text|
