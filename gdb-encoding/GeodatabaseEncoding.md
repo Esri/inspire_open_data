@@ -115,7 +115,7 @@ This section contains references to standards documents and related resources.
 
 ## Terms and Definitions
 
-Terms and Definitions can be found in the [Glossary](glossary.md) document.
+Terms and Definitions can be found in the [Glossary](Glossary.md) document.
 
 ## Schema Conversion Rules
 
