@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This document is an extension of the [TransformationRules](`https://github.com/INSPIRE-MIF/2017.2/blob/master/model-transformations/TransformationRules.md`) developed under [MIF action 2017.2](`https://github.com/INSPIRE-MIF/2017.2`).  
+This document uses the [TransformationRules](`https://github.com/INSPIRE-MIF/2017.2/blob/master/model-transformations/TransformationRules.md`) developed under [MIF action 2017.2](`https://github.com/INSPIRE-MIF/2017.2`) and adds additional rules to meet the requiements of a transformation to file geodatabase.  
 
-These Rules were used to create the alternative encodings for ESRI Geodatabase under [Model Transformations](./GeneralFlattening.md) The intent of this document is to describe multiple model transformation methods. These methods reduce complexity in encoded INSPIRE data, e.g. by reducing levels of aggregation, indirect referencing, using simple geometries and flattening structures such as arrays. As with alternate encodings, they have different objectives and scopes. A rule may be used with any number of encodings, including the default encoding, if applicable.
+These Rules were used to create the alternative encodings for ESRI Geodatabase under [Model Transformations](./TransformationRules.md) The intent of this document is to describe multiple model transformation methods. These methods reduce complexity in encoded INSPIRE data, e.g. by reducing levels of aggregation, indirect referencing, using simple geometries and flattening structures such as arrays. As with alternate encodings, they have different objectives and scopes. A rule may be used with any number of encodings, including the default encoding, if applicable.
 
 An Alternate encoding may refer to any number of such model transformation rules in its conformance classes. For this purpose, each model transformation rules receives a unique identifier. For an Alternate encoding to be the sole encoding, there may not be any information loss for the particular data set in question.
 
