@@ -8,9 +8,7 @@ Templates put the Alternative Encodings into action. Following the 'INSPIRE Esri
 
 ## Streamlined INSPIRE templates 
 
-- Streamlined INSPIRE Addresses [fGDB](link) [hosted Feature layer](link)
-- Streamlined INSPIRE 
-
-
-
-
+- Streamlined INSPIRE Addresses [fGDB](Addresses.gdb.zip) [hosted Feature layer](link)
+- Streamlined INSPIRE AdministrativeAndSocialGovernmentalServices [fGDB](AdministrativeAndSocialGovernmentalServices.gdb.zip) [hosted Feature layer](link)
+- Streamlined INSPIRE AreaManagementRestrictionAndRegulationZones [fGDB](AreaManagement.gdb.zip) [hosted Feature layer](link)
+- Streamlined INSPIRE EnvironmentalManagementFacilities [fGDB](EnvironmentalManagementFacilities.gdb.zip) [hosted Feature layer](link)
