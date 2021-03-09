@@ -13,7 +13,7 @@ The Simple AdministrativeAndSocialGovermentalServices encoding can be used as an
 
 ## Normative References
 
-* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](/gdb-encoding/geodatabse encoding.md)
+* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](GeodatabaseEncoding.md)
 * [Data Specification - INSPIRE Utility and governmental services version 3.1](https://inspire.ec.europa.eu/Themes/136/2892)
 
 ## Conformance Class Administrative And SocialGovermental Services
@@ -35,7 +35,7 @@ This section describes which transformation rules with which parameters are appl
 
     |Replace|With|
     |----|----|
-    |`pointOfContact_`|`'contact_' `|
+    |`'pointOfContact_'`|`'contact_' `|
     
 
 
@@ -43,47 +43,7 @@ This section describes which transformation rules with which parameters are appl
 
 
 
-#### GovernmentalServiceL
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|||featureId|Long|
-|beginLifespanVersion||beginLifespanVersion|Text|
-|endLifespanVersion||endLifespanVersion|Text|
-|inspireId|Identifier|inspireId_localId|Text|
-|||inspireId_namespace|Text|
-|||inspireId_versionId|Text|
-|pointOfContact|Contact|contact_address|Text|
-|||contact_contactInstructions|Text|
-|||contact_electronicMailAddress|Text|
-|||contact_hoursOfService|Text|
-|||contact_telephoneFacsimile|Text|
-|||contact_telephoneVoice|Text|
-|||contact_website|Text|
-|serviceLocation|ServiceLocationType|serviceLocation_serviceLocationByGeometry|Geometry|
-|serviceType|ServiceTypeValue|serviceType_href|Text|
-
-#### GovernmentalServiceP
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|||featureId|Long|
-|beginLifespanVersion||beginLifespanVersion|Text|
-|endLifespanVersion||endLifespanVersion|Text|
-|inspireId|Identifier|inspireId_localId|Text|
-|||inspireId_namespace|Text|
-|||inspireId_versionId|Text|
-|pointOfContact|Contact|contact_address|Text|
-|||contact_contactInstructions|Text|
-|||contact_electronicMailAddress|Text|
-|||contact_hoursOfService|Text|
-|||contact_telephoneFacsimile|Text|
-|||contact_telephoneVoice|Text|
-|||contact_website|Text|
-|serviceLocation|ServiceLocationType|serviceLocation_serviceLocationByGeometry|Geometry|
-|serviceType|ServiceTypeValue|serviceType_href|Text|
-
-#### GovernmentalServiceS
+#### GovernmentalService
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|

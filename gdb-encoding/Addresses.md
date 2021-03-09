@@ -11,7 +11,7 @@ The Simple Addresses encoding can be used as an *alternative encoding* for addre
 
 ## Normative References
 
-* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](/gdb-encoding/geodatabse encoding.md)
+* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](GeodatabaseEncoding.md)
 * [Data Specification - INSPIRE Addresses version 3.1](https://inspire.ec.europa.eu/Themes/79/2892)
 
 ## Conformance Class Core
@@ -31,8 +31,8 @@ This section describes which transformation rules with which parameters are appl
 
     |Replace|With|
     |----|----|
-    |`locator_designator_`|`'' `|
-    |`component_`|`'' `|
+    |`'locator_designator_'`|`'' `|
+    |`'component_'`|`'' `|
 
 
 

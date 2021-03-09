@@ -12,7 +12,7 @@ The Simple AreaManagementRestrictionAndRegulationZones encoding can be used as a
 
 ## Normative References
 
-* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](/gdb-encoding/geodatabse encoding.md)
+* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](GeodatabaseEncoding.md)
 * [Data Specification - INSPIRE Area Management Restriction And Regulation Zones version 3.1](https://inspire.ec.europa.eu/Themes/139/2892)
 
 ## Conformance Class Core
@@ -35,53 +35,17 @@ This section describes which transformation rules with which parameters are appl
 
     |Replace|With|
     |----|----|
-    |`designationPeriod_beginPosition`|`'designationPeriod_begin' `|
-    |`designationPeriod_endPosition`|`'designationPeriod_end' `|
-    |`legalBasis_journalCitation_officialJournalIdentification`|`'legal_officialJournalIdentification' `|
-    |`legalBasis_`|`'legal_' `|
-    |`relatedParty_`|`'related_' `|
+    |`'designationPeriod_beginPosition'`|`'designationPeriod_begin' `|
+    |`'designationPeriod_endPosition'`|`'designationPeriod_end' `|
+    |`'legalBasis_journalCitation_officialJournalIdentification'`|`'legal_officialJournalIdentification' `|
+    |`'legalBasis_'`|`'legal_' `|
+    |`'relatedParty_'`|`'related_' `|
 
 
 
 
 
-#### ManagementRestrictionOrRegulationZoneL
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|||featureId||
-|inspireId|Identifier|inspireId_localId|Text|
-|||inspireId_namespace|Text|
-|||inspireId_versionId|Text|
-|thematicId|ThematicIdentifer|thematicId_identifier|Text|
-|||thematicId_identifierScheme|Text|
-|geometry|GM_Object|geometry||
-|zoneType|ZoneTypeCode|zoneType_href|Text|
-|specialisedZoneType|SpecialisedZoneTypeCode|specialisedZoneType_href|Text|
-|designationPeriod|TM_Period|designationPeriod_begin|Date|
-|||designationPeriod_end||
-|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
-|endLifespanVersion|DateTime|endLifespanVersion|Date|
-
-#### ManagementRestrictionOrRegulationZoneP
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|||featureId||
-|inspireId|Identifier|inspireId_localId|Text|
-|||inspireId_namespace|Text|
-|||inspireId_versionId|Text|
-|thematicId|ThematicIdentifer|thematicId_identifier|Text|
-|||thematicId_identifierScheme|Text|
-|geometry|GM_Object|geometry||
-|zoneType|ZoneTypeCode|zoneType_href|Text|
-|specialisedZoneType|SpecialisedZoneTypeCode|specialisedZoneType_href|Text|
-|designationPeriod|TM_Period|designationPeriod_begin|Date|
-|||designationPeriod_end||
-|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
-|endLifespanVersion|DateTime|endLifespanVersion|Date|
-
-#### ManagementRestrictionOrRegulationZoneS
+#### ManagementRestrictionOrRegulationZone
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|

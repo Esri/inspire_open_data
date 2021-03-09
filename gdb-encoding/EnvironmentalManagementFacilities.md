@@ -12,7 +12,7 @@ The Simple EnvironmentalManagemmentFacility encoding can be used as an *alternat
 
 ## Normative References
 
-* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](/gdb-encoding/geodatabse encoding.md)
+* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](GeodatabaseEncoding.md)
 * [Data Specification - INSPIRE Utility and governmental services version 3.1](https://inspire.ec.europa.eu/Themes/136/2892)
 
 ## Conformance Class Environmental Managemment Facilities
@@ -34,9 +34,9 @@ This section describes which transformation rules with which parameters are appl
 
     |Replace|With|
     |----|----|
-    |`facilityDescription_`|`'' `|
-    |`relatedParty_`|`'related_' `|
-    |`permittedFunction_`|`'permitted_' `|
+    |`'facilityDescription_'`|`'' `|
+    |`'relatedParty_'`|`'related_' `|
+    |`'permittedFunction_'`|`'permitted_' `|
 
 
 
@@ -49,83 +49,7 @@ ToDO:
 
 
 
-#### EnvironmentalManagementFacilityL
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-||id|featureId|Long|
-|inspireId|Identifier|inspireId_localId|Text|
-|||inspireId_namespace|Text|
-|||inspireId_versionId|Text|
-|||name|Text|
-|||geometry||
-|validFrom|DateTime|validFrom|Date|
-|validTo|DateTime|validTo|Date|
-|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
-|endLifespanVersion|DateTime|endLifespanVersion|Date|
-|serviceHours|PT_FreeText|serviceHours|Text|
-|facilityDescription|ActivityComplexDescription|description|Text|
-||AddressRepresentation|address|Text|
-||AddressRepresentation|contact_address|Text|
-||Contact|contact_contactInstructions|Text|
-|||contact_electronicMailAddress|Text|
-|||contact_hoursOfService|Text|
-|||contact_telephoneFacsimile|Text|
-|||contact_telephoneVoice|Text|
-|||contact_website|Text|
-||RelatedParty|related_individualName|Text|
-|||related_organisationName|Text|
-|||related_positionName|Text|
-|||related_address|Text|
-|||related_contactInstructions|Text|
-|||related_electronicMailAddress|Text|
-|||related_hoursOfService|Text|
-|||related_telephoneFacsimile|Text|
-|||related_telephoneVoice|Text|
-|||related_website|Text|
-|||related_role|Text|
-||ConditionOfFacilityValue|status|Text|
-|||status_href|Text|
-
-#### EnvironmentalManagementFacilityP
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-||id|featureId|Long|
-|inspireId|Identifier|inspireId_localId|Text|
-|||inspireId_namespace|Text|
-|||inspireId_versionId|Text|
-|||name|Text|
-|||geometry||
-|validFrom|DateTime|validFrom|Date|
-|validTo|DateTime|validTo|Date|
-|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
-|endLifespanVersion|DateTime|endLifespanVersion|Date|
-|serviceHours|PT_FreeText|serviceHours|Text|
-|facilityDescription|ActivityComplexDescription|description|Text|
-||AddressRepresentation|address|Text|
-||AddressRepresentation|contact_address|Text|
-||Contact|contact_contactInstructions|Text|
-|||contact_electronicMailAddress|Text|
-|||contact_hoursOfService|Text|
-|||contact_telephoneFacsimile|Text|
-|||contact_telephoneVoice|Text|
-|||contact_website|Text|
-||RelatedParty|related_individualName|Text|
-|||related_organisationName|Text|
-|||related_positionName|Text|
-|||related_address|Text|
-|||related_contactInstructions|Text|
-|||related_electronicMailAddress|Text|
-|||related_hoursOfService|Text|
-|||related_telephoneFacsimile|Text|
-|||related_telephoneVoice|Text|
-|||related_website|Text|
-|||related_role|Text|
-||ConditionOfFacilityValue|status|Text|
-|||status_href|Text|
-
-#### EnvironmentalManagementFacilityS
+#### EnvironmentalManagementFacility
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
