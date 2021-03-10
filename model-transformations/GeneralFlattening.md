@@ -7,7 +7,7 @@
 </tr>
 <tr>
 <td>Description</td>
-<td><p>The complex structure of model elements can be reduced by applying a flattening method. The principle of the flattening is to derive a flat model structure by moving the nested child elements to its parent. The elements can be renamed to represent the former element path in the name of the resulting element and to avoid naming conflicts. The cardinality of the derived elements should be calculated from the cardinalities of the former element path. When applied recursively, this method flattens the structure of multiple levels.</p> 
+<td><p>The complex structure of model elements can be reduced by applying a flattening method. The principle of the flattening is to derive a flat model structure by moving the nested child elements to its parent. The elements can be renamed to represent the former element path in the name of the resulting element and to avoid naming conflicts. The cardinality of the derived elements should be calculated from the cardinalities of the former element path.</p> 
 <p>When applied recursively, this method flattens the structure of multiple levels and will result in properties such as these:</p>
 <ul>
     <li>inspireId_namespace</li>
