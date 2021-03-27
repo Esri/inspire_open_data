@@ -39,9 +39,7 @@ The important thing is that a complete mapping from the UML conceptual model to 
 
 Data provided through INSPIRE Alternative Encoding can be used *instead of* the default complex INSPIRE GML encoding, or *in addition to* the default encoding.
 
-It depends on the source data whether an encoding can be considered alternative (or just additional). The default encoding is **not required**, so long as the simplification rules do not lead to information loss from the source data set. If the simplification rules lead to information loss from the source data set, it should be considered an "additional encoding" and the default INSPIRE GML encoding should still be used. 
-
-For example <insert example>.
+It depends on the source data whether an encoding can be considered alternative (or just additional). The default encoding is **not required**, so long as the simplification rules do not lead to information loss from the source data set *as compared with using the ddefault encoding.* If the simplification rules lead to information loss from the source data set, it should be considered an "additional encoding" and the default INSPIRE GML encoding should still be used.
   
 The alternative encoding should not be used to omit attributes or object types that exist in the source data.
 
