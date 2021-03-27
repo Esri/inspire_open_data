@@ -33,4 +33,4 @@ Data providers are responsible for the conformance of their data to INSPIRE Impl
 Finally, share your INSPIRE spatial data sets and services using Hub Open Data to fulfill your obligations under the PSI-2/Open Data Directive.
 
 ## Learn how
-Ready to learn how? Step-by-step tutorials are available to guide you through the process [Follow the Learn Path](link to Learn Path)
+Ready to learn how? ArcGIS INSPIRE Open Data is a freely available solution to use with ArcGIS. Step-by-step tutorials are available to guide you through the process [Follow the Learn Path](https://linktoLearnPath)
