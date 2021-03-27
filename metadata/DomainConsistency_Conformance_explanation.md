@@ -22,12 +22,15 @@ Item metadata can be edited in the ArcGIS Online Metadata editor. This example s
         </gmd:explanation>
 ```
 ## Guidance for data providers regarding conformance
-Data providers are responsible for the conformance of their data to INSPIRE Implementing Rules on interoperability of spatial data sets and services (Commission Regulation (EU) No 1089/2010). ArcGIS INSPIRE Open Data enables the creation of spatial data sets and services using Alternative Encoding rules for Esri GDB. The following guidance can help you complete the metadata conformance statement:
+Data providers are responsible for the conformance of their data to INSPIRE Implementing Rules on interoperability of spatial data sets and services (Commission Regulation (EU) No 1089/2010). ArcGIS INSPIRE Open Data enables the creation of spatial data sets and services using Alternative Encoding rules for Esri GDB. The following guidance can help you determine conformance:
 
 - IF you load your source data into the target fGDB template and complete the necessary INSPIRE attributes,
 - AND confirm there is no loss of data using Alternative Encoding when compared with using the INSPIRE default complex GML encoding,
 - AND publish a Feature Layer and a Tile Layer from your hosted Feature Layer to automatically generate the INSPIRE Download and View Services,
-- AND update the dataset and services metadata to provide additional distributions,
+- AND update the dataset and services metadata with Additional Distributions and pass the INSPIRE Reference Validator,
 - THEN the spatial data sets and services provided can be considered confomant to the Alternative Encosing per the conformance explanation statement.
 
-Then, share your spatial data sets and services using Hub Open Data to fulfill your obligations under the PSI-2/Open Data Directive.
+Finally, share your INSPIRE spatial data sets and services using Hub Open Data to fulfill your obligations under the PSI-2/Open Data Directive.
+
+## Learn how
+Ready to learn how? Step-by-step tutorials are available to guide you through the process [Follow the Learn Path](link to Learn Path)
