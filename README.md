@@ -14,11 +14,20 @@ INSPIRE Action 2017.2 maintenance and implementation work programme [[2]](#refer
 ### This body of work
 During action 2017.2, proposals for alternative encodings rules were collected through an open call on the MIG collaboration platform and prioritised by Member State representatives in a survey. The results of the survey clearly showed support for GeoJSON as a possible alternative encoding. In addition, also simplified GML, database formats (geopackage, PostGIS, ESRI Geodatabase (GDB)) and linked data had significant support.[[3]](#referencees)
 
-This body of work addresses the support for using ESRI Geodatabase (GDB) and contributes to the larger body of work on INSPIRE alternative encodings.[[4]](#referencees)
-
-Why fGDB... benefits and target use case... easy to use and share... for example, make it easy to share on the web as feature layers, GeoJSON, shapefile, GeoPackage, and more...
+This body of work addresses the proposed support for using ESRI Geodatabase (GDB) and contributes to the larger body of work on INSPIRE alternative encodings.[[4]](#referencees)
 
 The INSPIRE-MIF Repository for action 2017.2 on alternative encoings can be found [here](https://github.com/INSPIRE-MIF/2017.2), including [template for Alternative Encodings for INSPIRE Data](https://github.com/INSPIRE-MIF/2017.2/blob/master/template/template.md) used herein. The glossary for terms can be found [here](https://github.com/INSPIRE-MIF/2017.2/blob/master/glossary.md).
+
+### Why GDB? 
+In today’s IT environment, users expect to share multiple representations of a resource and multiple service interfaces to access the same data resource to target different users and use cases. With ArcGIS, your GDB data are easily shared as GeoJSON, CSV, Shapefile, and fGDB, as well as GeoServices REST API. Optional additional distributions can include OGC WMTS, WFS, Layer Package, GeoPackage, and more. OGC API-Features is coming later in 2021.
+
+The geodatabase (GDB) is a "container" used to hold a collection of datasets. File Geodatabase (fGDB) is a subtype of GDB stored as folders in a file system. By default, files can grow to 1 TB, but this can be changed to 4 or 256 TB using a configuration keyword. fGDB uses an efficient data structure for high performance and scalability.
+
+#### fGDB Links
+Learn more [about fGDB](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/types-of-geodatabases.htm)
+[ESRI File Geodatabase API](https://github.com/Esri/file-geodatabase-api/)
+GDAL documentation for Vector drivers » [ESRI File Geodatabase (FileGDB)](https://gdal.org/drivers/vector/filegdb.html)
+[Working with File Geodatabases (.GBD) using qGIS and GDAL](https://gis.ucla.edu/node/53), UCLA Geospatial (2015)
 
 ## INSPIRE Requirements for Encoding Rules
 The Implementing Rules on interoperability of spatial data sets and services (Commission Regulation (EU) No 1089/2010) lays down the following requirements for encoding rules:
