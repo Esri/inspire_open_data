@@ -69,10 +69,6 @@ The catalogue also contains several substitution rules, where existing types suc
 
 [Simple Period](./SimplePeriod.md)
 
-### MT009: Simple Period
-
-[Simple Period](./SimplePeriod.md)
-
 ### MT010: Simple Free Text
 
 [Simple Free Text](./SimplePT_FreeText.md)
