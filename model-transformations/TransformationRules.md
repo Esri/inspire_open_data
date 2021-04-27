@@ -34,52 +34,51 @@ The catalogue also contains several substitution rules, where existing types suc
 
 ### MT001: Flattening of nested structures
 
-[General Flattening of nested structures](./GeneralFlattening.md)
+[General Flattening of nested structures](./MT001:GeneralFlattening.md)
 
 ### MT002: Extract Primitive Arrays
 
-[Extract Primitive Array](./ExtractPrimitiveArray.md)
+[Extract Primitive Array](./MT002:ExtractPrimitiveArray.md)
 
 ### MT003: Association/Aggregation to Composition with Hard Typing
 
-[Association/Aggregation to Composition with Hard Typing](./AssociatedComponentsHardType.md)
+[Association/Aggregation to Composition with Hard Typing](./MT003:AssociatedComponentsHardType.md)
 
 ### MT004: Association/Aggregation to Composition with Soft Typing
 
-[Association/Aggregation to Composition with Soft Typing](./AssociatedComponentsSoftType.md)
-
-### MT006: Property Composition to Association
-
-[Property Composition to Association](./PropertyCompositionToAssociation.md)
-
+[Association/Aggregation to Composition with Soft Typing](./MT004:AssociatedComponentsSoftType.md)
 
 ### MT005: Simple Geographic Name
 
-[Simple Geographic Name](./SimpleGeographicName.md)
+[Simple Geographic Name](./MT005:SimpleGeographicName.md)
+
+### MT006: Property Composition to Association
+
+[Property Composition to Association](./MT006:PropertyCompositionToAssociation.md)
 
 ### MT007: Simple Citation
 
-[Simple Citation](./SimpleCitation.md)
+[Simple Citation](./MT007:SimpleCitation.md)
 
 ### MT008: Simple Codelist Reference
 
-[Simple Codelist Reference](./SimpleCodelistReference.md)
+[Simple Codelist Reference](./MT008:SimpleCodelistReference.md)
 
 ### MT009: Simple Period
 
-[Simple Period](./SimplePeriod.md)
+[Simple Period](./MT009:SimplePeriod.md)
 
 ### MT010: Simple Free Text
 
-[Simple Free Text](./SimplePT_FreeText.md)
+[Simple Free Text](./MT010:SimplePT_FreeText.md)
 
 ### MT011: Simple TM_Period
 
-[Simple TM_Period](./SimpleTM_Period.md)
+[Simple TM_Period](./MT011:SimpleTM_Period.md)
 
 ### MT012: Simple Related Party
 
-[Simple RelatedParty](./SimpleRelatedParty.md)
+[Simple RelatedParty](./MT012:SimpleRelatedParty.md)
 
 ### MT013: Homogeneous Geometry
 
