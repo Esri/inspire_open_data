@@ -31,8 +31,8 @@ This section describes which transformation rules with which parameters are appl
 
     |Replace|With|
     |----|----|
-    |`'locator_designator_'`|`'' `|
-    |`'component_'`|`'' `|
+    |`'locator_designator_'`|`'ld_' `|
+    |`'component_'`|`'c_' `|
 
 
 
@@ -50,9 +50,9 @@ This section describes which transformation rules with which parameters are appl
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
-|locator|AddressLocator|addressNumber|Text|
-|||addressNumberExtension|Text|
-|||addressNumber2ndExtension|Text|
+|locator|AddressLocator|ld_addressNumber|Text|
+|||ld_addressNumberExtension|Text|
+|||ld_addressNumber2ndExtension|Text|
 |||addressIdentifierGeneral|Text|
 |||unitIdentifier|Text|
 |||buildingIdentifier|Text|
@@ -78,12 +78,12 @@ This section describes which transformation rules with which parameters are appl
 |||status|Text|
 |validFrom|DateTime|validFrom|Date|
 |validTo|DateTime|validTo|Date|
-|||AddressAreaName|Text|
-|||AdminUnitName_1stLevel|Text|
-|||AdminUnitName_2ndLevel|Text|
-|||AdminUnitName_3rdLevel|Text|
-|||AdminUnitName_4thLevel|Text|
-|||AdminUnitName_5thLevel|Text|
-|||AdminUnitName_6thLevel|Text|
-|||PostalDescriptor|Text|
-|||ThoroughfareName|Text|
+|||c_AddressAreaName|Text|
+|||c_AdminUnitName_1stLevel|Text|
+|||c_AdminUnitName_2ndLevel|Text|
+|||c_AdminUnitName_3rdLevel|Text|
+|||c_AdminUnitName_4thLevel|Text|
+|||c_AdminUnitName_5thLevel|Text|
+|||c_AdminUnitName_6thLevel|Text|
+|||c_PostalDescriptor|Text|
+|||c_ThoroughfareName|Text|
