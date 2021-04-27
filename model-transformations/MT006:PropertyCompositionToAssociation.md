@@ -1,4 +1,4 @@
-## Restriction of property encoding options to only by-reference
+## MT006: Restriction of property encoding options to only by-reference
 
 <table>
 <tr>
