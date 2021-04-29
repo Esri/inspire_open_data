@@ -32,7 +32,7 @@ This section describes which transformation rules with which parameters are appl
     |Replace|With|
     |----|----|
     |`'locator_designator_'`|`'ld_' `|
-    |`'component_'`|`'c_' `|
+    |`'component_'`|`'' `|
 
 
 
@@ -78,12 +78,12 @@ This section describes which transformation rules with which parameters are appl
 |||status|Text|
 |validFrom|DateTime|validFrom|Date|
 |validTo|DateTime|validTo|Date|
-|||c_AddressAreaName|Text|
-|||c_AdminUnitName_1stLevel|Text|
-|||c_AdminUnitName_2ndLevel|Text|
-|||c_AdminUnitName_3rdLevel|Text|
-|||c_AdminUnitName_4thLevel|Text|
-|||c_AdminUnitName_5thLevel|Text|
-|||c_AdminUnitName_6thLevel|Text|
-|||c_PostalDescriptor|Text|
-|||c_ThoroughfareName|Text|
+|||AddressAreaName|Text|
+|||AdminUnitName_1stLevel|Text|
+|||AdminUnitName_2ndLevel|Text|
+|||AdminUnitName_3rdLevel|Text|
+|||AdminUnitName_4thLevel|Text|
+|||AdminUnitName_5thLevel|Text|
+|||AdminUnitName_6thLevel|Text|
+|||PostalDescriptor|Text|
+|||ThoroughfareName|Text|
