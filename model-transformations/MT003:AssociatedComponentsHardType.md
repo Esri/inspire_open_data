@@ -1,4 +1,4 @@
-## Inline associated or aggregated components using type names
+## MT003: Inline associated or aggregated components using type names
 
 <table>
 <tr>

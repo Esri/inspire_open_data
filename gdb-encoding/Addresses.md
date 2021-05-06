@@ -31,7 +31,7 @@ This section describes which transformation rules with which parameters are appl
 
     |Replace|With|
     |----|----|
-    |`'locator_designator_'`|`'' `|
+    |`'locator_designator_'`|`'ld_' `|
     |`'component_'`|`'' `|
 
 
@@ -50,9 +50,9 @@ This section describes which transformation rules with which parameters are appl
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
-|locator|AddressLocator|addressNumber|Text|
-|||addressNumberExtension|Text|
-|||addressNumber2ndExtension|Text|
+|locator|AddressLocator|ld_addressNumber|Text|
+|||ld_addressNumberExtension|Text|
+|||ld_addressNumber2ndExtension|Text|
 |||addressIdentifierGeneral|Text|
 |||unitIdentifier|Text|
 |||buildingIdentifier|Text|

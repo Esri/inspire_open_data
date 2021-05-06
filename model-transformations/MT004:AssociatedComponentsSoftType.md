@@ -1,4 +1,4 @@
-## Flatten aggregated or associated components using codelist values
+## MT004: Flatten aggregated or associated components using codelist values
 
 <table>
 <tr>
