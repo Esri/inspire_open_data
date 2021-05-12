@@ -5,9 +5,8 @@
 
 The Simple PlannedLandUse encoding can be used as an *alternative encoding* for PlannedLandUse data that fulfills the following requirements:
 
-* It is sufficient to provide the `activity` for the `Function` in function. 
-* It is sufficient to provide the `activity` for the `Capacity` in physicalCapacity.  
-* There is no information on permittedCapacity for Permissions.
+* There are not more than three values for the attribute `name` for `SupplementaryRegulation`. 
+( Possible limitations could be on the multiplicity of hilucLandUse and specificLanUSe to be a static number.)
 
 
 ## Normative References
@@ -23,15 +22,11 @@ The Land Use theme has five application schema. This application schema-specific
 This section describes which transformation rules with which parameters are applied to the PlannedLandUse conceptual model before applying the general rules of this encoding rule:
  
 
-1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. (works in GDB)
-2. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` (works in GDB as ong as not to long)
-4. Create seperate Tables for each Geometry Type, add suffix for P for Points, L for Lines and S for Areas.
-5. References to Objects by URL (String)
+1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. 
+2. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
+3. Substitute all occurences of LegislationCitation and DocumentCitation with the Simple Citation through Rule `MT007()`
 
 
-ToDO: 
-SimpleRelatedParty beschreiben, Multiplizität bei RelatedParty erlauben
-Contact in einzelne Attribute zerlegen.
 
 
 
@@ -40,213 +35,209 @@ Contact in einzelne Attribute zerlegen.
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||featureId||
-|inspireId|Identifier|inspireId_localId||
-|||inspireId_namespace||
-|||inspireId_versionId||
-|legislationCitation|LegislationCitation|legislationCitation_name||
-|||legislationCitation_type||
-|||legislationCitation_date||
-|||legislationCitation_link||
-|||legislationCitation_level||
-|||legislationCitation_level_href||
-|||regulationText||
-|||planDocument_name||
-|||planDocument_type||
-|||planDocument_date||
-|||planDocument_link||
-|||planDocument_level||
-|||planDocument_level_href||
+|||featureId|Long|
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|legislationCitation|LegislationCitation|legislationCitation_name|Text|
+|||legislationCitation_type|Text|
+|||legislationCitation_date|Date|
+|||legislationCitation_link|Text|
+|||legislationCitation_level|Text|
+|||legislationCitation_level_href|Text|
+|||regulationText|Text|
+|||planDocument_name|Text|
+|||planDocument_type|Text|
+|||planDocument_date|Date|
+|||planDocument_link|Text|
+|||planDocument_level|Text|
+|||planDocument_level_href|Text|
 
 #### SpatialPlan
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||featureId||
-|inspireId|Identifier|inspireId_localId||
-|||inspireId_namespace||
-|||inspireId_versionId||
-|extent|GM_MultiSurface|extent||
-|beginLifespanVersion|DateTime|beginLifespanVersion||
-|officialTitle|CharacterString|officialTitle||
-|levelOfSpatialPlan|LevelOfSpatialPlanValue|levelOfSpatialPlan||
-|||levelOfSpatialPlan_href||
-|endLifespanVersion|DateTime|endLifespanVersion||
-|validFrom|DateTime|validFrom||
-|validTo|DateTime|validTo||
-|alternativeTitle|CharacterString|alternativeTitle||
-|planTypeName|PlanTypeNameValue|planTypeName||
-|||planTypeName_href||
-|processStepGeneral|ProcessStepGeneralValue|processStepGeneral||
-|||processStepGeneral_href||
-|backgroundMap|BackgroundMapValue|backgroundMap_Date||
-|||backgroundMap_Reference||
-|||backgroundMap_URI||
+|||featureId|Long|
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|extent|GM_MultiSurface|extent|Polygon|
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
+|officialTitle|CharacterString|officialTitle|Text|
+|levelOfSpatialPlan|LevelOfSpatialPlanValue|levelOfSpatialPlan|Text|
+|||levelOfSpatialPlan_href|Text|
+|endLifespanVersion|DateTime|endLifespanVersion|Text|
+|validFrom|DateTime|validFrom|Date|
+|validTo|DateTime|validTo|Date|
+|alternativeTitle|CharacterString|alternativeTitle|Text|
+|planTypeName|PlanTypeNameValue|planTypeName|Text|
+|||planTypeName_href|Text|
+|processStepGeneral|ProcessStepGeneralValue|processStepGeneral|Text|
+|||processStepGeneral_href|Text|
+|backgroundMap|BackgroundMapValue|backgroundMap_Date|Text|
+|||backgroundMap_Reference|Text|
+|||backgroundMap_URI|Text|
 
 #### SpatialPlan_member
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||RID||
-|member|ZoningElement|member||
+|||RID|Long|
+|member|ZoningElement|member|Long|
 
 #### SpatialPlan_officialDocument
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||RID||
-|officialDocument|OfficialDocumentation|officialDocument||
+|||RID|Long|
+|officialDocument|OfficialDocumentation|officialDocument|Long|
 
 #### SpatialPlan_ordinance
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|ordinance|OrdinanceValue |RID||
-|||ordinanceDate||
-|||ordinanceReference||
+|ordinance|OrdinanceValue |RID|Long|
+|||ordinanceDate|Date|
+|||ordinanceReference|Text|
 
 #### SpatialPlan_restriction
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||RID||
-|restriction|SupplementaryRegulation|restriction||
+|||RID|Long|
+|restriction|SupplementaryRegulation|restriction|Long|
 
 #### SupplementaryRegulation
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||featureId||
-|validFrom|DateTime|validFrom||
-|validTo|DateTime|validTo||
-|processStepGeneral|ProcessStepGeneralValue|processStepGeneral||
-|||processStepGeneral_href||
-|backgroundMap|BackgroundMapValue|backgroundMap_Date||
-|||backgroundMap_Reference||
-|||backgroundMap_URI||
-|beginLifespanVersion|DateTime|beginLifespanVersion||
-|inspireId|Identifier|inspireId_localId||
-|||inspireId_namespace||
-|||inspireId_versionId||
-|endLifespanVersion|DateTime|endLifespanVersion||
-|geometry|GM_Object|geometry||
-|inheritedFromOtherPlans|Boolean|inheritedFromOtherPlans||
-|specificRegulationNature|CharacterString|specificRegulationNature||
-|regulationNature|RegulationNatureValue|regulationNature||
-|||regulationNature_href||
-|||plan||
+|||featureId|Long|
+|validFrom|DateTime|validFrom|Date|
+|validTo|DateTime|validTo|Date|
+|processStepGeneral|ProcessStepGeneralValue|processStepGeneral|Text|
+|||processStepGeneral_href|Text|
+|backgroundMap|BackgroundMapValue|backgroundMap_Date|Text|
+|||backgroundMap_Reference|Text|
+|||backgroundMap_URI|Text|
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|endLifespanVersion|DateTime|endLifespanVersion|Date|
+|geometry|GM_Object|geometry|Polygon|
+|inheritedFromOtherPlans|Boolean|inheritedFromOtherPlans|Short|
+|specificRegulationNature|CharacterString|specificRegulationNature|Text|
+|name|CharacterString|name_1|Text|
+|name|CharacterString|name_2|Text|
+|name|CharacterString|name_3|Text|
+|regulationNature|RegulationNatureValue|regulationNature|Text|
+|||regulationNature_href|Text|
+|||plan|Long|
 
 #### SupplementaryRegulation_dimensioningIndication
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|dimensioningIndication|DimensioningIndicationValue|RID||
-|||indicationReference||
-|||CharacterValue_value||
-|||IntegerValue_value||
-|||MeasureValue_value||
-|||MeasureValue_value_uom||
-|||RealValue_value||
-
-#### SupplementaryRegulation_name
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|||RID||
-|name|CharacterString|name||
+|dimensioningIndication|DimensioningIndicationValue|RID|Long|
+|||indicationReference|Text|
+|||CharacterValue_value|Text|
+|||IntegerValue_value|Long|
+|||MeasureValue_value|Float|
+|||MeasureValue_value_uom|Text|
+|||RealValue_value|Float|
 
 #### SupplementaryRegulation_officialDocument
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||RID||
-|||officialDocument||
+|||RID|Long|
+|||officialDocument|Long|
 
 #### SupplementaryRegulation_specificRegulation
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||RID||
-|specificSupplementaryRegulation|SpecificSupplementaryRegulationValue|specificSupRegulation||
-|||specificSupRegulation_href||
+|||RID|Long|
+|specificSupplementaryRegulation|SpecificSupplementaryRegulationValue|specificSupRegulation|Text|
+|||specificSupRegulation_href|Text|
 
 #### SupplementaryRegulation_supplementaryRegulation
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|supplementaryRegulation|SupplementaryRegulationValue|RID||
-|||supplementaryRegulation||
-|||supplementaryRegulation_href||
+|supplementaryRegulation|SupplementaryRegulationValue|RID|Long|
+|||supplementaryRegulation|Text|
+|||supplementaryRegulation_href|Text|
 
 #### ZoningElement
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||featureId||
-|inspireId|Identifier|inspireId_localId||
-|||inspireId_namespace||
-|||inspireId_versionId||
-|geometry|GM_MultiSurface|geometry||
-|validFrom|DateTime|validFrom||
-|validTo|DateTime|validTo||
-|beginLifespanVersion|DateTime|beginLifespanVersion||
-|regulationNature|RegulationNatureValue|regulationNature||
-|||regulationNature_href||
-|endLifespanVersion|DateTime|endLifespanVersion||
-|processStepGeneral|ProcessStepGeneralValue|processStepGeneral||
-|||processStepGeneral_href||
-|backgroundMap|BackgroundMapValue|backgroundMap_Date||
-|||backgroundMap_Reference||
-|||backgroundMap_URI||
-|plan||plan||
+|||featureId|Long|
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|geometry|GM_MultiSurface|geometry|Polygon|
+|validFrom|DateTime|validFrom|Date|
+|validTo|DateTime|validTo|Date|
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
+|regulationNature|RegulationNatureValue|regulationNature|Text|
+|||regulationNature_href|Text|
+|endLifespanVersion|DateTime|endLifespanVersion|Date|
+|processStepGeneral|ProcessStepGeneralValue|processStepGeneral|Text|
+|||processStepGeneral_href|Text|
+|backgroundMap|BackgroundMapValue|backgroundMap_Date|Text|
+|||backgroundMap_Reference|Text|
+|||backgroundMap_URI|Text|
+|plan||plan|Long|
 
 #### ZoningElement_dimensioningIndication
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|dimensioningIndication|DimensioningIndicationValue|RID||
-|||indicationReference||
-|||CharacterValue_value||
-|||IntegerValue_value||
-|||MeasureValue_value||
-|||MeasureValue_value_uom||
-|||RealValue_value||
+|dimensioningIndication|DimensioningIndicationValue|RID|Long|
+|||indicationReference|Text|
+|||CharacterValue_value|Text|
+|||IntegerValue_value|Long|
+|||MeasureValue_value|Float|
+|||MeasureValue_value_uom|Text|
+|||RealValue_value|Float|
 
 #### ZoningElement_hilucsLandUse
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|hilucsLandUse|HILUCSValue|RID||
-|||hilucsLandUse||
-|||hilucsLandUse_href||
+|hilucsLandUse|HILUCSValue|RID|Long|
+|||hilucsLandUse|Text|
+|||hilucsLandUse_href|Text|
 
 #### ZoningElement_hilucsPresence
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|hilucsPresence| HILUCSPresence|RID||
-|||orderedList||
-|||orderedList_href||
-|||percentage_hilucsValue||
-|||percentage_percentage||
+|hilucsPresence| HILUCSPresence|RID|Long|
+|||orderedList|Text|
+|||orderedList_href|Text|
+|||percentage_hilucsValue|Text|
+|||percentage_percentage|Text|
 
 #### ZoningElement_officialDocument
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||RID||
-|officialDocument||officialDocument||
+|||RID|Long|
+|officialDocument||officialDocument|Long|
 
 #### ZoningElement_specificLandUse
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||specificLandUse_href||
+|||specificLandUse_href|Text|
 
 #### ZoningElement_specificPresence
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||orderedList_href||
-|||percentage_specificValue_href||
-|||percentage_specificPercentage||
+|||orderedList_href|Text|
+|||percentage_specificValue_href|Text|
+|||percentage_specificPercentage|Text|

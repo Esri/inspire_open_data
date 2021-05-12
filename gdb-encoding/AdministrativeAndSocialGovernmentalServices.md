@@ -40,10 +40,7 @@ This section describes which transformation rules with which parameters are appl
 
 
 
-
-
-
-#### GovernmentalService
+#### GovernmentalServiceL
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
@@ -60,12 +57,55 @@ This section describes which transformation rules with which parameters are appl
 |||contact_telephoneFacsimile|Text|
 |||contact_telephoneVoice|Text|
 |||contact_website|Text|
-|serviceLocation|ServiceLocationType|serviceLocation_serviceLocationByGeometry|Geometry|
+|serviceLocation|ServiceLocationType|serviceLocation_serviceLocationByGeometry|Line|
 |serviceType|ServiceTypeValue|serviceType_href|Text|
+|||serviceType|Text|
+
+#### GovernmentalServiceP
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+|||featureId|Long|
+|beginLifespanVersion||beginLifespanVersion|Text|
+|endLifespanVersion||endLifespanVersion|Text|
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|pointOfContact|Contact|contact_address|Text|
+|||contact_contactInstructions|Text|
+|||contact_electronicMailAddress|Text|
+|||contact_hoursOfService|Text|
+|||contact_telephoneFacsimile|Text|
+|||contact_telephoneVoice|Text|
+|||contact_website|Text|
+|serviceLocation|ServiceLocationType|serviceLocation_serviceLocationByGeometry|Point|
+|serviceType|ServiceTypeValue|serviceType_href|Text|
+|||serviceType|Text|
+
+#### GovernmentalServiceS
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+|||featureId|Long|
+|beginLifespanVersion||beginLifespanVersion|Text|
+|endLifespanVersion||endLifespanVersion|Text|
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|pointOfContact|Contact|contact_address|Text|
+|||contact_contactInstructions|Text|
+|||contact_electronicMailAddress|Text|
+|||contact_hoursOfService|Text|
+|||contact_telephoneFacsimile|Text|
+|||contact_telephoneVoice|Text|
+|||contact_website|Text|
+|serviceLocation|ServiceLocationType|serviceLocation_serviceLocationByGeometry|Polygon|
+|serviceType|ServiceTypeValue|serviceType_href|Text|
+|||serviceType|Text|
 
 #### GovernmentalService_areaOfResponsibility
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|areaOfResponsibility|AreaOfResponsibilityType|areaOfResponsibility|Geometry|
+|areaOfResponsibility|AreaOfResponsibilityType|areaOfResponsibility|Polygon|
 |||RID|Long|

@@ -31,9 +31,8 @@ This section describes which transformation rules with which parameters are appl
 
     |Replace|With|
     |----|----|
-    |`'locator_designator_'`|`'ld_' `|
+    |`'locator_designator_'`|`'ld' `|
     |`'component_'`|`'' `|
-
 
 
 
@@ -53,23 +52,23 @@ This section describes which transformation rules with which parameters are appl
 |locator|AddressLocator|ld_addressNumber|Text|
 |||ld_addressNumberExtension|Text|
 |||ld_addressNumber2ndExtension|Text|
-|||addressIdentifierGeneral|Text|
-|||unitIdentifier|Text|
-|||buildingIdentifier|Text|
-|||buildingIdentifierPrefix|Text|
-|||cornerAddress1stIdentifier|Text|
-|||cornerAddress2ndIdentifier|Text|
-|||entranceDoorIdentifier|Text|
-|||floorIdentifier|Text|
-|||kilometrePoint|Text|
-|||postalDeliveryIdentifier|Text|
-|||staircaseIdentifier|Text|
-|||unitIdentifier|Text|
+|||ld_addressIdentifierGeneral|Text|
+|||ld_unitIdentifier|Text|
+|||ld_buildingIdentifier|Text|
+|||ld_buildingIdentifierPrefix|Text|
+|||ld_cornerAddress1stIdentifier|Text|
+|||ld_cornerAddress2ndIdentifier|Text|
+|||ld_entranceDoorIdentifier|Text|
+|||ld_floorIdentifier|Text|
+|||ld_kilometrePoint|Text|
+|||ld_postalDeliveryIdentifier|Text|
+|||ld_staircaseIdentifier|Text|
+|||ld_unitIdentifier|Text|
 |||locator_level_href|Text|
 |||locator_level|Text|
 |||locator_name|Text|
-|parentAddress|Address|parentAddress|Text|
-|position|GeographicPosition|position|Geometry|
+|parentAddress|Address|parentAddress|Long|
+|position|GeographicPosition|position|Point|
 |||position_method_href|Text|
 |||position_method|Text|
 |||position_specification_href|Text|
@@ -78,7 +77,7 @@ This section describes which transformation rules with which parameters are appl
 |||status|Text|
 |validFrom|DateTime|validFrom|Date|
 |validTo|DateTime|validTo|Date|
-|||AddressAreaName|Text|
+|component|AddressComponent|AddressAreaName|Text|
 |||AdminUnitName_1stLevel|Text|
 |||AdminUnitName_2ndLevel|Text|
 |||AdminUnitName_3rdLevel|Text|

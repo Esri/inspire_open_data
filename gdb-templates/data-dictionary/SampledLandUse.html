@@ -47,7 +47,7 @@
 	<br/>
 	<strong>Geodatabase Documentation</strong>
 	<hr/>
-	<strong>Date: </strong>20210506160738.9520912<br/>
+	<strong>Date: </strong>20210512173905.9621113<br/>
 	<hr/>
 	<p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 2
 			Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">5 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">5 Relationship
@@ -628,10 +628,10 @@
 	<td/>
 	<td/>
 </tr><tr>
-	<td width="8%">percentageList_hilucsValue</td>
+	<td width="8%">percentage_hilucsValue</td>
 	<td width="8%">String</td>
 	<td width="3%">254</td>
-	<td width="8%">percentageList_hilucsValue</td>
+	<td width="8%">percentage_hilucsValue</td>
 	<td width="8%">Land use HILUCS classes that are present in this existing land use sample.</td>
 	<td width="8%"><a href="#Domain"/></td>
 	<td width="8%"/>
@@ -639,10 +639,10 @@
 	<td/>
 	<td/>
 </tr><tr>
-	<td width="8%">percentageList_hilucsValue_href</td>
+	<td width="8%">percentage_hilucsValue_href</td>
 	<td width="8%">String</td>
 	<td width="3%">254</td>
-	<td width="8%">percentageList_hilucsValue_href</td>
+	<td width="8%">percentage_hilucsValue_href</td>
 	<td width="8%">URI from the HILUCSValue Codelist.</td>
 	<td width="8%"><a href="#Domain"/></td>
 	<td width="8%"/>
@@ -650,10 +650,10 @@
 	<td/>
 	<td/>
 </tr><tr>
-	<td width="8%">percentageList_percentage</td>
+	<td width="8%">percentage_percentage</td>
 	<td width="8%">String</td>
 	<td width="3%">254</td>
-	<td width="8%">percentageList_percentage</td>
+	<td width="8%">percentage_percentage</td>
 	<td width="8%">Percentage of land use object that is covered by this specific presence.</td>
 	<td width="8%"><a href="#Domain"/></td>
 	<td width="8%"/>
@@ -813,21 +813,10 @@
 	<td/>
 	<td/>
 </tr><tr>
-	<td width="8%">percentageList_specificPercentage</td>
+	<td width="8%">orderedList</td>
 	<td width="8%">String</td>
 	<td width="3%">254</td>
-	<td width="8%">percentageList_specificPercentage</td>
-	<td width="8%">Percentage of land use object that is covered by a specific presence.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">percentageList_specificValue</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">percentageList_specificValue</td>
+	<td width="8%">orderedList</td>
 	<td width="8%">LandUseClassificationValue</td>
 	<td width="8%"><a href="#Domain"/></td>
 	<td width="8%"/>
@@ -835,10 +824,43 @@
 	<td/>
 	<td/>
 </tr><tr>
-	<td width="8%">percentageList_specificValue_href</td>
+	<td width="8%">orderedList_href</td>
 	<td width="8%">String</td>
 	<td width="3%">254</td>
-	<td width="8%">percentageList_specificValue_href</td>
+	<td width="8%">orderedList_href</td>
+	<td width="8%">LandUseClassificationValue</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">percentage_specificPercentage</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">percentage_specificPercentage</td>
+	<td width="8%">Percentage of land use object that is covered by a specific presence.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">percentage_specificValue</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">percentage_specificValue</td>
+	<td width="8%">LandUseClassificationValue</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">percentage_specificValue_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">percentage_specificValue_href</td>
 	<td width="8%">LandUseClassificationValue</td>
 	<td width="8%"><a href="#Domain"/></td>
 	<td width="8%"/>
@@ -851,28 +873,6 @@
 	<td width="3%">4</td>
 	<td width="8%">RID</td>
 	<td width="8%">Reference to featureId field in parent 'ExistingLandUseSample'.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">specificPresence_orderedList</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">specificPresence_orderedList</td>
-	<td width="8%">LandUseClassificationValue</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">specificPresence_orderedList_href</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">specificPresence_orderedList_href</td>
-	<td width="8%">LandUseClassificationValue</td>
 	<td width="8%"><a href="#Domain"/></td>
 	<td width="8%"/>
 	<td width="8%">true</td>

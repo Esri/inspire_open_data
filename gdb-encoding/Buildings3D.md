@@ -5,9 +5,13 @@
 
 The Simple Buildings3D encoding can be used as an *alternative encoding* for Buildings3D data that fulfills the following requirements:
 
-* It is sufficient to provide the `activity` for the `Function` in function. 
-* It is sufficient to provide the `activity` for the `Capacity` in physicalCapacity.  
-* There is no information on permittedCapacity for Permissions.
+* There is not more than one value for the attribute `elevation` for `Building` or `BuildingPart`. 
+* There is not more than one value for the attribute `externalReference` for `Building` or `BuildingPart`. 
+* There is not more than one value for the attribute `heightAboveGround` for `Building` or `BuildingPart`. 
+* There are not more than three values for the attribute `name` for `Building` or `BuildingPart`. 
+* There are not more than three values for the attribute `buildingNature` for `Building` or `BuildingPart`. 
+* There are not more than three values for the attribute `currentUse` for `Building` or `BuildingPart`. 
+* There is only one LoD Geometry for each `Building` or `BuildingPart`.
 
 ## Normative References
 
@@ -22,17 +26,10 @@ The Buildings theme has three application schema. This application schema-specif
 
 This section describes which transformation rules with which parameters are applied to the Buildings3D conceptual model before applying the general rules of this encoding rule:
  
-
 1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. (works in GDB)
 2. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` (works in GDB as ong as not to long)
-4. Create seperate Tables for each Geometry Type, add suffix for P for Points, L for Lines and S for Areas.
-5. References to Objects by URL (String)
+3. Substitute all occurences of `GeographicName` with the Simple Geographic Name through Rule `MT005(separator: '_')`.
 
-
-ToDO: 
-Single 3D geometry per Object
-externalInformation system Reference 
-multiplicities
 
 
 
@@ -41,39 +38,61 @@ multiplicities
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||featureId||
+|||featureId|Long|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Text|
 |||conditionOfConstruction_href|Text|
-|dateOfConstruction|DateOfEvent|dateOfConstruction_beginning|Text|
-|||dateOfConstruction_end|Text|
-|dateOfDemolition|DateOfEvent|dateOfDemolition_beginning|Text|
-|||dateOfDemolition_end|Text|
-|dateOfRenovation|DateOfEvent|dateOfRenovation_beginning|Text|
-|||dateOfRenovation_end|Text|
+|dateOfConstruction|DateOfEvent|dateOfConstruction_beginning|Date|
+|||dateOfConstruction_end|Date|
+|dateOfDemolition|DateOfEvent|dateOfDemolition_beginning|Date|
+|||dateOfDemolition_end|Date|
+|dateOfRenovation|DateOfEvent|dateOfRenovation_beginning|Date|
+|||dateOfRenovation_end|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Text|
+|externalReference|ExternalReference|externalReference_informationSystem|Text|
+|||externalReference_informationSystemName|Text|
+|||externalReference_reference|Text|
+|heightAboveGround|HeightAboveGround|heightReference|Text|
+|||heightReference_href|Text|
+|||lowReference|Text|
+|||lowReference_href|Text|
+|||status|Text|
+|||status_href|Text|
+|||heightAboveGround_value|Text|
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
+|name|GeographicalName|name_1_language|Text|
+|||name_2_language|Text|
+|||name_3_language|Text|
+|||name_1|Text|
+|||name_2|Text|
+|||name_3|Text|
+|buildingNature|BuildingNatureValue|buildingNature_1|Text|
+|||buildingNature_2|Text|
+|||buildingNature_3|Text|
+|||buildingNature_1_href|Text|
+|||buildingNature_2_href|Text|
+|||buildingNature_3_href|Text|
 |||numberOfDwellings|Text|
 |numberOfDwellings|Integer|numberOfBuildingUnits|Text|
 |numberOfBuildingUnits|Integer|numberOfFloorsAboveGround|Text|
-|||geometry3DLoD1_geometrySolid||
-|verticalGeometryReference3DBottom|ElevationReferenceValue|verticalReference3DBottom||
-|||verticalReference3DBottom_href||
+|||geometry3DLoD1_geometrySolid|Multipatch|
+|verticalGeometryReference3DBottom|ElevationReferenceValue|verticalReference3DBottom|Text|
+|||verticalReference3DBottom_href|Text|
 |horizontalEstimatedAccuracy|Length|horizontalEstimatedAccuracy|Text|
 |verticalEstimatedAccuracy|Length|verticalEstimatedAccuracy|Text|
-|horizontalGeometryReference|HorizontalGeometryReferenceValue|horizontalReference||
-|||horizontalReference_href||
-|verticalGeometryReference3DTop|ElevationReferenceValue|verticalReference3DTop||
-|||verticalReference3DTop_href||
+|horizontalGeometryReference|HorizontalGeometryReferenceValue|horizontalReference|Text|
+|||horizontalReference_href|Text|
+|verticalGeometryReference3DTop|ElevationReferenceValue|verticalReference3DTop|Text|
+|||verticalReference3DTop_href|Text|
 
 #### BuildingPart
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||featureId||
-|||partOf||
-|beginLifespanVersion|DateTime|beginLifespanVersion||
+|||featureId|Long|
+|||partOf|Long|
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |conditionOfConstruction|ConditionOfConstructionValue|conditionOfConstruction|Text|
 |||conditionOfConstruction_href|Text|
 |dateOfConstruction|DateOfEvent|dateOfConstruction_beginning|Text|
@@ -82,143 +101,83 @@ multiplicities
 |||dateOfDemolition_end|Text|
 |dateOfRenovation|DateOfEvent|dateOfRenovation_beginning|Text|
 |||dateOfRenovation_end|Text|
+|elevation|Elevation|elevationReference_href|Text|
+|||elevationValue|Text|
 |endLifespanVersion|DateTime|endLifespanVersion|Text|
+|externalReference|ExternalReference|externalReference_informationSystem|Text|
+|||externalReference_informationSystemName|Text|
+|||externalReference_reference|Text|
+|heightAboveGround|HeightAboveGround|heightReference|Text|
+|||heightReference_href|Text|
+|||lowReference|Text|
+|||lowReference_href|Text|
+|||status|Text|
+|||status_href|Text|
+|||value|Text|
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
+|name|GeographicalName|name_1_language|Text|
+|||name_2_language|Text|
+|||name_3_language|Text|
+|||name_1|Text|
+|||name_2|Text|
+|||name_3|Text|
+|buildingNature|BuildingNatureValue|buildingNature_1|Text|
+|||buildingNature_2|Text|
+|||buildingNature_3|Text|
+|||buildingNature_1_href|Text|
+|||buildingNature_2_href|Text|
+|||buildingNature_3_href|Text|
 |numberOfDwellings|Integer|numberOfDwellings|Text|
 |numberOfBuildingUnits|Integer|numberOfBuildingUnits|Text|
 |numberOfFloorsAboveGround|Integer|numberOfFloorsAboveGround|Text|
-|geometrySolid|GM_Solid|geometrySolid||
-|verticalGeometryReference3DBottom|ElevationReferenceValue|verticalReference3DBottom||
-|||verticalReference3DBottom||
+|geometrySolid|GM_Solid|geometrySolid|Multipatch|
+|verticalGeometryReference3DBottom|ElevationReferenceValue|verticalReference3DBottom|Text|
+|||verticalReference3DBottom|Text|
 |horizontalEstimatedAccuracy|Length|horizontalEstimatedAccuracy|Text|
 |verticalEstimatedAccuracy|Length|verticalEstimatedAccuracy|Text|
-|horizontalGeometryReference|HorizontalGeometryReferenceValue|horizontalReference||
-|||horizontalReference_href||
-|verticalGeometryReference3DTop|ElevationReferenceValue|verticalReference3DTop||
-|||verticalReference3DTop_href||
-
-#### BuildingPart_buildingNature
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|buildingNature|BuildingNatureValue|RID|Text|
-|||buildingNature|Text|
-|||buildingNature_href|Text|
+|horizontalGeometryReference|HorizontalGeometryReferenceValue|horizontalReference|Text|
+|||horizontalReference_href|Text|
+|verticalGeometryReference3DTop|ElevationReferenceValue|verticalReference3DTop|Text|
+|||verticalReference3DTop_href|Text|
 
 #### BuildingPart_currentUse
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|currentUse|CurrentUse|RID||
+|currentUse|CurrentUse|RID|Long|
 |||currentUse|Text|
 |||currentUse_href|Text|
 |||currentUse_percentage|Text|
-
-#### BuildingPart_elevation
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|elevation|Elevation|RID||
-|||elevationReference_href|Text|
-|||elevationValue|Text|
-
-#### BuildingPart_externalReference
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|externalReference|ExternalReference|RID||
-|||informationSystem|Text|
-|||informationSystemName|Text|
-|||reference||
-
-#### BuildingPart_heightAboveGround
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|heightAboveGround|HeightAboveGround|RID||
-||ElevationReferenceValue|heightReference||
-|||heightReference_href||
-||ElevationReferenceValue|lowReference||
-|||lowReference_href||
-||HeightStatusValue|status||
-|||status_href||
-|||value||
-
-#### BuildingPart_name
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|name|GeographicalName|RID||
-|||name_language||
-|||name||
 
 #### BuildingPart_terrainIntersection
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|terrainIntersection|GM_MultiCurve|RID||
-|||terrainIntersection||
-
-#### Building_buildingNature
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|buildingNature|BuildingNatureValue|RID||
-|||buildingNature|Text|
-|||buildingNature_href|Text|
+|terrainIntersection|GM_MultiCurve|RID|Long|
+|||terrainIntersection|Line|
 
 #### Building_currentUse
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||RID|Text|
-|currentUse|CurrentUse|currentUse||
-|||currentUse_href||
+|||RID|Long|
+|currentUse|CurrentUse|currentUse|Text|
+|||currentUse_href|Text|
 |||percentage|Text|
 
 #### Building_elevation
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|elevation|Elevation|RID||
+|elevation|Elevation|RID|Long|
 |||elevationReference_href|Text|
 |||elevationValue|Text|
-
-#### Building_externalReference
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|externalReference|ExternalReference|RID||
-|||informationSystem|Text|
-|||informationSystemName|Text|
-|||reference||
-
-#### Building_heightAboveGround
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|heightAboveGround|HeightAboveGround|RID||
-|||heightReference|Text|
-|||heightReference_href|Text|
-|||lowReference|Text|
-|||lowReference_href|Text|
-|||status|Text|
-|||status_href|Text|
-|||heightAboveGround_value|Text|
-
-#### Building_name
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|name|GeographicalName|RID||
-|||name_language||
-|||name||
 
 #### Building_terrainIntersection
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|terrainIntersection|GM_MultiCurve|RID||
-|||terrainIntersection||
+|terrainIntersection|GM_MultiCurve|RID|Long|
+|||terrainIntersection|Line|

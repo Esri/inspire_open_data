@@ -5,10 +5,7 @@
 
 The Simple ExistingLandUse encoding can be used as an *alternative encoding* for ExistingLandUse data that fulfills the following requirements:
 
-* It is sufficient to provide the `activity` for the `Function` in function. 
-* It is sufficient to provide the `activity` for the `Capacity` in physicalCapacity.  
-* There is no information on permittedCapacity for Permissions.
-
+Any Dataset can be used. ( Possible limitations could be on the multiplicity of hilucLandUse and specificLanUSe to be a static number.)
 
 ## Normative References
 
@@ -26,14 +23,9 @@ This section describes which transformation rules with which parameters are appl
 
 1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. (works in GDB)
 2. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` (works in GDB as ong as not to long)
-4. Create seperate Tables for each Geometry Type, add suffix for P for Points, L for Lines and S for Areas.
-5. References to Objects by URL (String)
-
 
 ToDO: 
-SimpleRelatedParty beschreiben, Multiplizität bei RelatedParty erlauben
-Contact in einzelne Attribute zerlegen.
-
+Rule for ExistingLandUseObject_hilucsPresence/ specificPresence is either orderedList or percentageList
 
 
 
@@ -41,74 +33,74 @@ Contact in einzelne Attribute zerlegen.
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||featureId||
-|inspireId|Identifier|inspireId_localId||
-|||inspireId_namespace||
-|||inspireId_versionId||
-|extent|GM_MultiSurface|extent||
-|beginLifespanVersion|DateTime|beginLifespanVersion||
-|endLifespanVersion|DateTime|endLifespanVersion||
-|name|CharacterString|name||
-|validFrom|DateTime|validFrom||
-|validTo|DateTime|validTo||
+|||featureId|Long|
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|extent|GM_MultiSurface|extent|Polygon|
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
+|endLifespanVersion|DateTime|endLifespanVersion|Date|
+|name|CharacterString|name|Text|
+|validFrom|DateTime|validFrom|Date|
+|validTo|DateTime|validTo|Date|
 
 #### ExistingLandUseDataSet_member
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||RID||
-|||member||
+|||RID|Long|
+|||member|Long|
 
 #### ExistingLandUseObject
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||featureId||
-|inspireId|Identifier|inspireId.localId||
-|||inspireId_namespace||
-|||inspireId_versionId||
-|geometry|GM_MultiSurface|geometry||
-|beginLifespanVersion|DateTime|beginLifespanVersion||
-|endLifespanVersion|DateTime|endLifespanVersion||
-|observationDate|Date|observationDate||
-|validFrom|DateTime|validFrom||
-|validTo|DateTime|validTo||
-|dataset|ExistingLandUseDataSet|dataset||
+|||featureId|Text|
+|inspireId|Identifier|inspireId.localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|geometry|GM_MultiSurface|geometry|Polygon|
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
+|endLifespanVersion|DateTime|endLifespanVersion|Date|
+|observationDate|Date|observationDate|Date|
+|validFrom|DateTime|validFrom|Date|
+|validTo|DateTime|validTo|Date|
+|dataset|ExistingLandUseDataSet|dataset|Long|
 
 #### ExistingLandUseObject_hilucsLandUse
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|hilucsLandUse|HILUCSValue|RID||
-|||hilucsLandUse||
-|||hilucsLandUse_href||
+|hilucsLandUse|HILUCSValue|RID|Long|
+|||hilucsLandUse|Text|
+|||hilucsLandUse_href|Text|
 
 #### ExistingLandUseObject_hilucsPresence
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|hilucsPresence| HILUCSPresence|RID||
-|||orderedList||
-|||orderedList_href||
-|||percentage_hilucsValue_href||
-|||percentage_hilucsValue||
-|||percentage_percentage||
+|hilucsPresence| HILUCSPresence|RID|Long|
+|||orderedList|Text|
+|||orderedList_href|Text|
+|||percentage_hilucsValue_href|Text|
+|||percentage_hilucsValue|Text|
+|||percentage_percentage|Text|
 
 #### ExistingLandUseObject_specificLandUse
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|specificLandUse|LandUseClassificationValue|RID||
-|||specificLandUse||
-|||specificLandUse_href||
+|specificLandUse|LandUseClassificationValue|RID|Long|
+|||specificLandUse|Text|
+|||specificLandUse_href|Text|
 
 #### ExistingLandUseObject_specificPresence
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|specificPresence|SpecificPresence|RID||
-|||orderedList||
-|||orderedList_href||
-|||percentage_specificValue||
-|||percentage_specificValue_href||
-|||percentage_specificPercentage||
+|specificPresence|SpecificPresence|RID|Long|
+|||orderedList|Text|
+|||orderedList_href|Text|
+|||percentage_specificValue|Text|
+|||percentage_specificValue_href|Text|
+|||percentage_specificPercentage|Text|
