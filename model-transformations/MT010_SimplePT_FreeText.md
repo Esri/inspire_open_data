@@ -1,4 +1,4 @@
-## MT010: Simplified Period
+## MT010: Simplified PT_FreeText
 
 <table>
 <tr>
@@ -7,13 +7,8 @@
 </tr>
 <tr>
 <td>Description</td>
-<td><p>XML has primitive types for times and dates that are well supported through most software. In INSPIRE and the related ISO standards, a more powerful but also highly complex model is available that allows to precisely specify time-related information. This model allows any subtype of <code>AbstractTimeObject</code>, which can include <code>TimeEdge</code>, <code>TimeInstant</code>, <code>TimeNode</code> and <code>TimePeriods</code>. In several themes, such as EMF, other types buld on top of this model, such as <code>ef:OperationalActivityPeriod</code>. Alltogether, this means that relatively important information tends to be nested very deep in a structure, making it harder to create and to process.</p> 
-<p>Within this rule, we substitute these complex structures through a very simple structure with just two properties:</p>
-<ul>
-    <li>beginPosition</li>
-    <li>endPosition</li>
-</ul>
-<p>Both of these are to use teh same definitions for these two properties as in the original structure. Note that the <code>endPosition</code> is optional, so the simple type can also be used for periods that haven't ended yet.</p>
+<td><p><code>PT_FreeText</code> is used to provide textual information in different locales using textGroups. These text groups use LocalisedCharacterString to provide information in different languages. The number of text groups is not limited by the data model. This creates a complex structure that is in many cases not necessary making it harder to create and to process.</p> 
+<p>This ruel proposes a simplified alternative representation:</p>
 </td>
 </tr>
 <tr>
@@ -21,6 +16,20 @@
 <td>
 
 ```xml
+<us-emf:EnvironmentalManagementFacility gml:id="id153d54f4-076e-4166-a30c-78e29f2f23ec">
+			<!-- ... -->
+      <us-emf:facilityDescription>
+        <gmd:PT_FreeText>
+					<gmd:textGroup>
+						  <gmd:LocalisedCharacterString locale="de_DE">Beschreibung der Aktivität</gmd:LocalisedCharacterString>
+					</gmd:textGroup>
+					<gmd:textGroup>
+						  <gmd:LocalisedCharacterString locale="en_EN">Desccription of activity</gmd:LocalisedCharacterString>
+					</gmd:textGroup>
+				</gmd:PT_FreeText>
+      </us-emf:facilityDescription>
+		<!-- ... -->
+</us-emf:EnvironmentalManagementFacility>
 <ef:EnvironmentalMonitoringFacility>
   <!-- ... -->
   <ef:operationalActivityPeriod>
@@ -44,16 +53,14 @@
 <td>
 
 ```xml
-<efs:EnvironmentalMonitoringFacility>
-  <!-- ... -->
-  <efs:operationalActivityPeriod>
-      <simple:SimplePeriod>
-        <gml:beginPosition>1977-10-08T23:00:00Z</gml:beginPosition>
-        <gml:endPosition>2014-10-14T06:00:00Z</gml:endPosition>
-      </simple:SimplePeriod>
-  </efs:operationalActivityPeriod>
-  <!-- ... -->
-</efs:EnvironmentalMonitoringFacility>
+<us-emfs:EnvironmentalManagementFacility gml:id="id153d54f4-076e-4166-a30c-78e29f2f23ec">
+			<!-- ... -->
+      <us-emfs:facilityDescription>
+      	  <gmd:LocalisedCharacterString locale="de_DE">Beschreibung der Aktivität</gmd:LocalisedCharacterString>
+				  <gmd:LocalisedCharacterString locale="en_EN">Desccription of activity</gmd:LocalisedCharacterString>
+      </us-emfs:facilityDescription>
+		<!-- ... -->
+</us-emfs:EnvironmentalManagementFacility>
 ``` 
 
 </td>
@@ -61,25 +68,21 @@
 <tr>
 <td>Model transformation rule: </td>
 <td>
-    <p>Parameters:</p> 
-    <ul>
-      <li><code>type</code>: The type to be substituted, e.g. <code>OperationalActivityPeriod</code>.</li>
-    </ul>
-    <p>Substitute existing type as indicated by the <code>type</code> parameter with this <code>SimplePeriod</code> type.</p>
+    <p>Substitute existing <code>PT_FreeText</code> types with this SimplePT_FreeText type.</p>
 </td>
 </tr>
 <tr>
 <td>Instance transformation rule:</td>
 <td>
 	<ul>
-		<li>Copy the value of <code>gml:beginPosition</code> to the property <code>gml:beginPosition</code>.</li>
-		<li>Copy the value of <code>gml:endPosition</code> to the property <code>gml:endPosition</code>.</li>
+		<li>Copy the value of <code>gmd:LocalisedCharacterString</code> to the property <code>gmd:LocalisedCharacterString</code>.</li>
+		<li>Copy the value of <code>gmd:LocalisedCharacterString.locale</code> to the property <code>gmd:LocalisedCharacterString.locale</code>.</li>
 	</ul>
 </td>
 </tr>
 <tr>
 <td>Solves usability issues:</td>
-<td>The transformed data structure can easily be edited, filtered and symbolized in desktop GIS and web GIS software. This transformation also reduces data volume in datasets.</td>
+<td>The transformed data structure can easily be edited, filtered and symbolized in desktop GIS and web GIS software.</td>
 </tr>
 <tr>
 <td>Known usability issues:</td>
@@ -87,7 +90,7 @@
 </tr>
 <tr>
 <td>INSPIRE Compliance:</td>
-<td>This rule works only with one external link, and it removed finer grained information about dates. It can be combined with the [Property Composition to Association](./PropertyCompositiontoAssociation.md) rule to add more information from an external register.</td>
+<td>Fully compliant.</td>
 </tr>
 </table>
 
