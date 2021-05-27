@@ -1,3435 +1,3438 @@
+
 #AdministrativeUnits
 
 
-	<br/>
-	<strong>Geodatabase Documentation</strong>
-	<hr/>
-	<strong>Date: </strong>20210526173957.1969511<br/>
-	<hr/>
-	<p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 13
-			Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">1 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">6 Relationship
-			Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
-	<hr/>
-	<p><a name="FeatureDatasets"/><strong>Feature Datasets and Child Classes</strong></p><a name="Raster"/>
-	<p><strong>Rasters</strong></p><br/>
-	<hr/><a name="ObjectClasses"/>
-	<p><strong>Workspace-Level Tables and Feature Classes</strong></p>
+<br/>
+<strong>Geodatabase Documentation</strong>
+<hr/>
+<strong>Date: </strong>20210526173957.1969511<br/>
+<hr/>
+<p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 13
+Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">1 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">6 Relationship
+Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
+<hr/>
+<p><a name="FeatureDatasets"/><strong>Feature Datasets and Child Classes</strong></p><a name="Raster"/>
+<p><strong>Rasters</strong></p><br/>
+<hr/><a name="ObjectClasses"/>
+<p><strong>Workspace-Level Tables and Feature Classes</strong></p>
     <a href="#FeatureClassAdministrativeBoundary">AdministrativeBoundary - FeatureClass</a><br/><a href="#FeatureClassAdministrativeUnit1stOrder">AdministrativeUnit1stOrder - FeatureClass</a><br/><a href="#FeatureClassAdministrativeUnit1stOrder_residenceOfAuthority">AdministrativeUnit1stOrder_residenceOfAuthority - FeatureClass</a><br/><a href="#FeatureClassAdministrativeUnit2ndOrder">AdministrativeUnit2ndOrder - FeatureClass</a><br/><a href="#FeatureClassAdministrativeUnit2ndOrder_residenceOfAuthority">AdministrativeUnit2ndOrder_residenceOfAuthority - FeatureClass</a><br/><a href="#FeatureClassAdministrativeUnit3rdOrder">AdministrativeUnit3rdOrder - FeatureClass</a><br/><a href="#FeatureClassAdministrativeUnit3rdOrder_residenceOfAuthority">AdministrativeUnit3rdOrder_residenceOfAuthority - FeatureClass</a><br/><a href="#FeatureClassAdministrativeUnit4thOrder">AdministrativeUnit4thOrder - FeatureClass</a><br/><a href="#FeatureClassAdministrativeUnit4thOrder_residenceOfAuthority">AdministrativeUnit4thOrder_residenceOfAuthority - FeatureClass</a><br/><a href="#FeatureClassAdministrativeUnit5thOrder">AdministrativeUnit5thOrder - FeatureClass</a><br/><a href="#FeatureClassAdministrativeUnit5thOrder_residenceOfAuthority">AdministrativeUnit5thOrder_residenceOfAuthority - FeatureClass</a><br/><a href="#FeatureClassAdministrativeUnit6thOrder">AdministrativeUnit6thOrder - FeatureClass</a><br/><a href="#FeatureClassAdministrativeUnit6thOrder_residenceOfAuthority">AdministrativeUnit6thOrder_residenceOfAuthority - FeatureClass</a><br/><a href="#TableRelation_Unit_Boundary">Relation_Unit_Boundary - Table</a><br/>
-	<p/><br/>
-	<hr/><a name="RelationshipClasses"/>
-	<p><strong>Relationship Classes</strong></p>
+<p/><br/>
+<hr/><a name="RelationshipClasses"/>
+<p><strong>Relationship Classes</strong></p>
     <a href="#RelationshipClassRelAU1O_AU1O_residenceOfAuthority">RelAU1O_AU1O_residenceOfAuthority</a><br/><a href="#RelationshipClassRelAU2O_AU2O_residenceOfAuthority">RelAU2O_AU2O_residenceOfAuthority</a><br/><a href="#RelationshipClassRelAU3O_AU3O_residenceOfAuthority">RelAU3O_AU3O_residenceOfAuthority</a><br/><a href="#RelationshipClassRelAU4O_AU4O_residenceOfAuthority">RelAU4O_AU4O_residenceOfAuthority</a><br/><a href="#RelationshipClassRelAU5O_AU5O_residenceOfAuthority">RelAU5O_AU5O_residenceOfAuthority</a><br/><a href="#RelationshipClassRelAU6O_AU6O_residenceOfAuthority">RelAU6O_AU6O_residenceOfAuthority</a><br/>
-	<p/>
-	<hr/><br/><a name="Domains"/>
-	<p><strong>Domains</strong></p><a href="#DomainDomainExample">DomainExample</a><br/>
-	<p/>
-    <p>	<hr/><br/><a name="FeatureClassAdministrativeBoundary"/>
-	<p><strong>AdministrativeBoundary - FeatureClass</strong></p>
-	<p>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">AdministrativeBoundary</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
-				<td width="*" style="border-color: white">Polyline</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
-				<td width="*" style="border-color: white">Simple</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
-				<td width="*" style="border-color: white">AdministrativeBoundary</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">AdministrativeBoundary</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="100%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="8%" style="border:0px"><strong>Field</strong></td>
-				<td width="8%" style="border:0px"><strong>DataType</strong></td>
-				<td width="5%" style="border:0px"><strong>Length</strong></td>
-				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
-				<td width="8%" style="border:0px"><strong>Description</strong></td>
-				<td width="8%" style="border:0px"><strong>Domain</strong></td>
-				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
-				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
-				<td width="5%" style="border:0px"><strong>Precision</strong></td>
-				<td width="5%" style="border:0px"><strong>Scale</strong></td>
-			</tr>
+<p/>
+<hr/><br/><a name="Domains"/>
+<p><strong>Domains</strong></p><a href="#DomainDomainExample">DomainExample</a><br/>
+<p/>
+    <p><hr/><br/><a name="FeatureClassAdministrativeBoundary"/>
+<p><strong>AdministrativeBoundary - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
 <tr>
-	<td width="8%">OBJECTID</td>
-	<td width="8%">OID</td>
-	<td width="3%">4</td>
-	<td width="8%">OBJECTID</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE</td>
-	<td width="8%">Geometry</td>
-	<td width="3%">0</td>
-	<td width="8%">SHAPE</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE_Length</td>
-	<td width="8%">Double</td>
-	<td width="3%">8</td>
-	<td width="8%">SHAPE_Length</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">beginLifespanVersion</td>
-	<td width="8%">Date</td>
-	<td width="3%">8</td>
-	<td width="8%">beginLifespanVersion</td>
-	<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">country</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">country</td>
-	<td width="8%">Two-character country code according to the Interinstitutional style guide published by the Publications Office of the European Union.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">endLifespanVersion</td>
-	<td width="8%">Date</td>
-	<td width="3%">8</td>
-	<td width="8%">endLifespanVersion</td>
-	<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">featureId</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">featureId</td>
-	<td width="8%">Identifier, used in references to this object</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_localId</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_localId</td>
-	<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_namespace</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_namespace</td>
-	<td width="8%">Namespace uniquely identifying the data source of the spatial object.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_versionId</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_versionId</td>
-	<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">legalStatus</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">legalStatus</td>
-	<td width="8%">Legal status of this administrative boundary. Value from LegalStatusValue Codelist.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel_1</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel_1</td>
-	<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. Value from  AdministrativeHierarchyLevel Codelist.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel_1_href</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel_1_href</td>
-	<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. URI from  AdministrativeHierarchyLevel Codelist.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel_2</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel_2</td>
-	<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. Value from  AdministrativeHierarchyLevel Codelist.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel_3</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel_3</td>
-	<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. Value from  AdministrativeHierarchyLevel Codelist.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel_3_href</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel_3_href</td>
-	<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. URI from  AdministrativeHierarchyLevel Codelist.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel_5</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel_5</td>
-	<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. Value from  AdministrativeHierarchyLevel Codelist.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel_5_href</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel_5_href</td>
-	<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. URI from  AdministrativeHierarchyLevel Codelist.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">technicalStatus</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">technicalStatus</td>
-	<td width="8%">The technical status of the administrative boundary.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">AdministrativeBoundary</td>
 </tr>
-		</tbody>
-	</table>
-	</p></p><p>	<hr/><br/><a name="FeatureClassAdministrativeUnit1stOrder"/>
-	<p><strong>AdministrativeUnit1stOrder - FeatureClass</strong></p>
-	<p>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit1stOrder</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
-				<td width="*" style="border-color: white">Polyline</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
-				<td width="*" style="border-color: white">Simple</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit1stOrder</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit1stOrder</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="100%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="8%" style="border:0px"><strong>Field</strong></td>
-				<td width="8%" style="border:0px"><strong>DataType</strong></td>
-				<td width="5%" style="border:0px"><strong>Length</strong></td>
-				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
-				<td width="8%" style="border:0px"><strong>Description</strong></td>
-				<td width="8%" style="border:0px"><strong>Domain</strong></td>
-				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
-				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
-				<td width="5%" style="border:0px"><strong>Precision</strong></td>
-				<td width="5%" style="border:0px"><strong>Scale</strong></td>
-			</tr>
 <tr>
-	<td width="8%">OBJECTID</td>
-	<td width="8%">OID</td>
-	<td width="3%">4</td>
-	<td width="8%">OBJECTID</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE</td>
-	<td width="8%">Geometry</td>
-	<td width="3%">0</td>
-	<td width="8%">SHAPE</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE_Length</td>
-	<td width="8%">Double</td>
-	<td width="3%">8</td>
-	<td width="8%">SHAPE_Length</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE_Area</td>
-	<td width="8%">Double</td>
-	<td width="3%">8</td>
-	<td width="8%">SHAPE_Area</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">beginLifespanVersion</td>
-	<td width="8%">Date</td>
-	<td width="3%">8</td>
-	<td width="8%">beginLifespanVersion</td>
-	<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">country</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">country</td>
-	<td width="8%">Two-character country code according to the Interinstitutional style guide published by the Publications Office of the European Union.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">endLifespanVersion</td>
-	<td width="8%">Date</td>
-	<td width="3%">8</td>
-	<td width="8%">endLifespanVersion</td>
-	<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">featureId</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">featureId</td>
-	<td width="8%">Identifier, used in references to this object</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_localId</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_localId</td>
-	<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_namespace</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_namespace</td>
-	<td width="8%">Namespace uniquely identifying the data source of the spatial object.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_versionId</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_versionId</td>
-	<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_1</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_1</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_1_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_1_lang</td>
-	<td width="8%">Language used in the name_1 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_2</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_2</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_2_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_2_lang</td>
-	<td width="8%">Language used in the name_2 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_3</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_3</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_3_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_3_lang</td>
-	<td width="8%">Language used in the name_3 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalCode</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalCode</td>
-	<td width="8%">Thematic identifier corresponding to the national administrative codes defined in each country.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel</td>
-	<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel_href</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel_href</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_1</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_1</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_2</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_2</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_3</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_3</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">upperLevelUnit</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">upperLevelUnit</td>
-	<td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
 </tr>
-		</tbody>
-	</table>
-	</p></p><p>	<hr/><br/><a name="FeatureClassAdministrativeUnit1stOrder_residenceOfAuthority"/>
-	<p><strong>AdministrativeUnit1stOrder_residenceOfAuthority - FeatureClass</strong></p>
-	<p>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit1stOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
-				<td width="*" style="border-color: white">Polyline</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
-				<td width="*" style="border-color: white">Simple</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit1stOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit1stOrder_residenceOfAuthority</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="100%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="8%" style="border:0px"><strong>Field</strong></td>
-				<td width="8%" style="border:0px"><strong>DataType</strong></td>
-				<td width="5%" style="border:0px"><strong>Length</strong></td>
-				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
-				<td width="8%" style="border:0px"><strong>Description</strong></td>
-				<td width="8%" style="border:0px"><strong>Domain</strong></td>
-				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
-				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
-				<td width="5%" style="border:0px"><strong>Precision</strong></td>
-				<td width="5%" style="border:0px"><strong>Scale</strong></td>
-			</tr>
 <tr>
-	<td width="8%">OBJECTID</td>
-	<td width="8%">OID</td>
-	<td width="3%">4</td>
-	<td width="8%">OBJECTID</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE</td>
-	<td width="8%">Geometry</td>
-	<td width="3%">0</td>
-	<td width="8%">SHAPE</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name</td>
-	<td width="8%">Name of the residence of authority.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_lang</td>
-	<td width="8%">Language used in the name field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">RID</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">RID</td>
-	<td width="8%">Reference to featureId field in parent 'AdministrativeUnit'.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
 </tr>
-		</tbody>
-	</table>
-	</p></p><p>	<hr/><br/><a name="FeatureClassAdministrativeUnit2ndOrder"/>
-	<p><strong>AdministrativeUnit2ndOrder - FeatureClass</strong></p>
-	<p>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit2ndOrder</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
-				<td width="*" style="border-color: white">Polyline</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
-				<td width="*" style="border-color: white">Simple</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit2ndOrder</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit2ndOrder</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="100%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="8%" style="border:0px"><strong>Field</strong></td>
-				<td width="8%" style="border:0px"><strong>DataType</strong></td>
-				<td width="5%" style="border:0px"><strong>Length</strong></td>
-				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
-				<td width="8%" style="border:0px"><strong>Description</strong></td>
-				<td width="8%" style="border:0px"><strong>Domain</strong></td>
-				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
-				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
-				<td width="5%" style="border:0px"><strong>Precision</strong></td>
-				<td width="5%" style="border:0px"><strong>Scale</strong></td>
-			</tr>
 <tr>
-	<td width="8%">OBJECTID</td>
-	<td width="8%">OID</td>
-	<td width="3%">4</td>
-	<td width="8%">OBJECTID</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE</td>
-	<td width="8%">Geometry</td>
-	<td width="3%">0</td>
-	<td width="8%">SHAPE</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE_Length</td>
-	<td width="8%">Double</td>
-	<td width="3%">8</td>
-	<td width="8%">SHAPE_Length</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE_Area</td>
-	<td width="8%">Double</td>
-	<td width="3%">8</td>
-	<td width="8%">SHAPE_Area</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">beginLifespanVersion</td>
-	<td width="8%">Date</td>
-	<td width="3%">8</td>
-	<td width="8%">beginLifespanVersion</td>
-	<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">country</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">country</td>
-	<td width="8%">Two-character country code according to the Interinstitutional style guide published by the Publications Office of the European Union.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">endLifespanVersion</td>
-	<td width="8%">Date</td>
-	<td width="3%">8</td>
-	<td width="8%">endLifespanVersion</td>
-	<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">featureId</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">featureId</td>
-	<td width="8%">Identifier, used in references to this object</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_localId</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_localId</td>
-	<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_namespace</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_namespace</td>
-	<td width="8%">Namespace uniquely identifying the data source of the spatial object.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_versionId</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_versionId</td>
-	<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_1</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_1</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_1_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_1_lang</td>
-	<td width="8%">Language used in the name_1 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_2</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_2</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_2_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_2_lang</td>
-	<td width="8%">Language used in the name_2 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_3</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_3</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_3_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_3_lang</td>
-	<td width="8%">Language used in the name_3 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalCode</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalCode</td>
-	<td width="8%">Thematic identifier corresponding to the national administrative codes defined in each country.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel</td>
-	<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel_href</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel_href</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_1</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_1</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_2</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_2</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_3</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_3</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">upperLevelUnit</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">upperLevelUnit</td>
-	<td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">AdministrativeBoundary</td>
 </tr>
-		</tbody>
-	</table>
-	</p></p><p>	<hr/><br/><a name="FeatureClassAdministrativeUnit2ndOrder_residenceOfAuthority"/>
-	<p><strong>AdministrativeUnit2ndOrder_residenceOfAuthority - FeatureClass</strong></p>
-	<p>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit2ndOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
-				<td width="*" style="border-color: white">Polyline</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
-				<td width="*" style="border-color: white">Simple</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit2ndOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit2ndOrder_residenceOfAuthority</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="100%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="8%" style="border:0px"><strong>Field</strong></td>
-				<td width="8%" style="border:0px"><strong>DataType</strong></td>
-				<td width="5%" style="border:0px"><strong>Length</strong></td>
-				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
-				<td width="8%" style="border:0px"><strong>Description</strong></td>
-				<td width="8%" style="border:0px"><strong>Domain</strong></td>
-				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
-				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
-				<td width="5%" style="border:0px"><strong>Precision</strong></td>
-				<td width="5%" style="border:0px"><strong>Scale</strong></td>
-			</tr>
 <tr>
-	<td width="8%">OBJECTID</td>
-	<td width="8%">OID</td>
-	<td width="3%">4</td>
-	<td width="8%">OBJECTID</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE</td>
-	<td width="8%">Geometry</td>
-	<td width="3%">0</td>
-	<td width="8%">SHAPE</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name</td>
-	<td width="8%">Name of the residence of authority.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_lang</td>
-	<td width="8%">Language used in the name field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">RID</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">RID</td>
-	<td width="8%">Reference to featureId field in parent 'AdministrativeUnit'.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
 </tr>
-		</tbody>
-	</table>
-	</p></p><p>	<hr/><br/><a name="FeatureClassAdministrativeUnit3rdOrder"/>
-	<p><strong>AdministrativeUnit3rdOrder - FeatureClass</strong></p>
-	<p>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit3rdOrder</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
-				<td width="*" style="border-color: white">Polyline</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
-				<td width="*" style="border-color: white">Simple</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit3rdOrder</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit3rdOrder</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="100%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="8%" style="border:0px"><strong>Field</strong></td>
-				<td width="8%" style="border:0px"><strong>DataType</strong></td>
-				<td width="5%" style="border:0px"><strong>Length</strong></td>
-				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
-				<td width="8%" style="border:0px"><strong>Description</strong></td>
-				<td width="8%" style="border:0px"><strong>Domain</strong></td>
-				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
-				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
-				<td width="5%" style="border:0px"><strong>Precision</strong></td>
-				<td width="5%" style="border:0px"><strong>Scale</strong></td>
-			</tr>
 <tr>
-	<td width="8%">OBJECTID</td>
-	<td width="8%">OID</td>
-	<td width="3%">4</td>
-	<td width="8%">OBJECTID</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE</td>
-	<td width="8%">Geometry</td>
-	<td width="3%">0</td>
-	<td width="8%">SHAPE</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE_Length</td>
-	<td width="8%">Double</td>
-	<td width="3%">8</td>
-	<td width="8%">SHAPE_Length</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE_Area</td>
-	<td width="8%">Double</td>
-	<td width="3%">8</td>
-	<td width="8%">SHAPE_Area</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">beginLifespanVersion</td>
-	<td width="8%">Date</td>
-	<td width="3%">8</td>
-	<td width="8%">beginLifespanVersion</td>
-	<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">country</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">country</td>
-	<td width="8%">Two-character country code according to the Interinstitutional style guide published by the Publications Office of the European Union.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">endLifespanVersion</td>
-	<td width="8%">Date</td>
-	<td width="3%">8</td>
-	<td width="8%">endLifespanVersion</td>
-	<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">featureId</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">featureId</td>
-	<td width="8%">Identifier, used in references to this object</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_localId</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_localId</td>
-	<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_namespace</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_namespace</td>
-	<td width="8%">Namespace uniquely identifying the data source of the spatial object.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_versionId</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_versionId</td>
-	<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_1</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_1</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_1_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_1_lang</td>
-	<td width="8%">Language used in the name_1 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_2</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_2</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_2_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_2_lang</td>
-	<td width="8%">Language used in the name_2 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_3</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_3</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_3_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_3_lang</td>
-	<td width="8%">Language used in the name_3 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalCode</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalCode</td>
-	<td width="8%">Thematic identifier corresponding to the national administrative codes defined in each country.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel</td>
-	<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel_href</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel_href</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_1</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_1</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_2</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_2</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_3</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_3</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">upperLevelUnit</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">upperLevelUnit</td>
-	<td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
 </tr>
-		</tbody>
-	</table>
-	</p></p><p>	<hr/><br/><a name="FeatureClassAdministrativeUnit3rdOrder_residenceOfAuthority"/>
-	<p><strong>AdministrativeUnit3rdOrder_residenceOfAuthority - FeatureClass</strong></p>
-	<p>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit3rdOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
-				<td width="*" style="border-color: white">Polyline</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
-				<td width="*" style="border-color: white">Simple</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit3rdOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit3rdOrder_residenceOfAuthority</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="100%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="8%" style="border:0px"><strong>Field</strong></td>
-				<td width="8%" style="border:0px"><strong>DataType</strong></td>
-				<td width="5%" style="border:0px"><strong>Length</strong></td>
-				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
-				<td width="8%" style="border:0px"><strong>Description</strong></td>
-				<td width="8%" style="border:0px"><strong>Domain</strong></td>
-				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
-				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
-				<td width="5%" style="border:0px"><strong>Precision</strong></td>
-				<td width="5%" style="border:0px"><strong>Scale</strong></td>
-			</tr>
 <tr>
-	<td width="8%">OBJECTID</td>
-	<td width="8%">OID</td>
-	<td width="3%">4</td>
-	<td width="8%">OBJECTID</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE</td>
-	<td width="8%">Geometry</td>
-	<td width="3%">0</td>
-	<td width="8%">SHAPE</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name</td>
-	<td width="8%">Name of the residence of authority.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_lang</td>
-	<td width="8%">Language used in the name field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">RID</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">RID</td>
-	<td width="8%">Reference to featureId field in parent 'AdministrativeUnit'.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
 </tr>
-		</tbody>
-	</table>
-	</p></p><p>	<hr/><br/><a name="FeatureClassAdministrativeUnit4thOrder"/>
-	<p><strong>AdministrativeUnit4thOrder - FeatureClass</strong></p>
-	<p>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit4thOrder</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
-				<td width="*" style="border-color: white">Polyline</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
-				<td width="*" style="border-color: white">Simple</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit4thOrder</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit4thOrder</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="100%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="8%" style="border:0px"><strong>Field</strong></td>
-				<td width="8%" style="border:0px"><strong>DataType</strong></td>
-				<td width="5%" style="border:0px"><strong>Length</strong></td>
-				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
-				<td width="8%" style="border:0px"><strong>Description</strong></td>
-				<td width="8%" style="border:0px"><strong>Domain</strong></td>
-				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
-				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
-				<td width="5%" style="border:0px"><strong>Precision</strong></td>
-				<td width="5%" style="border:0px"><strong>Scale</strong></td>
-			</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
 <tr>
-	<td width="8%">OBJECTID</td>
-	<td width="8%">OID</td>
-	<td width="3%">4</td>
-	<td width="8%">OBJECTID</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE</td>
-	<td width="8%">Geometry</td>
-	<td width="3%">0</td>
-	<td width="8%">SHAPE</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE_Length</td>
-	<td width="8%">Double</td>
-	<td width="3%">8</td>
-	<td width="8%">SHAPE_Length</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE_Area</td>
-	<td width="8%">Double</td>
-	<td width="3%">8</td>
-	<td width="8%">SHAPE_Area</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">beginLifespanVersion</td>
-	<td width="8%">Date</td>
-	<td width="3%">8</td>
-	<td width="8%">beginLifespanVersion</td>
-	<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">country</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">country</td>
-	<td width="8%">Two-character country code according to the Interinstitutional style guide published by the Publications Office of the European Union.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">endLifespanVersion</td>
-	<td width="8%">Date</td>
-	<td width="3%">8</td>
-	<td width="8%">endLifespanVersion</td>
-	<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">featureId</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">featureId</td>
-	<td width="8%">Identifier, used in references to this object</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_localId</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_localId</td>
-	<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_namespace</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_namespace</td>
-	<td width="8%">Namespace uniquely identifying the data source of the spatial object.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_versionId</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_versionId</td>
-	<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_1</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_1</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_1_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_1_lang</td>
-	<td width="8%">Language used in the name_1 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_2</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_2</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_2_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_2_lang</td>
-	<td width="8%">Language used in the name_2 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_3</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_3</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_3_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_3_lang</td>
-	<td width="8%">Language used in the name_3 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalCode</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalCode</td>
-	<td width="8%">Thematic identifier corresponding to the national administrative codes defined in each country.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel</td>
-	<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel_href</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel_href</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_1</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_1</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_2</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_2</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_3</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_3</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">upperLevelUnit</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">upperLevelUnit</td>
-	<td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">AdministrativeBoundary</td>
 </tr>
-		</tbody>
-	</table>
-	</p></p><p>	<hr/><br/><a name="FeatureClassAdministrativeUnit4thOrder_residenceOfAuthority"/>
-	<p><strong>AdministrativeUnit4thOrder_residenceOfAuthority - FeatureClass</strong></p>
-	<p>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit4thOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
-				<td width="*" style="border-color: white">Polyline</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
-				<td width="*" style="border-color: white">Simple</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit4thOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit4thOrder_residenceOfAuthority</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="100%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="8%" style="border:0px"><strong>Field</strong></td>
-				<td width="8%" style="border:0px"><strong>DataType</strong></td>
-				<td width="5%" style="border:0px"><strong>Length</strong></td>
-				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
-				<td width="8%" style="border:0px"><strong>Description</strong></td>
-				<td width="8%" style="border:0px"><strong>Domain</strong></td>
-				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
-				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
-				<td width="5%" style="border:0px"><strong>Precision</strong></td>
-				<td width="5%" style="border:0px"><strong>Scale</strong></td>
-			</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
 <tr>
-	<td width="8%">OBJECTID</td>
-	<td width="8%">OID</td>
-	<td width="3%">4</td>
-	<td width="8%">OBJECTID</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
 </tr><tr>
-	<td width="8%">SHAPE</td>
-	<td width="8%">Geometry</td>
-	<td width="3%">0</td>
-	<td width="8%">SHAPE</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
 </tr><tr>
-	<td width="8%">name</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name</td>
-	<td width="8%">Name of the residence of authority.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
 </tr><tr>
-	<td width="8%">name_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_lang</td>
-	<td width="8%">Language used in the name field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
 </tr><tr>
-	<td width="8%">RID</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">RID</td>
-	<td width="8%">Reference to featureId field in parent 'AdministrativeUnit'.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="8%">country</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">country</td>
+<td width="8%">Two-character country code according to the Interinstitutional style guide published by the Publications Office of the European Union.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">legalStatus</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">legalStatus</td>
+<td width="8%">Legal status of this administrative boundary. Value from LegalStatusValue Codelist.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_1</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_1</td>
+<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. Value from  AdministrativeHierarchyLevel Codelist.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_1_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_1_href</td>
+<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. URI from  AdministrativeHierarchyLevel Codelist.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_2</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_2</td>
+<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. Value from  AdministrativeHierarchyLevel Codelist.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_3</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_3</td>
+<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. Value from  AdministrativeHierarchyLevel Codelist.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_3_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_3_href</td>
+<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. URI from  AdministrativeHierarchyLevel Codelist.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_5</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_5</td>
+<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. Value from  AdministrativeHierarchyLevel Codelist.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_5_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_5_href</td>
+<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. URI from  AdministrativeHierarchyLevel Codelist.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">technicalStatus</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">technicalStatus</td>
+<td width="8%">The technical status of the administrative boundary.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
 </tr>
-		</tbody>
-	</table>
-	</p></p><p>	<hr/><br/><a name="FeatureClassAdministrativeUnit5thOrder"/>
-	<p><strong>AdministrativeUnit5thOrder - FeatureClass</strong></p>
-	<p>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit5thOrder</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
-				<td width="*" style="border-color: white">Polyline</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
-				<td width="*" style="border-color: white">Simple</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit5thOrder</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit5thOrder</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="100%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="8%" style="border:0px"><strong>Field</strong></td>
-				<td width="8%" style="border:0px"><strong>DataType</strong></td>
-				<td width="5%" style="border:0px"><strong>Length</strong></td>
-				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
-				<td width="8%" style="border:0px"><strong>Description</strong></td>
-				<td width="8%" style="border:0px"><strong>Domain</strong></td>
-				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
-				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
-				<td width="5%" style="border:0px"><strong>Precision</strong></td>
-				<td width="5%" style="border:0px"><strong>Scale</strong></td>
-			</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassAdministrativeUnit1stOrder"/>
+<p><strong>AdministrativeUnit1stOrder - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
 <tr>
-	<td width="8%">OBJECTID</td>
-	<td width="8%">OID</td>
-	<td width="3%">4</td>
-	<td width="8%">OBJECTID</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE</td>
-	<td width="8%">Geometry</td>
-	<td width="3%">0</td>
-	<td width="8%">SHAPE</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE_Length</td>
-	<td width="8%">Double</td>
-	<td width="3%">8</td>
-	<td width="8%">SHAPE_Length</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE_Area</td>
-	<td width="8%">Double</td>
-	<td width="3%">8</td>
-	<td width="8%">SHAPE_Area</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">beginLifespanVersion</td>
-	<td width="8%">Date</td>
-	<td width="3%">8</td>
-	<td width="8%">beginLifespanVersion</td>
-	<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">country</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">country</td>
-	<td width="8%">Two-character country code according to the Interinstitutional style guide published by the Publications Office of the European Union.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">endLifespanVersion</td>
-	<td width="8%">Date</td>
-	<td width="3%">8</td>
-	<td width="8%">endLifespanVersion</td>
-	<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">featureId</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">featureId</td>
-	<td width="8%">Identifier, used in references to this object</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_localId</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_localId</td>
-	<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_namespace</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_namespace</td>
-	<td width="8%">Namespace uniquely identifying the data source of the spatial object.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_versionId</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_versionId</td>
-	<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_1</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_1</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_1_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_1_lang</td>
-	<td width="8%">Language used in the name_1 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_2</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_2</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_2_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_2_lang</td>
-	<td width="8%">Language used in the name_2 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_3</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_3</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_3_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_3_lang</td>
-	<td width="8%">Language used in the name_3 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalCode</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalCode</td>
-	<td width="8%">Thematic identifier corresponding to the national administrative codes defined in each country.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel</td>
-	<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel_href</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel_href</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_1</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_1</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_2</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_2</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_3</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_3</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">upperLevelUnit</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">upperLevelUnit</td>
-	<td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit1stOrder</td>
 </tr>
-		</tbody>
-	</table>
-	</p></p><p>	<hr/><br/><a name="FeatureClassAdministrativeUnit5thOrder_residenceOfAuthority"/>
-	<p><strong>AdministrativeUnit5thOrder_residenceOfAuthority - FeatureClass</strong></p>
-	<p>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit5thOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
-				<td width="*" style="border-color: white">Polyline</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
-				<td width="*" style="border-color: white">Simple</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit5thOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit5thOrder_residenceOfAuthority</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="100%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="8%" style="border:0px"><strong>Field</strong></td>
-				<td width="8%" style="border:0px"><strong>DataType</strong></td>
-				<td width="5%" style="border:0px"><strong>Length</strong></td>
-				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
-				<td width="8%" style="border:0px"><strong>Description</strong></td>
-				<td width="8%" style="border:0px"><strong>Domain</strong></td>
-				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
-				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
-				<td width="5%" style="border:0px"><strong>Precision</strong></td>
-				<td width="5%" style="border:0px"><strong>Scale</strong></td>
-			</tr>
 <tr>
-	<td width="8%">OBJECTID</td>
-	<td width="8%">OID</td>
-	<td width="3%">4</td>
-	<td width="8%">OBJECTID</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE</td>
-	<td width="8%">Geometry</td>
-	<td width="3%">0</td>
-	<td width="8%">SHAPE</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name</td>
-	<td width="8%">Name of the residence of authority.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_lang</td>
-	<td width="8%">Language used in the name field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">RID</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">RID</td>
-	<td width="8%">Reference to featureId field in parent 'AdministrativeUnit'.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
 </tr>
-		</tbody>
-	</table>
-	</p></p><p>	<hr/><br/><a name="FeatureClassAdministrativeUnit6thOrder"/>
-	<p><strong>AdministrativeUnit6thOrder - FeatureClass</strong></p>
-	<p>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit6thOrder</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
-				<td width="*" style="border-color: white">Polyline</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
-				<td width="*" style="border-color: white">Simple</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit6thOrder</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit6thOrder</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="100%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="8%" style="border:0px"><strong>Field</strong></td>
-				<td width="8%" style="border:0px"><strong>DataType</strong></td>
-				<td width="5%" style="border:0px"><strong>Length</strong></td>
-				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
-				<td width="8%" style="border:0px"><strong>Description</strong></td>
-				<td width="8%" style="border:0px"><strong>Domain</strong></td>
-				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
-				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
-				<td width="5%" style="border:0px"><strong>Precision</strong></td>
-				<td width="5%" style="border:0px"><strong>Scale</strong></td>
-			</tr>
 <tr>
-	<td width="8%">OBJECTID</td>
-	<td width="8%">OID</td>
-	<td width="3%">4</td>
-	<td width="8%">OBJECTID</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE</td>
-	<td width="8%">Geometry</td>
-	<td width="3%">0</td>
-	<td width="8%">SHAPE</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE_Length</td>
-	<td width="8%">Double</td>
-	<td width="3%">8</td>
-	<td width="8%">SHAPE_Length</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE_Area</td>
-	<td width="8%">Double</td>
-	<td width="3%">8</td>
-	<td width="8%">SHAPE_Area</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">beginLifespanVersion</td>
-	<td width="8%">Date</td>
-	<td width="3%">8</td>
-	<td width="8%">beginLifespanVersion</td>
-	<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">country</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">country</td>
-	<td width="8%">Two-character country code according to the Interinstitutional style guide published by the Publications Office of the European Union.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">endLifespanVersion</td>
-	<td width="8%">Date</td>
-	<td width="3%">8</td>
-	<td width="8%">endLifespanVersion</td>
-	<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">featureId</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">featureId</td>
-	<td width="8%">Identifier, used in references to this object</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_localId</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_localId</td>
-	<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_namespace</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_namespace</td>
-	<td width="8%">Namespace uniquely identifying the data source of the spatial object.	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">inspireId_versionId</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">inspireId_versionId</td>
-	<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique	</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_1</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_1</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_1_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_1_lang</td>
-	<td width="8%">Language used in the name_1 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_2</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_2</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_2_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_2_lang</td>
-	<td width="8%">Language used in the name_2 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_3</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_3</td>
-	<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_3_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_3_lang</td>
-	<td width="8%">Language used in the name_3 field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalCode</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalCode</td>
-	<td width="8%">Thematic identifier corresponding to the national administrative codes defined in each country.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel</td>
-	<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevel_href</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevel_href</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_1</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_1</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_2</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_2</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">nationalLevelName_3</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">nationalLevelName_3</td>
-	<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">upperLevelUnit</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">upperLevelUnit</td>
-	<td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
 </tr>
-		</tbody>
-	</table>
-	</p></p><p>	<hr/><br/><a name="FeatureClassAdministrativeUnit6thOrder_residenceOfAuthority"/>
-	<p><strong>AdministrativeUnit6thOrder_residenceOfAuthority - FeatureClass</strong></p>
-	<p>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit6thOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
-				<td width="*" style="border-color: white">Polyline</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
-				<td width="*" style="border-color: white">Simple</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit6thOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit6thOrder_residenceOfAuthority</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="100%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="8%" style="border:0px"><strong>Field</strong></td>
-				<td width="8%" style="border:0px"><strong>DataType</strong></td>
-				<td width="5%" style="border:0px"><strong>Length</strong></td>
-				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
-				<td width="8%" style="border:0px"><strong>Description</strong></td>
-				<td width="8%" style="border:0px"><strong>Domain</strong></td>
-				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
-				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
-				<td width="5%" style="border:0px"><strong>Precision</strong></td>
-				<td width="5%" style="border:0px"><strong>Scale</strong></td>
-			</tr>
 <tr>
-	<td width="8%">OBJECTID</td>
-	<td width="8%">OID</td>
-	<td width="3%">4</td>
-	<td width="8%">OBJECTID</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">SHAPE</td>
-	<td width="8%">Geometry</td>
-	<td width="3%">0</td>
-	<td width="8%">SHAPE</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name</td>
-	<td width="8%">Name of the residence of authority.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">name_lang</td>
-	<td width="8%">String</td>
-	<td width="3%">254</td>
-	<td width="8%">name_lang</td>
-	<td width="8%">Language used in the name field</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">RID</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">RID</td>
-	<td width="8%">Reference to featureId field in parent 'AdministrativeUnit'.</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit1stOrder</td>
 </tr>
-		</tbody>
-	</table>
-	</p></p>	<p><hr/><a name="TableRelation_Unit_Boundary"/>
-	<p><strong>Relation_Unit_Boundary - Table</strong></p>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">Relation_Unit_Boundary</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
-				<td width="*" style="border-color: white">Relation_Unit_Boundary</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
-				<td width="*" style="border-color: white">false</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">Relation_Unit_Boundary</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="100%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="8%" style="border:0px"><strong>Field</strong></td>
-				<td width="8%" style="border:0px"><strong>DataType</strong></td>
-				<td width="5%" style="border:0px"><strong>Length</strong></td>
-				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
-				<td width="8%" style="border:0px"><strong>Description</strong></td>
-				<td width="8%" style="border:0px"><strong>Domain</strong></td>
-				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
-				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
-				<td width="5%" style="border:0px"><strong>Precision</strong></td>
-				<td width="5%" style="border:0px"><strong>Scale</strong></td>
-			</tr>
 <tr>
-	<td width="8%">OBJECTID</td>
-	<td width="8%">OID</td>
-	<td width="3%">4</td>
-	<td width="8%">OBJECTID</td>
-	<td width="8%"/>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">boundaryId</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">boundaryId</td>
-	<td width="8%">Reference to featureId field in table 'AdministrativeBoundary'</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
-</tr><tr>
-	<td width="8%">unitId</td>
-	<td width="8%">Integer</td>
-	<td width="3%">4</td>
-	<td width="8%">unitId</td>
-	<td width="8%">Reference to featureId field in table 'AdministrativeUnit'</td>
-	<td width="8%"><a href="#Domain"/></td>
-	<td width="8%"/>
-	<td width="8%">true</td>
-	<td/>
-	<td/>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
 </tr>
-		</tbody>
-	</table>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit1stOrder</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">country</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">country</td>
+<td width="8%">Two-character country code according to the Interinstitutional style guide published by the Publications Office of the European Union.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_1</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_1</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_1_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_1_lang</td>
+<td width="8%">Language used in the name_1 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_2</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_2</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_2_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_2_lang</td>
+<td width="8%">Language used in the name_2 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_3</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_3</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_3_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_3_lang</td>
+<td width="8%">Language used in the name_3 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalCode</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalCode</td>
+<td width="8%">Thematic identifier corresponding to the national administrative codes defined in each country.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel</td>
+<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_href</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_1</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_1</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_2</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_2</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_3</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_3</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">upperLevelUnit</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">upperLevelUnit</td>
+<td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassAdministrativeUnit1stOrder_residenceOfAuthority"/>
+<p><strong>AdministrativeUnit1stOrder_residenceOfAuthority - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit1stOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit1stOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit1stOrder_residenceOfAuthority</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name</td>
+<td width="8%">Name of the residence of authority.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_lang</td>
+<td width="8%">Language used in the name field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">RID</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">RID</td>
+<td width="8%">Reference to featureId field in parent 'AdministrativeUnit'.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassAdministrativeUnit2ndOrder"/>
+<p><strong>AdministrativeUnit2ndOrder - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit2ndOrder</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit2ndOrder</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit2ndOrder</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">country</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">country</td>
+<td width="8%">Two-character country code according to the Interinstitutional style guide published by the Publications Office of the European Union.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_1</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_1</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_1_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_1_lang</td>
+<td width="8%">Language used in the name_1 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_2</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_2</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_2_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_2_lang</td>
+<td width="8%">Language used in the name_2 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_3</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_3</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_3_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_3_lang</td>
+<td width="8%">Language used in the name_3 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalCode</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalCode</td>
+<td width="8%">Thematic identifier corresponding to the national administrative codes defined in each country.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel</td>
+<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_href</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_1</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_1</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_2</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_2</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_3</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_3</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">upperLevelUnit</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">upperLevelUnit</td>
+<td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassAdministrativeUnit2ndOrder_residenceOfAuthority"/>
+<p><strong>AdministrativeUnit2ndOrder_residenceOfAuthority - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit2ndOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit2ndOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit2ndOrder_residenceOfAuthority</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name</td>
+<td width="8%">Name of the residence of authority.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_lang</td>
+<td width="8%">Language used in the name field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">RID</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">RID</td>
+<td width="8%">Reference to featureId field in parent 'AdministrativeUnit'.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassAdministrativeUnit3rdOrder"/>
+<p><strong>AdministrativeUnit3rdOrder - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit3rdOrder</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit3rdOrder</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit3rdOrder</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">country</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">country</td>
+<td width="8%">Two-character country code according to the Interinstitutional style guide published by the Publications Office of the European Union.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_1</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_1</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_1_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_1_lang</td>
+<td width="8%">Language used in the name_1 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_2</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_2</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_2_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_2_lang</td>
+<td width="8%">Language used in the name_2 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_3</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_3</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_3_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_3_lang</td>
+<td width="8%">Language used in the name_3 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalCode</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalCode</td>
+<td width="8%">Thematic identifier corresponding to the national administrative codes defined in each country.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel</td>
+<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_href</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_1</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_1</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_2</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_2</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_3</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_3</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">upperLevelUnit</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">upperLevelUnit</td>
+<td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassAdministrativeUnit3rdOrder_residenceOfAuthority"/>
+<p><strong>AdministrativeUnit3rdOrder_residenceOfAuthority - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit3rdOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit3rdOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit3rdOrder_residenceOfAuthority</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name</td>
+<td width="8%">Name of the residence of authority.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_lang</td>
+<td width="8%">Language used in the name field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">RID</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">RID</td>
+<td width="8%">Reference to featureId field in parent 'AdministrativeUnit'.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassAdministrativeUnit4thOrder"/>
+<p><strong>AdministrativeUnit4thOrder - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit4thOrder</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit4thOrder</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit4thOrder</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">country</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">country</td>
+<td width="8%">Two-character country code according to the Interinstitutional style guide published by the Publications Office of the European Union.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_1</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_1</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_1_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_1_lang</td>
+<td width="8%">Language used in the name_1 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_2</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_2</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_2_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_2_lang</td>
+<td width="8%">Language used in the name_2 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_3</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_3</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_3_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_3_lang</td>
+<td width="8%">Language used in the name_3 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalCode</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalCode</td>
+<td width="8%">Thematic identifier corresponding to the national administrative codes defined in each country.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel</td>
+<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_href</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_1</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_1</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_2</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_2</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_3</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_3</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">upperLevelUnit</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">upperLevelUnit</td>
+<td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassAdministrativeUnit4thOrder_residenceOfAuthority"/>
+<p><strong>AdministrativeUnit4thOrder_residenceOfAuthority - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit4thOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit4thOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit4thOrder_residenceOfAuthority</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name</td>
+<td width="8%">Name of the residence of authority.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_lang</td>
+<td width="8%">Language used in the name field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">RID</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">RID</td>
+<td width="8%">Reference to featureId field in parent 'AdministrativeUnit'.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassAdministrativeUnit5thOrder"/>
+<p><strong>AdministrativeUnit5thOrder - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit5thOrder</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit5thOrder</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit5thOrder</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">country</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">country</td>
+<td width="8%">Two-character country code according to the Interinstitutional style guide published by the Publications Office of the European Union.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_1</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_1</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_1_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_1_lang</td>
+<td width="8%">Language used in the name_1 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_2</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_2</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_2_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_2_lang</td>
+<td width="8%">Language used in the name_2 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_3</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_3</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_3_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_3_lang</td>
+<td width="8%">Language used in the name_3 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalCode</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalCode</td>
+<td width="8%">Thematic identifier corresponding to the national administrative codes defined in each country.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel</td>
+<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_href</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_1</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_1</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_2</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_2</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_3</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_3</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">upperLevelUnit</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">upperLevelUnit</td>
+<td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassAdministrativeUnit5thOrder_residenceOfAuthority"/>
+<p><strong>AdministrativeUnit5thOrder_residenceOfAuthority - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit5thOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit5thOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit5thOrder_residenceOfAuthority</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name</td>
+<td width="8%">Name of the residence of authority.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_lang</td>
+<td width="8%">Language used in the name field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">RID</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">RID</td>
+<td width="8%">Reference to featureId field in parent 'AdministrativeUnit'.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassAdministrativeUnit6thOrder"/>
+<p><strong>AdministrativeUnit6thOrder - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit6thOrder</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit6thOrder</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit6thOrder</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">country</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">country</td>
+<td width="8%">Two-character country code according to the Interinstitutional style guide published by the Publications Office of the European Union.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_1</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_1</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_1_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_1_lang</td>
+<td width="8%">Language used in the name_1 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_2</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_2</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_2_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_2_lang</td>
+<td width="8%">Language used in the name_2 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_3</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_3</td>
+<td width="8%">Official national geographical name of the administrative unit, given in several languages where required.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_3_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_3_lang</td>
+<td width="8%">Language used in the name_3 field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalCode</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalCode</td>
+<td width="8%">Thematic identifier corresponding to the national administrative codes defined in each country.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel</td>
+<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_href</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_1</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_1</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_2</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_2</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_3</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_3</td>
+<td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">upperLevelUnit</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">upperLevelUnit</td>
+<td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassAdministrativeUnit6thOrder_residenceOfAuthority"/>
+<p><strong>AdministrativeUnit6thOrder_residenceOfAuthority - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit6thOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit6thOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit6thOrder_residenceOfAuthority</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name</td>
+<td width="8%">Name of the residence of authority.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">name_lang</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_lang</td>
+<td width="8%">Language used in the name field</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">RID</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">RID</td>
+<td width="8%">Reference to featureId field in parent 'AdministrativeUnit'.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p>
+<p><hr/><a name="TableRelation_Unit_Boundary"/>
+<p><strong>Relation_Unit_Boundary - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">Relation_Unit_Boundary</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">Relation_Unit_Boundary</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">Relation_Unit_Boundary</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">boundaryId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">boundaryId</td>
+<td width="8%">Reference to featureId field in table 'AdministrativeBoundary'</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">unitId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">unitId</td>
+<td width="8%">Reference to featureId field in table 'AdministrativeUnit'</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
 </p>
     <p><hr/><a name="RelationshipClassRelAU1O_AU1O_residenceOfAuthority"/>
-	<p><strong>RelAU1O_AU1O_residenceOfAuthority - RelationshipClass</strong></p>
-	<table width="100%">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">RelAU1O_AU1O_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
-				<td width="*" style="border-color: white">OneToMany</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
-				<td width="*" style="border-color: white">False</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
-				<td width="*" style="border-color: white">False</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit1stOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit1stOrder</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">RelAU1O_AU1O_residenceOfAuthority</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="50%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
-				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
-				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
-			</tr><br/>
-			<tr>
-				<td width="30%">AdministrativeUnit1stOrder</td>
-				<td width="30%">featureId</td>
-				<td width="30%">RID</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="50%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
-				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
-				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
-			</tr>
-			<tr>
-				<td width="30%">AdministrativeUnit1stOrder_residenceOfAuthority</td>
-				<td width="30%"/>
-				<td width="30%"/>
-			</tr>
-		</tbody>
-	</table></p><p><hr/><a name="RelationshipClassRelAU2O_AU2O_residenceOfAuthority"/>
-	<p><strong>RelAU2O_AU2O_residenceOfAuthority - RelationshipClass</strong></p>
-	<table width="100%">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">RelAU2O_AU2O_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
-				<td width="*" style="border-color: white">OneToMany</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
-				<td width="*" style="border-color: white">False</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
-				<td width="*" style="border-color: white">False</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit2ndOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit2ndOrder</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">RelAU2O_AU2O_residenceOfAuthority</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="50%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
-				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
-				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
-			</tr><br/>
-			<tr>
-				<td width="30%">AdministrativeUnit2ndOrder</td>
-				<td width="30%">featureId</td>
-				<td width="30%">RID</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="50%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
-				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
-				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
-			</tr>
-			<tr>
-				<td width="30%">AdministrativeUnit2ndOrder_residenceOfAuthority</td>
-				<td width="30%"/>
-				<td width="30%"/>
-			</tr>
-		</tbody>
-	</table></p><p><hr/><a name="RelationshipClassRelAU3O_AU3O_residenceOfAuthority"/>
-	<p><strong>RelAU3O_AU3O_residenceOfAuthority - RelationshipClass</strong></p>
-	<table width="100%">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">RelAU3O_AU3O_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
-				<td width="*" style="border-color: white">OneToMany</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
-				<td width="*" style="border-color: white">False</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
-				<td width="*" style="border-color: white">False</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit3rdOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit3rdOrder</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">RelAU3O_AU3O_residenceOfAuthority</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="50%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
-				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
-				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
-			</tr><br/>
-			<tr>
-				<td width="30%">AdministrativeUnit3rdOrder</td>
-				<td width="30%">featureId</td>
-				<td width="30%">RID</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="50%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
-				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
-				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
-			</tr>
-			<tr>
-				<td width="30%">AdministrativeUnit3rdOrder_residenceOfAuthority</td>
-				<td width="30%"/>
-				<td width="30%"/>
-			</tr>
-		</tbody>
-	</table></p><p><hr/><a name="RelationshipClassRelAU4O_AU4O_residenceOfAuthority"/>
-	<p><strong>RelAU4O_AU4O_residenceOfAuthority - RelationshipClass</strong></p>
-	<table width="100%">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">RelAU4O_AU4O_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
-				<td width="*" style="border-color: white">OneToMany</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
-				<td width="*" style="border-color: white">False</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
-				<td width="*" style="border-color: white">False</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit4thOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit4thOrder</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">RelAU4O_AU4O_residenceOfAuthority</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="50%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
-				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
-				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
-			</tr><br/>
-			<tr>
-				<td width="30%">AdministrativeUnit4thOrder</td>
-				<td width="30%">featureId</td>
-				<td width="30%">RID</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="50%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
-				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
-				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
-			</tr>
-			<tr>
-				<td width="30%">AdministrativeUnit4thOrder_residenceOfAuthority</td>
-				<td width="30%"/>
-				<td width="30%"/>
-			</tr>
-		</tbody>
-	</table></p><p><hr/><a name="RelationshipClassRelAU5O_AU5O_residenceOfAuthority"/>
-	<p><strong>RelAU5O_AU5O_residenceOfAuthority - RelationshipClass</strong></p>
-	<table width="100%">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">RelAU5O_AU5O_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
-				<td width="*" style="border-color: white">OneToMany</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
-				<td width="*" style="border-color: white">False</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
-				<td width="*" style="border-color: white">False</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit5thOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit5thOrder</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">RelAU5O_AU5O_residenceOfAuthority</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="50%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
-				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
-				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
-			</tr><br/>
-			<tr>
-				<td width="30%">AdministrativeUnit5thOrder</td>
-				<td width="30%">featureId</td>
-				<td width="30%">RID</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="50%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
-				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
-				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
-			</tr>
-			<tr>
-				<td width="30%">AdministrativeUnit5thOrder_residenceOfAuthority</td>
-				<td width="30%"/>
-				<td width="30%"/>
-			</tr>
-		</tbody>
-	</table></p><p><hr/><a name="RelationshipClassRelAU6O_AU6O_residenceOfAuthority"/>
-	<p><strong>RelAU6O_AU6O_residenceOfAuthority - RelationshipClass</strong></p>
-	<table width="100%">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Name</strong></td>
-				<td width="*" style="border-color: white">RelAU6O_AU6O_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
-				<td width="*" style="border-color: white">OneToMany</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
-				<td width="*" style="border-color: white">False</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
-				<td width="*" style="border-color: white">False</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit6thOrder_residenceOfAuthority</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
-				<td width="*" style="border-color: white">AdministrativeUnit6thOrder</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>Description</strong></td>
-				<td width="*" style="border-color: white">RelAU6O_AU6O_residenceOfAuthority</td>
-			</tr>
-		</tbody>
-	</table>
-	<table width="50%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
-				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
-				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
-			</tr><br/>
-			<tr>
-				<td width="30%">AdministrativeUnit6thOrder</td>
-				<td width="30%">featureId</td>
-				<td width="30%">RID</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="50%">
-		<tbody>
-			<tr style="border:0px">
-				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
-				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
-				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
-			</tr>
-			<tr>
-				<td width="30%">AdministrativeUnit6thOrder_residenceOfAuthority</td>
-				<td width="30%"/>
-				<td width="30%"/>
-			</tr>
-		</tbody>
-	</table></p>	<hr/><a name="DomainDomainExample"/>
-	<p><strong>DomainExample - Domain</strong></p>
-	<p>
-	<table width="100%" style="border-color: white">
-		<tbody>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
-				<td width="*" style="border-color: white">DomainExample</td>
-			</tr>
-			<tr>
-				<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
-				<td width="*" style="border-color: white">String</td>
-			</tr>
-			<tr>
-				<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
-				<td width="*%" style="border-color: white">CodedValue</td>
-			</tr>
-		</tbody>
-	</table><br/>
-	<table width="100%">
-		<tbody>
-			<tr style="border-width:0px"><strong>
-					<td width="10%" style="border-width:0px"><strong>Code</strong></td>
-				</strong>
-				<td width="20%" style="border-width:0px"><strong>Name</strong></td>
-			</tr>
-			<tr>
-			<tr>
-				<td width="20%">Val1</td>
-				<td width="20%">Val1</td>
-			</tr>
-			<tr>
-				<td width="20%">Val2</td>
-				<td width="20%">Val2</td>
-			</tr>
-			</tr>
-		</tbody>
-	</table>
-	</p>
-	<hr/>
+<p><strong>RelAU1O_AU1O_residenceOfAuthority - RelationshipClass</strong></p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">RelAU1O_AU1O_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+<td width="*" style="border-color: white">OneToMany</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit1stOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit1stOrder</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">RelAU1O_AU1O_residenceOfAuthority</td>
+</tr>
+</tbody>
+</table>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+</tr><br/>
+<tr>
+<td width="30%">AdministrativeUnit1stOrder</td>
+<td width="30%">featureId</td>
+<td width="30%">RID</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+</tr>
+<tr>
+<td width="30%">AdministrativeUnit1stOrder_residenceOfAuthority</td>
+<td width="30%"/>
+<td width="30%"/>
+</tr>
+</tbody>
+</table></p><p><hr/><a name="RelationshipClassRelAU2O_AU2O_residenceOfAuthority"/>
+<p><strong>RelAU2O_AU2O_residenceOfAuthority - RelationshipClass</strong></p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">RelAU2O_AU2O_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+<td width="*" style="border-color: white">OneToMany</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit2ndOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit2ndOrder</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">RelAU2O_AU2O_residenceOfAuthority</td>
+</tr>
+</tbody>
+</table>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+</tr><br/>
+<tr>
+<td width="30%">AdministrativeUnit2ndOrder</td>
+<td width="30%">featureId</td>
+<td width="30%">RID</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+</tr>
+<tr>
+<td width="30%">AdministrativeUnit2ndOrder_residenceOfAuthority</td>
+<td width="30%"/>
+<td width="30%"/>
+</tr>
+</tbody>
+</table></p><p><hr/><a name="RelationshipClassRelAU3O_AU3O_residenceOfAuthority"/>
+<p><strong>RelAU3O_AU3O_residenceOfAuthority - RelationshipClass</strong></p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">RelAU3O_AU3O_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+<td width="*" style="border-color: white">OneToMany</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit3rdOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit3rdOrder</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">RelAU3O_AU3O_residenceOfAuthority</td>
+</tr>
+</tbody>
+</table>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+</tr><br/>
+<tr>
+<td width="30%">AdministrativeUnit3rdOrder</td>
+<td width="30%">featureId</td>
+<td width="30%">RID</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+</tr>
+<tr>
+<td width="30%">AdministrativeUnit3rdOrder_residenceOfAuthority</td>
+<td width="30%"/>
+<td width="30%"/>
+</tr>
+</tbody>
+</table></p><p><hr/><a name="RelationshipClassRelAU4O_AU4O_residenceOfAuthority"/>
+<p><strong>RelAU4O_AU4O_residenceOfAuthority - RelationshipClass</strong></p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">RelAU4O_AU4O_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+<td width="*" style="border-color: white">OneToMany</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit4thOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit4thOrder</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">RelAU4O_AU4O_residenceOfAuthority</td>
+</tr>
+</tbody>
+</table>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+</tr><br/>
+<tr>
+<td width="30%">AdministrativeUnit4thOrder</td>
+<td width="30%">featureId</td>
+<td width="30%">RID</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+</tr>
+<tr>
+<td width="30%">AdministrativeUnit4thOrder_residenceOfAuthority</td>
+<td width="30%"/>
+<td width="30%"/>
+</tr>
+</tbody>
+</table></p><p><hr/><a name="RelationshipClassRelAU5O_AU5O_residenceOfAuthority"/>
+<p><strong>RelAU5O_AU5O_residenceOfAuthority - RelationshipClass</strong></p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">RelAU5O_AU5O_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+<td width="*" style="border-color: white">OneToMany</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit5thOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit5thOrder</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">RelAU5O_AU5O_residenceOfAuthority</td>
+</tr>
+</tbody>
+</table>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+</tr><br/>
+<tr>
+<td width="30%">AdministrativeUnit5thOrder</td>
+<td width="30%">featureId</td>
+<td width="30%">RID</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+</tr>
+<tr>
+<td width="30%">AdministrativeUnit5thOrder_residenceOfAuthority</td>
+<td width="30%"/>
+<td width="30%"/>
+</tr>
+</tbody>
+</table></p><p><hr/><a name="RelationshipClassRelAU6O_AU6O_residenceOfAuthority"/>
+<p><strong>RelAU6O_AU6O_residenceOfAuthority - RelationshipClass</strong></p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">RelAU6O_AU6O_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+<td width="*" style="border-color: white">OneToMany</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit6thOrder_residenceOfAuthority</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+<td width="*" style="border-color: white">AdministrativeUnit6thOrder</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">RelAU6O_AU6O_residenceOfAuthority</td>
+</tr>
+</tbody>
+</table>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+</tr><br/>
+<tr>
+<td width="30%">AdministrativeUnit6thOrder</td>
+<td width="30%">featureId</td>
+<td width="30%">RID</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+</tr>
+<tr>
+<td width="30%">AdministrativeUnit6thOrder_residenceOfAuthority</td>
+<td width="30%"/>
+<td width="30%"/>
+</tr>
+</tbody>
+</table></p>
+<hr/><a name="DomainDomainExample"/>
+<p><strong>DomainExample - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">DomainExample</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">Val1</td>
+<td width="20%">Val1</td>
+</tr>
+<tr>
+<td width="20%">Val2</td>
+<td width="20%">Val2</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+<hr/>
