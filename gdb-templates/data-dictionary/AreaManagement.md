@@ -1,0 +1,2651 @@
+	<br/>
+	<strong>Geodatabase Documentation</strong>
+	<hr/>
+	<strong>Date: </strong>20210526173956.8618804<br/>
+	<hr/>
+	<p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 3
+			Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">4 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">12 Relationship
+			Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
+	<hr/>
+	<p><a name="FeatureDatasets"/><strong>Feature Datasets and Child Classes</strong></p><a name="Raster"/>
+	<p><strong>Rasters</strong></p><br/>
+	<hr/><a name="ObjectClasses"/>
+	<p><strong>Workspace-Level Tables and Feature Classes</strong></p>
+    <a href="#FeatureClassManagementRestrictionOrRegulationZoneL">ManagementRestrictionOrRegulationZoneL - FeatureClass</a><br/><a href="#FeatureClassManagementRestrictionOrRegulationZoneP">ManagementRestrictionOrRegulationZoneP - FeatureClass</a><br/><a href="#FeatureClassManagementRestrictionOrRegulationZoneS">ManagementRestrictionOrRegulationZoneS - FeatureClass</a><br/><a href="#TableManagementRestrictionOrRegulationZone_competentAuthority">ManagementRestrictionOrRegulationZone_competentAuthority - Table</a><br/><a href="#TableManagementRestrictionOrRegulationZone_legalBasis">ManagementRestrictionOrRegulationZone_legalBasis - Table</a><br/><a href="#TableManagementRestrictionOrRegulationZone_plan">ManagementRestrictionOrRegulationZone_plan - Table</a><br/><a href="#TableManagementRestrictionOrRegulationZone_relatedZone">ManagementRestrictionOrRegulationZone_relatedZone - Table</a><br/>
+	<p/><br/>
+	<hr/><a name="RelationshipClasses"/>
+	<p><strong>Relationship Classes</strong></p>
+    <a href="#RelationshipClassRelMRORZL_MRORZ_competentAuthority">RelMRORZL_MRORZ_competentAuthority</a><br/><a href="#RelationshipClassRelMRORZL_MRORZ_legalBasis">RelMRORZL_MRORZ_legalBasis</a><br/><a href="#RelationshipClassRelMRORZL_MRORZ_plan">RelMRORZL_MRORZ_plan</a><br/><a href="#RelationshipClassRelMRORZL_MRORZ_relatedZone">RelMRORZL_MRORZ_relatedZone</a><br/><a href="#RelationshipClassRelMRORZP_MRORZ_competentAuthority">RelMRORZP_MRORZ_competentAuthority</a><br/><a href="#RelationshipClassRelMRORZP_MRORZ_legalBasis">RelMRORZP_MRORZ_legalBasis</a><br/><a href="#RelationshipClassRelMRORZP_MRORZ_plan">RelMRORZP_MRORZ_plan</a><br/><a href="#RelationshipClassRelMRORZP_MRORZ_relatedZone">RelMRORZP_MRORZ_relatedZone</a><br/><a href="#RelationshipClassRelMRORZS_MRORZ_competentAuthority">RelMRORZS_MRORZ_competentAuthority</a><br/><a href="#RelationshipClassRelMRORZS_MRORZ_legalBasis">RelMRORZS_MRORZ_legalBasis</a><br/><a href="#RelationshipClassRelMRORZS_MRORZ_plan">RelMRORZS_MRORZ_plan</a><br/><a href="#RelationshipClassRelMRORZS_MRORZ_relatedZone">RelMRORZS_MRORZ_relatedZone</a><br/>
+	<p/>
+	<hr/><br/><a name="Domains"/>
+	<p><strong>Domains</strong></p><a href="#DomainDomainExample">DomainExample</a><br/>
+	<p/>
+    <p>	<hr/><br/><a name="FeatureClassManagementRestrictionOrRegulationZoneL"/>
+	<p><strong>ManagementRestrictionOrRegulationZoneL - FeatureClass</strong></p>
+	<p>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneL</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+				<td width="*" style="border-color: white">Polyline</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+				<td width="*" style="border-color: white">Simple</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneL</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+				<td width="*" style="border-color: white">false</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+				<td width="*" style="border-color: white">false</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+				<td width="*" style="border-color: white">false</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneL</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="100%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="8%" style="border:0px"><strong>Field</strong></td>
+				<td width="8%" style="border:0px"><strong>DataType</strong></td>
+				<td width="5%" style="border:0px"><strong>Length</strong></td>
+				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+				<td width="8%" style="border:0px"><strong>Description</strong></td>
+				<td width="8%" style="border:0px"><strong>Domain</strong></td>
+				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+				<td width="5%" style="border:0px"><strong>Precision</strong></td>
+				<td width="5%" style="border:0px"><strong>Scale</strong></td>
+			</tr>
+<tr>
+	<td width="8%">OBJECTID</td>
+	<td width="8%">OID</td>
+	<td width="3%">4</td>
+	<td width="8%">OBJECTID</td>
+	<td width="8%"/>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">SHAPE</td>
+	<td width="8%">Geometry</td>
+	<td width="3%">0</td>
+	<td width="8%">SHAPE</td>
+	<td width="8%"/>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">SHAPE_Length</td>
+	<td width="8%">Double</td>
+	<td width="3%">8</td>
+	<td width="8%">SHAPE_Length</td>
+	<td width="8%"/>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">beginLifespanVersion</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">beginLifespanVersion</td>
+	<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">designationPeriod_begin</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">designationPeriod_begin</td>
+	<td width="8%">Beginning of Time period defining when the management, restriction or regulation zone was legally designated or became effective in the real world.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">designationPeriod_end</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">designationPeriod_end</td>
+	<td width="8%">End of Time period defining when the management, restriction or regulation zone was legally designated or became effective in the real world.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">endLifespanVersion</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">endLifespanVersion</td>
+	<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_1</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_1</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. Value from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_1_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_1_href</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. URI from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_2</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_2</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. Value from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_2_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_2_href</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. URI from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_3</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_3</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. Value from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_3_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_3_href</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. URI from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">featureId</td>
+	<td width="8%">Integer</td>
+	<td width="3%">4</td>
+	<td width="8%">featureId</td>
+	<td width="8%">Identifier, used in references to this object</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">inspireId_localId</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">inspireId_localId</td>
+	<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">inspireId_namespace</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">inspireId_namespace</td>
+	<td width="8%">Namespace uniquely identifying the data source of the spatial object.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">inspireId_versionId</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">inspireId_versionId</td>
+	<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">name_1</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">name_1</td>
+	<td width="8%">A geographical name that is used to identify the management, restriction or  regulation zone in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">name_2</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">name_2</td>
+	<td width="8%">A geographical name that is used to identify the management, restriction or  regulation zone in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">specialisedZoneType_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">specialisedZoneType_href</td>
+	<td width="8%">Additional classification value which further specialises the type of management, regulation or restriction zone relevant to the domain. URI from the SpecialisedZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">thematicId_identifier</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">thematicId_identifier</td>
+	<td width="8%">External object identifier of the spatial object.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">thematicId_identifierScheme</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">thematicId_identifierScheme</td>
+	<td width="8%">Identifier defining the scheme used to assign the identifier.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_1</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_1</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. Value from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_1_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_1_href</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. URI from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_2</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_2</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. Value from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_2_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_2_href</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. URI from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_3</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_3</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. Value from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_3_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_3_href</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. URI from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr>
+		</tbody>
+	</table>
+	</p></p><p>	<hr/><br/><a name="FeatureClassManagementRestrictionOrRegulationZoneP"/>
+	<p><strong>ManagementRestrictionOrRegulationZoneP - FeatureClass</strong></p>
+	<p>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneP</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+				<td width="*" style="border-color: white">Polyline</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+				<td width="*" style="border-color: white">Simple</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneP</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+				<td width="*" style="border-color: white">false</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+				<td width="*" style="border-color: white">false</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+				<td width="*" style="border-color: white">false</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneP</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="100%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="8%" style="border:0px"><strong>Field</strong></td>
+				<td width="8%" style="border:0px"><strong>DataType</strong></td>
+				<td width="5%" style="border:0px"><strong>Length</strong></td>
+				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+				<td width="8%" style="border:0px"><strong>Description</strong></td>
+				<td width="8%" style="border:0px"><strong>Domain</strong></td>
+				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+				<td width="5%" style="border:0px"><strong>Precision</strong></td>
+				<td width="5%" style="border:0px"><strong>Scale</strong></td>
+			</tr>
+<tr>
+	<td width="8%">OBJECTID</td>
+	<td width="8%">OID</td>
+	<td width="3%">4</td>
+	<td width="8%">OBJECTID</td>
+	<td width="8%"/>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">SHAPE</td>
+	<td width="8%">Geometry</td>
+	<td width="3%">0</td>
+	<td width="8%">SHAPE</td>
+	<td width="8%"/>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">beginLifespanVersion</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">beginLifespanVersion</td>
+	<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">designationPeriod_begin</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">designationPeriod_begin</td>
+	<td width="8%">Beginning of Time period defining when the management, restriction or regulation zone was legally designated or became effective in the real world.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">designationPeriod_end</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">designationPeriod_end</td>
+	<td width="8%">End of Time period defining when the management, restriction or regulation zone was legally designated or became effective in the real world.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">endLifespanVersion</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">endLifespanVersion</td>
+	<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_1</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_1</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. Value from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_1_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_1_href</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. URI from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_2</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_2</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. Value from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_2_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_2_href</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. URI from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_3</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_3</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. Value from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_3_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_3_href</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. URI from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">featureId</td>
+	<td width="8%">Integer</td>
+	<td width="3%">4</td>
+	<td width="8%">featureId</td>
+	<td width="8%">Identifier, used in references to this object</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">inspireId_localId</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">inspireId_localId</td>
+	<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">inspireId_namespace</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">inspireId_namespace</td>
+	<td width="8%">Namespace uniquely identifying the data source of the spatial object.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">inspireId_versionId</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">inspireId_versionId</td>
+	<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">name_1</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">name_1</td>
+	<td width="8%">A geographical name that is used to identify the management, restriction or  regulation zone in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">name_2</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">name_2</td>
+	<td width="8%">A geographical name that is used to identify the management, restriction or  regulation zone in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">specialisedZoneType_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">specialisedZoneType_href</td>
+	<td width="8%">Additional classification value which further specialises the type of management, regulation or restriction zone relevant to the domain. URI from the SpecialisedZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">thematicId_identifier</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">thematicId_identifier</td>
+	<td width="8%">External object identifier of the spatial object.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">thematicId_identifierScheme</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">thematicId_identifierScheme</td>
+	<td width="8%">Identifier defining the scheme used to assign the identifier.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_1</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_1</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. Value from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_1_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_1_href</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. URI from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_2</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_2</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. Value from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_2_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_2_href</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. URI from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_3</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_3</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. Value from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_3_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_3_href</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. URI from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr>
+		</tbody>
+	</table>
+	</p></p><p>	<hr/><br/><a name="FeatureClassManagementRestrictionOrRegulationZoneS"/>
+	<p><strong>ManagementRestrictionOrRegulationZoneS - FeatureClass</strong></p>
+	<p>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneS</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+				<td width="*" style="border-color: white">Polyline</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+				<td width="*" style="border-color: white">Simple</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneS</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+				<td width="*" style="border-color: white">false</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+				<td width="*" style="border-color: white">false</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+				<td width="*" style="border-color: white">false</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneS</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="100%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="8%" style="border:0px"><strong>Field</strong></td>
+				<td width="8%" style="border:0px"><strong>DataType</strong></td>
+				<td width="5%" style="border:0px"><strong>Length</strong></td>
+				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+				<td width="8%" style="border:0px"><strong>Description</strong></td>
+				<td width="8%" style="border:0px"><strong>Domain</strong></td>
+				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+				<td width="5%" style="border:0px"><strong>Precision</strong></td>
+				<td width="5%" style="border:0px"><strong>Scale</strong></td>
+			</tr>
+<tr>
+	<td width="8%">OBJECTID</td>
+	<td width="8%">OID</td>
+	<td width="3%">4</td>
+	<td width="8%">OBJECTID</td>
+	<td width="8%"/>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">SHAPE</td>
+	<td width="8%">Geometry</td>
+	<td width="3%">0</td>
+	<td width="8%">SHAPE</td>
+	<td width="8%"/>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">SHAPE_Length</td>
+	<td width="8%">Double</td>
+	<td width="3%">8</td>
+	<td width="8%">SHAPE_Length</td>
+	<td width="8%"/>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">SHAPE_Area</td>
+	<td width="8%">Double</td>
+	<td width="3%">8</td>
+	<td width="8%">SHAPE_Area</td>
+	<td width="8%"/>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">beginLifespanVersion</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">beginLifespanVersion</td>
+	<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">designationPeriod_begin</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">designationPeriod_begin</td>
+	<td width="8%">Beginning of Time period defining when the management, restriction or regulation zone was legally designated or became effective in the real world.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">designationPeriod_end</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">designationPeriod_end</td>
+	<td width="8%">End of Time period defining when the management, restriction or regulation zone was legally designated or became effective in the real world.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">endLifespanVersion</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">endLifespanVersion</td>
+	<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_1</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_1</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. Value from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_1_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_1_href</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. URI from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_2</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_2</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. Value from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_2_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_2_href</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. URI from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_3</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_3</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. Value from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">environmentalDomain_3_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">environmentalDomain_3_href</td>
+	<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. URI from the EnvironmentalDomain Codelist</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">featureId</td>
+	<td width="8%">Integer</td>
+	<td width="3%">4</td>
+	<td width="8%">featureId</td>
+	<td width="8%">Identifier, used in references to this object</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">inspireId_localId</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">inspireId_localId</td>
+	<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">inspireId_namespace</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">inspireId_namespace</td>
+	<td width="8%">Namespace uniquely identifying the data source of the spatial object.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">inspireId_versionId</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">inspireId_versionId</td>
+	<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">name_1</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">name_1</td>
+	<td width="8%">A geographical name that is used to identify the management, restriction or  regulation zone in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">name_2</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">name_2</td>
+	<td width="8%">A geographical name that is used to identify the management, restriction or  regulation zone in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">specialisedZoneType_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">specialisedZoneType_href</td>
+	<td width="8%">Additional classification value which further specialises the type of management, regulation or restriction zone relevant to the domain. URI from the SpecialisedZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">thematicId_identifier</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">thematicId_identifier</td>
+	<td width="8%">External object identifier of the spatial object.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">thematicId_identifierScheme</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">thematicId_identifierScheme</td>
+	<td width="8%">Identifier defining the scheme used to assign the identifier.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_1</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_1</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. Value from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_1_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_1_href</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. URI from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_2</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_2</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. Value from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_2_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_2_href</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. URI from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_3</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_3</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. Value from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">zoneType_3_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">zoneType_3_href</td>
+	<td width="8%">High level classification defining the type of management, restriction or regulation zone. URI from the ZoneTypeCode Codelist.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr>
+		</tbody>
+	</table>
+	</p></p>
+
+	<p><hr/><a name="TableManagementRestrictionOrRegulationZone_competentAuthority"/>
+	<p><strong>ManagementRestrictionOrRegulationZone_competentAuthority - Table</strong></p>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_competentAuthority</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_competentAuthority</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+				<td width="*" style="border-color: white">false</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_competentAuthority</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="100%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="8%" style="border:0px"><strong>Field</strong></td>
+				<td width="8%" style="border:0px"><strong>DataType</strong></td>
+				<td width="5%" style="border:0px"><strong>Length</strong></td>
+				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+				<td width="8%" style="border:0px"><strong>Description</strong></td>
+				<td width="8%" style="border:0px"><strong>Domain</strong></td>
+				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+				<td width="5%" style="border:0px"><strong>Precision</strong></td>
+				<td width="5%" style="border:0px"><strong>Scale</strong></td>
+			</tr>
+<tr>
+	<td width="8%">OBJECTID</td>
+	<td width="8%">OID</td>
+	<td width="3%">4</td>
+	<td width="8%">OBJECTID</td>
+	<td width="8%"/>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">related_address</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">related_address</td>
+	<td width="8%">An address provided as free text.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">related_contactInstructions</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">related_contactInstructions</td>
+	<td width="8%">Supplementary instructions on how or when to contact an individual or organisation.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">related_electronicMailAddress</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">related_electronicMailAddress</td>
+	<td width="8%">An address of the organisation's or individual's electronic mailbox.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">related_hoursOfService</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">related_hoursOfService</td>
+	<td width="8%">Periods of time when the organisation or individual can be contacted.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">related_individualName</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">related_individualName</td>
+	<td width="8%">Name of the related person.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">related_organisationName</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">related_organisationName</td>
+	<td width="8%">Name of the related organisation.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">related_positionName</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">related_positionName</td>
+	<td width="8%">Position of the party in relation to a resource, such as head of department.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">related_role</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">related_role</td>
+	<td width="8%">Role(s) of the party in relation to a resource, such as owner.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">related_telephoneFacsimile</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">related_telephoneFacsimile</td>
+	<td width="8%">Number of a facsimile machine of the organisation or individual.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">related_telephoneVoice</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">related_telephoneVoice</td>
+	<td width="8%">Telephone number of the organisation or individual.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">related_website</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">related_website</td>
+	<td width="8%">Pages provided on the World Wide Web by the organisation or individual.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">RID</td>
+	<td width="8%">Integer</td>
+	<td width="3%">4</td>
+	<td width="8%">RID</td>
+	<td width="8%">Reference to featureId field in parent 'ManagementRestrictionOrRegulationZone'.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr>
+		</tbody>
+	</table>
+</p><p><hr/><a name="TableManagementRestrictionOrRegulationZone_legalBasis"/>
+	<p><strong>ManagementRestrictionOrRegulationZone_legalBasis - Table</strong></p>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_legalBasis</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_legalBasis</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+				<td width="*" style="border-color: white">false</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_legalBasis</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="100%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="8%" style="border:0px"><strong>Field</strong></td>
+				<td width="8%" style="border:0px"><strong>DataType</strong></td>
+				<td width="5%" style="border:0px"><strong>Length</strong></td>
+				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+				<td width="8%" style="border:0px"><strong>Description</strong></td>
+				<td width="8%" style="border:0px"><strong>Domain</strong></td>
+				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+				<td width="5%" style="border:0px"><strong>Precision</strong></td>
+				<td width="5%" style="border:0px"><strong>Scale</strong></td>
+			</tr>
+<tr>
+	<td width="8%">OBJECTID</td>
+	<td width="8%">OID</td>
+	<td width="3%">4</td>
+	<td width="8%">OBJECTID</td>
+	<td width="8%"/>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">legal_date</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">legal_date</td>
+	<td width="8%">Date of creation, publication or revision of the document.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">legal_dateEnteredIntoForce</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">legal_dateEnteredIntoForce</td>
+	<td width="8%">Date the legislative instrument entered into force.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">legal_dateRepealed</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">legal_dateRepealed</td>
+	<td width="8%">Date the legislative instrument was repealed.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">legal_identificationNumber</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">legal_identificationNumber</td>
+	<td width="8%">Code used to identify the legislative instrument	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">legal_journal_Identification</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">legal_journal_Identification</td>
+	<td width="8%">Reference to the location within the official journal within which the legislative instrument was published. This reference shall be comprised of three parts: the title of the official journal the volume and/or series number Page number(s)	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">legal_journal_ISBN</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">legal_journal_ISBN</td>
+	<td width="8%">International Standard Book Number (ISBN) is an nine-digit number that uniquely identifies the book in which the legislative instrument was published.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">legal_journal_ISSN</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">legal_journal_ISSN</td>
+	<td width="8%">The International Standard Serial Number (ISSN) is an eight-digit number that identifies the periodical publication in which the legislative instrument was published.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">legal_journal_link</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">legal_journal_link</td>
+	<td width="8%">Link to an online version of the official journal.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">legal_level_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">legal_level_href</td>
+	<td width="8%">The level at which the legislative instrument is adopted. URI from the LevelValue Codelist	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">legal_link</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">legal_link</td>
+	<td width="8%">Link to an online version of the document	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">legal_name</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">legal_name</td>
+	<td width="8%">Name of the document.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">legal_officialDocumentNumber</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">legal_officialDocumentNumber</td>
+	<td width="8%">Official document number used to uniquely identify the legislative instrument.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">legal_shortName</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">legal_shortName</td>
+	<td width="8%">Short name or alternative title of the document.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">legal_specificReference</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">legal_specificReference</td>
+	<td width="8%">Reference to a specific part of the document.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">RID</td>
+	<td width="8%">Integer</td>
+	<td width="3%">4</td>
+	<td width="8%">RID</td>
+	<td width="8%">Reference to featureId field in parent 'ManagementRestrictionOrRegulationZone'.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr>
+		</tbody>
+	</table>
+</p><p><hr/><a name="TableManagementRestrictionOrRegulationZone_plan"/>
+	<p><strong>ManagementRestrictionOrRegulationZone_plan - Table</strong></p>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_plan</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_plan</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+				<td width="*" style="border-color: white">false</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_plan</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="100%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="8%" style="border:0px"><strong>Field</strong></td>
+				<td width="8%" style="border:0px"><strong>DataType</strong></td>
+				<td width="5%" style="border:0px"><strong>Length</strong></td>
+				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+				<td width="8%" style="border:0px"><strong>Description</strong></td>
+				<td width="8%" style="border:0px"><strong>Domain</strong></td>
+				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+				<td width="5%" style="border:0px"><strong>Precision</strong></td>
+				<td width="5%" style="border:0px"><strong>Scale</strong></td>
+			</tr>
+<tr>
+	<td width="8%">OBJECTID</td>
+	<td width="8%">OID</td>
+	<td width="3%">4</td>
+	<td width="8%">OBJECTID</td>
+	<td width="8%"/>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">plan_date</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">plan_date</td>
+	<td width="8%">Date of creation, publication or revision of the document.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">plan_dateEnteredIntoForce</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">plan_dateEnteredIntoForce</td>
+	<td width="8%">Date the legislative instrument entered into force.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">plan_dateRepealed</td>
+	<td width="8%">Date</td>
+	<td width="3%">8</td>
+	<td width="8%">plan_dateRepealed</td>
+	<td width="8%">Date the legislative instrument was repealed.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">plan_identificationNumber</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">plan_identificationNumber</td>
+	<td width="8%">Code used to identify the legislative instrument	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">plan_journal_Identification</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">plan_journal_Identification</td>
+	<td width="8%">Reference to the location within the official journal within which the legislative instrument was published. This reference shall be comprised of three parts: the title of the official journal the volume and/or series number Page number(s)	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">plan_journal_ISBN</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">plan_journal_ISBN</td>
+	<td width="8%">International Standard Book Number (ISBN) is an nine-digit number that uniquely identifies the book in which the legislative instrument was published.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">plan_journal_ISSN</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">plan_journal_ISSN</td>
+	<td width="8%">The International Standard Serial Number (ISSN) is an eight-digit number that identifies the periodical publication in which the legislative instrument was published.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">plan_journal_linkToJournal</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">plan_journal_linkToJournal</td>
+	<td width="8%">Link to an online version of the official journal.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">plan_level_href</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">plan_level_href</td>
+	<td width="8%">The level at which the legislative instrument is adopted. URI from the LevelValue Codelist	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">plan_link</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">plan_link</td>
+	<td width="8%">Link to an online version of the document	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">plan_name</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">plan_name</td>
+	<td width="8%">Name of the document.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">plan_officialDocumentNumber</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">plan_officialDocumentNumber</td>
+	<td width="8%">Official document number used to uniquely identify the legislative instrument.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">plan_shortName</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">plan_shortName</td>
+	<td width="8%">Short name or alternative title of the document.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">plan_specificReference</td>
+	<td width="8%">String</td>
+	<td width="3%">254</td>
+	<td width="8%">plan_specificReference</td>
+	<td width="8%">Reference to a specific part of the document.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">RID</td>
+	<td width="8%">Integer</td>
+	<td width="3%">4</td>
+	<td width="8%">RID</td>
+	<td width="8%">Reference to featureId field in parent 'ManagementRestrictionOrRegulationZone'.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr>
+		</tbody>
+	</table>
+</p><p><hr/><a name="TableManagementRestrictionOrRegulationZone_relatedZone"/>
+	<p><strong>ManagementRestrictionOrRegulationZone_relatedZone - Table</strong></p>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_relatedZone</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_relatedZone</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+				<td width="*" style="border-color: white">false</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_relatedZone</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="100%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="8%" style="border:0px"><strong>Field</strong></td>
+				<td width="8%" style="border:0px"><strong>DataType</strong></td>
+				<td width="5%" style="border:0px"><strong>Length</strong></td>
+				<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+				<td width="8%" style="border:0px"><strong>Description</strong></td>
+				<td width="8%" style="border:0px"><strong>Domain</strong></td>
+				<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+				<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+				<td width="5%" style="border:0px"><strong>Precision</strong></td>
+				<td width="5%" style="border:0px"><strong>Scale</strong></td>
+			</tr>
+<tr>
+	<td width="8%">OBJECTID</td>
+	<td width="8%">OID</td>
+	<td width="3%">4</td>
+	<td width="8%">OBJECTID</td>
+	<td width="8%"/>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">relatedZone</td>
+	<td width="8%">Integer</td>
+	<td width="3%">4</td>
+	<td width="8%">relatedZone</td>
+	<td width="8%">Reference to a related management, regulation or restriction zone.	</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr><tr>
+	<td width="8%">RID</td>
+	<td width="8%">Integer</td>
+	<td width="3%">4</td>
+	<td width="8%">RID</td>
+	<td width="8%">Reference to featureId field in parent 'ManagementRestrictionOrRegulationZone'.</td>
+	<td width="8%"><a href="#Domain"/></td>
+	<td width="8%"/>
+	<td width="8%">true</td>
+	<td/>
+	<td/>
+</tr>
+		</tbody>
+	</table>
+</p>
+    <p><hr/><a name="RelationshipClassRelMRORZL_MRORZ_competentAuthority"/>
+	<p><strong>RelMRORZL_MRORZ_competentAuthority - RelationshipClass</strong></p>
+	<table width="100%">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">RelMRORZL_MRORZ_competentAuthority</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+				<td width="*" style="border-color: white">OneToMany</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_competentAuthority</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneL</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">RelMRORZL_MRORZ_competentAuthority</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+			</tr><br/>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZoneL</td>
+				<td width="30%">featureId</td>
+				<td width="30%">RID</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+			</tr>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZone_competentAuthority</td>
+				<td width="30%"/>
+				<td width="30%"/>
+			</tr>
+		</tbody>
+	</table></p><p><hr/><a name="RelationshipClassRelMRORZL_MRORZ_legalBasis"/>
+	<p><strong>RelMRORZL_MRORZ_legalBasis - RelationshipClass</strong></p>
+	<table width="100%">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">RelMRORZL_MRORZ_legalBasis</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+				<td width="*" style="border-color: white">OneToMany</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_legalBasis</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneL</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">RelMRORZL_MRORZ_legalBasis</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+			</tr><br/>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZoneL</td>
+				<td width="30%">featureId</td>
+				<td width="30%">RID</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+			</tr>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZone_legalBasis</td>
+				<td width="30%"/>
+				<td width="30%"/>
+			</tr>
+		</tbody>
+	</table></p><p><hr/><a name="RelationshipClassRelMRORZL_MRORZ_plan"/>
+	<p><strong>RelMRORZL_MRORZ_plan - RelationshipClass</strong></p>
+	<table width="100%">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">RelMRORZL_MRORZ_plan</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+				<td width="*" style="border-color: white">OneToMany</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_plan</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneL</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">RelMRORZL_MRORZ_plan</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+			</tr><br/>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZoneL</td>
+				<td width="30%">featureId</td>
+				<td width="30%">RID</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+			</tr>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZone_plan</td>
+				<td width="30%"/>
+				<td width="30%"/>
+			</tr>
+		</tbody>
+	</table></p><p><hr/><a name="RelationshipClassRelMRORZL_MRORZ_relatedZone"/>
+	<p><strong>RelMRORZL_MRORZ_relatedZone - RelationshipClass</strong></p>
+	<table width="100%">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">RelMRORZL_MRORZ_relatedZone</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+				<td width="*" style="border-color: white">OneToMany</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_relatedZone</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneL</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">RelMRORZL_MRORZ_relatedZone</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+			</tr><br/>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZoneL</td>
+				<td width="30%">featureId</td>
+				<td width="30%">RID</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+			</tr>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZone_relatedZone</td>
+				<td width="30%"/>
+				<td width="30%"/>
+			</tr>
+		</tbody>
+	</table></p><p><hr/><a name="RelationshipClassRelMRORZP_MRORZ_competentAuthority"/>
+	<p><strong>RelMRORZP_MRORZ_competentAuthority - RelationshipClass</strong></p>
+	<table width="100%">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">RelMRORZP_MRORZ_competentAuthority</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+				<td width="*" style="border-color: white">OneToMany</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_competentAuthority</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneP</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">RelMRORZP_MRORZ_competentAuthority</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+			</tr><br/>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZoneP</td>
+				<td width="30%">featureId</td>
+				<td width="30%">RID</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+			</tr>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZone_competentAuthority</td>
+				<td width="30%"/>
+				<td width="30%"/>
+			</tr>
+		</tbody>
+	</table></p><p><hr/><a name="RelationshipClassRelMRORZP_MRORZ_legalBasis"/>
+	<p><strong>RelMRORZP_MRORZ_legalBasis - RelationshipClass</strong></p>
+	<table width="100%">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">RelMRORZP_MRORZ_legalBasis</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+				<td width="*" style="border-color: white">OneToMany</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_legalBasis</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneP</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">RelMRORZP_MRORZ_legalBasis</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+			</tr><br/>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZoneP</td>
+				<td width="30%">featureId</td>
+				<td width="30%">RID</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+			</tr>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZone_legalBasis</td>
+				<td width="30%"/>
+				<td width="30%"/>
+			</tr>
+		</tbody>
+	</table></p><p><hr/><a name="RelationshipClassRelMRORZP_MRORZ_plan"/>
+	<p><strong>RelMRORZP_MRORZ_plan - RelationshipClass</strong></p>
+	<table width="100%">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">RelMRORZP_MRORZ_plan</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+				<td width="*" style="border-color: white">OneToMany</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_plan</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneP</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">RelMRORZP_MRORZ_plan</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+			</tr><br/>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZoneP</td>
+				<td width="30%">featureId</td>
+				<td width="30%">RID</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+			</tr>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZone_plan</td>
+				<td width="30%"/>
+				<td width="30%"/>
+			</tr>
+		</tbody>
+	</table></p><p><hr/><a name="RelationshipClassRelMRORZP_MRORZ_relatedZone"/>
+	<p><strong>RelMRORZP_MRORZ_relatedZone - RelationshipClass</strong></p>
+	<table width="100%">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">RelMRORZP_MRORZ_relatedZone</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+				<td width="*" style="border-color: white">OneToMany</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_relatedZone</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneP</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">RelMRORZP_MRORZ_relatedZone</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+			</tr><br/>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZoneP</td>
+				<td width="30%">featureId</td>
+				<td width="30%">RID</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+			</tr>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZone_relatedZone</td>
+				<td width="30%"/>
+				<td width="30%"/>
+			</tr>
+		</tbody>
+	</table></p><p><hr/><a name="RelationshipClassRelMRORZS_MRORZ_competentAuthority"/>
+	<p><strong>RelMRORZS_MRORZ_competentAuthority - RelationshipClass</strong></p>
+	<table width="100%">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">RelMRORZS_MRORZ_competentAuthority</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+				<td width="*" style="border-color: white">OneToMany</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_competentAuthority</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneS</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">RelMRORZS_MRORZ_competentAuthority</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+			</tr><br/>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZoneS</td>
+				<td width="30%">featureId</td>
+				<td width="30%">RID</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+			</tr>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZone_competentAuthority</td>
+				<td width="30%"/>
+				<td width="30%"/>
+			</tr>
+		</tbody>
+	</table></p><p><hr/><a name="RelationshipClassRelMRORZS_MRORZ_legalBasis"/>
+	<p><strong>RelMRORZS_MRORZ_legalBasis - RelationshipClass</strong></p>
+	<table width="100%">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">RelMRORZS_MRORZ_legalBasis</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+				<td width="*" style="border-color: white">OneToMany</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_legalBasis</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneS</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">RelMRORZS_MRORZ_legalBasis</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+			</tr><br/>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZoneS</td>
+				<td width="30%">featureId</td>
+				<td width="30%">RID</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+			</tr>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZone_legalBasis</td>
+				<td width="30%"/>
+				<td width="30%"/>
+			</tr>
+		</tbody>
+	</table></p><p><hr/><a name="RelationshipClassRelMRORZS_MRORZ_plan"/>
+	<p><strong>RelMRORZS_MRORZ_plan - RelationshipClass</strong></p>
+	<table width="100%">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">RelMRORZS_MRORZ_plan</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+				<td width="*" style="border-color: white">OneToMany</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_plan</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneS</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">RelMRORZS_MRORZ_plan</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+			</tr><br/>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZoneS</td>
+				<td width="30%">featureId</td>
+				<td width="30%">RID</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+			</tr>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZone_plan</td>
+				<td width="30%"/>
+				<td width="30%"/>
+			</tr>
+		</tbody>
+	</table></p><p><hr/><a name="RelationshipClassRelMRORZS_MRORZ_relatedZone"/>
+	<p><strong>RelMRORZS_MRORZ_relatedZone - RelationshipClass</strong></p>
+	<table width="100%">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Name</strong></td>
+				<td width="*" style="border-color: white">RelMRORZS_MRORZ_relatedZone</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+				<td width="*" style="border-color: white">OneToMany</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+				<td width="*" style="border-color: white">False</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZone_relatedZone</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+				<td width="*" style="border-color: white">ManagementRestrictionOrRegulationZoneS</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>Description</strong></td>
+				<td width="*" style="border-color: white">RelMRORZS_MRORZ_relatedZone</td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+			</tr><br/>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZoneS</td>
+				<td width="30%">featureId</td>
+				<td width="30%">RID</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="50%">
+		<tbody>
+			<tr style="border:0px">
+				<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+				<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+			</tr>
+			<tr>
+				<td width="30%">ManagementRestrictionOrRegulationZone_relatedZone</td>
+				<td width="30%"/>
+				<td width="30%"/>
+			</tr>
+		</tbody>
+	</table></p>
+
+	<hr/><a name="DomainDomainExample"/>
+	<p><strong>DomainExample - Domain</strong></p>
+	<p>
+	<table width="100%" style="border-color: white">
+		<tbody>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+				<td width="*" style="border-color: white">DomainExample</td>
+			</tr>
+			<tr>
+				<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+				<td width="*" style="border-color: white">String</td>
+			</tr>
+			<tr>
+				<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+				<td width="*%" style="border-color: white">CodedValue</td>
+			</tr>
+		</tbody>
+	</table><br/>
+	<table width="100%">
+		<tbody>
+			<tr style="border-width:0px"><strong>
+					<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+				</strong>
+				<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+			</tr>
+			<tr>
+			<tr>
+				<td width="20%">Val1</td>
+				<td width="20%">Val1</td>
+			</tr>
+			<tr>
+				<td width="20%">Val2</td>
+				<td width="20%">Val2</td>
+			</tr>
+			</tr>
+		</tbody>
+	</table>
+	</p>
+	<hr/>
