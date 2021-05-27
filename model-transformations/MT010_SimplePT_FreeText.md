@@ -30,20 +30,7 @@
       </us-emf:facilityDescription>
 		<!-- ... -->
 </us-emf:EnvironmentalManagementFacility>
-<ef:EnvironmentalMonitoringFacility>
-  <!-- ... -->
-  <ef:operationalActivityPeriod>
-      <ef:OperationalActivityPeriod gml:id="Piezometre.OperationalActivityPeriod.2.06512X0037-STREMY">
-          <ef:activityTime>
-              <gml:TimePeriod gml:id="TimePeriod.2.225196">
-                  <gml:beginPosition>1977-10-08T23:00:00Z</gml:beginPosition>
-                  <gml:endPosition>2014-10-14T06:00:00Z</gml:endPosition>
-              </gml:TimePeriod>
-          </ef:activityTime>
-      </ef:OperationalActivityPeriod>
-  </ef:operationalActivityPeriod>
-  <!-- ... -->
-</ef:EnvironmentalMonitoringFacility>
+
 ```
    
 </td>
