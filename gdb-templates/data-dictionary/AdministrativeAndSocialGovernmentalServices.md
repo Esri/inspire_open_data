@@ -1,3 +1,6 @@
+#AdministrativeAndSocialGovernmentalServices
+
+
 	<br/>
 	<strong>Geodatabase Documentation</strong>
 	<hr/>
@@ -910,8 +913,6 @@
 		</tbody>
 	</table>
 	</p></p>
-
-
     <p><hr/><a name="RelationshipClassRelGSL_GS_areaOfResponsibility"/>
 	<p><strong>RelGSL_GS_areaOfResponsibility - RelationshipClass</strong></p>
 	<table width="100%">
@@ -1107,9 +1108,7 @@
 				<td width="30%"/>
 			</tr>
 		</tbody>
-	</table></p>
-
-	<hr/><a name="DomainDomainExample"/>
+	</table></p>	<hr/><a name="DomainDomainExample"/>
 	<p><strong>DomainExample - Domain</strong></p>
 	<p>
 	<table width="100%" style="border-color: white">

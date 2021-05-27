@@ -1,3 +1,6 @@
+#EnvironmentalManagementFacilities
+
+
 	<br/>
 	<strong>Geodatabase Documentation</strong>
 	<hr/>
@@ -1487,9 +1490,7 @@
 </tr>
 		</tbody>
 	</table>
-	</p></p>
-
-	<p><hr/><a name="TableEnvironmentalManagementFacility_capacity"/>
+	</p></p>	<p><hr/><a name="TableEnvironmentalManagementFacility_capacity"/>
 	<p><strong>EnvironmentalManagementFacility_capacity - Table</strong></p>
 	<table width="100%" style="border-color: white">
 		<tbody>
@@ -3109,9 +3110,7 @@
 				<td width="30%"/>
 			</tr>
 		</tbody>
-	</table></p>
-
-	<hr/><a name="DomainDomainExample"/>
+	</table></p>	<hr/><a name="DomainDomainExample"/>
 	<p><strong>DomainExample - Domain</strong></p>
 	<p>
 	<table width="100%" style="border-color: white">

@@ -1,3 +1,6 @@
+#AdministrativeUnits
+
+
 	<br/>
 	<strong>Geodatabase Documentation</strong>
 	<hr/>
@@ -2923,9 +2926,7 @@
 </tr>
 		</tbody>
 	</table>
-	</p></p>
-
-	<p><hr/><a name="TableRelation_Unit_Boundary"/>
+	</p></p>	<p><hr/><a name="TableRelation_Unit_Boundary"/>
 	<p><strong>Relation_Unit_Boundary - Table</strong></p>
 	<table width="100%" style="border-color: white">
 		<tbody>
@@ -3392,9 +3393,7 @@
 				<td width="30%"/>
 			</tr>
 		</tbody>
-	</table></p>
-
-	<hr/><a name="DomainDomainExample"/>
+	</table></p>	<hr/><a name="DomainDomainExample"/>
 	<p><strong>DomainExample - Domain</strong></p>
 	<p>
 	<table width="100%" style="border-color: white">
