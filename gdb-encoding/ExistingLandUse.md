@@ -37,7 +37,6 @@ Rule for ExistingLandUseObject_hilucsPresence/ specificPresence is either ordere
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
-|extent|GM_MultiSurface|extent|Polygon|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|
 |name|CharacterString|name|Text|
@@ -59,7 +58,6 @@ Rule for ExistingLandUseObject_hilucsPresence/ specificPresence is either ordere
 |inspireId|Identifier|inspireId.localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
-|geometry|GM_MultiSurface|geometry|Polygon|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|
 |observationDate|Date|observationDate|Date|

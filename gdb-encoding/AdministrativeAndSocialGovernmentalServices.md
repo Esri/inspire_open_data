@@ -57,7 +57,6 @@ This section describes which transformation rules with which parameters are appl
 |||contact_telephoneFacsimile|Text|
 |||contact_telephoneVoice|Text|
 |||contact_website|Text|
-|serviceLocation|ServiceLocationType|serviceLocation_serviceLocationByGeometry|Line|
 |serviceType|ServiceTypeValue|serviceType_href|Text|
 |||serviceType|Text|
 
@@ -78,7 +77,6 @@ This section describes which transformation rules with which parameters are appl
 |||contact_telephoneFacsimile|Text|
 |||contact_telephoneVoice|Text|
 |||contact_website|Text|
-|serviceLocation|ServiceLocationType|serviceLocation_serviceLocationByGeometry|Point|
 |serviceType|ServiceTypeValue|serviceType_href|Text|
 |||serviceType|Text|
 
@@ -99,7 +97,6 @@ This section describes which transformation rules with which parameters are appl
 |||contact_telephoneFacsimile|Text|
 |||contact_telephoneVoice|Text|
 |||contact_website|Text|
-|serviceLocation|ServiceLocationType|serviceLocation_serviceLocationByGeometry|Polygon|
 |serviceType|ServiceTypeValue|serviceType_href|Text|
 |||serviceType|Text|
 
@@ -107,5 +104,4 @@ This section describes which transformation rules with which parameters are appl
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|areaOfResponsibility|AreaOfResponsibilityType|areaOfResponsibility|Polygon|
 |||RID|Long|

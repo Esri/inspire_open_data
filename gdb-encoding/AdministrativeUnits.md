@@ -37,7 +37,6 @@ This section describes which transformation rules with which parameters are appl
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
 |||featureId|Long|
-|geometry|GM_Curve|geometry|Line|
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
@@ -59,12 +58,11 @@ This section describes which transformation rules with which parameters are appl
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|
 
-#### AdministrativeUnit
+#### AdministrativeUnit1stOrder
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
 |||featureId|Long|
-|geometry|GM_MultiSurface|geometry|Polygon|
 |nationalCode|CharacterString|nationalCode|Text|
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
@@ -72,22 +70,209 @@ This section describes which transformation rules with which parameters are appl
 |nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
 |||nationalLevel_href|Text|
 |nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
+|||nationalLevelName_2|Text|
+|||nationalLevelName_3|Text|
 |||nationalLevelName_1_locale|Text|
+|||nationalLevelName_2_locale|Text|
+|||nationalLevelName_3_locale|Text|
 |country|CountryCode|country|Text|
 |name|GeographicalName|name_1_lang|Text|
+|||name_2_lang|Text|
+|||name_3_lang|Text|
 |||name_1|Text|
+|||name_2|Text|
+|||name_3|Text|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|
 |upperLevelUnit|AdministrativeUnit|upperLevelUnit|Long|
 
-#### AdministrativeUnit_residenceOfAuthority
+#### AdministrativeUnit1stOrder_residenceOfAuthority
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
 |||RID|Long|
 |name|GeographicalName|name_lang|Text|
 |||name|Text|
-|geometry|GM_Point|geometry|Point|
+
+#### AdministrativeUnit2ndOrder
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+|||featureId|Long|
+|nationalCode|CharacterString|nationalCode|Text|
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
+|||nationalLevel_href|Text|
+|nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
+|||nationalLevelName_2|Text|
+|||nationalLevelName_3|Text|
+|||nationalLevelName_1_locale|Text|
+|||nationalLevelName_2_locale|Text|
+|||nationalLevelName_3_locale|Text|
+|country|CountryCode|country|Text|
+|name|GeographicalName|name_1_lang|Text|
+|||name_2_lang|Text|
+|||name_3_lang|Text|
+|||name_1|Text|
+|||name_2|Text|
+|||name_3|Text|
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
+|endLifespanVersion|DateTime|endLifespanVersion|Date|
+|upperLevelUnit|AdministrativeUnit|upperLevelUnit|Long|
+
+#### AdministrativeUnit2ndOrder_residenceOfAuthority
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+|||RID|Long|
+|name|GeographicalName|name_lang|Text|
+|||name|Text|
+
+#### AdministrativeUnit3rdOrder
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+|||featureId|Long|
+|nationalCode|CharacterString|nationalCode|Text|
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
+|||nationalLevel_href|Text|
+|nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
+|||nationalLevelName_2|Text|
+|||nationalLevelName_3|Text|
+|||nationalLevelName_1_locale|Text|
+|||nationalLevelName_2_locale|Text|
+|||nationalLevelName_3_locale|Text|
+|country|CountryCode|country|Text|
+|name|GeographicalName|name_1_lang|Text|
+|||name_2_lang|Text|
+|||name_3_lang|Text|
+|||name_1|Text|
+|||name_2|Text|
+|||name_3|Text|
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
+|endLifespanVersion|DateTime|endLifespanVersion|Date|
+|upperLevelUnit|AdministrativeUnit|upperLevelUnit|Long|
+
+#### AdministrativeUnit3rdOrder_residenceOfAuthority
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+|||RID|Long|
+|name|GeographicalName|name_lang|Text|
+|||name|Text|
+
+#### AdministrativeUnit4thOrder
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+|||featureId|Long|
+|nationalCode|CharacterString|nationalCode|Text|
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
+|||nationalLevel_href|Text|
+|nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
+|||nationalLevelName_2|Text|
+|||nationalLevelName_3|Text|
+|||nationalLevelName_1_locale|Text|
+|||nationalLevelName_2_locale|Text|
+|||nationalLevelName_3_locale|Text|
+|country|CountryCode|country|Text|
+|name|GeographicalName|name_1_lang|Text|
+|||name_2_lang|Text|
+|||name_3_lang|Text|
+|||name_1|Text|
+|||name_2|Text|
+|||name_3|Text|
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
+|endLifespanVersion|DateTime|endLifespanVersion|Date|
+|upperLevelUnit|AdministrativeUnit|upperLevelUnit|Long|
+
+#### AdministrativeUnit4thOrder_residenceOfAuthority
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+|||RID|Long|
+|name|GeographicalName|name_lang|Text|
+|||name|Text|
+
+#### AdministrativeUnit5thOrder
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+|||featureId|Long|
+|nationalCode|CharacterString|nationalCode|Text|
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
+|||nationalLevel_href|Text|
+|nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
+|||nationalLevelName_2|Text|
+|||nationalLevelName_3|Text|
+|||nationalLevelName_1_locale|Text|
+|||nationalLevelName_2_locale|Text|
+|||nationalLevelName_3_locale|Text|
+|country|CountryCode|country|Text|
+|name|GeographicalName|name_1_lang|Text|
+|||name_2_lang|Text|
+|||name_3_lang|Text|
+|||name_1|Text|
+|||name_2|Text|
+|||name_3|Text|
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
+|endLifespanVersion|DateTime|endLifespanVersion|Date|
+|upperLevelUnit|AdministrativeUnit|upperLevelUnit|Long|
+
+#### AdministrativeUnit5thOrder_residenceOfAuthority
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+|||RID|Long|
+|name|GeographicalName|name_lang|Text|
+|||name|Text|
+
+#### AdministrativeUnit6thOrder
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+|||featureId|Long|
+|nationalCode|CharacterString|nationalCode|Text|
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
+|||nationalLevel_href|Text|
+|nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
+|||nationalLevelName_2|Text|
+|||nationalLevelName_3|Text|
+|||nationalLevelName_1_locale|Text|
+|||nationalLevelName_2_locale|Text|
+|||nationalLevelName_3_locale|Text|
+|country|CountryCode|country|Text|
+|name|GeographicalName|name_1_lang|Text|
+|||name_2_lang|Text|
+|||name_3_lang|Text|
+|||name_1|Text|
+|||name_2|Text|
+|||name_3|Text|
+|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
+|endLifespanVersion|DateTime|endLifespanVersion|Date|
+|upperLevelUnit|AdministrativeUnit|upperLevelUnit|Long|
+
+#### AdministrativeUnit6thOrder_residenceOfAuthority
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+|||RID|Long|
+|name|GeographicalName|name_lang|Text|
+|||name|Text|
 
 #### Relation_Unit_Boundary
 

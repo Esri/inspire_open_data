@@ -40,7 +40,6 @@ This section describes which transformation rules with which parameters are appl
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
-|location|GM_Point|location|Point|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |observationDate|Date|observationDate|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|
@@ -94,7 +93,6 @@ This section describes which transformation rules with which parameters are appl
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
-|extent|GM_MultiSurface|extent|Polygon|
 |name|CharacterString|name|Text|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|

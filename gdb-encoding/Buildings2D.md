@@ -87,7 +87,6 @@ This section describes which transformation rules with which parameters are appl
 |numberOfDwellings|Integer|numberOfDwellings|Long|
 |numberOfBuildingUnits|Integer|numberOfBuildingUnits|Long|
 |numberOfFloorsAboveGround|Integer|numberOfFloorsAboveGround|Long|
-|geometry|GM_Object|geometry|Polygon|
 |referenceGeometry|Boolean|referenceGeometry|Text|
 |horizontalGeometryReference|HorizontalGeometryReferenceValue|horizontalReference|Text|
 |||horizontalReference_href|Text|
@@ -151,7 +150,6 @@ This section describes which transformation rules with which parameters are appl
 |numberOfDwellings|Integer|numberOfDwellings|Long|
 |numberOfBuildingUnits|Integer|numberOfBuildingUnits|Long|
 |numberOfFloorsAboveGround|Integer|numberOfFloorsAboveGround|Long|
-|||geometry|Polygon|
 |referenceGeometry|Boolean|referenceGeometry|Long|
 |horizontalReference|HorizontalGeometryReferenceValue|horizontalReference|Text|
 |||horizontalReference_href|Text|

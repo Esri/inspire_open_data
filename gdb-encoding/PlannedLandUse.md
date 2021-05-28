@@ -61,7 +61,6 @@ This section describes which transformation rules with which parameters are appl
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
-|extent|GM_MultiSurface|extent|Polygon|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |officialTitle|CharacterString|officialTitle|Text|
 |levelOfSpatialPlan|LevelOfSpatialPlanValue|levelOfSpatialPlan|Text|
@@ -124,7 +123,6 @@ This section describes which transformation rules with which parameters are appl
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|
-|geometry|GM_Object|geometry|Polygon|
 |inheritedFromOtherPlans|Boolean|inheritedFromOtherPlans|Short|
 |specificRegulationNature|CharacterString|specificRegulationNature|Text|
 |name|CharacterString|name_1|Text|
@@ -177,7 +175,6 @@ This section describes which transformation rules with which parameters are appl
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
-|geometry|GM_MultiSurface|geometry|Polygon|
 |validFrom|DateTime|validFrom|Date|
 |validTo|DateTime|validTo|Date|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
@@ -218,6 +215,7 @@ This section describes which transformation rules with which parameters are appl
 |hilucsPresence| HILUCSPresence|RID|Long|
 |||orderedList|Text|
 |||orderedList_href|Text|
+|||percentage_hilucsValue_href|Text|
 |||percentage_hilucsValue|Text|
 |||percentage_percentage|Text|
 
@@ -232,12 +230,17 @@ This section describes which transformation rules with which parameters are appl
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
+|specificLandUse|LandUseClassificationValue|RID|Long|
+|||specificLandUse|Text|
 |||specificLandUse_href|Text|
 
 #### ZoningElement_specificPresence
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
+|specificPresence|SpecificPresence|RID|Long|
+|||orderedList|Text|
 |||orderedList_href|Text|
+|||percentage_specificValue|Text|
 |||percentage_specificValue_href|Text|
 |||percentage_specificPercentage|Text|

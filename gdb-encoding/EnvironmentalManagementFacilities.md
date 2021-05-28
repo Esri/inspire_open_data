@@ -58,7 +58,6 @@ ToDO:
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
 |||name|Text|
-|||geometry|Line|
 |validFrom|DateTime|validFrom|Date|
 |validTo|DateTime|validTo|Date|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
@@ -100,7 +99,6 @@ ToDO:
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
 |||name|Text|
-|||geometry|Point|
 |validFrom|DateTime|validFrom|Date|
 |validTo|DateTime|validTo|Date|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
@@ -142,7 +140,6 @@ ToDO:
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
 |||name|Text|
-|||geometry|Polygon|
 |validFrom|DateTime|validFrom|Date|
 |validTo|DateTime|validTo|Date|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|

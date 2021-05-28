@@ -68,7 +68,6 @@ This section describes which transformation rules with which parameters are appl
 |||name_1_lang|Text|
 |name||name_2_lang|Text|
 |||name_3_lang|Text|
-|geometry|GM_Object|geometry|Line|
 |zoneType|ZoneTypeCode|zoneType_1|Text|
 |||zoneType_2|Text|
 |||zoneType_3|Text|
@@ -103,7 +102,6 @@ This section describes which transformation rules with which parameters are appl
 |||name_1_lang|Text|
 |name||name_2_lang|Text|
 |||name_3_lang|Text|
-|geometry|GM_Object|geometry|Point|
 |zoneType|ZoneTypeCode|zoneType_1|Text|
 |||zoneType_2|Text|
 |||zoneType_3|Text|
@@ -138,7 +136,6 @@ This section describes which transformation rules with which parameters are appl
 |||name_1_lang|Text|
 |name||name_2_lang|Text|
 |||name_3_lang|Text|
-|geometry|GM_Object|geometry|Polygon|
 |zoneType|ZoneTypeCode|zoneType_1|Text|
 |||zoneType_2|Text|
 |||zoneType_3|Text|

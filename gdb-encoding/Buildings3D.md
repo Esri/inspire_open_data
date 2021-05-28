@@ -156,7 +156,6 @@ This section describes which transformation rules with which parameters are appl
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
 |terrainIntersection|GM_MultiCurve|RID|Long|
-|||terrainIntersection|Line|
 
 #### Building_currentUse
 
@@ -180,4 +179,3 @@ This section describes which transformation rules with which parameters are appl
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
 |terrainIntersection|GM_MultiCurve|RID|Long|
-|||terrainIntersection|Line|

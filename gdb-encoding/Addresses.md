@@ -68,7 +68,6 @@ This section describes which transformation rules with which parameters are appl
 |||locator_level|Text|
 |||locator_name|Text|
 |parentAddress|Address|parentAddress|Long|
-|position|GeographicPosition|position|Point|
 |||position_method_href|Text|
 |||position_method|Text|
 |||position_specification_href|Text|
