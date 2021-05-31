@@ -92,7 +92,7 @@
 </tr>
 <tr>
 <td>Known usability issues:</td>
-<td>This rule has no fixed limit in the character length of the resulting property names. Some of these names can get very long. The rule should thus be combined with others that reduce the likelyhood of that happening, such as [SimpleGeographicName](./SimpleGeographicName.html).</td>
+<td>This rule has no fixed limit in the character length of the resulting property names. Some of these names can get very long. The rule should thus be combined with others that reduce the likelyhood of that happening, such as [SimpleGeographicName](./MT005_SimpleGeographicName.html).</td>
 </tr>
 <tr>
 <td>INSPIRE Compliance:</td>

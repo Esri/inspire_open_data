@@ -9,7 +9,7 @@ Any Dataset can be used. ( Possible limitations could be on the multiplicity of 
 
 ## Normative References
 
-* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](/gdb-encoding/geodatabse encoding.md)
+* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](GeodatabaseEncoding.md)
 * [Data Specification - INSPIRE Land Use version 3.1](https://inspire.ec.europa.eu/Themes/129/2892)
 
 ## Conformance Class Existing Land Use
@@ -55,7 +55,7 @@ Rule for ExistingLandUseObject_hilucsPresence/ specificPresence is either ordere
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
 |||featureId|Text|
-|inspireId|Identifier|inspireId.localId|Text|
+|inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|

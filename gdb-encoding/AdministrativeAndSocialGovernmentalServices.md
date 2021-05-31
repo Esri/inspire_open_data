@@ -1,13 +1,14 @@
 # Geodatabase Encoding Rule for INSPIRE AdministrativeAndSocialGovermentalServices
 
-`Version: 0.2`
-`Date: 2021-03-06`
+`Version: 0.5`
+`Date: 2021-05-31`
 
 The Simple AdministrativeAndSocialGovermentalServices encoding can be used as an *alternative encoding* for AdministrativeAndSocialGovermentalServices data that fulfills the following requirements:
 
 * It is sufficient to provide the `AreaOfResponsibility` by Polygon. 
 * It is sufficient to provide the `ServiceLocation` by Geometry.  
 * There is only one `pointOfContact` per GovermentalService
+* It is sufficient to provide one 'telephoneVoice' and one 'telephoneFax' for the 'Contact'
 
 
 
@@ -25,13 +26,13 @@ The Utility and governmental services theme has 3 application schema. This appli
 This section describes which transformation rules with which parameters are applied to the Administrative And SocialGovermental Services conceptual model before applying the general rules of this encoding rule:
  
 
-1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. (works in GDB)
-2. Use Simplified Contact for all occurences `MT012()`. 
-2. Use Simplified Related Party for all occurences `MT013()`. 
-3. Create seperate Tables for each Geometry Type, add suffix for P for Points, L for Lines and S for Areas `MT014()`.
-4. Create seperate Tables for the remaining one-to-many relationships `MT015()`.
-5. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` (works in GDB as ong as not to long)
-6. Apply Attribute shortening rule for AdministrativeAndSocialGovermentalServices:
+1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. 
+2. Limit the Multiplicity for role in pointOfContact to 1 through Rule `MT012(1)` 
+3. Limit the Multiplicity for telephoneVoice in Contact to 1 through Rule `MT012(1)`
+4. Limit the Multiplicity for telephoneFax in Contact to 1 through Rule `MT012(1)`
+5. Apply MT016 to fan-out GM_Object to seperate Tables for Point, Lines and Areas. 
+6. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
+7. Apply Attribute shortening rule for AdministrativeAndSocialGovermentalServices:
 
     |Replace|With|
     |----|----|

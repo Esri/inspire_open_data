@@ -39,8 +39,19 @@
 <td>Transformed instance encoded in a table:</td>
 <td>
 
+Table: AdministrativeUnit
+|featureId|...|
+|------|------|
+|1|...|
+
+Table: AdministrativeBoundary
+|featureId|...|
+|------|------|
+|1|...|
+
+Table: AdministrativeUnit_AdministrativeBoundary
 |AdmminUnit_ID|AdminBoundary_ID|
-|------|------|------|------|
+|------|------|
 |1|1|
 |1|2|
 |1|3|

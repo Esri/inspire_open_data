@@ -12,7 +12,7 @@ The Simple SampledLandUse encoding can be used as an *alternative encoding* for 
 
 ## Normative References
 
-* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](/gdb-encoding/geodatabse encoding.md)
+* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](GeodatabaseEncoding.md)
 * [Data Specification - INSPIRE Land Use version 3.1](https://inspire.ec.europa.eu/Themes/129/2892)
 
 ## Conformance Class Sampled Land Use
@@ -62,8 +62,8 @@ This section describes which transformation rules with which parameters are appl
 |hilucsPresence| HILUCSPresence|RID|Long|
 |||orderedList|Text|
 |||orderedList_href|Text|
-|||percentage_hilucsValue_href|Text|
 |||percentage_hilucsValue|Text|
+|||percentage_hilucsValue_href|Text|
 |||percentage_percentage|Text|
 
 #### ExistingLandUseSample_specificLandUse

@@ -1,7 +1,7 @@
 # Geodatabase Encoding Rule for INSPIRE Buildings2D
 
-`Version: 0.0`
-`Date: 2021-02-22`
+`Version: 0.5`
+`Date: 2021-05-31`
 
 The Simple Buildings2D encoding can be used as an *alternative encoding* for Buildings2D data that fulfills the following requirements:
 
@@ -15,7 +15,7 @@ The Simple Buildings2D encoding can be used as an *alternative encoding* for Bui
 
 ## Normative References
 
-* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](/gdb-encoding/geodatabse encoding.md)
+* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](GeodatabaseEncoding.md)
 * [Data Specification - INSPIRE Buildings version 3.1](https://inspire.ec.europa.eu/Themes/126/2892)
 
 ## Conformance Class Buildings2D
@@ -27,8 +27,14 @@ The Buildings theme has three application schema. This application schema-specif
 This section describes which transformation rules with which parameters are applied to the Buildings2D conceptual model before applying the general rules of this encoding rule:
  
 1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. (works in GDB)
-2. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` (works in GDB as ong as not to long)
-3. Substitute all occurences of `GeographicName` with the Simple Geographic Name through Rule `MT005(separator: '_')`.
+2. Limit the Multiplicity for `elevation` for `Building` or `BuildingPart` to 1 through Rule `MT012(3)`
+3. Limit the Multiplicity for `externalReference` for `Building` or `BuildingPart` to 1 through Rule `MT012(3)`
+4. Limit the Multiplicity for `heightAboveGround` for `Building` or `BuildingPart` to 1 through Rule `MT012(3)`
+5. Limit the Multiplicity for `buildingNature` for `Building` or `BuildingPart` to 3 through Rule `MT012(1)`
+6. Limit the Multiplicity for `currentUse` for `Building` or `BuildingPart` to 3 through Rule `MT012(1)`
+7. Substitute all occurences of `GeographicName` with the Simple Geographic Name through Rule `MT005(separator: '_')`.
+8. Apply MT011 on `part` for `Building`.
+8. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
 
 
 
@@ -50,9 +56,9 @@ This section describes which transformation rules with which parameters are appl
 |||elevationReference_href|Text|
 |||elevationValue|Text|
 |endLifespanVersion|DateTime|endLifespanVersion|Text|
-|externalReference|ExternalReference|externalReference_informationSystem|Text|
-|||externalReference_informationSystemName|Text|
-|||externalReference_reference|Text|
+|externalReference|ExternalReference|extRef_informationSystem|Text|
+|||extRef_informationSystemName|Text|
+|||extRef_reference|Text|
 |heightAboveGround|HeightAboveGround|heightReference|Text|
 |||heightReference_href|Text|
 |||lowReference|Text|
@@ -63,17 +69,17 @@ This section describes which transformation rules with which parameters are appl
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
-|name|GeographicalName|name_1_language|Text|
-|||name_2_language|Text|
-|||name_3_language|Text|
-|||name_1|Text|
+|name|GeographicalName|name_1|Text|
+|||name_1_language|Text|
 |||name_2|Text|
+|||name_2_language|Text|
 |||name_3|Text|
+|||name_3_language|Text|
 |buildingNature|BuildingNatureValue|buildingNature_1|Text|
-|||buildingNature_2|Text|
-|||buildingNature_3|Text|
 |||buildingNature_1_href|Text|
+|||buildingNature_2|Text|
 |||buildingNature_2_href|Text|
+|||buildingNature_3|Text|
 |||buildingNature_3_href|Text|
 |currentUse|CurrentUse|currentUse_1_currentUse|Text|
 |||currentUse_1_currentUse_href|Text|
@@ -113,9 +119,9 @@ This section describes which transformation rules with which parameters are appl
 ||ElevationReferenceValue|elevationReference_href|Text|
 |||elevationValue|Text|
 |endLifespanVersion|DateTime|endLifespanVersion|Text|
-|externalReference|ExternalReference|externalReference_informationSystem|Text|
-|||externalReference_informationSystemName|Text|
-|||externalReference_reference|Text|
+|externalReference|ExternalReference|extRef_informationSystem|Text|
+|||extRef_informationSystemName|Text|
+|||extRef_reference|Text|
 |heightAboveGround|HeightAboveGround|heightReference|Text|
 |||heightReference_href|Text|
 |||lowReference|Text|
@@ -126,17 +132,17 @@ This section describes which transformation rules with which parameters are appl
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
-|name|GeographicalName|name_1_language|Text|
-|||name_2_language|Text|
-|||name_3_language|Text|
-|||name_1|Text|
+|name|GeographicalName|name_1|Text|
+|||name_1_language|Text|
 |||name_2|Text|
+|||name_2_language|Text|
 |||name_3|Text|
+|||name_3_language|Text|
 |buildingNature|BuildingNatureValue|buildingNature_1|Text|
-|||buildingNature_2|Text|
-|||buildingNature_3|Text|
 |||buildingNature_1_href|Text|
+|||buildingNature_2|Text|
 |||buildingNature_2_href|Text|
+|||buildingNature_3|Text|
 |||buildingNature_3_href|Text|
 |||currentUse_1_currentUse|Text|
 |||currentUse_1_currentUse_href|Text|

@@ -1,7 +1,7 @@
 # Geodatabase Encoding Rule for INSPIRE Administrative Units
 
-`Version: 0.0`
-`Date: 2021-02-22`
+`Version: 0.5`
+`Date: 2021-05-31`
 
 The Simple AdministrativeUnits encoding can be used as an *alternative encoding* for Administrative Units data that fulfills the following requirements:
 
@@ -12,7 +12,7 @@ The Simple AdministrativeUnits encoding can be used as an *alternative encoding*
 
 ## Normative References
 
-* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](/gdb-encoding/geodatabse encoding.md)
+* [INSPIRE UML-to-Geodatabase encoding rule version 0.2](GeodatabaseEncoding.md)
 * [Data Specification - INSPIRE Administrative Units version 3.1](https://inspire.ec.europa.eu/Themes/114/2892)
 
 ## Conformance Class Administrative Units
@@ -27,6 +27,10 @@ This section describes which transformation rules with which parameters are appl
 1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`.
 2. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
 3. Substitute all occurences of `GeographicName` with the Simple Geographic Name through Rule `MT005(separator: '_')`.
+4. Limit the Multiplicity for nationalLevelName in AdministrativeUnit to 3 through Rule `MT012(3)`
+5. Limit the Multiplicity for name in AdministrativeUnit to 3 through Rule `MT012(3)`
+6. Represent the Relationships AdminstrativeUnit.boundary and AdminstrativeBoundary.admUnit in a Relationship Table: `MT013`
+7. Fan-out the AdministrytiveUnits by nationalLevel: `MT015`
 
 
 
@@ -42,16 +46,16 @@ This section describes which transformation rules with which parameters are appl
 |||inspireId_versionId|Text|
 |country|CountryCode|country|Text|
 |nationalLevel|AdministrativeHierarchyLevel|nationalLevel_1|Text|
-|||nationalLevel_2|Text|
-|||nationalLevel_3|Text|
-|||nationalLevel_4|Text|
-|||nationalLevel_5|Text|
-|||nationalLevel_6|Text|
 |||nationalLevel_1_href|Text|
+|||nationalLevel_2|Text|
 |||nationalLevel_2_href|Text|
+|||nationalLevel_3|Text|
 |||nationalLevel_3_href|Text|
+|||nationalLevel_4|Text|
 |||nationalLevel_4_href|Text|
+|||nationalLevel_5|Text|
 |||nationalLevel_5_href|Text|
+|||nationalLevel_6|Text|
 |||nationalLevel_6_href|Text|
 |legalStatus|LegalStatusValue|legalStatus|Text|
 |technicalStatus|TechnicalStatusValue|technicalStatus|Text|
@@ -70,18 +74,18 @@ This section describes which transformation rules with which parameters are appl
 |nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
 |||nationalLevel_href|Text|
 |nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
-|||nationalLevelName_2|Text|
-|||nationalLevelName_3|Text|
 |||nationalLevelName_1_locale|Text|
+|||nationalLevelName_2|Text|
 |||nationalLevelName_2_locale|Text|
+|||nationalLevelName_3|Text|
 |||nationalLevelName_3_locale|Text|
 |country|CountryCode|country|Text|
-|name|GeographicalName|name_1_lang|Text|
-|||name_2_lang|Text|
-|||name_3_lang|Text|
-|||name_1|Text|
+|name|GeographicalName|name_1|Text|
+|||name_1_lang|Text|
 |||name_2|Text|
+|||name_2_lang|Text|
 |||name_3|Text|
+|||name_3_lang|Text|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|
 |upperLevelUnit|AdministrativeUnit|upperLevelUnit|Long|
@@ -91,8 +95,8 @@ This section describes which transformation rules with which parameters are appl
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
 |||RID|Long|
-|name|GeographicalName|name_lang|Text|
 |||name|Text|
+|name|GeographicalName|name_lang|Text|
 
 #### AdministrativeUnit2ndOrder
 
@@ -106,18 +110,18 @@ This section describes which transformation rules with which parameters are appl
 |nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
 |||nationalLevel_href|Text|
 |nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
-|||nationalLevelName_2|Text|
-|||nationalLevelName_3|Text|
 |||nationalLevelName_1_locale|Text|
+|||nationalLevelName_2|Text|
 |||nationalLevelName_2_locale|Text|
+|||nationalLevelName_3|Text|
 |||nationalLevelName_3_locale|Text|
 |country|CountryCode|country|Text|
-|name|GeographicalName|name_1_lang|Text|
-|||name_2_lang|Text|
-|||name_3_lang|Text|
-|||name_1|Text|
+|name|GeographicalName|name_1|Text|
+|||name_1_lang|Text|
 |||name_2|Text|
+|||name_2_lang|Text|
 |||name_3|Text|
+|||name_3_lang|Text|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|
 |upperLevelUnit|AdministrativeUnit|upperLevelUnit|Long|
@@ -127,8 +131,8 @@ This section describes which transformation rules with which parameters are appl
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
 |||RID|Long|
-|name|GeographicalName|name_lang|Text|
 |||name|Text|
+|name|GeographicalName|name_lang|Text|
 
 #### AdministrativeUnit3rdOrder
 
@@ -142,18 +146,18 @@ This section describes which transformation rules with which parameters are appl
 |nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
 |||nationalLevel_href|Text|
 |nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
-|||nationalLevelName_2|Text|
-|||nationalLevelName_3|Text|
 |||nationalLevelName_1_locale|Text|
+|||nationalLevelName_2|Text|
 |||nationalLevelName_2_locale|Text|
+|||nationalLevelName_3|Text|
 |||nationalLevelName_3_locale|Text|
 |country|CountryCode|country|Text|
-|name|GeographicalName|name_1_lang|Text|
-|||name_2_lang|Text|
-|||name_3_lang|Text|
-|||name_1|Text|
+|name|GeographicalName|name_1|Text|
+|||name_1_lang|Text|
 |||name_2|Text|
+|||name_2_lang|Text|
 |||name_3|Text|
+|||name_3_lang|Text|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|
 |upperLevelUnit|AdministrativeUnit|upperLevelUnit|Long|
@@ -163,8 +167,8 @@ This section describes which transformation rules with which parameters are appl
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
 |||RID|Long|
-|name|GeographicalName|name_lang|Text|
 |||name|Text|
+|name|GeographicalName|name_lang|Text|
 
 #### AdministrativeUnit4thOrder
 
@@ -178,18 +182,18 @@ This section describes which transformation rules with which parameters are appl
 |nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
 |||nationalLevel_href|Text|
 |nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
-|||nationalLevelName_2|Text|
-|||nationalLevelName_3|Text|
 |||nationalLevelName_1_locale|Text|
+|||nationalLevelName_2|Text|
 |||nationalLevelName_2_locale|Text|
+|||nationalLevelName_3|Text|
 |||nationalLevelName_3_locale|Text|
 |country|CountryCode|country|Text|
-|name|GeographicalName|name_1_lang|Text|
-|||name_2_lang|Text|
-|||name_3_lang|Text|
-|||name_1|Text|
+|name|GeographicalName|name_1|Text|
+|||name_1_lang|Text|
 |||name_2|Text|
+|||name_2_lang|Text|
 |||name_3|Text|
+|||name_3_lang|Text|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|
 |upperLevelUnit|AdministrativeUnit|upperLevelUnit|Long|
@@ -199,8 +203,8 @@ This section describes which transformation rules with which parameters are appl
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
 |||RID|Long|
-|name|GeographicalName|name_lang|Text|
 |||name|Text|
+|name|GeographicalName|name_lang|Text|
 
 #### AdministrativeUnit5thOrder
 
@@ -214,18 +218,18 @@ This section describes which transformation rules with which parameters are appl
 |nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
 |||nationalLevel_href|Text|
 |nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
-|||nationalLevelName_2|Text|
-|||nationalLevelName_3|Text|
 |||nationalLevelName_1_locale|Text|
+|||nationalLevelName_2|Text|
 |||nationalLevelName_2_locale|Text|
+|||nationalLevelName_3|Text|
 |||nationalLevelName_3_locale|Text|
 |country|CountryCode|country|Text|
-|name|GeographicalName|name_1_lang|Text|
-|||name_2_lang|Text|
-|||name_3_lang|Text|
-|||name_1|Text|
+|name|GeographicalName|name_1|Text|
+|||name_1_lang|Text|
 |||name_2|Text|
+|||name_2_lang|Text|
 |||name_3|Text|
+|||name_3_lang|Text|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|
 |upperLevelUnit|AdministrativeUnit|upperLevelUnit|Long|
@@ -235,8 +239,8 @@ This section describes which transformation rules with which parameters are appl
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
 |||RID|Long|
-|name|GeographicalName|name_lang|Text|
 |||name|Text|
+|name|GeographicalName|name_lang|Text|
 
 #### AdministrativeUnit6thOrder
 
@@ -250,18 +254,18 @@ This section describes which transformation rules with which parameters are appl
 |nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
 |||nationalLevel_href|Text|
 |nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
-|||nationalLevelName_2|Text|
-|||nationalLevelName_3|Text|
 |||nationalLevelName_1_locale|Text|
+|||nationalLevelName_2|Text|
 |||nationalLevelName_2_locale|Text|
+|||nationalLevelName_3|Text|
 |||nationalLevelName_3_locale|Text|
 |country|CountryCode|country|Text|
-|name|GeographicalName|name_1_lang|Text|
-|||name_2_lang|Text|
-|||name_3_lang|Text|
-|||name_1|Text|
+|name|GeographicalName|name_1|Text|
+|||name_1_lang|Text|
 |||name_2|Text|
+|||name_2_lang|Text|
 |||name_3|Text|
+|||name_3_lang|Text|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|
 |upperLevelUnit|AdministrativeUnit|upperLevelUnit|Long|
@@ -271,8 +275,8 @@ This section describes which transformation rules with which parameters are appl
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
 |||RID|Long|
-|name|GeographicalName|name_lang|Text|
 |||name|Text|
+|name|GeographicalName|name_lang|Text|
 
 #### Relation_Unit_Boundary
 

@@ -1,14 +1,18 @@
 # Geodatabase Encoding Rule for INSPIRE Area Management Restriction And RegulationZones
 
-`Version: 0.2`
-`Date: 2021-03-08`
+`Version: 0.5`
+`Date: 2021-05-31`
 
 The Simple AreaManagementRestrictionAndRegulationZones encoding can be used as an *alternative encoding* for Area Management Restriction And Regulation Zones data that fulfills the following requirements:
 
-* tbd
-* maybe limit to Area Geometries, the name Zone already indicates its mostly areas, didn't find a single dataset with points or lines
-* only one thematic identifier (not sure here, discussion needed)
-*only one zone type (not sure here, discussion needed)
+* ManagementRestrictionOrRegulationZone features have an Area Geometry
+* It is sufficient to provide one 'telephoneVoice' and one 'telephoneFax' for the 'competentAuthority'
+* There are not more than 3 zoneTypes per ManagementRestrictionOrRegulationZone
+* There are not more than 3 environmentalDomains per ManagementRestrictionOrRegulationZone
+* There are not more than 3 names per ManagementRestrictionOrRegulationZone
+* There is not more than one thematicId per ManagementRestrictionOrRegulationZone
+* There is not more than one role per RelatedParty
+
 
 ## Normative References
 
@@ -26,12 +30,17 @@ This section describes which transformation rules with which parameters are appl
  
 
 1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. (works in GDB)
-2. Use Simplified Contact for all occurences `MT012()`. 
-3. Use Simplified Related Party for all occurences `MT013()`. 
-4. Use Simple Citation for all occurences `MT007()`.
-5. Create seperate Tables for each Geometry Type, add suffix for P for Points, L for Lines and S for Areas `MT014()`.
-6. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` (works in GDB as ong as not to long) 5.
-7. Apply Attribute shortening rules for AreaManagementRestrictionAndRegulationZones:
+2. Limit the Multiplicity for zoneType in ManagementRestrictionOrRegulationZone to 3 through Rule `MT012(3)`
+3. Limit the Multiplicity for environmentalDomain in ManagementRestrictionOrRegulationZone to 3 through Rule `MT012(3)`
+4. Limit the Multiplicity for name in ManagementRestrictionOrRegulationZone to 3 through Rule `MT012(3)`
+5. Limit the Multiplicity for thematicId in ManagementRestrictionOrRegulationZone to 1 through Rule `MT012(1)`
+6. Limit the Multiplicity for telephoneVoice in Contact to 1 through Rule `MT012(1)`
+7. Limit the Multiplicity for telephoneFax in Contact to 1 through Rule `MT012(1)`
+8. Limit the Multiplicity for role in RelatedParty to 1 through Rule `MT012(1)`
+9. Substitute `TM_Period` with the Simple Period using `MT009()`.
+10. Apply MT011 on competentAuthority, legalBasis and plan.
+11. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
+12. Apply Attribute shortening rules for AreaManagementRestrictionAndRegulationZones:
 
     |Replace|With|
     |----|----|
@@ -46,110 +55,37 @@ This section describes which transformation rules with which parameters are appl
 
 
 
-#### 
+#### ManagementRestrictionOrRegulationZone
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
+|||featureId|Long|
+|inspireId|Identifier|inspireId_localId|Text|
+|||inspireId_namespace|Text|
+|||inspireId_versionId|Text|
+|thematicId|ThematicIdentifer|thematicId_identifier|Text|
+|||thematicId_identifierScheme|Text|
+|name|GeographicalName|name_1|Text|
+|||name_1_lang|Text|
+|||name_2|Text|
+|||name_2_lang|Text|
+|||name_3|Text|
+|||name_3_lang|Text|
+|zoneType|ZoneTypeCode|zoneType_1|Text|
+|||zoneType_1_href|Text|
+|||zoneType_2|Text|
+|||zoneType_2_href|Text|
+|||zoneType_3|Text|
+|||zoneType_3_href|Text|
 |specialisedZoneType|SpecialisedZoneTypeCode|specialisedZoneType|Text|
-
-#### ManagementRestrictionOrRegulationZoneL
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|||featureId|Long|
-|inspireId|Identifier|inspireId_localId|Text|
-|||inspireId_namespace|Text|
-|||inspireId_versionId|Text|
-|thematicId|ThematicIdentifer|thematicId_identifier|Text|
-|||thematicId_identifierScheme|Text|
-|name|GeographicalName|name_1|Text|
-|||name_2|Text|
-|||name_3|Text|
-|||name_1_lang|Text|
-|name||name_2_lang|Text|
-|||name_3_lang|Text|
-|zoneType|ZoneTypeCode|zoneType_1|Text|
-|||zoneType_2|Text|
-|||zoneType_3|Text|
-|||zoneType_1_href|Text|
-|||zoneType_2_href|Text|
-|||zoneType_3_href|Text|
 |||specialisedZoneType_href|Text|
 |designationPeriod|TM_Period|designationPeriod_begin|Date|
 |||designationPeriod_end|Date|
 |environmentalDomain|EnvironmentalDomain|environmentalDomain_1|Text|
-|||environmentalDomain_2|Text|
-|||environmentalDomain_3|Text|
 |||environmentalDomain_1_href|Text|
-|||environmentalDomain_2_href|Text|
-|||environmentalDomain_3_href|Text|
-|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
-|endLifespanVersion|DateTime|endLifespanVersion|Date|
-
-#### ManagementRestrictionOrRegulationZoneP
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|||featureId|Long|
-|inspireId|Identifier|inspireId_localId|Text|
-|||inspireId_namespace|Text|
-|||inspireId_versionId|Text|
-|thematicId|ThematicIdentifer|thematicId_identifier|Text|
-|||thematicId_identifierScheme|Text|
-|name|GeographicalName|name_1|Text|
-|||name_2|Text|
-|||name_3|Text|
-|||name_1_lang|Text|
-|name||name_2_lang|Text|
-|||name_3_lang|Text|
-|zoneType|ZoneTypeCode|zoneType_1|Text|
-|||zoneType_2|Text|
-|||zoneType_3|Text|
-|||zoneType_1_href|Text|
-|||zoneType_2_href|Text|
-|||zoneType_3_href|Text|
-|||specialisedZoneType_href|Text|
-|designationPeriod|TM_Period|designationPeriod_begin|Date|
-|||designationPeriod_end|Date|
-|environmentalDomain|EnvironmentalDomain|environmentalDomain_1|Text|
 |||environmentalDomain_2|Text|
-|||environmentalDomain_3|Text|
-|||environmentalDomain_1_href|Text|
 |||environmentalDomain_2_href|Text|
-|||environmentalDomain_3_href|Text|
-|beginLifespanVersion|DateTime|beginLifespanVersion|Date|
-|endLifespanVersion|DateTime|endLifespanVersion|Date|
-
-#### ManagementRestrictionOrRegulationZoneS
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|||featureId|Long|
-|inspireId|Identifier|inspireId_localId|Text|
-|||inspireId_namespace|Text|
-|||inspireId_versionId|Text|
-|thematicId|ThematicIdentifer|thematicId_identifier|Text|
-|||thematicId_identifierScheme|Text|
-|name|GeographicalName|name_1|Text|
-|||name_2|Text|
-|||name_3|Text|
-|||name_1_lang|Text|
-|name||name_2_lang|Text|
-|||name_3_lang|Text|
-|zoneType|ZoneTypeCode|zoneType_1|Text|
-|||zoneType_2|Text|
-|||zoneType_3|Text|
-|||zoneType_1_href|Text|
-|||zoneType_2_href|Text|
-|||zoneType_3_href|Text|
-|||specialisedZoneType_href|Text|
-|designationPeriod|TM_Period|designationPeriod_begin|Date|
-|||designationPeriod_end|Date|
-|environmentalDomain|EnvironmentalDomain|environmentalDomain_1|Text|
-|||environmentalDomain_2|Text|
 |||environmentalDomain_3|Text|
-|||environmentalDomain_1_href|Text|
-|||environmentalDomain_2_href|Text|
 |||environmentalDomain_3_href|Text|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|

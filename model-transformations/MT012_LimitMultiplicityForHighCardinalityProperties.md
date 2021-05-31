@@ -61,14 +61,18 @@
 <tr>
 <td>Model transformation rule: </td>
 <td>
-    <p>Copy each value of a selected property is numbered according to its occurence.</p>
+<p>Parameters:</p> 
+    <ul>
+        <li><code>number</code>: The number to which this cardinality is limited by the rule</li>
+    </ul>
+    <p>Depending on the value of number limit a selected property occurence.</p>
 </td>
 </tr>
 <tr>
 <td>Instance transformation rule:</td>
 <td>
 	<ul>
-		<li>Copy the value of <code>propertie</code> to the same property with a number according to its position in the source data.</li>
+		<li>Copy the value of <code>property</code> to the same property with a number according to its position in the source data.</li>
 	</ul>
 </td>
 </tr>
