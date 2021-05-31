@@ -1,4 +1,4 @@
-## MT013: High Cardinality Properties to Extra Tables
+## MT011: High Cardinality Properties to Extra Tables
 
 <table>
 <tr>

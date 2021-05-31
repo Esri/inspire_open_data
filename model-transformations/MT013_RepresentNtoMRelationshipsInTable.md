@@ -1,4 +1,4 @@
-## MT015: Represent n:m Relationships in Table
+## MT013: Represent n:m Relationships in Table
 
 <table>
 <tr>

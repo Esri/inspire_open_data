@@ -1,4 +1,4 @@
-## MT014: Limit number of High Cardinality Objects
+## MT012: Limit number of High Cardinality Objects
 
 <table>
 <tr>
