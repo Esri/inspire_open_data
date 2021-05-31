@@ -30,6 +30,7 @@
 <tr>
 <td>Transformed instance in database table encoding:</td>
 <td>
+
 Table: Building
 |featureId|...|
 |------|------|
