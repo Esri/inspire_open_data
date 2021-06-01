@@ -1,0 +1,1268 @@
+
+#GeographicalNames
+
+
+<br/>
+<strong>Geodatabase Documentation</strong>
+<hr/>
+<strong>Date: </strong>20210601171332.2802926<br/>
+<hr/>
+<p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 3
+Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">1 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">3 Relationship
+Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
+<hr/>
+<p><a name="FeatureDatasets"/><strong>Feature Datasets and Child Classes</strong></p><a name="Raster"/>
+<p><strong>Rasters</strong></p><br/>
+<hr/><a name="ObjectClasses"/>
+<p><strong>Workspace-Level Tables and Feature Classes</strong></p>
+    <a href="#FeatureClassNamedPlaceL">NamedPlaceL - FeatureClass</a><br/><a href="#FeatureClassNamedPlaceP">NamedPlaceP - FeatureClass</a><br/><a href="#FeatureClassNamedPlaceS">NamedPlaceS - FeatureClass</a><br/><a href="#TableNamedPlace_name">NamedPlace_name - Table</a><br/>
+<p/><br/>
+<hr/><a name="RelationshipClasses"/>
+<p><strong>Relationship Classes</strong></p>
+    <a href="#RelationshipClassRelNPL_NP_name">RelNPL_NP_name</a><br/><a href="#RelationshipClassRelNPP_NP_name">RelNPP_NP_name</a><br/><a href="#RelationshipClassRelNPS_NP_name">RelNPS_NP_name</a><br/>
+<p/>
+<hr/><br/><a name="Domains"/>
+<p><strong>Domains</strong></p><a href="#DomainDomainExample">DomainExample</a><br/>
+<p/>
+    <p><hr/><br/><a name="FeatureClassNamedPlaceL"/>
+<p><strong>NamedPlaceL - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">NamedPlaceL</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">NamedPlaceL</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">NamedPlaceL</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">leastDetailedViewingResolution</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">leastDetailedViewingResolution</td>
+<td width="8%">Resolution, expressed as the inverse of an indicative scale or a ground distance, above which the named place and its associated name(s) should no longer be displayed in a basic viewing service.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">localType</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">localType</td>
+<td width="8%">Characterisation of the kind of entity designated by geographical name(s), as defined by the data provider, given in at least in one official language of the European Union.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">localType_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">localType_locale</td>
+<td width="8%">The locale of localType</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">mostDetailedViewingResolution</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">mostDetailedViewingResolution</td>
+<td width="8%">Resolution, expressed as the inverse of an indicative scale or a ground distance, below which the named place and its associated name(s) should no longer be displayed in a basic viewing service.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">relatedSpatialObject_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">relatedSpatialObject_localId</td>
+<td width="8%">localId of  the Identifier of a spatial object representing the same entity but appearing in other themes of INSPIRE, if any.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">relatedSpatialObject_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">relatedSpatialObject_namespace</td>
+<td width="8%">namespace of  the Identifier of a spatial object representing the same entity but appearing in other themes of INSPIRE, if any.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">relatedSpatialObject_versionId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">relatedSpatialObject_versionId</td>
+<td width="8%">versionId of  the Identifier of a spatial object representing the same entity but appearing in other themes of INSPIRE, if any.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">type</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">type</td>
+<td width="8%">Characterisation of the kind of entity designated by geographical name(s). Value from the NamedPlaceTypeCodelist</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">type_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">type_href</td>
+<td width="8%">Characterisation of the kind of entity designated by geographical name(s). Value from the NamedPlaceTypeCodelist</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassNamedPlaceP"/>
+<p><strong>NamedPlaceP - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">NamedPlaceP</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">NamedPlaceP</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">NamedPlaceP</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">leastDetailedViewingResolution</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">leastDetailedViewingResolution</td>
+<td width="8%">Resolution, expressed as the inverse of an indicative scale or a ground distance, above which the named place and its associated name(s) should no longer be displayed in a basic viewing service.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">localType</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">localType</td>
+<td width="8%">Characterisation of the kind of entity designated by geographical name(s), as defined by the data provider, given in at least in one official language of the European Union.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">localType_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">localType_locale</td>
+<td width="8%">The locale of localType</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">mostDetailedViewingResolution</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">mostDetailedViewingResolution</td>
+<td width="8%">Resolution, expressed as the inverse of an indicative scale or a ground distance, below which the named place and its associated name(s) should no longer be displayed in a basic viewing service.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">relatedSpatialObject_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">relatedSpatialObject_localId</td>
+<td width="8%">localId of  the Identifier of a spatial object representing the same entity but appearing in other themes of INSPIRE, if any.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">relatedSpatialObject_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">relatedSpatialObject_namespace</td>
+<td width="8%">namespace of  the Identifier of a spatial object representing the same entity but appearing in other themes of INSPIRE, if any.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">relatedSpatialObject_versionId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">relatedSpatialObject_versionId</td>
+<td width="8%">versionId of  the Identifier of a spatial object representing the same entity but appearing in other themes of INSPIRE, if any.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">type</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">type</td>
+<td width="8%">Characterisation of the kind of entity designated by geographical name(s). Value from the NamedPlaceTypeCodelist</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">type_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">type_href</td>
+<td width="8%">Characterisation of the kind of entity designated by geographical name(s). Value from the NamedPlaceTypeCodelist</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassNamedPlaceS"/>
+<p><strong>NamedPlaceS - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">NamedPlaceS</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">NamedPlaceS</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">NamedPlaceS</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">leastDetailedViewingResolution</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">leastDetailedViewingResolution</td>
+<td width="8%">Resolution, expressed as the inverse of an indicative scale or a ground distance, above which the named place and its associated name(s) should no longer be displayed in a basic viewing service.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">localType</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">localType</td>
+<td width="8%">Characterisation of the kind of entity designated by geographical name(s), as defined by the data provider, given in at least in one official language of the European Union.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">localType_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">localType_locale</td>
+<td width="8%">The locale of localType</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">mostDetailedViewingResolution</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">mostDetailedViewingResolution</td>
+<td width="8%">Resolution, expressed as the inverse of an indicative scale or a ground distance, below which the named place and its associated name(s) should no longer be displayed in a basic viewing service.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">relatedSpatialObject_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">relatedSpatialObject_localId</td>
+<td width="8%">localId of  the Identifier of a spatial object representing the same entity but appearing in other themes of INSPIRE, if any.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">relatedSpatialObject_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">relatedSpatialObject_namespace</td>
+<td width="8%">namespace of  the Identifier of a spatial object representing the same entity but appearing in other themes of INSPIRE, if any.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">relatedSpatialObject_versionId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">relatedSpatialObject_versionId</td>
+<td width="8%">versionId of  the Identifier of a spatial object representing the same entity but appearing in other themes of INSPIRE, if any.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">type</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">type</td>
+<td width="8%">Characterisation of the kind of entity designated by geographical name(s). Value from the NamedPlaceTypeCodelist</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">type_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">type_href</td>
+<td width="8%">Characterisation of the kind of entity designated by geographical name(s). Value from the NamedPlaceTypeCodelist</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p>
+<p><hr/><a name="TableNamedPlace_name"/>
+<p><strong>NamedPlace_name - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">NamedPlace_name</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">NamedPlace_name</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">NamedPlace_name</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">grammaticalGender</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">grammaticalGender</td>
+<td width="8%">Class of nouns reflected in the behaviour of associated words.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">grammaticalGender_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">grammaticalGender_href</td>
+<td width="8%">Class of nouns reflected in the behaviour of associated words.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">grammaticalNumber</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">grammaticalNumber</td>
+<td width="8%">Grammatical category of nouns that expresses count distinctions.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">grammaticalNumber_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">grammaticalNumber_href</td>
+<td width="8%">Grammatical category of nouns that expresses count distinctions.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">language</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">language</td>
+<td width="8%">Language of the name, given as a three letters code, in accordance with either ISO 639-3 or ISO 639-5.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nameStatus</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nameStatus</td>
+<td width="8%">Qualitative information enabling to discern which credit should be given to the name with respect to its standardisation and/or its topicality.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nameStatus_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nameStatus_href</td>
+<td width="8%">Qualitative information enabling to discern which credit should be given to the name with respect to its standardisation and/or its topicality.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nativeness</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nativeness</td>
+<td width="8%">Information enabling to acknowledge if the name is the one that is/was used in the area where the spatial object is situated at the instant when the name is/was in use.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nativeness_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nativeness_href</td>
+<td width="8%">Information enabling to acknowledge if the name is the one that is/was used in the area where the spatial object is situated at the instant when the name is/was in use.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pronunciationIPA</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">pronunciationIPA</td>
+<td width="8%">Proper, correct or standard (standard within the linguistic community concerned) pronunciation of a name, expressed in International Phonetic Alphabet (IPA).</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pronunciationSoundLink</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">pronunciationSoundLink</td>
+<td width="8%">Proper, correct or standard (standard within the linguistic community concerned) pronunciation of a name, expressed by a link to any sound file.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">RID</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">RID</td>
+<td width="8%">Name of the named place.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">sourceOfName</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">sourceOfName</td>
+<td width="8%">Original data source from which the geographical name is taken from and integrated in the data set providing/publishing it. For some named spatial objects it might refer again to the publishing data set if no other information is available.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">spelling_script</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">spelling_script</td>
+<td width="8%">Set of graphic symbols (for example an alphabet) employed in writing the name, expressed using the four letters codes defined in ISO 15924, where applicable.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">spelling_text</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">spelling_text</td>
+<td width="8%">Way the name is written.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">spelling_transliterationScheme</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">spelling_transliterationScheme</td>
+<td width="8%">Method used for the names conversion between different scripts.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p>
+    <p><hr/><a name="RelationshipClassRelNPL_NP_name"/>
+<p><strong>RelNPL_NP_name - RelationshipClass</strong></p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">RelNPL_NP_name</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+<td width="*" style="border-color: white">OneToMany</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+<td width="*" style="border-color: white">NamedPlace_name</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+<td width="*" style="border-color: white">NamedPlaceL</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">RelNPL_NP_name</td>
+</tr>
+</tbody>
+</table>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+</tr><br/>
+<tr>
+<td width="30%">NamedPlaceL</td>
+<td width="30%">featureId</td>
+<td width="30%">RID</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+</tr>
+<tr>
+<td width="30%">NamedPlace_name</td>
+<td width="30%"/>
+<td width="30%"/>
+</tr>
+</tbody>
+</table></p><p><hr/><a name="RelationshipClassRelNPP_NP_name"/>
+<p><strong>RelNPP_NP_name - RelationshipClass</strong></p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">RelNPP_NP_name</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+<td width="*" style="border-color: white">OneToMany</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+<td width="*" style="border-color: white">NamedPlace_name</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+<td width="*" style="border-color: white">NamedPlaceP</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">RelNPP_NP_name</td>
+</tr>
+</tbody>
+</table>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+</tr><br/>
+<tr>
+<td width="30%">NamedPlaceP</td>
+<td width="30%">featureId</td>
+<td width="30%">RID</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+</tr>
+<tr>
+<td width="30%">NamedPlace_name</td>
+<td width="30%"/>
+<td width="30%"/>
+</tr>
+</tbody>
+</table></p><p><hr/><a name="RelationshipClassRelNPS_NP_name"/>
+<p><strong>RelNPS_NP_name - RelationshipClass</strong></p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">RelNPS_NP_name</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+<td width="*" style="border-color: white">OneToMany</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+<td width="*" style="border-color: white">NamedPlace_name</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+<td width="*" style="border-color: white">NamedPlaceS</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">RelNPS_NP_name</td>
+</tr>
+</tbody>
+</table>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+</tr><br/>
+<tr>
+<td width="30%">NamedPlaceS</td>
+<td width="30%">featureId</td>
+<td width="30%">RID</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+</tr>
+<tr>
+<td width="30%">NamedPlace_name</td>
+<td width="30%"/>
+<td width="30%"/>
+</tr>
+</tbody>
+</table></p>
+<hr/><a name="DomainDomainExample"/>
+<p><strong>DomainExample - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">DomainExample</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">Val1</td>
+<td width="20%">Val1</td>
+</tr>
+<tr>
+<td width="20%">Val2</td>
+<td width="20%">Val2</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+<hr/>
