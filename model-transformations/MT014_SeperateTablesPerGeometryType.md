@@ -1,4 +1,4 @@
-## MT014: Separate Tables Per Geometry Type
+## MT014: One Feature Class Per Geometry Type
 
 <table>
 <tr>
@@ -7,7 +7,7 @@
 </tr>
 <tr>
 <td>Description</td>
-<td><p>The encoding in GML allows mixing geometrie properties with diferent data types in the same file/structure. This is not possible in some GIS Databases. Therefore with this rule the one Feature Class per geometry type is used to seperate heterogenious geometry types into tables. A prefix is used to indicate wicht type of Geometry is stored in each table. P for Point geometries, L for Line and S for Area geeometries.</p> 
+<td><p>The encoding in GML allows mixing geometry properties with diferent data types in the same file/structure. This is not possible in some GIS Databases. Therefore with this rule one Feature Class per geometry type is used to seperate heterogenious geometry types into tables. A suffix is used to indicate which type of Geometry is stored in each table. **P** for Point geometries, **L** for Line and **S** for Area geeometries.</p> 
 </p>
 </td>
 </tr>
@@ -97,9 +97,9 @@
 <td>Instance transformation rule:</td>
 <td>
 	<ul>
-		<li>If the geometry is a point geometry copy th object into the FeatureClass ending with P</li>
-		<li>If the geometry is a line geometry copy th object into the FeatureClass ending with L.</li>
-        <li>If the geometry is a area geometry copy th object into the FeatureClass ending with S.</li>
+		<li>If the geometry is a point geometry copy the object into the FeatureClass ending with P</li>
+		<li>If the geometry is a line geometry copy the object into the FeatureClass ending with L.</li>
+        	<li>If the geometry is a area geometry copy the object into the FeatureClass ending with S.</li>
 		</ul>
 </td>
 </tr>
