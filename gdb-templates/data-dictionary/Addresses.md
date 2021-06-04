@@ -113,10 +113,10 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
-<td width="8%">AdminUnitName_1stLevel</td>
+<td width="8%">AdminUnitName_1stOrder</td>
 <td width="8%">String</td>
 <td width="3%">254</td>
-<td width="8%">AdminUnitName_1stLevel</td>
+<td width="8%">AdminUnitName_1stOrder</td>
 <td width="8%">Name of the Administrative Unit at the highest level in the national administrative hierarchy (country level).</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
@@ -124,10 +124,10 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
-<td width="8%">AdminUnitName_2ndLevel</td>
+<td width="8%">AdminUnitName_2ndOrder</td>
 <td width="8%">String</td>
 <td width="3%">254</td>
-<td width="8%">AdminUnitName_2ndLevel</td>
+<td width="8%">AdminUnitName_2ndOrder</td>
 <td width="8%">Name of the Administrative Unit at the 2nd level in the national administrative hierarchy.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
@@ -135,10 +135,10 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
-<td width="8%">AdminUnitName_3rdLevel</td>
+<td width="8%">AdminUnitName_3rdOrder</td>
 <td width="8%">String</td>
 <td width="3%">254</td>
-<td width="8%">AdminUnitName_3rdLevel</td>
+<td width="8%">AdminUnitName_3rdOrder</td>
 <td width="8%">Name of the Administrative Unit at the 3rd level in the national administrative hierarchy.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
@@ -146,10 +146,10 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
-<td width="8%">AdminUnitName_4thLevel</td>
+<td width="8%">AdminUnitName_4thOrder</td>
 <td width="8%">String</td>
 <td width="3%">254</td>
-<td width="8%">AdminUnitName_4thLevel</td>
+<td width="8%">AdminUnitName_4thOrder</td>
 <td width="8%">Name of the Administrative Unit at the 4th level in the national administrative hierarchy.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
@@ -157,10 +157,10 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
-<td width="8%">AdminUnitName_5thLevel</td>
+<td width="8%">AdminUnitName_5thOrder</td>
 <td width="8%">String</td>
 <td width="3%">254</td>
-<td width="8%">AdminUnitName_5thLevel</td>
+<td width="8%">AdminUnitName_5thOrder</td>
 <td width="8%">Name of the Administrative Unit at the 5th level in the national administrative hierarchy.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
@@ -168,10 +168,10 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
-<td width="8%">AdminUnitName_6thLevel</td>
+<td width="8%">AdminUnitName_6thOrder</td>
 <td width="8%">String</td>
 <td width="3%">254</td>
-<td width="8%">AdminUnitName_6thLevel</td>
+<td width="8%">AdminUnitName_6thOrder</td>
 <td width="8%">Name of the Administrative Unit at the 6th level in the national administrative hierarchy.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
