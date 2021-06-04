@@ -77,11 +77,11 @@ This section describes which transformation rules with which parameters are appl
 |validFrom|DateTime|validFrom|Date|
 |validTo|DateTime|validTo|Date|
 |component|AddressComponent|AddressAreaName|Text|
-|||AdminUnitName_1stLevel|Text|
-|||AdminUnitName_2ndLevel|Text|
-|||AdminUnitName_3rdLevel|Text|
-|||AdminUnitName_4thLevel|Text|
-|||AdminUnitName_5thLevel|Text|
-|||AdminUnitName_6thLevel|Text|
+|||AdminUnitName_1stOrder|Text|
+|||AdminUnitName_2ndOrder|Text|
+|||AdminUnitName_3rdOrder|Text|
+|||AdminUnitName_4thOrder|Text|
+|||AdminUnitName_5thOrder|Text|
+|||AdminUnitName_6thOrder|Text|
 |||PostalDescriptor|Text|
 |||ThoroughfareName|Text|
