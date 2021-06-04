@@ -1,4 +1,4 @@
-## MT015: FanOutFeatureTypeByCodelistProperty
+## MT015: Fan Out Feature Type By Codelist Property
 
 <table>
 <tr>
@@ -7,7 +7,7 @@
 </tr>
 <tr>
 <td>Description</td>
-<td><p>This rule is used to Fan-Out Features by the value of a codelist property. </p> 
+<td><p>This rule is used to fan-out features by the value of a codelist property into separate attributes. </p> 
 </p>
 </td>
 </tr>
