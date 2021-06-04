@@ -30,7 +30,7 @@ This section describes which transformation rules with which parameters are appl
 2. Limit the Multiplicity for role in pointOfContact to 1 through Rule `MT012(1)` 
 3. Limit the Multiplicity for telephoneVoice in Contact to 1 through Rule `MT012(1)`
 4. Limit the Multiplicity for telephoneFax in Contact to 1 through Rule `MT012(1)`
-5. Apply MT016 to fan-out GM_Object to seperate Tables for Point, Lines and Areas. 
+5. Fan-out GM_Object to seperate Tables for Point, Lines and Areas through Rule `MT016(1)`
 6. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
 7. Apply Attribute shortening rule for AdministrativeAndSocialGovermentalServices:
 
