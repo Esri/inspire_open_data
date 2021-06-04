@@ -436,7 +436,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">locator_level_href</td>
-<td width="8%">The level to which the locator refers.</td>
+<td width="8%">URI from the INSPIRE code list register - LocatorLevelValue https://inspire.ec.europa.eu/codelist/LocatorLevelValue</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -480,7 +480,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">position_method_href</td>
-<td width="8%">URI from the GeometryMethodValue Codelist</td>
+<td width="8%">URI from the INSPIRE code list register - GeometryMethodValue https://inspire.ec.europa.eu/codelist/GeometryMethodValue</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -502,7 +502,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">position_specification_href</td>
-<td width="8%">URI from the GeometrySpecificationValue Codelist</td>
+<td width="8%">URI from the INSPIRE code list register - GeometrySpecificationValue https://inspire.ec.europa.eu/codelist/GeometrySpecificationValue</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -535,7 +535,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">status_href</td>
-<td width="8%">URI from the StatusValue Codelist</td>
+<td width="8%">URI from the INSPIRE code list register - StatusValue https://inspire.ec.europa.eu/codelist/StatusValue</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
