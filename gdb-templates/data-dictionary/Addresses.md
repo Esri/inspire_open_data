@@ -568,7 +568,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">Date</td>
 <td width="3%">8</td>
 <td width="8%">validTo</td>
-<td width="8%">ate and time at which the address component ceased or will cease to exist in the real world.</td>
+<td width="8%">Date and time at which the address component ceased or will cease to exist in the real world.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
