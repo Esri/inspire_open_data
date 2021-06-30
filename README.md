@@ -1,6 +1,6 @@
 # Streamlined INSPIRE Esri GDB - Alternative Encodings 
 This is a repository for streamlined INSPIRE Esri Geodatabase (GDB) encodings documented according to INSPIRE Implementing Rules (IRs) [Article 7 -- Encodings](#inspire-requirements-for-encoding-rules). This repository provides access to:
-* streamlined fGDB templates and hosted Feature layer templates
+* streamlined fGDB templates
 * publicly available encoding rules used to encode spatial data and that explain how (and/or under which conditions) the encoding meets the requirements of the IRs
 * examples
 
@@ -9,7 +9,7 @@ Importantly, data provided in streamlined INSPIRE Esri GDBs can be used as an al
 ## Why would you want to use alternative encodings? 
 For many use cases, streamlined INSPIRE data are easier to create, use, and share. The default encoding for INSPIRE is highly structured complex GML. It is widely recognized that due to complex data structures the consumption of INSPIRE data is not easy.[[1]](#referencees) By applying Alternative Encoding rules, the complex data structures are simplified and flattened, resulting in streamlined INSPIRE data (also referred to as simplified INSPIRE data). Streamlined INSPIRE data have great potential to improve interoperablity and ease of use within mainstream ICT and GIS applications.
 
-INSPIRE Action 2017.2 maintenance and implementation work programme [[2]](#referencees) laid the groundwork for Alternative Encoding by defining documentation templates and providing guidance and examples for developing alternative encodings. 
+INSPIRE Action 2017.2 Maintenance and Implementation Group (MIG) work programme [[2]](#referencees) laid the groundwork for Alternative Encoding by defining documentation templates and providing guidance and examples for developing alternative encodings. 
 
 ### This body of work
 During action 2017.2, proposals for alternative encodings rules were collected through an open call on the MIG collaboration platform and prioritised by Member State representatives in a survey. The results of the survey clearly showed support for GeoJSON as a possible alternative encoding. In addition, also simplified GML, database formats (geopackage, PostGIS, ESRI Geodatabase (GDB)) and linked data had significant support.[[3]](#referencees)
@@ -19,7 +19,7 @@ This body of work addresses the proposed support for using ESRI Geodatabase (GDB
 The INSPIRE-MIF Repository for action 2017.2 on alternative encoings can be found [here](https://github.com/INSPIRE-MIF/2017.2), including [template for Alternative Encodings for INSPIRE Data](https://github.com/INSPIRE-MIF/2017.2/blob/master/template/template.md) used herein. The glossary for terms can be found [here](https://github.com/INSPIRE-MIF/2017.2/blob/master/glossary.md).
 
 ### Why GDB? 
-In today’s IT environment, users expect to share multiple representations of a resource and multiple service interfaces (APIs) to access the same data resource to target different users and use cases. With ArcGIS, your GDB data are easily shared as GeoJSON, CSV, KML, Shapefile, and fGDB, as well as GeoServices REST API. Optional additional distributions can include OGC WMTS, WFS, Layer Package, GeoPackage, and more. OGC API-Features is coming later in 2021.
+In today’s IT environment, users expect to share multiple representations of a resource and multiple service interfaces (APIs) to access the same data resource to target different users and use cases. ArcGIS makes interoperability easy through application of international open standards and open specifications. With ArcGIS, your GDB data are easily published and shared as GeoServices and shared as GeoJSON, CSV, KML, Shapefile, and fGDB. Optional additional distributions can include OGC WMTS, WFS, GeoPackage, and OGC API-Features.
 
 The geodatabase (GDB) is a "container" used to hold a collection of datasets. File Geodatabase (fGDB) is a subtype of GDB stored as folders in a file system. fGDB uses an efficient data structure for high performance and scalability. By default, fGDB files can grow to 1 TB, and this can be changed to 4 or 256 TB using a configuration keyword.
 
