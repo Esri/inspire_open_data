@@ -5,11 +5,11 @@
 <br/>
 <strong>Geodatabase Documentation</strong>
 <hr/>
-<strong>Date: </strong>20210601171332.2802926<br/>
+<strong>Date: </strong>20210630175154.7519163<br/>
 <hr/>
 <p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 3
 Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">1 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">3 Relationship
-Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
+Classes</a><br/><a href="#Domains">5 Domains</a><br/></p>
 <hr/>
 <p><a name="FeatureDatasets"/><strong>Feature Datasets and Child Classes</strong></p><a name="Raster"/>
 <p><strong>Rasters</strong></p><br/>
@@ -22,8 +22,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
     <a href="#RelationshipClassRelNPL_NP_name">RelNPL_NP_name</a><br/><a href="#RelationshipClassRelNPP_NP_name">RelNPP_NP_name</a><br/><a href="#RelationshipClassRelNPS_NP_name">RelNPS_NP_name</a><br/>
 <p/>
 <hr/><br/><a name="Domains"/>
-<p><strong>Domains</strong></p><a href="#DomainDomainExample">DomainExample</a><br/>
-<p/>
+<p><strong>Domains</strong></p>
+   <a href="#DomainNativenessValue">NativenessValue</a><br/><a href="#DomainNamedPlaceTypeValue">NamedPlaceTypeValue</a><br/><a href="#DomainGrammaticalGenderValue">GrammaticalGenderValue</a><br/><a href="#DomainNameStatusValue">NameStatusValue</a><br/><a href="#DomainGrammaticalNumberValue">GrammaticalNumberValue</a><br/>
     <p><hr/><br/><a name="FeatureClassNamedPlaceL"/>
 <p><strong>NamedPlaceL - FeatureClass</strong></p>
 <p>
@@ -251,7 +251,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">type</td>
-<td width="8%">Characterisation of the kind of entity designated by geographical name(s). Value from the NamedPlaceTypeCodelist</td>
+<td width="8%">Characterisation of the kind of entity designated by geographical name(s).</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -262,8 +262,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">type_href</td>
-<td width="8%">Characterisation of the kind of entity designated by geographical name(s). Value from the NamedPlaceTypeCodelist</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - NamedPlaceTypeValue <a href="https://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue">https://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue</a></td>
+<td width="8%"><a href="#DomainNamedPlaceTypeValue">NamedPlaceTypeValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -509,7 +509,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">type</td>
-<td width="8%">Characterisation of the kind of entity designated by geographical name(s). Value from the NamedPlaceTypeCodelist</td>
+<td width="8%">Characterisation of the kind of entity designated by geographical name(s).</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -520,8 +520,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">type_href</td>
-<td width="8%">Characterisation of the kind of entity designated by geographical name(s). Value from the NamedPlaceTypeCodelist</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - NamedPlaceTypeValue <a href="https://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue">https://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue</a></td>
+<td width="8%"><a href="#DomainNamedPlaceTypeValue">NamedPlaceTypeValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -756,7 +756,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">type</td>
-<td width="8%">Characterisation of the kind of entity designated by geographical name(s). Value from the NamedPlaceTypeCodelist</td>
+<td width="8%">Characterisation of the kind of entity designated by geographical name(s).</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -767,8 +767,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">type_href</td>
-<td width="8%">Characterisation of the kind of entity designated by geographical name(s). Value from the NamedPlaceTypeCodelist</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - NamedPlaceTypeValue <a href="https://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue">https://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue</a></td>
+<td width="8%"><a href="#DomainNamedPlaceTypeValue">NamedPlaceTypeValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -866,8 +866,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">grammaticalGender_href</td>
-<td width="8%">Class of nouns reflected in the behaviour of associated words.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - GrammaticalGenderValue <a href="https://inspire.ec.europa.eu/codelist/GrammaticalGenderValue">https://inspire.ec.europa.eu/codelist/GrammaticalGenderValue</a></td>
+<td width="8%"><a href="#DomainGrammaticalGenderValue">GrammaticalGenderValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -888,8 +888,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">grammaticalNumber_href</td>
-<td width="8%">Grammatical category of nouns that expresses count distinctions.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - GrammaticalNumberValue <a href="https://inspire.ec.europa.eu/codelist/GrammaticalNumberValue">https://inspire.ec.europa.eu/codelist/GrammaticalNumberValue</a></td>
+<td width="8%"><a href="#DomainGrammaticalNumberValue">GrammaticalNumberValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -921,8 +921,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nameStatus_href</td>
-<td width="8%">Qualitative information enabling to discern which credit should be given to the name with respect to its standardisation and/or its topicality.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - NameStatusValue <a href="https://inspire.ec.europa.eu/codelist/NameStatusValue">https://inspire.ec.europa.eu/codelist/NameStatusValue</a></td>
+<td width="8%"><a href="#DomainNameStatusValue">NameStatusValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -943,8 +943,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nativeness_href</td>
-<td width="8%">Information enabling to acknowledge if the name is the one that is/was used in the area where the spatial object is situated at the instant when the name is/was in use.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - NativenessValue <a href="https://inspire.ec.europa.eu/codelist/NativenessValue">https://inspire.ec.europa.eu/codelist/NativenessValue</a></td>
+<td width="8%"><a href="#DomainNativenessValue">NativenessValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -1226,14 +1226,15 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 </tr>
 </tbody>
 </table></p>
-<hr/><a name="DomainDomainExample"/>
-<p><strong>DomainExample - Domain</strong></p>
+    <p>
+    <hr/><a name="DomainNativenessValue"/>
+<p><strong>NativenessValue - Domain</strong></p>
 <p>
 <table width="100%" style="border-color: white">
 <tbody>
 <tr>
 <td width="12%" style="border-color: white"><strong>DomainName</strong></td>
-<td width="*" style="border-color: white">DomainExample</td>
+<td width="*" style="border-color: white">NativenessValue</td>
 </tr>
 <tr>
 <td width="12%" style="border-color: white"><strong>FieldType</strong></td>
@@ -1254,15 +1255,275 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 </tr>
 <tr>
 <tr>
-<td width="20%">Val1</td>
-<td width="20%">Val1</td>
-</tr>
-<tr>
-<td width="20%">Val2</td>
-<td width="20%">Val2</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NativenessValue/endonym</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NativenessValue/endonym</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NativenessValue/exonym</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NativenessValue/exonym</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/hydrography</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/hydrography</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landcover</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landcover</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landform</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landform</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/other</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/other</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/populatedPlace</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/populatedPlace</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/protectedSite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/protectedSite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/transportNetwork</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/transportNetwork</td>
 </tr>
 </tr>
 </tbody>
 </table>
 </p>
-<hr/>
+</p><p>
+    <hr/><a name="DomainNamedPlaceTypeValue"/>
+<p><strong>NamedPlaceTypeValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">NamedPlaceTypeValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/administrativeUnit</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/administrativeUnit</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/building</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/building</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/hydrography</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/hydrography</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landcover</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landcover</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landform</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landform</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/other</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/other</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/populatedPlace</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/populatedPlace</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/protectedSite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/protectedSite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/transportNetwork</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/transportNetwork</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainGrammaticalGenderValue"/>
+<p><strong>GrammaticalGenderValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">GrammaticalGenderValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GrammaticalGenderValue/common</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GrammaticalGenderValue/common</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GrammaticalGenderValue/feminine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GrammaticalGenderValue/feminine</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GrammaticalGenderValue/masculine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GrammaticalGenderValue/masculine</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GrammaticalGenderValue/neuter</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GrammaticalGenderValue/neuter</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landform</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landform</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/other</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/other</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/populatedPlace</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/populatedPlace</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/protectedSite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/protectedSite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/transportNetwork</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/transportNetwork</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainNameStatusValue"/>
+<p><strong>NameStatusValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">NameStatusValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NameStatusValue/historical</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NameStatusValue/historical</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NameStatusValue/official</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NameStatusValue/official</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NameStatusValue/other</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NameStatusValue/other</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NameStatusValue/standardised</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NameStatusValue/standardised</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landform</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landform</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/other</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/other</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/populatedPlace</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/populatedPlace</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/protectedSite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/protectedSite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/transportNetwork</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/transportNetwork</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainGrammaticalNumberValue"/>
+<p><strong>GrammaticalNumberValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">GrammaticalNumberValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GrammaticalNumberValue/dual</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GrammaticalNumberValue/dual</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GrammaticalNumberValue/plural</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GrammaticalNumberValue/plural</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GrammaticalNumberValue/singular</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GrammaticalNumberValue/singular</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landcover</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landcover</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landform</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/landform</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/other</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/other</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/populatedPlace</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/populatedPlace</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/protectedSite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/protectedSite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/transportNetwork</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/NamedPlaceTypeValue/transportNetwork</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p>

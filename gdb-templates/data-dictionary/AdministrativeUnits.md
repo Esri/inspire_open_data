@@ -5,11 +5,11 @@
 <br/>
 <strong>Geodatabase Documentation</strong>
 <hr/>
-<strong>Date: </strong>20210526173957.1969511<br/>
+<strong>Date: </strong>20210630175154.9931077<br/>
 <hr/>
 <p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 13
 Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">1 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">6 Relationship
-Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
+Classes</a><br/><a href="#Domains">1 Domains</a><br/></p>
 <hr/>
 <p><a name="FeatureDatasets"/><strong>Feature Datasets and Child Classes</strong></p><a name="Raster"/>
 <p><strong>Rasters</strong></p><br/>
@@ -22,8 +22,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
     <a href="#RelationshipClassRelAU1O_AU1O_residenceOfAuthority">RelAU1O_AU1O_residenceOfAuthority</a><br/><a href="#RelationshipClassRelAU2O_AU2O_residenceOfAuthority">RelAU2O_AU2O_residenceOfAuthority</a><br/><a href="#RelationshipClassRelAU3O_AU3O_residenceOfAuthority">RelAU3O_AU3O_residenceOfAuthority</a><br/><a href="#RelationshipClassRelAU4O_AU4O_residenceOfAuthority">RelAU4O_AU4O_residenceOfAuthority</a><br/><a href="#RelationshipClassRelAU5O_AU5O_residenceOfAuthority">RelAU5O_AU5O_residenceOfAuthority</a><br/><a href="#RelationshipClassRelAU6O_AU6O_residenceOfAuthority">RelAU6O_AU6O_residenceOfAuthority</a><br/>
 <p/>
 <hr/><br/><a name="Domains"/>
-<p><strong>Domains</strong></p><a href="#DomainDomainExample">DomainExample</a><br/>
-<p/>
+<p><strong>Domains</strong></p>
+   <a href="#DomainAdministrativeHierarchyLevel">AdministrativeHierarchyLevel</a><br/>
     <p><hr/><br/><a name="FeatureClassAdministrativeBoundary"/>
 <p><strong>AdministrativeBoundary - FeatureClass</strong></p>
 <p>
@@ -97,17 +97,6 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">Geometry</td>
 <td width="3%">0</td>
 <td width="8%">SHAPE</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">SHAPE_Length</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Length</td>
 <td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
@@ -196,7 +185,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">legalStatus</td>
-<td width="8%">Legal status of this administrative boundary. Value from LegalStatusValue Codelist.</td>
+<td width="8%">Legal status of this administrative boundary.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -207,7 +196,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel_1</td>
-<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. Value from  AdministrativeHierarchyLevel Codelist.</td>
+<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -218,8 +207,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel_1_href</td>
-<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. URI from  AdministrativeHierarchyLevel Codelist.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - AdministrativeHierarchyLevel <a href="https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel">https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel</a></td>
+<td width="8%"><a href="#DomainAdministrativeHierarchyLevel">AdministrativeHierarchyLevel</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -229,8 +218,19 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel_2</td>
-<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. Value from  AdministrativeHierarchyLevel Codelist.</td>
+<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of.</td>
 <td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_2_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_2_href</td>
+<td width="8%">URI from the INSPIRE code list register - AdministrativeHierarchyLevel <a href="https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel">https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel</a></td>
+<td width="8%"><a href="#DomainAdministrativeHierarchyLevel">AdministrativeHierarchyLevel</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -240,7 +240,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel_3</td>
-<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. Value from  AdministrativeHierarchyLevel Codelist.</td>
+<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -251,8 +251,30 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel_3_href</td>
-<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. URI from  AdministrativeHierarchyLevel Codelist.</td>
+<td width="8%">URI from the INSPIRE code list register - AdministrativeHierarchyLevel <a href="https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel">https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel</a></td>
+<td width="8%"><a href="#DomainAdministrativeHierarchyLevel">AdministrativeHierarchyLevel</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_4</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_4</td>
+<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of.</td>
 <td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_4_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_4_href</td>
+<td width="8%">URI from the INSPIRE code list register - AdministrativeHierarchyLevel <a href="https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel">https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel</a></td>
+<td width="8%"><a href="#DomainAdministrativeHierarchyLevel">AdministrativeHierarchyLevel</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -262,7 +284,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel_5</td>
-<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. Value from  AdministrativeHierarchyLevel Codelist.</td>
+<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -273,8 +295,30 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel_5_href</td>
-<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of. URI from  AdministrativeHierarchyLevel Codelist.</td>
+<td width="8%">URI from the INSPIRE code list register - AdministrativeHierarchyLevel <a href="https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel">https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel</a></td>
+<td width="8%"><a href="#DomainAdministrativeHierarchyLevel">AdministrativeHierarchyLevel</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_6</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_6</td>
+<td width="8%">The hierarchy levels of all adjacent administrative units this boundary is part of.</td>
 <td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevel_6_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevel_6_href</td>
+<td width="8%">URI from the INSPIRE code list register - AdministrativeHierarchyLevel <a href="https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel">https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel</a></td>
+<td width="8%"><a href="#DomainAdministrativeHierarchyLevel">AdministrativeHierarchyLevel</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -285,6 +329,17 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">254</td>
 <td width="8%">technicalStatus</td>
 <td width="8%">The technical status of the administrative boundary.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -366,28 +421,6 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">Geometry</td>
 <td width="3%">0</td>
 <td width="8%">SHAPE</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">SHAPE_Length</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Length</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">SHAPE_Area</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Area</td>
 <td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
@@ -553,7 +586,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel</td>
-<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
+<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established. Value from the AdminstrativeHierarchyLevel Codelist.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -564,8 +597,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel_href</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - AdministrativeHierarchyLevel <a href="https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel">https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel</a></td>
+<td width="8%"><a href="#DomainAdministrativeHierarchyLevel">AdministrativeHierarchyLevel</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -576,6 +609,17 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">254</td>
 <td width="8%">nationalLevelName_1</td>
 <td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_1_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_1_locale</td>
+<td width="8%">Locale of nationalLevelName_1</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -593,11 +637,33 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
+<td width="8%">nationalLevelName_2_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_2_locale</td>
+<td width="8%">Locale of nationalLevelName_2</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
 <td width="8%">nationalLevelName_3</td>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevelName_3</td>
 <td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_3_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_3_locale</td>
+<td width="8%">Locale of nationalLevelName_1</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -609,6 +675,28 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">4</td>
 <td width="8%">upperLevelUnit</td>
 <td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -812,28 +900,6 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
-<td width="8%">SHAPE_Length</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Length</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">SHAPE_Area</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Area</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
 <td width="8%">beginLifespanVersion</td>
 <td width="8%">Date</td>
 <td width="3%">8</td>
@@ -992,7 +1058,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel</td>
-<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
+<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established. Value from the AdminstrativeHierarchyLevel Codelist.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1003,8 +1069,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel_href</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - AdministrativeHierarchyLevel <a href="https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel">https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel</a></td>
+<td width="8%"><a href="#DomainAdministrativeHierarchyLevel">AdministrativeHierarchyLevel</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -1015,6 +1081,17 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">254</td>
 <td width="8%">nationalLevelName_1</td>
 <td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_1_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_1_locale</td>
+<td width="8%">Locale of nationalLevelName_1</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1032,11 +1109,33 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
+<td width="8%">nationalLevelName_2_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_2_locale</td>
+<td width="8%">Locale of nationalLevelName_2</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
 <td width="8%">nationalLevelName_3</td>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevelName_3</td>
 <td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_3_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_3_locale</td>
+<td width="8%">Locale of nationalLevelName_1</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1048,6 +1147,28 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">4</td>
 <td width="8%">upperLevelUnit</td>
 <td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1251,28 +1372,6 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
-<td width="8%">SHAPE_Length</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Length</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">SHAPE_Area</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Area</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
 <td width="8%">beginLifespanVersion</td>
 <td width="8%">Date</td>
 <td width="3%">8</td>
@@ -1431,7 +1530,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel</td>
-<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
+<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established. Value from the AdminstrativeHierarchyLevel Codelist.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1442,8 +1541,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel_href</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - AdministrativeHierarchyLevel <a href="https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel">https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel</a></td>
+<td width="8%"><a href="#DomainAdministrativeHierarchyLevel">AdministrativeHierarchyLevel</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -1454,6 +1553,17 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">254</td>
 <td width="8%">nationalLevelName_1</td>
 <td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_1_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_1_locale</td>
+<td width="8%">Locale of nationalLevelName_1</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1471,11 +1581,33 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
+<td width="8%">nationalLevelName_2_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_2_locale</td>
+<td width="8%">Locale of nationalLevelName_2</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
 <td width="8%">nationalLevelName_3</td>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevelName_3</td>
 <td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_3_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_3_locale</td>
+<td width="8%">Locale of nationalLevelName_1</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1487,6 +1619,28 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">4</td>
 <td width="8%">upperLevelUnit</td>
 <td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1690,28 +1844,6 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
-<td width="8%">SHAPE_Length</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Length</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">SHAPE_Area</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Area</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
 <td width="8%">beginLifespanVersion</td>
 <td width="8%">Date</td>
 <td width="3%">8</td>
@@ -1870,7 +2002,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel</td>
-<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
+<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established. Value from the AdminstrativeHierarchyLevel Codelist.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1881,8 +2013,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel_href</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - AdministrativeHierarchyLevel <a href="https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel">https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel</a></td>
+<td width="8%"><a href="#DomainAdministrativeHierarchyLevel">AdministrativeHierarchyLevel</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -1893,6 +2025,17 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">254</td>
 <td width="8%">nationalLevelName_1</td>
 <td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_1_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_1_locale</td>
+<td width="8%">Locale of nationalLevelName_1</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1910,11 +2053,33 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
+<td width="8%">nationalLevelName_2_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_2_locale</td>
+<td width="8%">Locale of nationalLevelName_2</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
 <td width="8%">nationalLevelName_3</td>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevelName_3</td>
 <td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_3_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_3_locale</td>
+<td width="8%">Locale of nationalLevelName_1</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1926,6 +2091,28 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">4</td>
 <td width="8%">upperLevelUnit</td>
 <td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -2129,28 +2316,6 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
-<td width="8%">SHAPE_Length</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Length</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">SHAPE_Area</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Area</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
 <td width="8%">beginLifespanVersion</td>
 <td width="8%">Date</td>
 <td width="3%">8</td>
@@ -2309,7 +2474,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel</td>
-<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
+<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established. Value from the AdminstrativeHierarchyLevel Codelist.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -2320,8 +2485,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel_href</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - AdministrativeHierarchyLevel <a href="https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel">https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel</a></td>
+<td width="8%"><a href="#DomainAdministrativeHierarchyLevel">AdministrativeHierarchyLevel</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -2332,6 +2497,17 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">254</td>
 <td width="8%">nationalLevelName_1</td>
 <td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_1_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_1_locale</td>
+<td width="8%">Locale of nationalLevelName_1</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -2349,11 +2525,33 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
+<td width="8%">nationalLevelName_2_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_2_locale</td>
+<td width="8%">Locale of nationalLevelName_2</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
 <td width="8%">nationalLevelName_3</td>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevelName_3</td>
 <td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_3_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_3_locale</td>
+<td width="8%">Locale of nationalLevelName_1</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -2365,6 +2563,28 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">4</td>
 <td width="8%">upperLevelUnit</td>
 <td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -2568,28 +2788,6 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
-<td width="8%">SHAPE_Length</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Length</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">SHAPE_Area</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Area</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
 <td width="8%">beginLifespanVersion</td>
 <td width="8%">Date</td>
 <td width="3%">8</td>
@@ -2748,7 +2946,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel</td>
-<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established.</td>
+<td width="8%">Level in the national administrative hierarchy, at which the administrative unit is established. Value from the AdminstrativeHierarchyLevel Codelist.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -2759,8 +2957,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevel_href</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - AdministrativeHierarchyLevel <a href="https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel">https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel</a></td>
+<td width="8%"><a href="#DomainAdministrativeHierarchyLevel">AdministrativeHierarchyLevel</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -2771,6 +2969,17 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">254</td>
 <td width="8%">nationalLevelName_1</td>
 <td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_1_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_1_locale</td>
+<td width="8%">Locale of nationalLevelName_1</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -2788,11 +2997,33 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
+<td width="8%">nationalLevelName_2_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_2_locale</td>
+<td width="8%">Locale of nationalLevelName_2</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
 <td width="8%">nationalLevelName_3</td>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">nationalLevelName_3</td>
 <td width="8%">Name of the level in the national administrative hierarchy, at which  the administrative unit is established.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">nationalLevelName_3_locale</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">nationalLevelName_3_locale</td>
+<td width="8%">Locale of nationalLevelName_1</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -2804,6 +3035,28 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">4</td>
 <td width="8%">upperLevelUnit</td>
 <td width="8%">A unit established at a higher level of national administrative hierarchy that this administrative unit administers.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -3396,14 +3649,15 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 </tr>
 </tbody>
 </table></p>
-<hr/><a name="DomainDomainExample"/>
-<p><strong>DomainExample - Domain</strong></p>
+    <p>
+    <hr/><a name="DomainAdministrativeHierarchyLevel"/>
+<p><strong>AdministrativeHierarchyLevel - Domain</strong></p>
 <p>
 <table width="100%" style="border-color: white">
 <tbody>
 <tr>
 <td width="12%" style="border-color: white"><strong>DomainName</strong></td>
-<td width="*" style="border-color: white">DomainExample</td>
+<td width="*" style="border-color: white">AdministrativeHierarchyLevel</td>
 </tr>
 <tr>
 <td width="12%" style="border-color: white"><strong>FieldType</strong></td>
@@ -3424,15 +3678,26 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 </tr>
 <tr>
 <tr>
-<td width="20%">Val1</td>
-<td width="20%">Val1</td>
-</tr>
-<tr>
-<td width="20%">Val2</td>
-<td width="20%">Val2</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel/1stOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel/1stOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel/2ndOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel/2ndOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel/3rdOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel/3rdOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel/4thOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel/4thOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel/5thOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel/5thOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel/6thOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel/6thOrder</td>
 </tr>
 </tr>
 </tbody>
 </table>
 </p>
-<hr/>
+</p>

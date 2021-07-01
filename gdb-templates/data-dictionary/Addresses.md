@@ -5,11 +5,11 @@
 <br/>
 <strong>Geodatabase Documentation</strong>
 <hr/>
-<strong>Date: </strong>20210526173957.549057<br/>
+<strong>Date: </strong>20210630175156.8037873<br/>
 <hr/>
 <p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 1
 Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">0 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">0 Relationship
-Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
+Classes</a><br/><a href="#Domains">4 Domains</a><br/></p>
 <hr/>
 <p><a name="FeatureDatasets"/><strong>Feature Datasets and Child Classes</strong></p><a name="Raster"/>
 <p><strong>Rasters</strong></p><br/>
@@ -20,8 +20,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <hr/><a name="RelationshipClasses"/>
 <p><strong>Relationship Classes</strong></p><p/>
 <hr/><br/><a name="Domains"/>
-<p><strong>Domains</strong></p><a href="#DomainDomainExample">DomainExample</a><br/>
-<p/>
+<p><strong>Domains</strong></p>
+   <a href="#DomainStatusValue">StatusValue</a><br/><a href="#DomainGeometrySpecificationValue">GeometrySpecificationValue</a><br/><a href="#DomainGeometryMethodValue">GeometryMethodValue</a><br/><a href="#DomainLocatorLevelValue">LocatorLevelValue</a><br/>
     <p><hr/><br/><a name="FeatureClassAddress"/>
 <p><strong>Address - FeatureClass</strong></p>
 <p>
@@ -117,7 +117,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">AdminUnitName_1stOrder</td>
-<td width="8%">Name of the Administrative Unit at the highest level in the national administrative hierarchy (country level) as described in the INSPIRE code list registry https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel.</td>
+<td width="8%">Name of the Administrative Unit at the 1st level in the national administrative hierarchy.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -128,7 +128,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">AdminUnitName_2ndOrder</td>
-<td width="8%">Name of the Administrative Unit at the 2nd level in the national administrative hierarchy as described in the INSPIRE code list registry https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel.</td>
+<td width="8%">Name of the Administrative Unit at the 2nd level in the national administrative hierarchy.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -139,7 +139,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">AdminUnitName_3rdOrder</td>
-<td width="8%">Name of the Administrative Unit at the 3rd level in the national administrative hierarchy as described in the INSPIRE code list registry https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel.</td>
+<td width="8%">Name of the Administrative Unit at the 3rd level in the national administrative hierarchy.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -150,7 +150,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">AdminUnitName_4thOrder</td>
-<td width="8%">Name of the Administrative Unit at the 4th level in the national administrative hierarchy as described in the INSPIRE code list registry https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel.</td>
+<td width="8%">Name of the Administrative Unit at the 4th level in the national administrative hierarchy.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -161,7 +161,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">AdminUnitName_5thOrder</td>
-<td width="8%">Name of the Administrative Unit at the 5th level in the national administrative hierarchy as described in the INSPIRE code list registry https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel.</td>
+<td width="8%">Name of the Administrative Unit at the 5th level in the national administrative hierarchy.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -172,7 +172,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">AdminUnitName_6thOrder</td>
-<td width="8%">Name of the Administrative Unit at the 6th level in the national administrative hierarchy as described in the INSPIRE code list registry https://inspire.ec.europa.eu/codelist/AdministrativeHierarchyLevel.</td>
+<td width="8%">Name of the Administrative Unit at the 6th level in the national administrative hierarchy.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -205,7 +205,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">building_href</td>
-<td width="8%">Building that the address is assigned to or associated with.</td>
+<td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -436,8 +436,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">locator_level_href</td>
-<td width="8%">URI from the INSPIRE code list register - LocatorLevelValue https://inspire.ec.europa.eu/codelist/LocatorLevelValue</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - LocatorLevelValue <a href="https://inspire.ec.europa.eu/codelist/LocatorLevelValue">https://inspire.ec.europa.eu/codelist/LocatorLevelValue</a></td>
+<td width="8%"><a href="#DomainLocatorLevelValue">LocatorLevelValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -447,7 +447,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">locator_name</td>
-<td width="8%">A geographic name or descriptive text associated to a property identified by the locator.</td>
+<td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -469,7 +469,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">position_method</td>
-<td width="8%">Description of how and by whom the geographic position of the address was created or derived.</td>
+<td width="8%">Description of how and by whom the geographic position of the address was created or derived. </td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -480,8 +480,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">position_method_href</td>
-<td width="8%">URI from the INSPIRE code list register - GeometryMethodValue https://inspire.ec.europa.eu/codelist/GeometryMethodValue</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - GeometryMethodValue <a href="https://inspire.ec.europa.eu/codelist/GeometryMethodValue">https://inspire.ec.europa.eu/codelist/GeometryMethodValue</a></td>
+<td width="8%"><a href="#DomainGeometryMethodValue">GeometryMethodValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -502,8 +502,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">position_specification_href</td>
-<td width="8%">URI from the INSPIRE code list register - GeometrySpecificationValue https://inspire.ec.europa.eu/codelist/GeometrySpecificationValue</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - GeometrySpecificationValue <a href="https://inspire.ec.europa.eu/codelist/GeometrySpecificationValue">https://inspire.ec.europa.eu/codelist/GeometrySpecificationValue</a></td>
+<td width="8%"><a href="#DomainGeometrySpecificationValue">GeometrySpecificationValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -535,8 +535,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">status_href</td>
-<td width="8%">URI from the INSPIRE code list register - StatusValue https://inspire.ec.europa.eu/codelist/StatusValue</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - StatusValue <a href="https://inspire.ec.europa.eu/codelist/StatusValue">https://inspire.ec.europa.eu/codelist/StatusValue</a></td>
+<td width="8%"><a href="#DomainStatusValue">StatusValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -578,14 +578,15 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 </tbody>
 </table>
 </p></p>
-<hr/><a name="DomainDomainExample"/>
-<p><strong>DomainExample - Domain</strong></p>
+    <p>
+    <hr/><a name="DomainStatusValue"/>
+<p><strong>StatusValue - Domain</strong></p>
 <p>
 <table width="100%" style="border-color: white">
 <tbody>
 <tr>
 <td width="12%" style="border-color: white"><strong>DomainName</strong></td>
-<td width="*" style="border-color: white">DomainExample</td>
+<td width="*" style="border-color: white">StatusValue</td>
 </tr>
 <tr>
 <td width="12%" style="border-color: white"><strong>FieldType</strong></td>
@@ -606,15 +607,287 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 </tr>
 <tr>
 <tr>
-<td width="20%">Val1</td>
-<td width="20%">Val1</td>
-</tr>
-<tr>
-<td width="20%">Val2</td>
-<td width="20%">Val2</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/alternative</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/alternative</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/current</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/current</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/proposed</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/proposed</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/reserved</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/reserved</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/retired</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/retired</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit5thOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit5thOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit6thOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit6thOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/building</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/building</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/entrance</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/entrance</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/parcel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/parcel</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDelivery</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDelivery</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDescriptor</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDescriptor</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/segment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/segment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/thoroughfareAccess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/thoroughfareAccess</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/utilityService</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/utilityService</td>
 </tr>
 </tr>
 </tbody>
 </table>
 </p>
-<hr/>
+</p><p>
+    <hr/><a name="DomainGeometrySpecificationValue"/>
+<p><strong>GeometrySpecificationValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">GeometrySpecificationValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/addressArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/addressArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit1stOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit1stOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit2ndOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit2ndOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit3rdOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit3rdOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit4thOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit4thOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit5thOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit5thOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit6thOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit6thOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/building</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/building</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/entrance</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/entrance</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/parcel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/parcel</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDelivery</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDelivery</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDescriptor</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDescriptor</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/segment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/segment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/thoroughfareAccess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/thoroughfareAccess</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/utilityService</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/utilityService</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainGeometryMethodValue"/>
+<p><strong>GeometryMethodValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">GeometryMethodValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometryMethodValue/byAdministrator</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometryMethodValue/byAdministrator</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometryMethodValue/byOtherParty</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometryMethodValue/byOtherParty</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometryMethodValue/fromFeature</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometryMethodValue/fromFeature</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/reserved</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/reserved</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/retired</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/retired</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit5thOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit5thOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit6thOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit6thOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/building</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/building</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/entrance</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/entrance</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/parcel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/parcel</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDelivery</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDelivery</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDescriptor</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDescriptor</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/segment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/segment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/thoroughfareAccess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/thoroughfareAccess</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/utilityService</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/utilityService</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainLocatorLevelValue"/>
+<p><strong>LocatorLevelValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">LocatorLevelValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LocatorLevelValue/accessLevel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LocatorLevelValue/accessLevel</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LocatorLevelValue/postalDeliveryPoint</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LocatorLevelValue/postalDeliveryPoint</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LocatorLevelValue/siteLevel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LocatorLevelValue/siteLevel</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LocatorLevelValue/unitLevel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LocatorLevelValue/unitLevel</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/retired</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/StatusValue/retired</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit5thOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit5thOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit6thOrder</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit6thOrder</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/building</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/building</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/entrance</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/entrance</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/parcel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/parcel</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDelivery</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDelivery</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDescriptor</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/postalDescriptor</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/segment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/segment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/thoroughfareAccess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/thoroughfareAccess</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/utilityService</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/utilityService</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p>

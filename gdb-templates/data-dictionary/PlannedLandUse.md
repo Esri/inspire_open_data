@@ -5,11 +5,11 @@
 <br/>
 <strong>Geodatabase Documentation</strong>
 <hr/>
-<strong>Date: </strong>20210526173955.9137082<br/>
+<strong>Date: </strong>20210630175153.7517121<br/>
 <hr/>
 <p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 3
 Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">15 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">14 Relationship
-Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
+Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <hr/>
 <p><a name="FeatureDatasets"/><strong>Feature Datasets and Child Classes</strong></p><a name="Raster"/>
 <p><strong>Rasters</strong></p><br/>
@@ -22,8 +22,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
     <a href="#RelationshipClassRelSP_SP_member">RelSP_SP_member</a><br/><a href="#RelationshipClassRelSP_SP_officialDocument">RelSP_SP_officialDocument</a><br/><a href="#RelationshipClassRelSP_SP_ordinance">RelSP_SP_ordinance</a><br/><a href="#RelationshipClassRelSP_SP_restriction">RelSP_SP_restriction</a><br/><a href="#RelationshipClassRelSR_SR_SR">RelSR_SR_SR</a><br/><a href="#RelationshipClassRelSR_SR_dimensioningIndication">RelSR_SR_dimensioningIndication</a><br/><a href="#RelationshipClassRelSR_SR_officialDocument">RelSR_SR_officialDocument</a><br/><a href="#RelationshipClassRelSR_SR_specificRegulation">RelSR_SR_specificRegulation</a><br/><a href="#RelationshipClassRelZE_ZE_dimensioningIndication">RelZE_ZE_dimensioningIndication</a><br/><a href="#RelationshipClassRelZE_ZE_hilucsLandUse">RelZE_ZE_hilucsLandUse</a><br/><a href="#RelationshipClassRelZE_ZE_hilucsPresence">RelZE_ZE_hilucsPresence</a><br/><a href="#RelationshipClassRelZE_ZE_officialDocument">RelZE_ZE_officialDocument</a><br/><a href="#RelationshipClassRelZE_ZE_specificLandUse">RelZE_ZE_specificLandUse</a><br/><a href="#RelationshipClassRelZE_ZE_specificPresence">RelZE_ZE_specificPresence</a><br/>
 <p/>
 <hr/><br/><a name="Domains"/>
-<p><strong>Domains</strong></p><a href="#DomainDomainExample">DomainExample</a><br/>
-<p/>
+<p><strong>Domains</strong></p>
+   <a href="#DomainRegulationNatureValue">RegulationNatureValue</a><br/><a href="#DomainProcessStepGeneralValue">ProcessStepGeneralValue</a><br/><a href="#DomainHILUCSValue">HILUCSValue</a><br/>
     <p><hr/><br/><a name="FeatureClassSpatialPlan"/>
 <p><strong>SpatialPlan - FeatureClass</strong></p>
 <p>
@@ -97,28 +97,6 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">Geometry</td>
 <td width="3%">0</td>
 <td width="8%">SHAPE</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">SHAPE_Length</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Length</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">SHAPE_Area</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Area</td>
 <td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
@@ -284,8 +262,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">planTypeName_href</td>
-<td width="8%">URI from the PlanTypeNameValue Codelist.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - PlanTypeNameValue <a href="https://inspire.ec.europa.eu/codelist/PlanTypeNameValue">https://inspire.ec.europa.eu/codelist/PlanTypeNameValue</a></td>
+<td width="8%"><a href="#DomainPlanTypeNameValue">PlanTypeNameValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -306,8 +284,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">processStepGeneral_href</td>
-<td width="8%">URI from the ProcessStepGeneralValue Codelist.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - ProcessStepGeneralValue <a href="https://inspire.ec.europa.eu/codelist/ProcessStepGeneralValue">https://inspire.ec.europa.eu/codelist/ProcessStepGeneralValue</a></td>
+<td width="8%"><a href="#DomainProcessStepGeneralValue">ProcessStepGeneralValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -329,6 +307,28 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">8</td>
 <td width="8%">validTo</td>
 <td width="8%">Date and time at which the address component ceased or will cease to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -410,28 +410,6 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">Geometry</td>
 <td width="3%">0</td>
 <td width="8%">SHAPE</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">SHAPE_Length</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Length</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">SHAPE_Area</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Area</td>
 <td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
@@ -571,6 +549,17 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
+<td width="8%">name_3</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">name_3</td>
+<td width="8%">Official name of the supplementary regulation</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
 <td width="8%">plan</td>
 <td width="8%">Integer</td>
 <td width="3%">4</td>
@@ -586,7 +575,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">processStepGeneral</td>
-<td width="8%">General indication of the step of the planning process that the plan is undergoing. Value from the ProcessStepGeneralValue Codelist.</td>
+<td width="8%">General indication of the step of the planning process that the plan is undergoing. </td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -597,8 +586,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">processStepGeneral_href</td>
-<td width="8%">URI from the ProcessStepGeneralValue Codelist.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - ProcessStepGeneralValue <a href="https://inspire.ec.europa.eu/codelist/ProcessStepGeneralValue">https://inspire.ec.europa.eu/codelist/ProcessStepGeneralValue</a></td>
+<td width="8%"><a href="#DomainProcessStepGeneralValue">ProcessStepGeneralValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -608,7 +597,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">regulationNature</td>
-<td width="8%">Legal nature of the land use indication. Value from the RegulationNatureValue Codelist.</td>
+<td width="8%">Legal nature of the land use indication. </td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -619,8 +608,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">regulationNature_href</td>
-<td width="8%">Legal nature of the land use indication. URI from the RegulationNatureValue Codelist.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - RegulationNatureValue <a href="https://inspire.ec.europa.eu/codelist/RegulationNatureValue">https://inspire.ec.europa.eu/codelist/RegulationNatureValue</a></td>
+<td width="8%"><a href="#DomainRegulationNatureValue">RegulationNatureValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -653,6 +642,28 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">8</td>
 <td width="8%">validTo</td>
 <td width="8%">Date and time at which the address component ceased or will cease to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -734,28 +745,6 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">Geometry</td>
 <td width="3%">0</td>
 <td width="8%">SHAPE</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">SHAPE_Length</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Length</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">SHAPE_Area</td>
-<td width="8%">Double</td>
-<td width="3%">8</td>
-<td width="8%">SHAPE_Area</td>
 <td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
@@ -877,7 +866,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">processStepGeneral</td>
-<td width="8%">General indication of the step of the planning process that the plan is undergoing. Value from the ProcessStepGeneralValue Codelist.</td>
+<td width="8%">General indication of the step of the planning process that the plan is undergoing. </td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -888,8 +877,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">processStepGeneral_href</td>
-<td width="8%">URI from the ProcessStepGeneralValue Codelist.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - ProcessStepGeneralValue <a href="https://inspire.ec.europa.eu/codelist/ProcessStepGeneralValue">https://inspire.ec.europa.eu/codelist/ProcessStepGeneralValue</a></td>
+<td width="8%"><a href="#DomainProcessStepGeneralValue">ProcessStepGeneralValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -933,6 +922,28 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="3%">8</td>
 <td width="8%">validTo</td>
 <td width="8%">Date and time at which the address component ceased or will cease to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1053,7 +1064,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">legislationCitation_level</td>
-<td width="8%">The level at which the legislative instrument is adopted. Value from the LegislationLevelValue Codelist.</td>
+<td width="8%">The level at which the legislative instrument is adopted. </td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1064,8 +1075,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">legislationCitation_level_href</td>
-<td width="8%">The level at which the legislative instrument is adopted. URI from the LegislationLevelValue Codelist.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - LegislationLevelValue <a href="https://inspire.ec.europa.eu/codelist/LegislationLevelValue">https://inspire.ec.europa.eu/codelist/LegislationLevelValue</a></td>
+<td width="8%"><a href="#DomainLegislationLevelValue">LegislationLevelValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -1119,7 +1130,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">planDocument_level</td>
-<td width="8%">The level at which the legislative instrument is adopted. Value from the LegislationLevelValue Codelist.</td>
+<td width="8%">The level at which the legislative instrument is adopted. </td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1130,8 +1141,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">planDocument_level_href</td>
-<td width="8%">The level at which the legislative instrument is adopted. URI from the LegislationLevelValue Codelist.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - LegislationLevelValue <a href="https://inspire.ec.europa.eu/codelist/LegislationLevelValue">https://inspire.ec.europa.eu/codelist/LegislationLevelValue</a></td>
+<td width="8%"><a href="#DomainLegislationLevelValue">LegislationLevelValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -1772,7 +1783,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">specificSupRegulation</td>
-<td width="8%">Reference to a category of supplementary regulation provided in a specific nomenclature of supplementary regulations provided by the data provider. Value from the SpecificSupplementaryRegulationValue Codelist</td>
+<td width="8%">Reference to a category of supplementary regulation provided in a specific nomenclature of supplementary regulations provided by the data provider.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1783,8 +1794,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">specificSupRegulation_href</td>
-<td width="8%">Reference to a category of supplementary regulation provided in a specific nomenclature of supplementary regulations provided by the data provider. URI from the SpecificSupplementaryRegulationValue Codelist</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - SpecificSupplementaryRegulationValue <a href="https://inspire.ec.europa.eu/codelist/SpecificSupplementaryRegulationValue">https://inspire.ec.europa.eu/codelist/SpecificSupplementaryRegulationValue</a></td>
+<td width="8%"><a href="#DomainSpecificSupplementaryRegulationValue">SpecificSupplementaryRegulationValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -1859,7 +1870,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">supplementaryRegulation</td>
-<td width="8%">Code of the supplementary regulation from the hierarchical supplementary regulation code list agreed at the European level. Value from the SupplementaryRegulationValue Codelist.</td>
+<td width="8%">Code of the supplementary regulation from the hierarchical supplementary regulation code list agreed at the European level. </td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -1870,8 +1881,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">supplementaryRegulation_href</td>
-<td width="8%">Code of the supplementary regulation from the hierarchical supplementary regulation code list agreed at the European level. URI from the SupplementaryRegulationValue Codelist.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - SupplementaryRegulationValue <a href="https://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue">https://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue</a></td>
+<td width="8%"><a href="#DomainSupplementaryRegulationValue">SupplementaryRegulationValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -2066,7 +2077,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">hilucsLandUse</td>
-<td width="8%">Land use HILUCS class that is dominant in this land use object. Value from the HILUCSValue Codelist.</td>
+<td width="8%">Land use HILUCS class that is dominant in this land use object. </td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -2077,8 +2088,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">hilucsLandUse_href</td>
-<td width="8%">Land use HILUCS class that is dominant in this land use object. URI from the HILUCSValue Codelist.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - HILUCSValue <a href="https://inspire.ec.europa.eu/codelist/HILUCSValue">https://inspire.ec.europa.eu/codelist/HILUCSValue</a></td>
+<td width="8%"><a href="#DomainHILUCSValue">HILUCSValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -2164,8 +2175,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">orderedList_href</td>
-<td width="8%">URI from the HILUCSValue Codelist.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - HILUCSValue <a href="https://inspire.ec.europa.eu/codelist/HILUCSValue">https://inspire.ec.europa.eu/codelist/HILUCSValue</a></td>
+<td width="8%"><a href="#DomainHILUCSValue">HILUCSValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -2175,7 +2186,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">percentage_hilucsValue</td>
-<td width="8%">Land use HILUCS classes that are present in this existing land use sample.</td>
+<td width="8%">Land use HILUCS classes that are present in this existing land use sample. </td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -2186,8 +2197,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">percentage_hilucsValue_href</td>
-<td width="8%">URI from the HILUCSValue Codelist.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - HILUCSValue <a href="https://inspire.ec.europa.eu/codelist/HILUCSValue">https://inspire.ec.europa.eu/codelist/HILUCSValue</a></td>
+<td width="8%"><a href="#DomainHILUCSValue">HILUCSValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -2360,7 +2371,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">specificLandUse</td>
-<td width="8%">Specific value category for this specific percentage. Value from the LandUseClassificationValue Codelist.</td>
+<td width="8%">Specific value category for this specific percentage.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -2371,8 +2382,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">specificLandUse_href</td>
-<td width="8%">Specific value category for this specific percentage. Value from the LandUseClassificationValue Codelist.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - LandUseClassificationValue <a href="https://inspire.ec.europa.eu/codelist/LandUseClassificationValue">https://inspire.ec.europa.eu/codelist/LandUseClassificationValue</a></td>
+<td width="8%"><a href="#DomainLandUseClassificationValue">LandUseClassificationValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -2436,7 +2447,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">orderedList</td>
-<td width="8%">LandUseClassificationValue</td>
+<td width="8%">Presence of one or several land use classification values in an area according to the code list</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -2447,8 +2458,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">orderedList_href</td>
-<td width="8%">LandUseClassificationValue</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - LandUseClassificationValue <a href="https://inspire.ec.europa.eu/codelist/LandUseClassificationValue">https://inspire.ec.europa.eu/codelist/LandUseClassificationValue</a></td>
+<td width="8%"><a href="#DomainLandUseClassificationValue">LandUseClassificationValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -2469,7 +2480,7 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">percentage_specificValue</td>
-<td width="8%">LandUseClassificationValue</td>
+<td width="8%">Presence of one or several land use classification values in an area according to the code list</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -2480,8 +2491,8 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">percentage_specificValue_href</td>
-<td width="8%">LandUseClassificationValue</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - LandUseClassificationValue <a href="https://inspire.ec.europa.eu/codelist/LandUseClassificationValue">https://inspire.ec.europa.eu/codelist/LandUseClassificationValue</a></td>
+<td width="8%"><a href="#DomainLandUseClassificationValue">LandUseClassificationValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -3412,14 +3423,15 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 </tr>
 </tbody>
 </table></p>
-<hr/><a name="DomainDomainExample"/>
-<p><strong>DomainExample - Domain</strong></p>
+    <p>
+    <hr/><a name="DomainRegulationNatureValue"/>
+<p><strong>RegulationNatureValue - Domain</strong></p>
 <p>
 <table width="100%" style="border-color: white">
 <tbody>
 <tr>
 <td width="12%" style="border-color: white"><strong>DomainName</strong></td>
-<td width="*" style="border-color: white">DomainExample</td>
+<td width="*" style="border-color: white">RegulationNatureValue</td>
 </tr>
 <tr>
 <td width="12%" style="border-color: white"><strong>FieldType</strong></td>
@@ -3440,15 +3452,956 @@ Classes</a><br/><a href="#Domains">1 Domain</a><br/></p>
 </tr>
 <tr>
 <tr>
-<td width="20%">Val1</td>
-<td width="20%">Val1</td>
-</tr>
-<tr>
-<td width="20%">Val2</td>
-<td width="20%">Val2</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/bindingForDevelopers</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/bindingForDevelopers</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/bindingOnlyForAuthorities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/bindingOnlyForAuthorities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/generallyBinding</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/generallyBinding</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/nonBinding</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/nonBinding</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/definedInLegislation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/definedInLegislation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_Forestry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_Forestry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_1_ForestryBasedOnShortRotation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_1_ForestryBasedOnShortRotation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_2_ForestryBasedOnIntermediateOrLongRotation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_2_ForestryBasedOnIntermediateOrLongRotation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_3_ForestryBasedOnContinuousCover</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_3_ForestryBasedOnContinuousCover</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_MiningAndQuarrying</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_MiningAndQuarrying</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_1_MiningOfEnergyProducingMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_1_MiningOfEnergyProducingMaterials</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_2_MiningOfMetalOres</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_2_MiningOfMetalOres</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_3_OtherMiningAndQuarrying</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_3_OtherMiningAndQuarrying</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_AquacultureAndFishing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_AquacultureAndFishing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_1_Aquaculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_1_Aquaculture</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_2_ProfessionalFishing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_2_ProfessionalFishing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_OtherPrimaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_OtherPrimaryProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_1_Hunting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_1_Hunting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_2_ManagementOfMigratoryAnimals</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_2_ManagementOfMigratoryAnimals</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_3_PickingOfNaturalProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_3_PickingOfNaturalProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_SecondaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_SecondaryProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_RawIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_RawIndustry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_1_ManufacturingOfTextileProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_1_ManufacturingOfTextileProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_2_ManufacturingOfWoodAndWoodBasedProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_2_ManufacturingOfWoodAndWoodBasedProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_3_ManufacturingOfPulpPaperAndPaperProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_3_ManufacturingOfPulpPaperAndPaperProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_4_ManufacturingOfCokeRefinedPetroleumProductsAndNuclearFuel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_4_ManufacturingOfCokeRefinedPetroleumProductsAndNuclearFuel</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_5_ManufacturingOfChemicalsChemicalProductsManMadeFibers</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_5_ManufacturingOfChemicalsChemicalProductsManMadeFibers</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_6_ManufacturingOfBasicMetalsAndFabricatedMetals</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_6_ManufacturingOfBasicMetalsAndFabricatedMetals</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_7_ManufacturingOfNonMetallicMineralProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_7_ManufacturingOfNonMetallicMineralProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_8_ManufacturingOfRubberPlasticProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_8_ManufacturingOfRubberPlasticProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_9_ManufacturingOfOtherRawMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_9_ManufacturingOfOtherRawMaterials</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_HeavyEndProductIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_HeavyEndProductIndustry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_1_ManufacturingOfMachinery</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_1_ManufacturingOfMachinery</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_2_ManufacturingOfVehiclesAndTransportEquipment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_2_ManufacturingOfVehiclesAndTransportEquipment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_3_ManufacturingOfOtherHeavyEndProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_3_ManufacturingOfOtherHeavyEndProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_LightEndProductIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_LightEndProductIndustry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_1_ManufacturingOfFoodBeveragesAndTobaccoProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_1_ManufacturingOfFoodBeveragesAndTobaccoProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_2_ManufacturingOfClothesAndLeather</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_2_ManufacturingOfClothesAndLeather</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_3_PublishingAndPrinting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_3_PublishingAndPrinting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_4_ManufacturingOfElectricalAndOpticalEquipment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_4_ManufacturingOfElectricalAndOpticalEquipment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_5_ManufacturingOfOtherLightEndProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_5_ManufacturingOfOtherLightEndProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_EnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_EnergyProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_1_NuclearBasedEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_1_NuclearBasedEnergyProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_2_FossilFuelBasedEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_2_FossilFuelBasedEnergyProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_3_BiomassBasedEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_3_BiomassBasedEnergyProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_4_RenewableEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_4_RenewableEnergyProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_5_OtherIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_5_OtherIndustry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_TertiaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_TertiaryProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_CommercialServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_CommercialServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_1_WholesaleAndRetailTradeAndRepairOfVehiclesAndPersonalAndHouseholdGoods</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_1_WholesaleAndRetailTradeAndRepairOfVehiclesAndPersonalAndHouseholdGoods</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_2_RealEstateServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_2_RealEstateServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_3_AccommodationAndFoodServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_3_AccommodationAndFoodServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_4_OtherCommercialServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_4_OtherCommercialServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_FinancialProfessionalAndInformationServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_FinancialProfessionalAndInformationServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_1_FinancialAndInsuranceServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_1_FinancialAndInsuranceServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_2_ProfessionalTechnicalAndScientificServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_2_ProfessionalTechnicalAndScientificServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_3_InformationAndCommunicationServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_3_InformationAndCommunicationServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_4_AdministrativeAndSupportServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_4_AdministrativeAndSupportServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_5_OtherFinancialProfessionalAndInformationServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_5_OtherFinancialProfessionalAndInformationServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_CommunityServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_CommunityServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_1_PublicAdministrationDefenceAndSocialSecurityServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_1_PublicAdministrationDefenceAndSocialSecurityServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_2_EducationalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_2_EducationalServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_3_HealthAndSocialServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_3_HealthAndSocialServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_4_ReligiousServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_4_ReligiousServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_5_OtherCommunityServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_5_OtherCommunityServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_CulturalEntertainmentAndRecreationalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_CulturalEntertainmentAndRecreationalServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_1_CulturalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_1_CulturalServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_2_EntertainmentServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_2_EntertainmentServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_3_SportsInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_3_SportsInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_4_OpenAirRecreationalAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_4_OpenAirRecreationalAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_5_OtherRecreationalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_5_OtherRecreationalServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_5_OtherServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_5_OtherServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_TransportNetworksLogisticsAndUtilities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_TransportNetworksLogisticsAndUtilities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_TransportNetworks</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_TransportNetworks</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_1_RoadTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_1_RoadTransport</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_2_RailwayTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_2_RailwayTransport</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_3_AirTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_3_AirTransport</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_4_WaterTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_4_WaterTransport</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_5_OtherTransportNetwork</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_5_OtherTransportNetwork</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_2_LogisticalAndStorageServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_2_LogisticalAndStorageServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_Utilities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_Utilities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_1_ElectricityGasAndThermalPowerDistributionServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_1_ElectricityGasAndThermalPowerDistributionServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_2_WaterAndSewageInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_2_WaterAndSewageInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_3_WasteTreatment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_3_WasteTreatment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_4_OtherUtilities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_4_OtherUtilities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_ResidentialUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_ResidentialUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_1_PermanentResidentialUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_1_PermanentResidentialUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_2_ResidentialUseWithOtherCompatibleUses</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_2_ResidentialUseWithOtherCompatibleUses</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_3_OtherResidentialUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_3_OtherResidentialUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_OtherUses</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_OtherUses</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_1_TransitionalAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_1_TransitionalAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_2_AbandonedAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_2_AbandonedAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_NaturalAreasNotInOtherEconomicUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_NaturalAreasNotInOtherEconomicUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_1_LandAreasNotInOtherEconomicUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_1_LandAreasNotInOtherEconomicUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_2_WaterAreasNotInOtherEconomicUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_2_WaterAreasNotInOtherEconomicUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_4_AreasWhereAnyUseAllowed</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_4_AreasWhereAnyUseAllowed</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_5_AreasWithoutAnySpecifiedPlannedUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_5_AreasWithoutAnySpecifiedPlannedUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_6_NotKnownUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_6_NotKnownUse</td>
 </tr>
 </tr>
 </tbody>
 </table>
 </p>
-<hr/>
+</p><p>
+    <hr/><a name="DomainProcessStepGeneralValue"/>
+<p><strong>ProcessStepGeneralValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">ProcessStepGeneralValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ProcessStepGeneralValue/adoption</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ProcessStepGeneralValue/adoption</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ProcessStepGeneralValue/elaboration</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ProcessStepGeneralValue/elaboration</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ProcessStepGeneralValue/legalForce</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ProcessStepGeneralValue/legalForce</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ProcessStepGeneralValue/obsolete</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ProcessStepGeneralValue/obsolete</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/definedInLegislation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/definedInLegislation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_Forestry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_Forestry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_1_ForestryBasedOnShortRotation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_1_ForestryBasedOnShortRotation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_2_ForestryBasedOnIntermediateOrLongRotation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_2_ForestryBasedOnIntermediateOrLongRotation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_3_ForestryBasedOnContinuousCover</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_3_ForestryBasedOnContinuousCover</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_MiningAndQuarrying</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_MiningAndQuarrying</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_1_MiningOfEnergyProducingMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_1_MiningOfEnergyProducingMaterials</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_2_MiningOfMetalOres</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_2_MiningOfMetalOres</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_3_OtherMiningAndQuarrying</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_3_OtherMiningAndQuarrying</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_AquacultureAndFishing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_AquacultureAndFishing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_1_Aquaculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_1_Aquaculture</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_2_ProfessionalFishing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_2_ProfessionalFishing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_OtherPrimaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_OtherPrimaryProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_1_Hunting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_1_Hunting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_2_ManagementOfMigratoryAnimals</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_2_ManagementOfMigratoryAnimals</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_3_PickingOfNaturalProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_3_PickingOfNaturalProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_SecondaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_SecondaryProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_RawIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_RawIndustry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_1_ManufacturingOfTextileProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_1_ManufacturingOfTextileProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_2_ManufacturingOfWoodAndWoodBasedProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_2_ManufacturingOfWoodAndWoodBasedProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_3_ManufacturingOfPulpPaperAndPaperProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_3_ManufacturingOfPulpPaperAndPaperProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_4_ManufacturingOfCokeRefinedPetroleumProductsAndNuclearFuel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_4_ManufacturingOfCokeRefinedPetroleumProductsAndNuclearFuel</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_5_ManufacturingOfChemicalsChemicalProductsManMadeFibers</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_5_ManufacturingOfChemicalsChemicalProductsManMadeFibers</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_6_ManufacturingOfBasicMetalsAndFabricatedMetals</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_6_ManufacturingOfBasicMetalsAndFabricatedMetals</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_7_ManufacturingOfNonMetallicMineralProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_7_ManufacturingOfNonMetallicMineralProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_8_ManufacturingOfRubberPlasticProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_8_ManufacturingOfRubberPlasticProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_9_ManufacturingOfOtherRawMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_9_ManufacturingOfOtherRawMaterials</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_HeavyEndProductIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_HeavyEndProductIndustry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_1_ManufacturingOfMachinery</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_1_ManufacturingOfMachinery</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_2_ManufacturingOfVehiclesAndTransportEquipment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_2_ManufacturingOfVehiclesAndTransportEquipment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_3_ManufacturingOfOtherHeavyEndProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_3_ManufacturingOfOtherHeavyEndProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_LightEndProductIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_LightEndProductIndustry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_1_ManufacturingOfFoodBeveragesAndTobaccoProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_1_ManufacturingOfFoodBeveragesAndTobaccoProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_2_ManufacturingOfClothesAndLeather</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_2_ManufacturingOfClothesAndLeather</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_3_PublishingAndPrinting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_3_PublishingAndPrinting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_4_ManufacturingOfElectricalAndOpticalEquipment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_4_ManufacturingOfElectricalAndOpticalEquipment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_5_ManufacturingOfOtherLightEndProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_5_ManufacturingOfOtherLightEndProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_EnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_EnergyProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_1_NuclearBasedEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_1_NuclearBasedEnergyProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_2_FossilFuelBasedEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_2_FossilFuelBasedEnergyProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_3_BiomassBasedEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_3_BiomassBasedEnergyProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_4_RenewableEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_4_RenewableEnergyProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_5_OtherIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_5_OtherIndustry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_TertiaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_TertiaryProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_CommercialServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_CommercialServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_1_WholesaleAndRetailTradeAndRepairOfVehiclesAndPersonalAndHouseholdGoods</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_1_WholesaleAndRetailTradeAndRepairOfVehiclesAndPersonalAndHouseholdGoods</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_2_RealEstateServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_2_RealEstateServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_3_AccommodationAndFoodServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_3_AccommodationAndFoodServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_4_OtherCommercialServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_4_OtherCommercialServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_FinancialProfessionalAndInformationServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_FinancialProfessionalAndInformationServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_1_FinancialAndInsuranceServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_1_FinancialAndInsuranceServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_2_ProfessionalTechnicalAndScientificServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_2_ProfessionalTechnicalAndScientificServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_3_InformationAndCommunicationServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_3_InformationAndCommunicationServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_4_AdministrativeAndSupportServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_4_AdministrativeAndSupportServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_5_OtherFinancialProfessionalAndInformationServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_5_OtherFinancialProfessionalAndInformationServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_CommunityServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_CommunityServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_1_PublicAdministrationDefenceAndSocialSecurityServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_1_PublicAdministrationDefenceAndSocialSecurityServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_2_EducationalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_2_EducationalServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_3_HealthAndSocialServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_3_HealthAndSocialServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_4_ReligiousServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_4_ReligiousServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_5_OtherCommunityServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_5_OtherCommunityServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_CulturalEntertainmentAndRecreationalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_CulturalEntertainmentAndRecreationalServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_1_CulturalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_1_CulturalServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_2_EntertainmentServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_2_EntertainmentServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_3_SportsInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_3_SportsInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_4_OpenAirRecreationalAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_4_OpenAirRecreationalAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_5_OtherRecreationalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_5_OtherRecreationalServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_5_OtherServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_5_OtherServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_TransportNetworksLogisticsAndUtilities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_TransportNetworksLogisticsAndUtilities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_TransportNetworks</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_TransportNetworks</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_1_RoadTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_1_RoadTransport</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_2_RailwayTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_2_RailwayTransport</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_3_AirTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_3_AirTransport</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_4_WaterTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_4_WaterTransport</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_5_OtherTransportNetwork</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_5_OtherTransportNetwork</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_2_LogisticalAndStorageServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_2_LogisticalAndStorageServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_Utilities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_Utilities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_1_ElectricityGasAndThermalPowerDistributionServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_1_ElectricityGasAndThermalPowerDistributionServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_2_WaterAndSewageInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_2_WaterAndSewageInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_3_WasteTreatment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_3_WasteTreatment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_4_OtherUtilities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_4_OtherUtilities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_ResidentialUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_ResidentialUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_1_PermanentResidentialUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_1_PermanentResidentialUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_2_ResidentialUseWithOtherCompatibleUses</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_2_ResidentialUseWithOtherCompatibleUses</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_3_OtherResidentialUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_3_OtherResidentialUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_OtherUses</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_OtherUses</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_1_TransitionalAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_1_TransitionalAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_2_AbandonedAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_2_AbandonedAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_NaturalAreasNotInOtherEconomicUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_NaturalAreasNotInOtherEconomicUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_1_LandAreasNotInOtherEconomicUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_1_LandAreasNotInOtherEconomicUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_2_WaterAreasNotInOtherEconomicUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_2_WaterAreasNotInOtherEconomicUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_4_AreasWhereAnyUseAllowed</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_4_AreasWhereAnyUseAllowed</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_5_AreasWithoutAnySpecifiedPlannedUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_5_AreasWithoutAnySpecifiedPlannedUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_6_NotKnownUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_6_NotKnownUse</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainHILUCSValue"/>
+<p><strong>HILUCSValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">HILUCSValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_PrimaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_PrimaryProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_1_Agriculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_1_Agriculture</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_1_1_CommercialAgriculturalProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_1_1_CommercialAgriculturalProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_1_2_FarmingInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_1_2_FarmingInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_1_3_AgriculturalProductionForOwnConsumption</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_1_3_AgriculturalProductionForOwnConsumption</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_Forestry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_Forestry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_1_ForestryBasedOnShortRotation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_1_ForestryBasedOnShortRotation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_2_ForestryBasedOnIntermediateOrLongRotation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_2_ForestryBasedOnIntermediateOrLongRotation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_3_ForestryBasedOnContinuousCover</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_3_ForestryBasedOnContinuousCover</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_MiningAndQuarrying</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_MiningAndQuarrying</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_1_MiningOfEnergyProducingMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_1_MiningOfEnergyProducingMaterials</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_2_MiningOfMetalOres</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_2_MiningOfMetalOres</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_3_OtherMiningAndQuarrying</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_3_OtherMiningAndQuarrying</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_AquacultureAndFishing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_AquacultureAndFishing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_1_Aquaculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_1_Aquaculture</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_2_ProfessionalFishing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_2_ProfessionalFishing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_OtherPrimaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_OtherPrimaryProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_1_Hunting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_1_Hunting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_2_ManagementOfMigratoryAnimals</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_2_ManagementOfMigratoryAnimals</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_3_PickingOfNaturalProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_3_PickingOfNaturalProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_SecondaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_SecondaryProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_RawIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_RawIndustry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_1_ManufacturingOfTextileProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_1_ManufacturingOfTextileProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_2_ManufacturingOfWoodAndWoodBasedProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_2_ManufacturingOfWoodAndWoodBasedProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_3_ManufacturingOfPulpPaperAndPaperProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_3_ManufacturingOfPulpPaperAndPaperProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_4_ManufacturingOfCokeRefinedPetroleumProductsAndNuclearFuel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_4_ManufacturingOfCokeRefinedPetroleumProductsAndNuclearFuel</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_5_ManufacturingOfChemicalsChemicalProductsManMadeFibers</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_5_ManufacturingOfChemicalsChemicalProductsManMadeFibers</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_6_ManufacturingOfBasicMetalsAndFabricatedMetals</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_6_ManufacturingOfBasicMetalsAndFabricatedMetals</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_7_ManufacturingOfNonMetallicMineralProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_7_ManufacturingOfNonMetallicMineralProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_8_ManufacturingOfRubberPlasticProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_8_ManufacturingOfRubberPlasticProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_9_ManufacturingOfOtherRawMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_9_ManufacturingOfOtherRawMaterials</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_HeavyEndProductIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_HeavyEndProductIndustry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_1_ManufacturingOfMachinery</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_1_ManufacturingOfMachinery</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_2_ManufacturingOfVehiclesAndTransportEquipment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_2_ManufacturingOfVehiclesAndTransportEquipment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_3_ManufacturingOfOtherHeavyEndProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_3_ManufacturingOfOtherHeavyEndProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_LightEndProductIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_LightEndProductIndustry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_1_ManufacturingOfFoodBeveragesAndTobaccoProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_1_ManufacturingOfFoodBeveragesAndTobaccoProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_2_ManufacturingOfClothesAndLeather</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_2_ManufacturingOfClothesAndLeather</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_3_PublishingAndPrinting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_3_PublishingAndPrinting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_4_ManufacturingOfElectricalAndOpticalEquipment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_4_ManufacturingOfElectricalAndOpticalEquipment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_5_ManufacturingOfOtherLightEndProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_5_ManufacturingOfOtherLightEndProducts</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_EnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_EnergyProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_1_NuclearBasedEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_1_NuclearBasedEnergyProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_2_FossilFuelBasedEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_2_FossilFuelBasedEnergyProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_3_BiomassBasedEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_3_BiomassBasedEnergyProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_4_RenewableEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_4_RenewableEnergyProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_5_OtherIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_5_OtherIndustry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_TertiaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_TertiaryProduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_CommercialServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_CommercialServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_1_WholesaleAndRetailTradeAndRepairOfVehiclesAndPersonalAndHouseholdGoods</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_1_WholesaleAndRetailTradeAndRepairOfVehiclesAndPersonalAndHouseholdGoods</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_2_RealEstateServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_2_RealEstateServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_3_AccommodationAndFoodServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_3_AccommodationAndFoodServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_4_OtherCommercialServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_4_OtherCommercialServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_FinancialProfessionalAndInformationServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_FinancialProfessionalAndInformationServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_1_FinancialAndInsuranceServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_1_FinancialAndInsuranceServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_2_ProfessionalTechnicalAndScientificServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_2_ProfessionalTechnicalAndScientificServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_3_InformationAndCommunicationServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_3_InformationAndCommunicationServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_4_AdministrativeAndSupportServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_4_AdministrativeAndSupportServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_5_OtherFinancialProfessionalAndInformationServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_5_OtherFinancialProfessionalAndInformationServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_CommunityServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_CommunityServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_1_PublicAdministrationDefenceAndSocialSecurityServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_1_PublicAdministrationDefenceAndSocialSecurityServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_2_EducationalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_2_EducationalServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_3_HealthAndSocialServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_3_HealthAndSocialServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_4_ReligiousServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_4_ReligiousServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_5_OtherCommunityServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_5_OtherCommunityServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_CulturalEntertainmentAndRecreationalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_CulturalEntertainmentAndRecreationalServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_1_CulturalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_1_CulturalServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_2_EntertainmentServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_2_EntertainmentServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_3_SportsInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_3_SportsInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_4_OpenAirRecreationalAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_4_OpenAirRecreationalAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_5_OtherRecreationalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_5_OtherRecreationalServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_5_OtherServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_5_OtherServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_TransportNetworksLogisticsAndUtilities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_TransportNetworksLogisticsAndUtilities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_TransportNetworks</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_TransportNetworks</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_1_RoadTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_1_RoadTransport</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_2_RailwayTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_2_RailwayTransport</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_3_AirTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_3_AirTransport</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_4_WaterTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_4_WaterTransport</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_5_OtherTransportNetwork</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_5_OtherTransportNetwork</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_2_LogisticalAndStorageServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_2_LogisticalAndStorageServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_Utilities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_Utilities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_1_ElectricityGasAndThermalPowerDistributionServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_1_ElectricityGasAndThermalPowerDistributionServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_2_WaterAndSewageInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_2_WaterAndSewageInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_3_WasteTreatment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_3_WasteTreatment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_4_OtherUtilities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_4_OtherUtilities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_ResidentialUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_ResidentialUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_1_PermanentResidentialUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_1_PermanentResidentialUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_2_ResidentialUseWithOtherCompatibleUses</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_2_ResidentialUseWithOtherCompatibleUses</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_3_OtherResidentialUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_3_OtherResidentialUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_OtherUses</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_OtherUses</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_1_TransitionalAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_1_TransitionalAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_2_AbandonedAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_2_AbandonedAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_NaturalAreasNotInOtherEconomicUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_NaturalAreasNotInOtherEconomicUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_1_LandAreasNotInOtherEconomicUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_1_LandAreasNotInOtherEconomicUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_2_WaterAreasNotInOtherEconomicUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_2_WaterAreasNotInOtherEconomicUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_4_AreasWhereAnyUseAllowed</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_4_AreasWhereAnyUseAllowed</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_5_AreasWithoutAnySpecifiedPlannedUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_5_AreasWithoutAnySpecifiedPlannedUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_6_NotKnownUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_6_NotKnownUse</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
