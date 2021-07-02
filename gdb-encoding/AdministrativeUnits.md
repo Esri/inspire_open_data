@@ -72,7 +72,7 @@ This section describes which transformation rules with which parameters are appl
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
 |nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
-|||nationalLevel_href|Text|
+||AdministrativeHierarchyLevel|nationalLevel_href|Text|
 |nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
 |||nationalLevelName_1_locale|Text|
 |||nationalLevelName_2|Text|
@@ -108,7 +108,7 @@ This section describes which transformation rules with which parameters are appl
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
 |nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
-|||nationalLevel_href|Text|
+||AdministrativeHierarchyLevel|nationalLevel_href|Text|
 |nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
 |||nationalLevelName_1_locale|Text|
 |||nationalLevelName_2|Text|
@@ -144,7 +144,7 @@ This section describes which transformation rules with which parameters are appl
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
 |nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
-|||nationalLevel_href|Text|
+||AdministrativeHierarchyLevel|nationalLevel_href|Text|
 |nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
 |||nationalLevelName_1_locale|Text|
 |||nationalLevelName_2|Text|
@@ -180,7 +180,7 @@ This section describes which transformation rules with which parameters are appl
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
 |nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
-|||nationalLevel_href|Text|
+||AdministrativeHierarchyLevel|nationalLevel_href|Text|
 |nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
 |||nationalLevelName_1_locale|Text|
 |||nationalLevelName_2|Text|
@@ -216,7 +216,7 @@ This section describes which transformation rules with which parameters are appl
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
 |nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
-|||nationalLevel_href|Text|
+||AdministrativeHierarchyLevel|nationalLevel_href|Text|
 |nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
 |||nationalLevelName_1_locale|Text|
 |||nationalLevelName_2|Text|
@@ -252,7 +252,7 @@ This section describes which transformation rules with which parameters are appl
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
 |nationalLevel|AdministrativeHierarchyLevel|nationalLevel|Text|
-|||nationalLevel_href|Text|
+||AdministrativeHierarchyLevel|nationalLevel_href|Text|
 |nationalLevelName|LocalisedCharacterString|nationalLevelName_1|Text|
 |||nationalLevelName_1_locale|Text|
 |||nationalLevelName_2|Text|

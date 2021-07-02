@@ -54,7 +54,7 @@ This section describes which transformation rules with which parameters are appl
 |relatedSpatialObject|Identifier|relatedSpatialObject_localId|Text|
 |||relatedSpatialObject_namespace|Text|
 |||relatedSpatialObject_versionId|Text|
-|type|NamedPlaceTypeValue|type|Text|
+|type||type|Text|
 |||type_href|Text|
 
 #### NamedPlaceP
@@ -74,7 +74,7 @@ This section describes which transformation rules with which parameters are appl
 |relatedSpatialObject|Identifier|relatedSpatialObject_localId|Text|
 |||relatedSpatialObject_namespace|Text|
 |||relatedSpatialObject_versionId|Text|
-|type|NamedPlaceTypeValue|type|Text|
+|type||type|Text|
 |||type_href|Text|
 
 #### NamedPlaceS
@@ -94,7 +94,7 @@ This section describes which transformation rules with which parameters are appl
 |relatedSpatialObject|Identifier|relatedSpatialObject_localId|Text|
 |||relatedSpatialObject_namespace|Text|
 |||relatedSpatialObject_versionId|Text|
-|type|NamedPlaceTypeValue|type|Text|
+|type||type|Text|
 |||type_href|Text|
 
 #### NamedPlace_name

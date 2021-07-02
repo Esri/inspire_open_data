@@ -58,8 +58,8 @@ This section describes which transformation rules with which parameters are appl
 |||contact_telephoneFacsimile|Text|
 |||contact_telephoneVoice|Text|
 |||contact_website|Text|
-|serviceType|ServiceTypeValue|serviceType_href|Text|
-|||serviceType|Text|
+|serviceType|ServiceTypeValue|serviceType|Text|
+|||serviceType_href|Text|
 
 #### GovernmentalServiceP
 
@@ -78,8 +78,8 @@ This section describes which transformation rules with which parameters are appl
 |||contact_telephoneFacsimile|Text|
 |||contact_telephoneVoice|Text|
 |||contact_website|Text|
-|serviceType|ServiceTypeValue|serviceType_href|Text|
-|||serviceType|Text|
+|serviceType|ServiceTypeValue|serviceType|Text|
+|||serviceType_href|Text|
 
 #### GovernmentalServiceS
 
@@ -98,8 +98,8 @@ This section describes which transformation rules with which parameters are appl
 |||contact_telephoneFacsimile|Text|
 |||contact_telephoneVoice|Text|
 |||contact_website|Text|
-|serviceType|ServiceTypeValue|serviceType_href|Text|
-|||serviceType|Text|
+|serviceType|ServiceTypeValue|serviceType|Text|
+|||serviceType_href|Text|
 
 #### GovernmentalService_areaOfResponsibility
 

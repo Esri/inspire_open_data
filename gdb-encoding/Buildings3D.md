@@ -44,6 +44,7 @@ This section describes which transformation rules with which parameters are appl
 |------|------|------|------|
 |||featureId|Long|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Text|
+|conditionOfConstruction|ConditionOfFacilityValue|conditionOfConstruction|Text|
 |||conditionOfConstruction_href|Text|
 |dateOfConstruction|DateOfEvent|dateOfConstruction_beginning|Date|
 |||dateOfConstruction_end|Date|
@@ -51,6 +52,9 @@ This section describes which transformation rules with which parameters are appl
 |||dateOfDemolition_end|Date|
 |dateOfRenovation|DateOfEvent|dateOfRenovation_beginning|Date|
 |||dateOfRenovation_end|Date|
+|elevation|Elevation|elevationReference|Text|
+|||elevationReference_href|Text|
+|||elevationValue|Text|
 |endLifespanVersion|DateTime|endLifespanVersion|Text|
 |externalReference|ExternalReference|extRef_informationSystem|Text|
 |||extRef_informationSystemName|Text|
@@ -105,7 +109,8 @@ This section describes which transformation rules with which parameters are appl
 |||dateOfDemolition_end|Text|
 |dateOfRenovation|DateOfEvent|dateOfRenovation_beginning|Text|
 |||dateOfRenovation_end|Text|
-|elevation|Elevation|elevationReference_href|Text|
+|elevation|Elevation|elevationReference|Text|
+|||elevationReference_href|Text|
 |||elevationValue|Text|
 |endLifespanVersion|DateTime|endLifespanVersion|Text|
 |externalReference|ExternalReference|extRef_informationSystem|Text|
@@ -138,7 +143,7 @@ This section describes which transformation rules with which parameters are appl
 |numberOfFloorsAboveGround|Integer|numberOfFloorsAboveGround|Text|
 |geometrySolid|GM_Solid|geometrySolid|Multipatch|
 |verticalGeometryReference3DBottom|ElevationReferenceValue|verticalReference3DBottom|Text|
-|||verticalReference3DBottom|Text|
+|||verticalReference3DBottom_href|Text|
 |horizontalEstimatedAccuracy|Length|horizontalEstimatedAccuracy|Text|
 |verticalEstimatedAccuracy|Length|verticalEstimatedAccuracy|Text|
 |horizontalGeometryReference|HorizontalGeometryReferenceValue|horizontalReference|Text|
@@ -169,14 +174,6 @@ This section describes which transformation rules with which parameters are appl
 |currentUse|CurrentUse|currentUse|Text|
 |||currentUse_href|Text|
 |||percentage|Text|
-
-#### Building_elevation
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|elevation|Elevation|RID|Long|
-|||elevationReference_href|Text|
-|||elevationValue|Text|
 
 #### Building_terrainIntersection
 

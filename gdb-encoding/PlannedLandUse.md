@@ -215,8 +215,8 @@ This section describes which transformation rules with which parameters are appl
 |hilucsPresence| HILUCSPresence|RID|Long|
 |||orderedList|Text|
 |||orderedList_href|Text|
-|||percentage_hilucsValue_href|Text|
 |||percentage_hilucsValue|Text|
+|||percentage_hilucsValue_href|Text|
 |||percentage_percentage|Text|
 
 #### ZoningElement_officialDocument

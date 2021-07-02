@@ -45,6 +45,7 @@ This section describes which transformation rules with which parameters are appl
 |------|------|------|------|
 |||featureId|Long|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Text|
+|conditionOfConstruction|ConditionOfFacilityValue|conditionOfConstruction|Text|
 |||conditionOfConstruction_href|Text|
 |dateOfConstruction|DateOfEvent|dateOfConstruction_beginning|Date|
 |||dateOfConstruction_end|Date|

@@ -64,8 +64,6 @@ This section describes which transformation rules with which parameters are appl
 |||type_1_href|Text|
 |||type_2|Text|
 |||type_2_href|Text|
-|||type_3|Text|
-|||type_3_href|Text|
 |serviceHours|PT_FreeText|serviceHours|Text|
 |facilityDescription|ActivityComplexDescription|description|Text|
 ||AddressRepresentation|address|Text|
@@ -109,8 +107,6 @@ This section describes which transformation rules with which parameters are appl
 |||type_1_href|Text|
 |||type_2|Text|
 |||type_2_href|Text|
-|||type_3|Text|
-|||type_3_href|Text|
 |serviceHours|PT_FreeText|serviceHours|Text|
 |facilityDescription|ActivityComplexDescription|description|Text|
 ||AddressRepresentation|address|Text|
@@ -154,8 +150,6 @@ This section describes which transformation rules with which parameters are appl
 |||type_1_href|Text|
 |||type_2|Text|
 |||type_2_href|Text|
-|||type_3|Text|
-|||type_3_href|Text|
 |serviceHours|PT_FreeText|serviceHours|Text|
 |facilityDescription|ActivityComplexDescription|description|Text|
 ||AddressRepresentation|address|Text|

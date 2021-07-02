@@ -54,7 +54,7 @@ Rule for ExistingLandUseObject_hilucsPresence/ specificPresence is either ordere
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
-|||featureId|Text|
+|||featureId|Long|
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
