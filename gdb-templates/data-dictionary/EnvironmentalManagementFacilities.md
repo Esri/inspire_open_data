@@ -5,11 +5,11 @@
 <br/>
 <strong>Geodatabase Documentation</strong>
 <hr/>
-<strong>Date: </strong>20210630175155.9095902<br/>
+<strong>Date: </strong>20210702115739.9476617<br/>
 <hr/>
 <p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 3
-Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">4 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">11 Relationship
-Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
+Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">4 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">12 Relationship
+Classes</a><br/><a href="#Domains">2 Domains</a><br/></p>
 <hr/>
 <p><a name="FeatureDatasets"/><strong>Feature Datasets and Child Classes</strong></p><a name="Raster"/>
 <p><strong>Rasters</strong></p><br/>
@@ -19,10 +19,11 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 <p/><br/>
 <hr/><a name="RelationshipClasses"/>
 <p><strong>Relationship Classes</strong></p>
-    <a href="#RelationshipClassRelEMFL_EMF_capacity">RelEMFL_EMF_capacity</a><br/><a href="#RelationshipClassRelEMFL_EMF_function">RelEMFL_EMF_function</a><br/><a href="#RelationshipClassRelEMFL_EMF_parentFacility">RelEMFL_EMF_parentFacility</a><br/><a href="#RelationshipClassRelEMFL_EMF_permission">RelEMFL_EMF_permission</a><br/><a href="#RelationshipClassRelEMFP_EMF_function">RelEMFP_EMF_function</a><br/><a href="#RelationshipClassRelEMFP_EMF_parentFacility">RelEMFP_EMF_parentFacility</a><br/><a href="#RelationshipClassRelEMFP_EMF_permission">RelEMFP_EMF_permission</a><br/><a href="#RelationshipClassRelEMFS_EMF_capacity">RelEMFS_EMF_capacity</a><br/><a href="#RelationshipClassRelEMFS_EMF_function">RelEMFS_EMF_function</a><br/><a href="#RelationshipClassRelEMFS_EMF_parentFacility">RelEMFS_EMF_parentFacility</a><br/><a href="#RelationshipClassRelEMFS_EMF_permission">RelEMFS_EMF_permission</a><br/>
+    <a href="#RelationshipClassRelEMFL_EMF_capacity">RelEMFL_EMF_capacity</a><br/><a href="#RelationshipClassRelEMFL_EMF_function">RelEMFL_EMF_function</a><br/><a href="#RelationshipClassRelEMFL_EMF_parentFacility">RelEMFL_EMF_parentFacility</a><br/><a href="#RelationshipClassRelEMFL_EMF_permission">RelEMFL_EMF_permission</a><br/><a href="#RelationshipClassRelEMFP_EMF_capacity">RelEMFP_EMF_capacity</a><br/><a href="#RelationshipClassRelEMFP_EMF_function">RelEMFP_EMF_function</a><br/><a href="#RelationshipClassRelEMFP_EMF_parentFacility">RelEMFP_EMF_parentFacility</a><br/><a href="#RelationshipClassRelEMFP_EMF_permission">RelEMFP_EMF_permission</a><br/><a href="#RelationshipClassRelEMFS_EMF_capacity">RelEMFS_EMF_capacity</a><br/><a href="#RelationshipClassRelEMFS_EMF_function">RelEMFS_EMF_function</a><br/><a href="#RelationshipClassRelEMFS_EMF_parentFacility">RelEMFS_EMF_parentFacility</a><br/><a href="#RelationshipClassRelEMFS_EMF_permission">RelEMFS_EMF_permission</a><br/>
 <p/>
 <hr/><br/><a name="Domains"/>
 <p><strong>Domains</strong></p>
+   <a href="#DomainConditionOfFacilityValue">ConditionOfFacilityValue</a><br/><a href="#DomainEnvironmentalManagementFacilityTypeValue">EnvironmentalManagementFacilityTypeValue</a><br/>
     <p><hr/><br/><a name="FeatureClassEnvironmentalManagementFacilityL"/>
 <p><strong>EnvironmentalManagementFacilityL - FeatureClass</strong></p>
 <p>
@@ -470,8 +471,8 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">type_1_href</td>
-<td width="8%">URI from the EnvironmentalFacilityType Codelist</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - EnvironmentalManagementFacilityTypeValue <a href="https://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue">https://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue</a></td>
+<td width="8%"><a href="#DomainEnvironmentalManagementFacilityTypeValue">EnvironmentalManagementFacilityTypeValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -492,30 +493,8 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">type_2_href</td>
-<td width="8%">URI from the EnvironmentalFacilityType Codelist</td>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">type_3</td>
-<td width="8%">String</td>
-<td width="3%">254</td>
-<td width="8%">type_3</td>
-<td width="8%">The type of facility, such as installation or site.</td>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">type_3_href</td>
-<td width="8%">String</td>
-<td width="3%">254</td>
-<td width="8%">type_3_href</td>
-<td width="8%">URI from the EnvironmentalFacilityType Codelist</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - EnvironmentalManagementFacilityTypeValue <a href="https://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue">https://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue</a></td>
+<td width="8%"><a href="#DomainEnvironmentalManagementFacilityTypeValue">EnvironmentalManagementFacilityTypeValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -1003,8 +982,8 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">type_1_href</td>
-<td width="8%">URI from the EnvironmentalFacilityType Codelist</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - EnvironmentalManagementFacilityTypeValue <a href="https://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue">https://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue</a></td>
+<td width="8%"><a href="#DomainEnvironmentalManagementFacilityTypeValue">EnvironmentalManagementFacilityTypeValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -1025,30 +1004,8 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">type_2_href</td>
-<td width="8%">URI from the EnvironmentalFacilityType Codelist</td>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">type_3</td>
-<td width="8%">String</td>
-<td width="3%">254</td>
-<td width="8%">type_3</td>
-<td width="8%">The type of facility, such as installation or site.</td>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">type_3_href</td>
-<td width="8%">String</td>
-<td width="3%">254</td>
-<td width="8%">type_3_href</td>
-<td width="8%">URI from the EnvironmentalFacilityType Codelist</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - EnvironmentalManagementFacilityTypeValue <a href="https://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue">https://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue</a></td>
+<td width="8%"><a href="#DomainEnvironmentalManagementFacilityTypeValue">EnvironmentalManagementFacilityTypeValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -1525,8 +1482,8 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">type_1_href</td>
-<td width="8%">URI from the EnvironmentalFacilityType Codelist</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - EnvironmentalManagementFacilityTypeValue <a href="https://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue">https://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue</a></td>
+<td width="8%"><a href="#DomainEnvironmentalManagementFacilityTypeValue">EnvironmentalManagementFacilityTypeValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -1547,30 +1504,8 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">type_2_href</td>
-<td width="8%">URI from the EnvironmentalFacilityType Codelist</td>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">type_3</td>
-<td width="8%">String</td>
-<td width="3%">254</td>
-<td width="8%">type_3</td>
-<td width="8%">The type of facility, such as installation or site.</td>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">type_3_href</td>
-<td width="8%">String</td>
-<td width="3%">254</td>
-<td width="8%">type_3_href</td>
-<td width="8%">URI from the EnvironmentalFacilityType Codelist</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - EnvironmentalManagementFacilityTypeValue <a href="https://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue">https://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue</a></td>
+<td width="8%"><a href="#DomainEnvironmentalManagementFacilityTypeValue">EnvironmentalManagementFacilityTypeValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -2441,6 +2376,71 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 <td width="30%"/>
 </tr>
 </tbody>
+</table></p><p><hr/><a name="RelationshipClassRelEMFP_EMF_capacity"/>
+<p><strong>RelEMFP_EMF_capacity - RelationshipClass</strong></p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">RelEMFP_EMF_capacity</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+<td width="*" style="border-color: white">OneToMany</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+<td width="*" style="border-color: white">EnvironmentalManagementFacility_capacity</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+<td width="*" style="border-color: white">EnvironmentalManagementFacilityP</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">RelEMFP_EMF_capacity</td>
+</tr>
+</tbody>
+</table>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+</tr><br/>
+<tr>
+<td width="30%">EnvironmentalManagementFacilityP</td>
+<td width="30%">featureId</td>
+<td width="30%">RID</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+</tr>
+<tr>
+<td width="30%">EnvironmentalManagementFacility_capacity</td>
+<td width="30%"/>
+<td width="30%"/>
+</tr>
+</tbody>
 </table></p><p><hr/><a name="RelationshipClassRelEMFP_EMF_function"/>
 <p><strong>RelEMFP_EMF_function - RelationshipClass</strong></p>
 <table width="100%">
@@ -2897,3 +2897,100 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 </tr>
 </tbody>
 </table></p>
+    <p>
+    <hr/><a name="DomainConditionOfFacilityValue"/>
+<p><strong>ConditionOfFacilityValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">ConditionOfFacilityValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/functional</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/functional</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/projected</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/projected</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/underConstruction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/underConstruction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/disused</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/disused</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/decommissioned</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/decommissioned</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainEnvironmentalManagementFacilityTypeValue"/>
+<p><strong>EnvironmentalManagementFacilityTypeValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">EnvironmentalManagementFacilityTypeValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue/site</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue/site</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue/installation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalManagementFacilityTypeValue/installation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/underConstruction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/underConstruction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/disused</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/disused</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/decommissioned</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfFacilityValue/decommissioned</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p>

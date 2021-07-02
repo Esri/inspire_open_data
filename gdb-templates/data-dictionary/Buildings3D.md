@@ -5,25 +5,25 @@
 <br/>
 <strong>Geodatabase Documentation</strong>
 <hr/>
-<strong>Date: </strong>20210630175152.3610562<br/>
+<strong>Date: </strong>20210702115735.7513198<br/>
 <hr/>
 <p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 4
-Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">3 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">5 Relationship
-Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
+Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">2 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">4 Relationship
+Classes</a><br/><a href="#Domains">6 Domains</a><br/></p>
 <hr/>
 <p><a name="FeatureDatasets"/><strong>Feature Datasets and Child Classes</strong></p><a name="Raster"/>
 <p><strong>Rasters</strong></p><br/>
 <hr/><a name="ObjectClasses"/>
 <p><strong>Workspace-Level Tables and Feature Classes</strong></p>
-    <a href="#FeatureClassBuilding">Building - FeatureClass</a><br/><a href="#FeatureClassBuildingPart">BuildingPart - FeatureClass</a><br/><a href="#TableBuildingPart_currentUse">BuildingPart_currentUse - Table</a><br/><a href="#FeatureClassBuildingPart_terrainIntersection">BuildingPart_terrainIntersection - FeatureClass</a><br/><a href="#TableBuilding_currentUse">Building_currentUse - Table</a><br/><a href="#TableBuilding_elevation">Building_elevation - Table</a><br/><a href="#FeatureClassBuilding_terrainIntersection">Building_terrainIntersection - FeatureClass</a><br/>
+    <a href="#FeatureClassBuilding">Building - FeatureClass</a><br/><a href="#FeatureClassBuildingPart">BuildingPart - FeatureClass</a><br/><a href="#TableBuildingPart_currentUse">BuildingPart_currentUse - Table</a><br/><a href="#FeatureClassBuildingPart_terrainIntersection">BuildingPart_terrainIntersection - FeatureClass</a><br/><a href="#TableBuilding_currentUse">Building_currentUse - Table</a><br/><a href="#FeatureClassBuilding_terrainIntersection">Building_terrainIntersection - FeatureClass</a><br/>
 <p/><br/>
 <hr/><a name="RelationshipClasses"/>
 <p><strong>Relationship Classes</strong></p>
-    <a href="#RelationshipClassRelBP_BP_currentUse">RelBP_BP_currentUse</a><br/><a href="#RelationshipClassRelBP_BP_terrainIntersection">RelBP_BP_terrainIntersection</a><br/><a href="#RelationshipClassRelB_B_currentUse">RelB_B_currentUse</a><br/><a href="#RelationshipClassRelB_B_elevation">RelB_B_elevation</a><br/><a href="#RelationshipClassRelB_B_terrainIntersection">RelB_B_terrainIntersection</a><br/>
+    <a href="#RelationshipClassRelBP_BP_currentUse">RelBP_BP_currentUse</a><br/><a href="#RelationshipClassRelBP_BP_terrainIntersection">RelBP_BP_terrainIntersection</a><br/><a href="#RelationshipClassRelB_B_currentUse">RelB_B_currentUse</a><br/><a href="#RelationshipClassRelB_B_terrainIntersection">RelB_B_terrainIntersection</a><br/>
 <p/>
 <hr/><br/><a name="Domains"/>
 <p><strong>Domains</strong></p>
-   <a href="#DomainConditionOfConstructionValue">ConditionOfConstructionValue</a><br/><a href="#DomainHeightStatusValue">HeightStatusValue</a><br/><a href="#DomainElevationReferenceValue">ElevationReferenceValue</a><br/>
+   <a href="#DomainBuildingNatureValue">BuildingNatureValue</a><br/><a href="#DomainConditionOfConstructionValue">ConditionOfConstructionValue</a><br/><a href="#DomainHorizontalGeometryReferenceValue">HorizontalGeometryReferenceValue</a><br/><a href="#DomainHeightStatusValue">HeightStatusValue</a><br/><a href="#DomainElevationReferenceValue">ElevationReferenceValue</a><br/><a href="#DomainCurrentUseValue">CurrentUseValue</a><br/>
     <p><hr/><br/><a name="FeatureClassBuilding"/>
 <p><strong>Building - FeatureClass</strong></p>
 <p>
@@ -269,6 +269,39 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
+<td width="8%">elevationReference</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">elevationReference</td>
+<td width="8%">Element where the elevation was measured.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">elevationReference_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">elevationReference_href</td>
+<td width="8%">URI from the INSPIRE code list register - ElevationReferenceValue <a href="https://inspire.ec.europa.eu/codelist/ElevationReferenceValue">https://inspire.ec.europa.eu/codelist/ElevationReferenceValue</a></td>
+<td width="8%"><a href="#DomainElevationReferenceValue">ElevationReferenceValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">elevationValue</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">elevationValue</td>
+<td width="8%">Value of the elevation in meter</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
 <td width="8%">endLifespanVersion</td>
 <td width="8%">String</td>
 <td width="3%">254</td>
@@ -383,8 +416,8 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">horizontalReference_href</td>
-<td width="8%">Element of the real world object that was captured by the (X,Y) coordinates of the LoD1 Multisurface or Solid geometry</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - HorizontalGeometryReferenceValue <a href="https://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue">https://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue</a></td>
+<td width="8%"><a href="#DomainHorizontalGeometryReferenceValue">HorizontalGeometryReferenceValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -592,8 +625,8 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">verticalReference3DBottom_href</td>
-<td width="8%">Vertical geometry reference 3D bottom. Height level to which the lower height of the model (Z-value of the lower horizontal polygon) refers to.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - ElevationReferenceValue <a href="https://inspire.ec.europa.eu/codelist/ElevationReferenceValue">https://inspire.ec.europa.eu/codelist/ElevationReferenceValue</a></td>
+<td width="8%"><a href="#DomainElevationReferenceValue">ElevationReferenceValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -614,8 +647,8 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">verticalReference3DTop_href</td>
-<td width="8%">Vertical geometry reference 3D top. Height level  to which the upper height of the model (Z-value of the upper horizontal polygon) refers to.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - ElevationReferenceValue <a href="https://inspire.ec.europa.eu/codelist/ElevationReferenceValue">https://inspire.ec.europa.eu/codelist/ElevationReferenceValue</a></td>
+<td width="8%"><a href="#DomainElevationReferenceValue">ElevationReferenceValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -795,8 +828,8 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">conditionOfConstruction_href</td>
-<td width="8%">Condition of construction</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - ConditionOfConstructionValue <a href="https://inspire.ec.europa.eu/codelist/ConditionOfConstructionValue">https://inspire.ec.europa.eu/codelist/ConditionOfConstructionValue</a></td>
+<td width="8%"><a href="#DomainConditionOfConstructionValue">ConditionOfConstructionValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -868,12 +901,23 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
+<td width="8%">elevationReference</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">elevationReference</td>
+<td width="8%">Element where the elevation was measured.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
 <td width="8%">elevationReference_href</td>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">elevationReference_href</td>
-<td width="8%">Element where the elevation was measured.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - ElevationReferenceValue <a href="https://inspire.ec.europa.eu/codelist/ElevationReferenceValue">https://inspire.ec.europa.eu/codelist/ElevationReferenceValue</a></td>
+<td width="8%"><a href="#DomainElevationReferenceValue">ElevationReferenceValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -993,8 +1037,8 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">horizontalReference_href</td>
-<td width="8%">Element of the real world object that was captured by the (X,Y) coordinates of the LoD1 Multisurface or Solid geometry</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - HorizontalGeometryReferenceValue <a href="https://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue">https://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue</a></td>
+<td width="8%"><a href="#DomainHorizontalGeometryReferenceValue">HorizontalGeometryReferenceValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -1220,6 +1264,17 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td/>
 <td/>
 </tr><tr>
+<td width="8%">verticalReference3DBottom_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">verticalReference3DBottom_href</td>
+<td width="8%">URI from the INSPIRE code list register - ElevationReferenceValue <a href="https://inspire.ec.europa.eu/codelist/ElevationReferenceValue">https://inspire.ec.europa.eu/codelist/ElevationReferenceValue</a></td>
+<td width="8%"><a href="#DomainElevationReferenceValue">ElevationReferenceValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
 <td width="8%">verticalReference3DTop</td>
 <td width="8%">String</td>
 <td width="3%">254</td>
@@ -1235,8 +1290,8 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">verticalReference3DTop_href</td>
-<td width="8%">Vertical geometry reference 3D top. Height level  to which the upper height of the model (Z-value of the upper horizontal polygon) refers to.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - ElevationReferenceValue <a href="https://inspire.ec.europa.eu/codelist/ElevationReferenceValue">https://inspire.ec.europa.eu/codelist/ElevationReferenceValue</a></td>
+<td width="8%"><a href="#DomainElevationReferenceValue">ElevationReferenceValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -1649,93 +1704,6 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 </tr>
 </tbody>
 </table>
-</p><p><hr/><a name="TableBuilding_elevation"/>
-<p><strong>Building_elevation - Table</strong></p>
-<table width="100%" style="border-color: white">
-<tbody>
-<tr>
-<td width="12%" style="border-color: white"><strong>Name</strong></td>
-<td width="*" style="border-color: white">Building_elevation</td>
-</tr>
-<tr>
-<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
-<td width="*" style="border-color: white">Building_elevation</td>
-</tr>
-<tr>
-<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
-<td width="*" style="border-color: white">false</td>
-</tr>
-</tbody>
-</table>
-<table width="100%" style="border-color: white">
-<tbody>
-<tr>
-<td width="12%" style="border-color: white"><strong>Description</strong></td>
-<td width="*" style="border-color: white">Building_elevation</td>
-</tr>
-</tbody>
-</table><br/>
-<table width="100%">
-<tbody>
-<tr style="border:0px">
-<td width="8%" style="border:0px"><strong>Field</strong></td>
-<td width="8%" style="border:0px"><strong>DataType</strong></td>
-<td width="5%" style="border:0px"><strong>Length</strong></td>
-<td width="8%" style="border:0px"><strong>AliasName</strong></td>
-<td width="8%" style="border:0px"><strong>Description</strong></td>
-<td width="8%" style="border:0px"><strong>Domain</strong></td>
-<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
-<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
-<td width="5%" style="border:0px"><strong>Precision</strong></td>
-<td width="5%" style="border:0px"><strong>Scale</strong></td>
-</tr>
-<tr>
-<td width="8%">OBJECTID</td>
-<td width="8%">OID</td>
-<td width="3%">4</td>
-<td width="8%">OBJECTID</td>
-<td width="8%"/>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">elevationReference_href</td>
-<td width="8%">String</td>
-<td width="3%">254</td>
-<td width="8%">elevationReference_href</td>
-<td width="8%">Element where the elevation was measured.</td>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">elevationValue</td>
-<td width="8%">String</td>
-<td width="3%">254</td>
-<td width="8%">elevationValue</td>
-<td width="8%">Value of the elevation in meter</td>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr><tr>
-<td width="8%">RID</td>
-<td width="8%">Integer</td>
-<td width="3%">4</td>
-<td width="8%">RID</td>
-<td width="8%">Reference to featureId field in parent 'Building'.</td>
-<td width="8%"><a href="#Domain"/></td>
-<td width="8%"/>
-<td width="8%">true</td>
-<td/>
-<td/>
-</tr>
-</tbody>
-</table>
 </p>
     <p><hr/><a name="RelationshipClassRelBP_BP_currentUse"/>
 <p><strong>RelBP_BP_currentUse - RelationshipClass</strong></p>
@@ -1932,71 +1900,6 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td width="30%"/>
 </tr>
 </tbody>
-</table></p><p><hr/><a name="RelationshipClassRelB_B_elevation"/>
-<p><strong>RelB_B_elevation - RelationshipClass</strong></p>
-<table width="100%">
-<tbody>
-<tr>
-<td width="12%" style="border-color: white"><strong>Name</strong></td>
-<td width="*" style="border-color: white">RelB_B_elevation</td>
-</tr>
-<tr>
-<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
-<td width="*" style="border-color: white">OneToMany</td>
-</tr>
-<tr>
-<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
-<td width="*" style="border-color: white">False</td>
-</tr>
-<tr>
-<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
-<td width="*" style="border-color: white">False</td>
-</tr>
-<tr>
-<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
-<td width="*" style="border-color: white">Building_elevation</td>
-</tr>
-<tr>
-<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
-<td width="*" style="border-color: white">Building</td>
-</tr>
-</tbody>
-</table>
-<table width="100%" style="border-color: white">
-<tbody>
-<tr>
-<td width="12%" style="border-color: white"><strong>Description</strong></td>
-<td width="*" style="border-color: white">RelB_B_elevation</td>
-</tr>
-</tbody>
-</table>
-<table width="50%">
-<tbody>
-<tr style="border:0px">
-<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
-<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
-<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
-</tr><br/>
-<tr>
-<td width="30%">Building</td>
-<td width="30%">featureId</td>
-<td width="30%">RID</td>
-</tr>
-</tbody>
-</table><br/>
-<table width="50%">
-<tbody>
-<tr style="border:0px">
-<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
-<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
-<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
-</tr>
-<tr>
-<td width="30%">Building_elevation</td>
-<td width="30%"/>
-<td width="30%"/>
-</tr>
-</tbody>
 </table></p><p><hr/><a name="RelationshipClassRelB_B_terrainIntersection"/>
 <p><strong>RelB_B_terrainIntersection - RelationshipClass</strong></p>
 <table width="100%">
@@ -2064,6 +1967,99 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 </tbody>
 </table></p>
     <p>
+    <hr/><a name="DomainBuildingNatureValue"/>
+<p><strong>BuildingNatureValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">BuildingNatureValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/arch</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/arch</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/bunker</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/bunker</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/canopy</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/canopy</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/caveBuilding</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/caveBuilding</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/chapel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/chapel</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/castle</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/castle</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/church</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/church</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/dam</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/dam</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/greenhouse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/greenhouse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/lighthouse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/lighthouse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/mosque</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/mosque</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/shed</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/shed</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/silo</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/silo</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/stadium</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/stadium</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/storageTank</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/storageTank</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/synagogue</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/synagogue</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/temple</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/temple</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/tower</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/tower</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windmill</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windmill</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windTurbine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windTurbine</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
     <hr/><a name="DomainConditionOfConstructionValue"/>
 <p><strong>ConditionOfConstructionValue - Domain</strong></p>
 <p>
@@ -2110,41 +2106,140 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfConstructionValue/underConstruction</td>
 <td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfConstructionValue/underConstruction</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/generalRoofEdge</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/generalRoofEdge</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/church</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/church</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestEave</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestEave</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/dam</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/dam</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/higheseu-technicalroundPoint</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/higheseu-technicalroundPoint</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/greenhouse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/greenhouse</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestPoint</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestPoint</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/lighthouse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/lighthouse</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestRoofEdge</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestRoofEdge</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/mosque</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/mosque</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestEave</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestEave</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/shed</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/shed</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestFloorAboveGround</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestFloorAboveGround</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/silo</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/silo</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/loweseu-technicalroundPoint</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/loweseu-technicalroundPoint</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/stadium</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/stadium</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestRoofEdge</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestRoofEdge</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/storageTank</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/storageTank</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/topOfConstruction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/topOfConstruction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/synagogue</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/synagogue</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestgroundPoint</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestgroundPoint</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/temple</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/temple</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestgroundPoint</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestgroundPoint</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/tower</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/tower</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windmill</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windmill</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windTurbine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windTurbine</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainHorizontalGeometryReferenceValue"/>
+<p><strong>HorizontalGeometryReferenceValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">HorizontalGeometryReferenceValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/aboveGroundEnvelope</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/aboveGroundEnvelope</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/combined</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/combined</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/entrancePoint</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/entrancePoint</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/envelope</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/envelope</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/footPrint</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/footPrint</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/lowestFloorAboveGround</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/lowestFloorAboveGround</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/pointInsideBuilding</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/pointInsideBuilding</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/pointInsideCadastralParcel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/pointInsideCadastralParcel</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/roofEdge</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/roofEdge</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/lighthouse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/lighthouse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/mosque</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/mosque</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/shed</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/shed</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/silo</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/silo</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/stadium</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/stadium</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/storageTank</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/storageTank</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/synagogue</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/synagogue</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/temple</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/temple</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/tower</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/tower</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windmill</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windmill</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windTurbine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windTurbine</td>
 </tr>
 </tr>
 </tbody>
@@ -2185,53 +2280,59 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td width="20%">http://inspire.ec.europa.eu/codelist/HeightStatusValue/measured</td>
 <td width="20%">http://inspire.ec.europa.eu/codelist/HeightStatusValue/measured</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfConstructionValue/functional</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfConstructionValue/functional</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/canopy</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/canopy</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfConstructionValue/projected</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfConstructionValue/projected</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/caveBuilding</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/caveBuilding</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfConstructionValue/ruin</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfConstructionValue/ruin</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/chapel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/chapel</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfConstructionValue/underConstruction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ConditionOfConstructionValue/underConstruction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/castle</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/castle</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/generalRoofEdge</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/generalRoofEdge</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/church</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/church</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestEave</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestEave</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/dam</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/dam</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/higheseu-technicalroundPoint</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/higheseu-technicalroundPoint</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/greenhouse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/greenhouse</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestPoint</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestPoint</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/lighthouse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/lighthouse</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestRoofEdge</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestRoofEdge</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/mosque</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/mosque</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestEave</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestEave</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/shed</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/shed</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestFloorAboveGround</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestFloorAboveGround</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/silo</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/silo</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/loweseu-technicalroundPoint</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/loweseu-technicalroundPoint</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/stadium</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/stadium</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestRoofEdge</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestRoofEdge</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/storageTank</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/storageTank</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/topOfConstruction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/topOfConstruction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/synagogue</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/synagogue</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestgroundPoint</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/highestgroundPoint</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/temple</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/temple</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestgroundPoint</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestgroundPoint</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/tower</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/tower</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windmill</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windmill</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windTurbine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windTurbine</td>
 </tr>
 </tr>
 </tbody>
@@ -2319,6 +2420,105 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 </tr><tr>
 <td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestgroundPoint</td>
 <td width="20%">http://inspire.ec.europa.eu/codelist/ElevationReferenceValue/lowestgroundPoint</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windmill</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windmill</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windTurbine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windTurbine</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainCurrentUseValue"/>
+<p><strong>CurrentUseValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">CurrentUseValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/residential</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/residential</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/individualResidence</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/individualResidence</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/collectiveResidence</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/collectiveResidence</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/twoDwellings</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/twoDwellings</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/moreThanTwoDwelling</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/moreThanTwoDwelling</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/residenceForCommunities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/residenceForCommunities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/agriculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/agriculture</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/industrial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/industrial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/commerceAndServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/commerceAndServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/office</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/office</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/trade</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/trade</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/publicServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/publicServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/ancillary</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/CurrentUseValue/ancillary</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/stadium</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/stadium</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/storageTank</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/storageTank</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/synagogue</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/synagogue</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/temple</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/temple</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/tower</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/tower</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windmill</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windmill</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windTurbine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/BuildingNatureValue/windTurbine</td>
 </tr>
 </tr>
 </tbody>

@@ -5,11 +5,11 @@
 <br/>
 <strong>Geodatabase Documentation</strong>
 <hr/>
-<strong>Date: </strong>20210630175153.7517121<br/>
+<strong>Date: </strong>20210702115737.2015175<br/>
 <hr/>
 <p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 3
 Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">15 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">14 Relationship
-Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
+Classes</a><br/><a href="#Domains">6 Domains</a><br/></p>
 <hr/>
 <p><a name="FeatureDatasets"/><strong>Feature Datasets and Child Classes</strong></p><a name="Raster"/>
 <p><strong>Rasters</strong></p><br/>
@@ -23,7 +23,7 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <p/>
 <hr/><br/><a name="Domains"/>
 <p><strong>Domains</strong></p>
-   <a href="#DomainRegulationNatureValue">RegulationNatureValue</a><br/><a href="#DomainProcessStepGeneralValue">ProcessStepGeneralValue</a><br/><a href="#DomainHILUCSValue">HILUCSValue</a><br/>
+   <a href="#DomainRegulationNatureValue">RegulationNatureValue</a><br/><a href="#DomainProcessStepGeneralValue">ProcessStepGeneralValue</a><br/><a href="#DomainLegislationLevelValue">LegislationLevelValue</a><br/><a href="#DomainLevelOfSpatialPlanValue">LevelOfSpatialPlanValue</a><br/><a href="#DomainSupplementaryRegulationValue">SupplementaryRegulationValue</a><br/><a href="#DomainHILUCSValue">HILUCSValue</a><br/>
     <p><hr/><br/><a name="FeatureClassSpatialPlan"/>
 <p><strong>SpatialPlan - FeatureClass</strong></p>
 <p>
@@ -218,7 +218,7 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">levelOfSpatialPlan</td>
-<td width="8%">Level of the administrative units covered by the plan. Value from the LevelOfSparilaPlan Codelist.</td>
+<td width="8%">Level of the administrative units covered by the plan. Value from the LevelOfSpatialPlan Codelist.</td>
 <td width="8%"><a href="#Domain"/></td>
 <td width="8%"/>
 <td width="8%">true</td>
@@ -229,8 +229,8 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">levelOfSpatialPlan_href</td>
-<td width="8%">Level of the administrative units covered by the plan. URI from the LevelOfSparilaPlan Codelist.</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - LevelOfSpatialPlanValue <a href="https://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue">https://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue</a></td>
+<td width="8%"><a href="#DomainLevelOfSpatialPlanValue">LevelOfSpatialPlanValue</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -3467,284 +3467,461 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/definedInLegislation</td>
 <td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/definedInLegislation</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_Forestry</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_Forestry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/supraRegional</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/supraRegional</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_1_ForestryBasedOnShortRotation</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_1_ForestryBasedOnShortRotation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/national</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/national</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_2_ForestryBasedOnIntermediateOrLongRotation</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_2_ForestryBasedOnIntermediateOrLongRotation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/other</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/other</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_3_ForestryBasedOnContinuousCover</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_3_ForestryBasedOnContinuousCover</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_2_BiodiversityReservoir</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_2_BiodiversityReservoir</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_MiningAndQuarrying</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_MiningAndQuarrying</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_3_ProtectedWoodedArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_3_ProtectedWoodedArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_1_MiningOfEnergyProducingMaterials</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_1_MiningOfEnergyProducingMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_4_ProtectedUrbanPeriurbanAgriculturalOrNaturalArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_4_ProtectedUrbanPeriurbanAgriculturalOrNaturalArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_2_MiningOfMetalOres</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_2_MiningOfMetalOres</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_5_ProtectedWetland</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_5_ProtectedWetland</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_3_OtherMiningAndQuarrying</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_3_OtherMiningAndQuarrying</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_6_PlantHealthProtectionZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_6_PlantHealthProtectionZone</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_AquacultureAndFishing</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_AquacultureAndFishing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_7_OtherNatureProtectionArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_7_OtherNatureProtectionArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_1_Aquaculture</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_1_Aquaculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_5_ClimateProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_5_ClimateProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_2_ProfessionalFishing</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_2_ProfessionalFishing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_WaterProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_WaterProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_OtherPrimaryProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_OtherPrimaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_1_DesignatedWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_1_DesignatedWaters</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_1_Hunting</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_1_Hunting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_2_NitrateVulnerableZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_2_NitrateVulnerableZone</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_2_ManagementOfMigratoryAnimals</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_2_ManagementOfMigratoryAnimals</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_3_SensitiveArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_3_SensitiveArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_3_PickingOfNaturalProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_3_PickingOfNaturalProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_4_BathingWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_4_BathingWaters</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_SecondaryProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_SecondaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_5_DrinkingWaterProtectionArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_5_DrinkingWaterProtectionArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_RawIndustry</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_RawIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_7_ForestManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_7_ForestManagementArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_1_ManufacturingOfTextileProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_1_ManufacturingOfTextileProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_8_OtherImpactOnEnvironment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_8_OtherImpactOnEnvironment</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_2_ManufacturingOfWoodAndWoodBasedProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_2_ManufacturingOfWoodAndWoodBasedProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_RiskExposure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_RiskExposure</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_3_ManufacturingOfPulpPaperAndPaperProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_3_ManufacturingOfPulpPaperAndPaperProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_FloodRisks</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_FloodRisks</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_4_ManufacturingOfCokeRefinedPetroleumProductsAndNuclearFuel</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_4_ManufacturingOfCokeRefinedPetroleumProductsAndNuclearFuel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_1_AreaExposedToFloodRisk</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_1_AreaExposedToFloodRisk</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_5_ManufacturingOfChemicalsChemicalProductsManMadeFibers</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_5_ManufacturingOfChemicalsChemicalProductsManMadeFibers</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_2_FloodRiskManagementZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_2_FloodRiskManagementZone</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_6_ManufacturingOfBasicMetalsAndFabricatedMetals</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_6_ManufacturingOfBasicMetalsAndFabricatedMetals</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_IndustrialRisk</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_IndustrialRisk</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_7_ManufacturingOfNonMetallicMineralProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_7_ManufacturingOfNonMetallicMineralProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_1_Lead</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_1_Lead</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_8_ManufacturingOfRubberPlasticProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_8_ManufacturingOfRubberPlasticProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_2_RestrictedZonesAroundContaminatedSites</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_2_RestrictedZonesAroundContaminatedSites</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_9_ManufacturingOfOtherRawMaterials</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_9_ManufacturingOfOtherRawMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_3_BrownfieldLand</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_3_BrownfieldLand</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_HeavyEndProductIndustry</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_HeavyEndProductIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_4_ExclusionAreaAroundSevesoSites</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_4_ExclusionAreaAroundSevesoSites</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_1_ManufacturingOfMachinery</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_1_ManufacturingOfMachinery</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_3_Mining</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_3_Mining</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_2_ManufacturingOfVehiclesAndTransportEquipment</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_2_ManufacturingOfVehiclesAndTransportEquipment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_4_Erosion</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_4_Erosion</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_3_ManufacturingOfOtherHeavyEndProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_3_ManufacturingOfOtherHeavyEndProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_5_OtherRiskExposure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_5_OtherRiskExposure</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_LightEndProductIndustry</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_LightEndProductIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_1_ManufacturingOfFoodBeveragesAndTobaccoProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_1_ManufacturingOfFoodBeveragesAndTobaccoProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_NaturalHeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_NaturalHeritageProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_2_ManufacturingOfClothesAndLeather</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_2_ManufacturingOfClothesAndLeather</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_1_BiodiversityProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_1_BiodiversityProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_3_PublishingAndPrinting</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_3_PublishingAndPrinting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_2_GeodiversityProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_2_GeodiversityProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_4_ManufacturingOfElectricalAndOpticalEquipment</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_4_ManufacturingOfElectricalAndOpticalEquipment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_2_LandscapeAreaProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_2_LandscapeAreaProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_5_ManufacturingOfOtherLightEndProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_5_ManufacturingOfOtherLightEndProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_3_BuiltHeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_3_BuiltHeritageProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_EnergyProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_EnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_4_ArcheologicalProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_4_ArcheologicalProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_1_NuclearBasedEnergyProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_1_NuclearBasedEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_5_OtherHeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_5_OtherHeritageProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_2_FossilFuelBasedEnergyProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_2_FossilFuelBasedEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_GeneralInterest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_GeneralInterest</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_3_BiomassBasedEnergyProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_3_BiomassBasedEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_PublicEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_PublicEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_4_RenewableEnergyProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_4_RenewableEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_1_AirportEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_1_AirportEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_5_OtherIndustry</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_5_OtherIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_2_RailroadEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_2_RailroadEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_TertiaryProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_TertiaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_UtilityEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_UtilityEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_CommercialServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_CommercialServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_1_RainWaterEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_1_RainWaterEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_1_WholesaleAndRetailTradeAndRepairOfVehiclesAndPersonalAndHouseholdGoods</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_1_WholesaleAndRetailTradeAndRepairOfVehiclesAndPersonalAndHouseholdGoods</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_2_SanitarySewerEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_2_SanitarySewerEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_2_RealEstateServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_2_RealEstateServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_3_ElectricalPowerLineEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_3_ElectricalPowerLineEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_3_AccommodationAndFoodServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_3_AccommodationAndFoodServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_4_TelephoneLineEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_4_TelephoneLineEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_4_OtherCommercialServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_4_OtherCommercialServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_5_RadioElectricalEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_5_RadioElectricalEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_FinancialProfessionalAndInformationServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_FinancialProfessionalAndInformationServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_6_FuelGasPipeEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_6_FuelGasPipeEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_1_FinancialAndInsuranceServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_1_FinancialAndInsuranceServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_4_BeachAccess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_4_BeachAccess</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_2_ProfessionalTechnicalAndScientificServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_2_ProfessionalTechnicalAndScientificServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_5_ConservationEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_5_ConservationEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_3_InformationAndCommunicationServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_3_InformationAndCommunicationServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_6_HistoricPreservationEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_6_HistoricPreservationEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_4_AdministrativeAndSupportServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_4_AdministrativeAndSupportServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_7_OtherPublicEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_7_OtherPublicEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_5_OtherFinancialProfessionalAndInformationServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_5_OtherFinancialProfessionalAndInformationServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_2_OtherEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_2_OtherEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_CommunityServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_CommunityServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_3_OtherReservedAreasServingGeneralInterest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_3_OtherReservedAreasServingGeneralInterest</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_1_PublicAdministrationDefenceAndSocialSecurityServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_1_PublicAdministrationDefenceAndSocialSecurityServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_LandPropertyRight</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_LandPropertyRight</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_2_EducationalServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_2_EducationalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_1_UsableBuildingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_1_UsableBuildingArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_3_HealthAndSocialServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_3_HealthAndSocialServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_2_AreaReservedForPreEmptingParcels</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_2_AreaReservedForPreEmptingParcels</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_4_ReligiousServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_4_ReligiousServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_3_AreaReservedForRestructuringParcels</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_3_AreaReservedForRestructuringParcels</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_5_OtherCommunityServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_5_OtherCommunityServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_4_ReconstructionAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_4_ReconstructionAreas</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_CulturalEntertainmentAndRecreationalServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_CulturalEntertainmentAndRecreationalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_5_StandByLandResources</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_5_StandByLandResources</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_1_CulturalServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_1_CulturalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_6_OtherLandPropertyRight</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_6_OtherLandPropertyRight</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_2_EntertainmentServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_2_EntertainmentServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_RegulationsOnBuildings</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_RegulationsOnBuildings</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_3_SportsInfrastructure</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_3_SportsInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_1_BuildingLine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_1_BuildingLine</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_4_OpenAirRecreationalAreas</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_4_OpenAirRecreationalAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_2_BoundaryLine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_2_BoundaryLine</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_5_OtherRecreationalServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_5_OtherRecreationalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_3_SpatialDesign</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_3_SpatialDesign</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_5_OtherServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_5_OtherServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_4_SecondaryStructureArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_4_SecondaryStructureArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_TransportNetworksLogisticsAndUtilities</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_TransportNetworksLogisticsAndUtilities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_5_CollectiveFacility</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_5_CollectiveFacility</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_TransportNetworks</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_TransportNetworks</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_6_BuildingHeightRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_6_BuildingHeightRegulation</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_1_RoadTransport</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_1_RoadTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_7_BuildingDensityRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_7_BuildingDensityRegulation</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_2_RailwayTransport</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_2_RailwayTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_8_MinimumHousingSize</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_8_MinimumHousingSize</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_3_AirTransport</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_3_AirTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_9_OtherRegulationsOnBuildings</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_9_OtherRegulationsOnBuildings</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_4_WaterTransport</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_4_WaterTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_LocalRegionalStateDevelopmentPolicies</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_LocalRegionalStateDevelopmentPolicies</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_5_OtherTransportNetwork</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_5_OtherTransportNetwork</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_SettlementStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_SettlementStructure</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_2_LogisticalAndStorageServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_2_LogisticalAndStorageServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_CentralPlaces</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_CentralPlaces</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_Utilities</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_Utilities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_1_Basic</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_1_Basic</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_1_ElectricityGasAndThermalPowerDistributionServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_1_ElectricityGasAndThermalPowerDistributionServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_2_LowerOrderCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_2_LowerOrderCentre</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_2_WaterAndSewageInfrastructure</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_2_WaterAndSewageInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_3_MiddleOrderCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_3_MiddleOrderCentre</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_3_WasteTreatment</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_3_WasteTreatment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_4_HighOrderCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_4_HighOrderCentre</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_4_OtherUtilities</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_4_OtherUtilities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_Axes</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_Axes</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_ResidentialUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_ResidentialUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_1_SettlementAxes</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_1_SettlementAxes</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_1_PermanentResidentialUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_1_PermanentResidentialUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_2_SupralocalAxes</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_2_SupralocalAxes</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_2_ResidentialUseWithOtherCompatibleUses</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_2_ResidentialUseWithOtherCompatibleUses</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_AssignmentOfFunctions</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_AssignmentOfFunctions</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_3_OtherResidentialUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_3_OtherResidentialUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_1_Housing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_1_Housing</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_OtherUses</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_OtherUses</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_2_CommerceIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_2_CommerceIndustry</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_1_TransitionalAreas</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_1_TransitionalAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_3_Services</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_3_Services</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_2_AbandonedAreas</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_2_AbandonedAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_4_Tourism</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_4_Tourism</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_NaturalAreasNotInOtherEconomicUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_NaturalAreasNotInOtherEconomicUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_5_Agriculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_5_Agriculture</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_1_LandAreasNotInOtherEconomicUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_1_LandAreasNotInOtherEconomicUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_6_Forestry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_6_Forestry</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_2_WaterAreasNotInOtherEconomicUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_2_WaterAreasNotInOtherEconomicUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_7_BusinessPark</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_7_BusinessPark</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_4_AreasWhereAnyUseAllowed</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_4_AreasWhereAnyUseAllowed</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_8_Technopole</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_8_Technopole</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_5_AreasWithoutAnySpecifiedPlannedUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_5_AreasWithoutAnySpecifiedPlannedUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_9_HarborActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_9_HarborActivities</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_6_NotKnownUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_6_NotKnownUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_10_AirportActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_10_AirportActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDeferring</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDeferring</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbiddenActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbiddenActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation</td>
 </tr>
 </tr>
 </tbody>
@@ -3794,284 +3971,1973 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/definedInLegislation</td>
 <td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/definedInLegislation</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_Forestry</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_Forestry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/supraRegional</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/supraRegional</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_1_ForestryBasedOnShortRotation</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_1_ForestryBasedOnShortRotation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/national</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/national</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_2_ForestryBasedOnIntermediateOrLongRotation</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_2_ForestryBasedOnIntermediateOrLongRotation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/other</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/other</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_3_ForestryBasedOnContinuousCover</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_3_ForestryBasedOnContinuousCover</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_2_BiodiversityReservoir</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_2_BiodiversityReservoir</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_MiningAndQuarrying</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_MiningAndQuarrying</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_3_ProtectedWoodedArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_3_ProtectedWoodedArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_1_MiningOfEnergyProducingMaterials</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_1_MiningOfEnergyProducingMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_4_ProtectedUrbanPeriurbanAgriculturalOrNaturalArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_4_ProtectedUrbanPeriurbanAgriculturalOrNaturalArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_2_MiningOfMetalOres</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_2_MiningOfMetalOres</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_5_ProtectedWetland</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_5_ProtectedWetland</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_3_OtherMiningAndQuarrying</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_3_OtherMiningAndQuarrying</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_6_PlantHealthProtectionZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_6_PlantHealthProtectionZone</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_AquacultureAndFishing</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_AquacultureAndFishing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_7_OtherNatureProtectionArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_7_OtherNatureProtectionArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_1_Aquaculture</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_1_Aquaculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_5_ClimateProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_5_ClimateProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_2_ProfessionalFishing</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_2_ProfessionalFishing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_WaterProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_WaterProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_OtherPrimaryProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_OtherPrimaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_1_DesignatedWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_1_DesignatedWaters</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_1_Hunting</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_1_Hunting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_2_NitrateVulnerableZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_2_NitrateVulnerableZone</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_2_ManagementOfMigratoryAnimals</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_2_ManagementOfMigratoryAnimals</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_3_SensitiveArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_3_SensitiveArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_3_PickingOfNaturalProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_3_PickingOfNaturalProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_4_BathingWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_4_BathingWaters</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_SecondaryProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_SecondaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_5_DrinkingWaterProtectionArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_5_DrinkingWaterProtectionArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_RawIndustry</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_RawIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_7_ForestManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_7_ForestManagementArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_1_ManufacturingOfTextileProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_1_ManufacturingOfTextileProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_8_OtherImpactOnEnvironment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_8_OtherImpactOnEnvironment</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_2_ManufacturingOfWoodAndWoodBasedProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_2_ManufacturingOfWoodAndWoodBasedProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_RiskExposure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_RiskExposure</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_3_ManufacturingOfPulpPaperAndPaperProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_3_ManufacturingOfPulpPaperAndPaperProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_FloodRisks</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_FloodRisks</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_4_ManufacturingOfCokeRefinedPetroleumProductsAndNuclearFuel</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_4_ManufacturingOfCokeRefinedPetroleumProductsAndNuclearFuel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_1_AreaExposedToFloodRisk</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_1_AreaExposedToFloodRisk</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_5_ManufacturingOfChemicalsChemicalProductsManMadeFibers</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_5_ManufacturingOfChemicalsChemicalProductsManMadeFibers</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_2_FloodRiskManagementZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_2_FloodRiskManagementZone</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_6_ManufacturingOfBasicMetalsAndFabricatedMetals</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_6_ManufacturingOfBasicMetalsAndFabricatedMetals</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_IndustrialRisk</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_IndustrialRisk</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_7_ManufacturingOfNonMetallicMineralProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_7_ManufacturingOfNonMetallicMineralProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_1_Lead</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_1_Lead</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_8_ManufacturingOfRubberPlasticProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_8_ManufacturingOfRubberPlasticProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_2_RestrictedZonesAroundContaminatedSites</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_2_RestrictedZonesAroundContaminatedSites</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_9_ManufacturingOfOtherRawMaterials</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_9_ManufacturingOfOtherRawMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_3_BrownfieldLand</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_3_BrownfieldLand</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_HeavyEndProductIndustry</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_HeavyEndProductIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_4_ExclusionAreaAroundSevesoSites</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_4_ExclusionAreaAroundSevesoSites</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_1_ManufacturingOfMachinery</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_1_ManufacturingOfMachinery</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_3_Mining</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_3_Mining</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_2_ManufacturingOfVehiclesAndTransportEquipment</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_2_ManufacturingOfVehiclesAndTransportEquipment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_4_Erosion</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_4_Erosion</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_3_ManufacturingOfOtherHeavyEndProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_3_ManufacturingOfOtherHeavyEndProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_5_OtherRiskExposure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_5_OtherRiskExposure</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_LightEndProductIndustry</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_LightEndProductIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_1_ManufacturingOfFoodBeveragesAndTobaccoProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_1_ManufacturingOfFoodBeveragesAndTobaccoProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_NaturalHeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_NaturalHeritageProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_2_ManufacturingOfClothesAndLeather</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_2_ManufacturingOfClothesAndLeather</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_1_BiodiversityProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_1_BiodiversityProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_3_PublishingAndPrinting</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_3_PublishingAndPrinting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_2_GeodiversityProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_2_GeodiversityProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_4_ManufacturingOfElectricalAndOpticalEquipment</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_4_ManufacturingOfElectricalAndOpticalEquipment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_2_LandscapeAreaProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_2_LandscapeAreaProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_5_ManufacturingOfOtherLightEndProducts</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_5_ManufacturingOfOtherLightEndProducts</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_3_BuiltHeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_3_BuiltHeritageProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_EnergyProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_EnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_4_ArcheologicalProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_4_ArcheologicalProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_1_NuclearBasedEnergyProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_1_NuclearBasedEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_5_OtherHeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_5_OtherHeritageProtection</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_2_FossilFuelBasedEnergyProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_2_FossilFuelBasedEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_GeneralInterest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_GeneralInterest</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_3_BiomassBasedEnergyProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_3_BiomassBasedEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_PublicEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_PublicEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_4_RenewableEnergyProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_4_RenewableEnergyProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_1_AirportEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_1_AirportEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_5_OtherIndustry</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/2_5_OtherIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_2_RailroadEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_2_RailroadEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_TertiaryProduction</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_TertiaryProduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_UtilityEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_UtilityEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_CommercialServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_CommercialServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_1_RainWaterEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_1_RainWaterEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_1_WholesaleAndRetailTradeAndRepairOfVehiclesAndPersonalAndHouseholdGoods</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_1_WholesaleAndRetailTradeAndRepairOfVehiclesAndPersonalAndHouseholdGoods</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_2_SanitarySewerEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_2_SanitarySewerEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_2_RealEstateServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_2_RealEstateServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_3_ElectricalPowerLineEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_3_ElectricalPowerLineEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_3_AccommodationAndFoodServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_3_AccommodationAndFoodServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_4_TelephoneLineEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_4_TelephoneLineEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_4_OtherCommercialServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_4_OtherCommercialServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_5_RadioElectricalEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_5_RadioElectricalEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_FinancialProfessionalAndInformationServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_FinancialProfessionalAndInformationServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_6_FuelGasPipeEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_6_FuelGasPipeEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_1_FinancialAndInsuranceServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_1_FinancialAndInsuranceServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_4_BeachAccess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_4_BeachAccess</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_2_ProfessionalTechnicalAndScientificServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_2_ProfessionalTechnicalAndScientificServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_5_ConservationEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_5_ConservationEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_3_InformationAndCommunicationServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_3_InformationAndCommunicationServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_6_HistoricPreservationEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_6_HistoricPreservationEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_4_AdministrativeAndSupportServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_4_AdministrativeAndSupportServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_7_OtherPublicEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_7_OtherPublicEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_5_OtherFinancialProfessionalAndInformationServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_5_OtherFinancialProfessionalAndInformationServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_2_OtherEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_2_OtherEasement</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_CommunityServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_CommunityServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_3_OtherReservedAreasServingGeneralInterest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_3_OtherReservedAreasServingGeneralInterest</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_1_PublicAdministrationDefenceAndSocialSecurityServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_1_PublicAdministrationDefenceAndSocialSecurityServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_LandPropertyRight</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_LandPropertyRight</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_2_EducationalServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_2_EducationalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_1_UsableBuildingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_1_UsableBuildingArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_3_HealthAndSocialServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_3_HealthAndSocialServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_2_AreaReservedForPreEmptingParcels</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_2_AreaReservedForPreEmptingParcels</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_4_ReligiousServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_4_ReligiousServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_3_AreaReservedForRestructuringParcels</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_3_AreaReservedForRestructuringParcels</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_5_OtherCommunityServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_5_OtherCommunityServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_4_ReconstructionAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_4_ReconstructionAreas</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_CulturalEntertainmentAndRecreationalServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_CulturalEntertainmentAndRecreationalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_5_StandByLandResources</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_5_StandByLandResources</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_1_CulturalServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_1_CulturalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_6_OtherLandPropertyRight</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_6_OtherLandPropertyRight</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_2_EntertainmentServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_2_EntertainmentServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_RegulationsOnBuildings</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_RegulationsOnBuildings</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_3_SportsInfrastructure</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_3_SportsInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_1_BuildingLine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_1_BuildingLine</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_4_OpenAirRecreationalAreas</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_4_OpenAirRecreationalAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_2_BoundaryLine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_2_BoundaryLine</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_5_OtherRecreationalServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_5_OtherRecreationalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_3_SpatialDesign</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_3_SpatialDesign</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_5_OtherServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/3_5_OtherServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_4_SecondaryStructureArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_4_SecondaryStructureArea</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_TransportNetworksLogisticsAndUtilities</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_TransportNetworksLogisticsAndUtilities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_5_CollectiveFacility</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_5_CollectiveFacility</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_TransportNetworks</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_TransportNetworks</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_6_BuildingHeightRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_6_BuildingHeightRegulation</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_1_RoadTransport</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_1_RoadTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_7_BuildingDensityRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_7_BuildingDensityRegulation</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_2_RailwayTransport</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_2_RailwayTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_8_MinimumHousingSize</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_8_MinimumHousingSize</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_3_AirTransport</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_3_AirTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_9_OtherRegulationsOnBuildings</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_9_OtherRegulationsOnBuildings</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_4_WaterTransport</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_4_WaterTransport</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_LocalRegionalStateDevelopmentPolicies</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_LocalRegionalStateDevelopmentPolicies</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_5_OtherTransportNetwork</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_5_OtherTransportNetwork</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_SettlementStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_SettlementStructure</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_2_LogisticalAndStorageServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_2_LogisticalAndStorageServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_CentralPlaces</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_CentralPlaces</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_Utilities</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_Utilities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_1_Basic</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_1_Basic</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_1_ElectricityGasAndThermalPowerDistributionServices</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_1_ElectricityGasAndThermalPowerDistributionServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_2_LowerOrderCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_2_LowerOrderCentre</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_2_WaterAndSewageInfrastructure</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_2_WaterAndSewageInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_3_MiddleOrderCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_3_MiddleOrderCentre</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_3_WasteTreatment</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_3_WasteTreatment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_4_HighOrderCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_4_HighOrderCentre</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_4_OtherUtilities</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_4_OtherUtilities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_Axes</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_Axes</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_ResidentialUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_ResidentialUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_1_SettlementAxes</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_1_SettlementAxes</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_1_PermanentResidentialUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_1_PermanentResidentialUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_2_SupralocalAxes</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_2_SupralocalAxes</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_2_ResidentialUseWithOtherCompatibleUses</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_2_ResidentialUseWithOtherCompatibleUses</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_AssignmentOfFunctions</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_AssignmentOfFunctions</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_3_OtherResidentialUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/5_3_OtherResidentialUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_1_Housing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_1_Housing</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_OtherUses</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_OtherUses</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_2_CommerceIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_2_CommerceIndustry</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_1_TransitionalAreas</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_1_TransitionalAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_3_Services</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_3_Services</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_2_AbandonedAreas</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_2_AbandonedAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_4_Tourism</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_4_Tourism</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_NaturalAreasNotInOtherEconomicUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_NaturalAreasNotInOtherEconomicUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_5_Agriculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_5_Agriculture</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_1_LandAreasNotInOtherEconomicUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_1_LandAreasNotInOtherEconomicUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_6_Forestry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_6_Forestry</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_2_WaterAreasNotInOtherEconomicUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_2_WaterAreasNotInOtherEconomicUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_7_BusinessPark</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_7_BusinessPark</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_4_AreasWhereAnyUseAllowed</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_4_AreasWhereAnyUseAllowed</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_8_Technopole</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_8_Technopole</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_5_AreasWithoutAnySpecifiedPlannedUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_5_AreasWithoutAnySpecifiedPlannedUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_9_HarborActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_9_HarborActivities</td>
 </tr><tr>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_6_NotKnownUse</td>
-<td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_6_NotKnownUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_10_AirportActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_10_AirportActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDeferring</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDeferring</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbiddenActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbiddenActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainLegislationLevelValue"/>
+<p><strong>LegislationLevelValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">LegislationLevelValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/international</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/international</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/european</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/european</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/national</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/national</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/sub-national</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/sub-national</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/definedInLegislation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/RegulationNatureValue/definedInLegislation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/supraRegional</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/supraRegional</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/national</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/national</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/other</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/other</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_2_BiodiversityReservoir</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_2_BiodiversityReservoir</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_3_ProtectedWoodedArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_3_ProtectedWoodedArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_4_ProtectedUrbanPeriurbanAgriculturalOrNaturalArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_4_ProtectedUrbanPeriurbanAgriculturalOrNaturalArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_5_ProtectedWetland</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_5_ProtectedWetland</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_6_PlantHealthProtectionZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_6_PlantHealthProtectionZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_7_OtherNatureProtectionArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_7_OtherNatureProtectionArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_5_ClimateProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_5_ClimateProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_WaterProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_WaterProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_1_DesignatedWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_1_DesignatedWaters</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_2_NitrateVulnerableZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_2_NitrateVulnerableZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_3_SensitiveArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_3_SensitiveArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_4_BathingWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_4_BathingWaters</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_5_DrinkingWaterProtectionArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_5_DrinkingWaterProtectionArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_7_ForestManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_7_ForestManagementArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_8_OtherImpactOnEnvironment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_8_OtherImpactOnEnvironment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_RiskExposure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_RiskExposure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_FloodRisks</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_FloodRisks</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_1_AreaExposedToFloodRisk</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_1_AreaExposedToFloodRisk</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_2_FloodRiskManagementZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_2_FloodRiskManagementZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_IndustrialRisk</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_IndustrialRisk</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_1_Lead</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_1_Lead</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_2_RestrictedZonesAroundContaminatedSites</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_2_RestrictedZonesAroundContaminatedSites</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_3_BrownfieldLand</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_3_BrownfieldLand</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_4_ExclusionAreaAroundSevesoSites</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_4_ExclusionAreaAroundSevesoSites</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_3_Mining</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_3_Mining</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_4_Erosion</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_4_Erosion</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_5_OtherRiskExposure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_5_OtherRiskExposure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_NaturalHeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_NaturalHeritageProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_1_BiodiversityProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_1_BiodiversityProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_2_GeodiversityProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_2_GeodiversityProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_2_LandscapeAreaProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_2_LandscapeAreaProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_3_BuiltHeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_3_BuiltHeritageProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_4_ArcheologicalProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_4_ArcheologicalProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_5_OtherHeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_5_OtherHeritageProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_GeneralInterest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_GeneralInterest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_PublicEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_PublicEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_1_AirportEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_1_AirportEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_2_RailroadEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_2_RailroadEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_UtilityEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_UtilityEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_1_RainWaterEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_1_RainWaterEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_2_SanitarySewerEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_2_SanitarySewerEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_3_ElectricalPowerLineEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_3_ElectricalPowerLineEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_4_TelephoneLineEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_4_TelephoneLineEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_5_RadioElectricalEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_5_RadioElectricalEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_6_FuelGasPipeEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_6_FuelGasPipeEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_4_BeachAccess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_4_BeachAccess</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_5_ConservationEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_5_ConservationEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_6_HistoricPreservationEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_6_HistoricPreservationEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_7_OtherPublicEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_7_OtherPublicEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_2_OtherEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_2_OtherEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_3_OtherReservedAreasServingGeneralInterest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_3_OtherReservedAreasServingGeneralInterest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_LandPropertyRight</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_LandPropertyRight</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_1_UsableBuildingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_1_UsableBuildingArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_2_AreaReservedForPreEmptingParcels</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_2_AreaReservedForPreEmptingParcels</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_3_AreaReservedForRestructuringParcels</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_3_AreaReservedForRestructuringParcels</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_4_ReconstructionAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_4_ReconstructionAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_5_StandByLandResources</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_5_StandByLandResources</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_6_OtherLandPropertyRight</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_6_OtherLandPropertyRight</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_RegulationsOnBuildings</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_RegulationsOnBuildings</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_1_BuildingLine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_1_BuildingLine</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_2_BoundaryLine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_2_BoundaryLine</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_3_SpatialDesign</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_3_SpatialDesign</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_4_SecondaryStructureArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_4_SecondaryStructureArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_5_CollectiveFacility</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_5_CollectiveFacility</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_6_BuildingHeightRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_6_BuildingHeightRegulation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_7_BuildingDensityRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_7_BuildingDensityRegulation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_8_MinimumHousingSize</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_8_MinimumHousingSize</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_9_OtherRegulationsOnBuildings</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_9_OtherRegulationsOnBuildings</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_LocalRegionalStateDevelopmentPolicies</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_LocalRegionalStateDevelopmentPolicies</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_SettlementStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_SettlementStructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_CentralPlaces</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_CentralPlaces</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_1_Basic</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_1_Basic</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_2_LowerOrderCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_2_LowerOrderCentre</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_3_MiddleOrderCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_3_MiddleOrderCentre</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_4_HighOrderCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_4_HighOrderCentre</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_Axes</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_Axes</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_1_SettlementAxes</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_1_SettlementAxes</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_2_SupralocalAxes</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_2_SupralocalAxes</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_AssignmentOfFunctions</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_AssignmentOfFunctions</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_1_Housing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_1_Housing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_2_CommerceIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_2_CommerceIndustry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_3_Services</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_3_Services</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_4_Tourism</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_4_Tourism</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_5_Agriculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_5_Agriculture</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_6_Forestry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_6_Forestry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_7_BusinessPark</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_7_BusinessPark</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_8_Technopole</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_8_Technopole</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_9_HarborActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_9_HarborActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_10_AirportActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_10_AirportActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDeferring</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDeferring</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbiddenActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbiddenActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainLevelOfSpatialPlanValue"/>
+<p><strong>LevelOfSpatialPlanValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">LevelOfSpatialPlanValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/infraLocal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/infraLocal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/local</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/local</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/supraLocal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/supraLocal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/infraRegional</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/infraRegional</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/regional</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/regional</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/supraRegional</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/supraRegional</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/national</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/national</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/other</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LevelOfSpatialPlanValue/other</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_2_BiodiversityReservoir</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_2_BiodiversityReservoir</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_3_ProtectedWoodedArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_3_ProtectedWoodedArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_4_ProtectedUrbanPeriurbanAgriculturalOrNaturalArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_4_ProtectedUrbanPeriurbanAgriculturalOrNaturalArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_5_ProtectedWetland</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_5_ProtectedWetland</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_6_PlantHealthProtectionZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_6_PlantHealthProtectionZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_7_OtherNatureProtectionArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_7_OtherNatureProtectionArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_5_ClimateProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_5_ClimateProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_WaterProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_WaterProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_1_DesignatedWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_1_DesignatedWaters</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_2_NitrateVulnerableZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_2_NitrateVulnerableZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_3_SensitiveArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_3_SensitiveArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_4_BathingWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_4_BathingWaters</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_5_DrinkingWaterProtectionArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_5_DrinkingWaterProtectionArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_7_ForestManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_7_ForestManagementArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_8_OtherImpactOnEnvironment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_8_OtherImpactOnEnvironment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_RiskExposure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_RiskExposure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_FloodRisks</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_FloodRisks</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_1_AreaExposedToFloodRisk</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_1_AreaExposedToFloodRisk</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_2_FloodRiskManagementZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_2_FloodRiskManagementZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_IndustrialRisk</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_IndustrialRisk</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_1_Lead</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_1_Lead</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_2_RestrictedZonesAroundContaminatedSites</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_2_RestrictedZonesAroundContaminatedSites</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_3_BrownfieldLand</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_3_BrownfieldLand</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_4_ExclusionAreaAroundSevesoSites</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_4_ExclusionAreaAroundSevesoSites</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_3_Mining</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_3_Mining</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_4_Erosion</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_4_Erosion</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_5_OtherRiskExposure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_5_OtherRiskExposure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_NaturalHeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_NaturalHeritageProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_1_BiodiversityProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_1_BiodiversityProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_2_GeodiversityProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_2_GeodiversityProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_2_LandscapeAreaProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_2_LandscapeAreaProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_3_BuiltHeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_3_BuiltHeritageProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_4_ArcheologicalProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_4_ArcheologicalProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_5_OtherHeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_5_OtherHeritageProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_GeneralInterest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_GeneralInterest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_PublicEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_PublicEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_1_AirportEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_1_AirportEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_2_RailroadEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_2_RailroadEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_UtilityEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_UtilityEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_1_RainWaterEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_1_RainWaterEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_2_SanitarySewerEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_2_SanitarySewerEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_3_ElectricalPowerLineEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_3_ElectricalPowerLineEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_4_TelephoneLineEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_4_TelephoneLineEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_5_RadioElectricalEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_5_RadioElectricalEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_6_FuelGasPipeEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_6_FuelGasPipeEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_4_BeachAccess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_4_BeachAccess</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_5_ConservationEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_5_ConservationEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_6_HistoricPreservationEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_6_HistoricPreservationEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_7_OtherPublicEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_7_OtherPublicEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_2_OtherEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_2_OtherEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_3_OtherReservedAreasServingGeneralInterest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_3_OtherReservedAreasServingGeneralInterest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_LandPropertyRight</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_LandPropertyRight</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_1_UsableBuildingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_1_UsableBuildingArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_2_AreaReservedForPreEmptingParcels</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_2_AreaReservedForPreEmptingParcels</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_3_AreaReservedForRestructuringParcels</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_3_AreaReservedForRestructuringParcels</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_4_ReconstructionAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_4_ReconstructionAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_5_StandByLandResources</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_5_StandByLandResources</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_6_OtherLandPropertyRight</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_6_OtherLandPropertyRight</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_RegulationsOnBuildings</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_RegulationsOnBuildings</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_1_BuildingLine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_1_BuildingLine</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_2_BoundaryLine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_2_BoundaryLine</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_3_SpatialDesign</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_3_SpatialDesign</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_4_SecondaryStructureArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_4_SecondaryStructureArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_5_CollectiveFacility</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_5_CollectiveFacility</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_6_BuildingHeightRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_6_BuildingHeightRegulation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_7_BuildingDensityRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_7_BuildingDensityRegulation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_8_MinimumHousingSize</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_8_MinimumHousingSize</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_9_OtherRegulationsOnBuildings</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_9_OtherRegulationsOnBuildings</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_LocalRegionalStateDevelopmentPolicies</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_LocalRegionalStateDevelopmentPolicies</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_SettlementStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_SettlementStructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_CentralPlaces</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_CentralPlaces</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_1_Basic</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_1_Basic</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_2_LowerOrderCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_2_LowerOrderCentre</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_3_MiddleOrderCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_3_MiddleOrderCentre</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_4_HighOrderCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_4_HighOrderCentre</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_Axes</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_Axes</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_1_SettlementAxes</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_1_SettlementAxes</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_2_SupralocalAxes</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_2_SupralocalAxes</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_AssignmentOfFunctions</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_AssignmentOfFunctions</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_1_Housing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_1_Housing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_2_CommerceIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_2_CommerceIndustry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_3_Services</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_3_Services</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_4_Tourism</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_4_Tourism</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_5_Agriculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_5_Agriculture</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_6_Forestry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_6_Forestry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_7_BusinessPark</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_7_BusinessPark</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_8_Technopole</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_8_Technopole</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_9_HarborActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_9_HarborActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_10_AirportActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_10_AirportActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDeferring</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDeferring</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbiddenActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbiddenActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainSupplementaryRegulationValue"/>
+<p><strong>SupplementaryRegulationValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">SupplementaryRegulationValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_ImpactOnEnvironment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_ImpactOnEnvironment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_1_NoiseManagementZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_1_NoiseManagementZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_1_1_NoiseProtectionArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_1_1_NoiseProtectionArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_2_EmissionControlArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_2_EmissionControlArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_2_1_AirQualityManagementZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_2_1_AirQualityManagementZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_3_RenewableEnergyArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_3_RenewableEnergyArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_NatureProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_NatureProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_1_EcologicalCorridor</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_1_EcologicalCorridor</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_2_BiodiversityReservoir</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_2_BiodiversityReservoir</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_3_ProtectedWoodedArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_3_ProtectedWoodedArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_4_ProtectedUrbanPeriurbanAgriculturalOrNaturalArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_4_ProtectedUrbanPeriurbanAgriculturalOrNaturalArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_5_ProtectedWetland</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_5_ProtectedWetland</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_6_PlantHealthProtectionZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_6_PlantHealthProtectionZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_7_OtherNatureProtectionArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_7_OtherNatureProtectionArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_5_ClimateProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_5_ClimateProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_WaterProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_WaterProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_1_DesignatedWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_1_DesignatedWaters</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_2_NitrateVulnerableZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_2_NitrateVulnerableZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_3_SensitiveArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_3_SensitiveArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_4_BathingWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_4_BathingWaters</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_5_DrinkingWaterProtectionArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_5_DrinkingWaterProtectionArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_7_ForestManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_7_ForestManagementArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_8_OtherImpactOnEnvironment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_8_OtherImpactOnEnvironment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_RiskExposure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_RiskExposure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_FloodRisks</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_FloodRisks</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_1_AreaExposedToFloodRisk</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_1_AreaExposedToFloodRisk</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_2_FloodRiskManagementZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_2_FloodRiskManagementZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_IndustrialRisk</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_IndustrialRisk</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_1_Lead</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_1_Lead</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_2_RestrictedZonesAroundContaminatedSites</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_2_RestrictedZonesAroundContaminatedSites</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_3_BrownfieldLand</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_3_BrownfieldLand</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_4_ExclusionAreaAroundSevesoSites</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_4_ExclusionAreaAroundSevesoSites</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_3_Mining</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_3_Mining</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_4_Erosion</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_4_Erosion</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_5_OtherRiskExposure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_5_OtherRiskExposure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_NaturalHeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_NaturalHeritageProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_1_BiodiversityProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_1_BiodiversityProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_2_GeodiversityProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_2_GeodiversityProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_2_LandscapeAreaProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_2_LandscapeAreaProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_3_BuiltHeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_3_BuiltHeritageProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_4_ArcheologicalProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_4_ArcheologicalProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_5_OtherHeritageProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_5_OtherHeritageProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_GeneralInterest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_GeneralInterest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_PublicEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_PublicEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_1_AirportEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_1_AirportEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_2_RailroadEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_2_RailroadEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_UtilityEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_UtilityEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_1_RainWaterEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_1_RainWaterEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_2_SanitarySewerEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_2_SanitarySewerEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_3_ElectricalPowerLineEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_3_ElectricalPowerLineEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_4_TelephoneLineEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_4_TelephoneLineEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_5_RadioElectricalEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_5_RadioElectricalEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_6_FuelGasPipeEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_6_FuelGasPipeEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_4_BeachAccess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_4_BeachAccess</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_5_ConservationEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_5_ConservationEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_6_HistoricPreservationEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_6_HistoricPreservationEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_7_OtherPublicEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_7_OtherPublicEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_2_OtherEasement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_2_OtherEasement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_3_OtherReservedAreasServingGeneralInterest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_3_OtherReservedAreasServingGeneralInterest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_LandPropertyRight</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_LandPropertyRight</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_1_UsableBuildingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_1_UsableBuildingArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_2_AreaReservedForPreEmptingParcels</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_2_AreaReservedForPreEmptingParcels</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_3_AreaReservedForRestructuringParcels</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_3_AreaReservedForRestructuringParcels</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_4_ReconstructionAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_4_ReconstructionAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_5_StandByLandResources</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_5_StandByLandResources</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_6_OtherLandPropertyRight</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_6_OtherLandPropertyRight</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_RegulationsOnBuildings</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_RegulationsOnBuildings</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_1_BuildingLine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_1_BuildingLine</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_2_BoundaryLine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_2_BoundaryLine</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_3_SpatialDesign</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_3_SpatialDesign</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_4_SecondaryStructureArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_4_SecondaryStructureArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_5_CollectiveFacility</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_5_CollectiveFacility</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_6_BuildingHeightRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_6_BuildingHeightRegulation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_7_BuildingDensityRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_7_BuildingDensityRegulation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_8_MinimumHousingSize</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_8_MinimumHousingSize</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_9_OtherRegulationsOnBuildings</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_9_OtherRegulationsOnBuildings</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_LocalRegionalStateDevelopmentPolicies</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_LocalRegionalStateDevelopmentPolicies</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_SettlementStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_SettlementStructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_CentralPlaces</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_CentralPlaces</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_1_Basic</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_1_Basic</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_2_LowerOrderCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_2_LowerOrderCentre</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_3_MiddleOrderCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_3_MiddleOrderCentre</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_4_HighOrderCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_4_HighOrderCentre</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_Axes</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_Axes</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_1_SettlementAxes</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_1_SettlementAxes</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_2_SupralocalAxes</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_2_SupralocalAxes</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_AssignmentOfFunctions</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_AssignmentOfFunctions</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_1_Housing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_1_Housing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_2_CommerceIndustry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_2_CommerceIndustry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_3_Services</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_3_Services</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_4_Tourism</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_4_Tourism</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_5_Agriculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_5_Agriculture</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_6_Forestry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_6_Forestry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_7_BusinessPark</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_7_BusinessPark</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_8_Technopole</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_8_Technopole</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_9_HarborActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_9_HarborActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_10_AirportActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_10_AirportActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDeferring</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDeferring</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbiddenActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbiddenActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation</td>
 </tr>
 </tr>
 </tbody>
@@ -4399,6 +6265,183 @@ Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 </tr><tr>
 <td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_6_NotKnownUse</td>
 <td width="20%">http://inspire.ec.europa.eu/codelist/HILUCSValue/6_6_NotKnownUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDeferring</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDeferring</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbiddenActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbiddenActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation</td>
 </tr>
 </tr>
 </tbody>

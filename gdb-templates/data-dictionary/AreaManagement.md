@@ -5,11 +5,11 @@
 <br/>
 <strong>Geodatabase Documentation</strong>
 <hr/>
-<strong>Date: </strong>20210630175156.5625198<br/>
+<strong>Date: </strong>20210702115740.569625<br/>
 <hr/>
 <p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 1
 Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">4 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">4 Relationship
-Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
+Classes</a><br/><a href="#Domains">3 Domains</a><br/></p>
 <hr/>
 <p><a name="FeatureDatasets"/><strong>Feature Datasets and Child Classes</strong></p><a name="Raster"/>
 <p><strong>Rasters</strong></p><br/>
@@ -23,6 +23,7 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 <p/>
 <hr/><br/><a name="Domains"/>
 <p><strong>Domains</strong></p>
+   <a href="#DomainLegislationLevelValue">LegislationLevelValue</a><br/><a href="#DomainZoneTypeCode">ZoneTypeCode</a><br/><a href="#DomainEnvironmentalDomain">EnvironmentalDomain</a><br/>
     <p><hr/><br/><a name="FeatureClassManagementRestrictionOrRegulationZone"/>
 <p><strong>ManagementRestrictionOrRegulationZone - FeatureClass</strong></p>
 <p>
@@ -162,8 +163,8 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">environmentalDomain_1_href</td>
-<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. URI from the EnvironmentalDomain Codelist</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - EnvironmentalDomain <a href="https://inspire.ec.europa.eu/codelist/EnvironmentalDomain">https://inspire.ec.europa.eu/codelist/EnvironmentalDomain</a></td>
+<td width="8%"><a href="#DomainEnvironmentalDomain">EnvironmentalDomain</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -184,8 +185,8 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">environmentalDomain_2_href</td>
-<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. URI from the EnvironmentalDomain Codelist</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - EnvironmentalDomain <a href="https://inspire.ec.europa.eu/codelist/EnvironmentalDomain">https://inspire.ec.europa.eu/codelist/EnvironmentalDomain</a></td>
+<td width="8%"><a href="#DomainEnvironmentalDomain">EnvironmentalDomain</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -206,8 +207,8 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 <td width="8%">String</td>
 <td width="3%">254</td>
 <td width="8%">environmentalDomain_3_href</td>
-<td width="8%">Classification of the environment domain(s) for which, through the establishment of the zone, certain environmental objectives shall be reached. URI from the EnvironmentalDomain Codelist</td>
-<td width="8%"><a href="#Domain"/></td>
+<td width="8%">URI from the INSPIRE code list register - EnvironmentalDomain <a href="https://inspire.ec.europa.eu/codelist/EnvironmentalDomain">https://inspire.ec.europa.eu/codelist/EnvironmentalDomain</a></td>
+<td width="8%"><a href="#DomainEnvironmentalDomain">EnvironmentalDomain</a></td>
 <td width="8%"/>
 <td width="8%">true</td>
 <td/>
@@ -1420,3 +1421,274 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 </tr>
 </tbody>
 </table></p>
+    <p>
+    <hr/><a name="DomainLegislationLevelValue"/>
+<p><strong>LegislationLevelValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">LegislationLevelValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/international</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/international</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/european</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/european</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/national</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/national</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/sub-national</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LegislationLevelValue/sub-national</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/regulatedFairwayAtSeaOrLargeInlandWater</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/regulatedFairwayAtSeaOrLargeInlandWater</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/restrictedZonesAroundContaminatedSites</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/restrictedZonesAroundContaminatedSites</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/areaForDisposalOfWaste</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/areaForDisposalOfWaste</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/coastalZoneManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/coastalZoneManagementArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/drinkingWaterProtectionArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/drinkingWaterProtectionArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/nitrateVulnerableZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/nitrateVulnerableZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/marineRegion</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/marineRegion</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/riverBasinDistrict</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/riverBasinDistrict</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/bathingWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/bathingWaters</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/floodUnitOfManagement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/floodUnitOfManagement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/waterBodyForWFD</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/waterBodyForWFD</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/sensitiveArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/sensitiveArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/designatedWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/designatedWaters</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/plantHealthProtectionZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/plantHealthProtectionZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/forestManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/forestManagementArea</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainZoneTypeCode"/>
+<p><strong>ZoneTypeCode - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">ZoneTypeCode</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/airQualityManagementZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/airQualityManagementZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/noiseRestrictionZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/noiseRestrictionZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/animalHealthRestrictionZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/animalHealthRestrictionZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/prospectingAndMiningPermitArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/prospectingAndMiningPermitArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/regulatedFairwayAtSeaOrLargeInlandWater</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/regulatedFairwayAtSeaOrLargeInlandWater</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/restrictedZonesAroundContaminatedSites</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/restrictedZonesAroundContaminatedSites</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/areaForDisposalOfWaste</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/areaForDisposalOfWaste</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/coastalZoneManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/coastalZoneManagementArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/drinkingWaterProtectionArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/drinkingWaterProtectionArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/nitrateVulnerableZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/nitrateVulnerableZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/marineRegion</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/marineRegion</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/riverBasinDistrict</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/riverBasinDistrict</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/bathingWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/bathingWaters</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/floodUnitOfManagement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/floodUnitOfManagement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/waterBodyForWFD</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/waterBodyForWFD</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/sensitiveArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/sensitiveArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/designatedWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/designatedWaters</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/plantHealthProtectionZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/plantHealthProtectionZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/forestManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/forestManagementArea</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainEnvironmentalDomain"/>
+<p><strong>EnvironmentalDomain - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">EnvironmentalDomain</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/soil</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/soil</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/noise</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/noise</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/naturalResources</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/naturalResources</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/climateAndClimateChange</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/climateAndClimateChange</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/healthProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/healthProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/air</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/air</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/water</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/water</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/waste</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/waste</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/natureAndBiodiversity</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/natureAndBiodiversity</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/sustainableDevelopment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/sustainableDevelopment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/landUse</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EnvironmentalDomain/landUse</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/riverBasinDistrict</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/riverBasinDistrict</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/bathingWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/bathingWaters</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/floodUnitOfManagement</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/floodUnitOfManagement</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/waterBodyForWFD</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/waterBodyForWFD</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/sensitiveArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/sensitiveArea</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/designatedWaters</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/designatedWaters</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/plantHealthProtectionZone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/plantHealthProtectionZone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/forestManagementArea</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ZoneTypeCode/forestManagementArea</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p>

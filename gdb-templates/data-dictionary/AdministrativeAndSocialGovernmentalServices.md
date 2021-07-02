@@ -5,11 +5,11 @@
 <br/>
 <strong>Geodatabase Documentation</strong>
 <hr/>
-<strong>Date: </strong>20210630175156.3603496<br/>
+<strong>Date: </strong>20210702115740.3029692<br/>
 <hr/>
 <p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 4
 Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">0 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">3 Relationship
-Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
+Classes</a><br/><a href="#Domains">1 Domains</a><br/></p>
 <hr/>
 <p><a name="FeatureDatasets"/><strong>Feature Datasets and Child Classes</strong></p><a name="Raster"/>
 <p><strong>Rasters</strong></p><br/>
@@ -23,6 +23,7 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 <p/>
 <hr/><br/><a name="Domains"/>
 <p><strong>Domains</strong></p>
+   <a href="#DomainServiceTypeValue">ServiceTypeValue</a><br/>
     <p><hr/><br/><a name="FeatureClassGovernmentalServiceL"/>
 <p><strong>GovernmentalServiceL - FeatureClass</strong></p>
 <p>
@@ -1109,3 +1110,205 @@ Classes</a><br/><a href="#Domains">0 Domains</a><br/></p>
 </tr>
 </tbody>
 </table></p>
+    <p>
+    <hr/><a name="DomainServiceTypeValue"/>
+<p><strong>ServiceTypeValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">ServiceTypeValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/publicAdministrationOffice</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/publicAdministrationOffice</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/generalAdministrationOffice</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/generalAdministrationOffice</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/specializedAdministrationOffice</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/specializedAdministrationOffice</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/publicOrderAndSafety</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/publicOrderAndSafety</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForPublicOrderAndSafety</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForPublicOrderAndSafety</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/policeService</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/policeService</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/fireProtectionService</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/fireProtectionService</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/fireStation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/fireStation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/siren</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/siren</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/hydrant</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/hydrant</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/antiFireWaterProvision</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/antiFireWaterProvision</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/fireDetectionAndObservationSite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/fireDetectionAndObservationSite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/rescueService</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/rescueService</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/rescueStation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/rescueStation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/rescueHelicopterLandingSite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/rescueHelicopterLandingSite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/marineRescueStation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/marineRescueStation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/civilProtectionSite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/civilProtectionSite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/emergencyCallPoint</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/emergencyCallPoint</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/standaloneFirstAidEquipment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/standaloneFirstAidEquipment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/defence</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/defence</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/barrack</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/barrack</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/camp</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/camp</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/environmentalProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/environmentalProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForEnvironmentalProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForEnvironmentalProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/environmentalEducationCentre</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/environmentalEducationCentre</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/health</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/health</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForHealth</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForHealth</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/medicalProductsAppliancesAndEquipment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/medicalProductsAppliancesAndEquipment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/outpatientService</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/outpatientService</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/generalMedicalService</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/generalMedicalService</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/specializedMedicalServices</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/specializedMedicalServices</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/paramedicalService</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/paramedicalService</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/hospitalService</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/hospitalService</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/generalHospital</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/generalHospital</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/specializedHospital</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/specializedHospital</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/nursingAndConvalescentHomeService</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/nursingAndConvalescentHomeService</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/medicalAndDiagnosticLaboratory</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/medicalAndDiagnosticLaboratory</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/education</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/education</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForEducation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForEducation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/earlyChildhoodEducation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/earlyChildhoodEducation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/primaryEducation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/primaryEducation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/lowerSecondaryEducation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/lowerSecondaryEducation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/upperSecondaryEducation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/upperSecondaryEducation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/postSecondaryNonTertiaryEducation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/postSecondaryNonTertiaryEducation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/shortCycleTertiaryEducation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/shortCycleTertiaryEducation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/bachelorOrEquivalentEducation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/bachelorOrEquivalentEducation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/masterOrEquivalentEducation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/masterOrEquivalentEducation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/doctoralOrEquivalentEducation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/doctoralOrEquivalentEducation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/educationNotElsewhereClassified</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/educationNotElsewhereClassified</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/subsidiaryServicesToEducation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/subsidiaryServicesToEducation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/socialService</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/socialService</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForSocialProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/administrationForSocialProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/specializedServiceOfSocialProtection</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/specializedServiceOfSocialProtection</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/housing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/housing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/childCareService</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/childCareService</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/charityAndCounselling</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/ServiceTypeValue/charityAndCounselling</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
