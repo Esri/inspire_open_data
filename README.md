@@ -1,33 +1,33 @@
 # Streamlined INSPIRE Esri GDB - Alternative Encodings 
 This is a repository for streamlined INSPIRE Esri Geodatabase (GDB) encodings documented according to INSPIRE Implementing Rules (IRs) [Article 7 -- Encodings](#inspire-requirements-for-encoding-rules). This repository provides access to:
 * streamlined fGDB templates
-* publicly available encoding rules used to encode spatial data and that explain how (and/or under which conditions) the encoding meets the requirements of the IRs
+* publicly available encoding rules used to encode spatial data and that explain how (and under which conditions) the encoding meets the requirements of the IRs
 * examples
 
-Importantly, data provided in streamlined INSPIRE Esri GDBs can be used as an alternative to (i.e., instead of) the default complex INSPIRE GML encoding, or in addition to the default encoding.
+Importantly, data provided in streamlined INSPIRE Esri GDBs can be used as an alternative to (i.e., instead of) the default complex INSPIRE GML encoding or in addition to the default encoding.
 
 ## Why would you want to use alternative encodings? 
-For many use cases, streamlined INSPIRE data are easier to create, use, and share. The default encoding for INSPIRE is highly structured complex GML. It is widely recognized that due to complex data structures the consumption of INSPIRE data is not easy.[[1]](#referencees) By applying Alternative Encoding rules, the complex data structures are simplified and flattened, resulting in streamlined INSPIRE data (also referred to as simplified INSPIRE data). Streamlined INSPIRE data have great potential to improve interoperablity and ease of use within mainstream ICT and GIS applications.
+For many use cases, streamlined INSPIRE data are easier to create, use, and share. The default encoding for INSPIRE is highly structured complex GML. It is widely recognized that due to complex data structures, the consumption of INSPIRE data is not easy.[[1]](#references) By applying Alternative Encoding rules, the complex data structures are simplified and flattened, resulting in streamlined INSPIRE data (also referred to as simplified INSPIRE data). Streamlined INSPIRE data have great potential to improve interoperability and ease of use within mainstream ICT and GIS applications.
 
 INSPIRE Action 2017.2 Maintenance and Implementation Group (MIG) work programme [[2]](#referencees) laid the groundwork for Alternative Encoding by defining documentation templates and providing guidance and examples for developing alternative encodings. 
 
 ### This body of work
-During action 2017.2, proposals for alternative encodings rules were collected through an open call on the MIG collaboration platform and prioritised by Member State representatives in a survey. The results of the survey clearly showed support for GeoJSON as a possible alternative encoding. In addition, also simplified GML, database formats (geopackage, PostGIS, ESRI Geodatabase (GDB)) and linked data had significant support.[[3]](#referencees)
+During action 2017.2, proposals for alternative encodings rules were collected through an open call on the MIG collaboration platform and prioritised by Member State representatives in a survey. The results of the survey clearly showed support for GeoJSON as a possible alternative encoding. In addition, simplified GML, database formats (GeoPackage, PostGIS, ESRI Geodatabase (GDB)), and linked data also had significant support.[[3]](#referencees)
 
 This body of work addresses the proposed support for using ESRI Geodatabase (GDB) and contributes to the larger body of work on INSPIRE alternative encodings.[[4]](#referencees)
 
-The INSPIRE-MIF Repository for action 2017.2 on alternative encoings can be found [here](https://github.com/INSPIRE-MIF/2017.2), including [template for Alternative Encodings for INSPIRE Data](https://github.com/INSPIRE-MIF/2017.2/blob/master/template/template.md) used herein. The glossary for terms can be found [here](https://github.com/INSPIRE-MIF/2017.2/blob/master/glossary.md).
+It references the INSPIRE-MIF Repository for [Action 2017.2 on alternative encodings](https://github.com/INSPIRE-MIF/2017.2), including the [template for Alternative Encodings for INSPIRE Data](https://github.com/INSPIRE-MIF/2017.2/blob/master/template/template.md) and the [glossary of terms](https://github.com/INSPIRE-MIF/2017.2/blob/master/glossary.md).
 
 ### Why GDB? 
-In today’s IT environment, users expect to share multiple representations of a resource and multiple service interfaces (APIs) to access the same data resource to target different users and use cases. ArcGIS makes interoperability easy through application of international open standards and open specifications. With ArcGIS, your GDB data are easily published and shared as GeoServices and shared as GeoJSON, CSV, KML, Shapefile, and fGDB. Optional additional distributions can include OGC WMTS, WFS, GeoPackage, and OGC API-Features.
+In today's IT environment, users expect to share multiple representations and service interfaces (APIs) of the same data resource to target different users and use cases. ArcGIS makes interoperability easy through the application of international open standards and open specifications. With ArcGIS, your GDB data are easily published as GeoServices and shared as GeoJSON, CSV, KML, Shapefile, and fGDB. Optional additional distributions can include OGC WMTS, WFS, GeoPackage, and OGC API-Features.
 
-The geodatabase (GDB) is a "container" used to hold a collection of datasets. File Geodatabase (fGDB) is a subtype of GDB stored as folders in a file system. fGDB uses an efficient data structure for high performance and scalability. By default, fGDB files can grow to 1 TB, and this can be changed to 4 or 256 TB using a configuration keyword.
+The geodatabase (GDB) is a "container" used to hold a collection of datasets. File Geodatabase (fGDB) is a subtype of GDB stored as folders in a file system. fGDB uses an efficient data structure for high performance and scalability. By default, fGDB files can grow to 1 TB, which can be changed to 4 or 256 TB using a configuration keyword.
 
 #### fGDB Links
 * Learn more [about fGDB](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/types-of-geodatabases.htm)
 * [ESRI File Geodatabase API](https://github.com/Esri/file-geodatabase-api)
 * GDAL documentation for Vector drivers » [ESRI File Geodatabase (FileGDB)](https://gdal.org/drivers/vector/filegdb.html)
-* [Working with File Geodatabases (.GBD) using qGIS and GDAL](https://gis.ucla.edu/node/53), UCLA Geospatial (2015)
+* [Working with File Geodatabases (.GBD) using QGIS and GDAL](https://gis.ucla.edu/node/53), UCLA Geospatial (2015)
 
 ## INSPIRE Requirements for Encoding Rules
 The Implementing Rules on interoperability of spatial data sets and services (Commission Regulation (EU) No 1089/2010) lays down the following requirements for encoding rules:
@@ -42,15 +42,15 @@ The Implementing Rules on interoperability of spatial data sets and services (Co
 **D2.7** also contains a relevant recommendation:
 > Recommendation 3: Encoding rules should be based on international, preferably open, standards.
 
-The important thing is that a complete mapping from the UML conceptual model to the encoding used and made public, as is done in this repository.
+The important thing is a complete mapping from the UML conceptual model to the encoding used and made public, as is done in this repository.
 
 ## Is the Default INSPIRE GML Encoding Still Required?
 
 Data provided through INSPIRE Alternative Encoding can be used *instead of* the default complex INSPIRE GML encoding, or *in addition to* the default encoding.
 
-It depends on the source data whether an encoding can be considered alternative (or just additional). The default encoding is **not required**, so long as the simplification rules do not lead to information loss from the source data set *as compared with using the ddefault encoding.* If the simplification rules lead to information loss from the source data set, it should be considered an "additional encoding" and the default INSPIRE GML encoding should still be used.
+It depends on the source data whether an encoding can be considered an alternative (or just additional). The default encoding is **not required**, so long as the simplification rules do not lead to information loss from the source data set *as compared with using the default encoding.* If the simplification rules lead to information loss from the source data set, it should be considered an "additional encoding," and the default INSPIRE GML encoding should still be used.
   
-The alternative encoding should not be used to omit attributes or object types that exist in the source data.
+Alternative encoding should not be used to omit attributes or object types that exist in the source data.
 
 ## References
 [1] INSPIRE action 2017.2 on Alternative Encodings https://inspire.ec.europa.eu/sites/default/files/inspire_alternative_encodings.pdf
@@ -60,5 +60,3 @@ The alternative encoding should not be used to omit attributes or object types t
 [3] https://github.com/INSPIRE-MIF/2017.2/blob/master/GeoJSON/geojson-encoding-rule.md
 
 [4] Github Action 2017.2 working space https://github.com/INSPIRE-MIF/2017.2
-
-
