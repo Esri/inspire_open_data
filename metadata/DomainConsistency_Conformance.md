@@ -1,8 +1,4 @@
-DRAFT - Template metadata for fGDB templates
-- [x] TO DO: suggest conformity explanation
-- [ ] TO DO: create template MD for fGDB
-- [ ] TO DO: create version of template MD to distrtibute with demo data
-- [ ] TO DO: add link to Learn Path
+
 
 ## Conformity explanation statement
 INSPIRE Metadata must contain an explanation of conformance, and the metadata ConformanceResult is used to gather metrics for INSPIRE reporting. To convey that Alternative Encoding are used to meet INSPIRE requirements for encoding rules per Article 7, this guidance document proposes the following conformity explanation statement for use in the data set **Metadata Quality Report for Domain Consistency**:
@@ -29,6 +25,3 @@ Data providers are responsible for the conformance of their data to INSPIRE Impl
 - THEN the spatial data sets provided can be considered conformant to the Alternative Encoding per the conformance explanation statement.
 
 Finally, share your INSPIRE spatial data sets, services, and metadata using Hub Open Data to fulfill your obligations under the PSI-2/Open Data Directive.
-
-## Learn how
-Ready to learn how? ArcGIS INSPIRE Open Data is a freely available solution to use with ArcGIS. Step-by-step tutorials are available to guide you through the process [Follow the Learn Path](https://linktoLearnPath)
