@@ -18,16 +18,20 @@ This body of work addresses the proposed support for using ESRI Geodatabase (GDB
 
 It references the INSPIRE-MIF Repository for [Action 2017.2 on alternative encodings](https://github.com/INSPIRE-MIF/2017.2), including the [template for Alternative Encodings for INSPIRE Data](https://github.com/INSPIRE-MIF/2017.2/blob/master/template/template.md) and the [glossary of terms](https://github.com/INSPIRE-MIF/2017.2/blob/master/glossary.md).
 
+Openly and publicly available encoding rules under an [Apache license](https://github.com/ArcGIS/inspire_open_data/blob/main/license.txt).
+
 ### Why GDB? 
 In today's IT environment, users expect to share multiple representations and service interfaces (APIs) of the same data resource to target different users and use cases. ArcGIS makes interoperability easy through the application of international open standards and open specifications. With ArcGIS, your GDB data are easily published as GeoServices and shared as GeoJSON, CSV, KML, Shapefile, and fGDB. Optional additional distributions can include OGC WMTS, WFS, GeoPackage, and OGC API-Features.
 
 The geodatabase (GDB) is a "container" used to hold a collection of datasets. File Geodatabase (fGDB) is a subtype of GDB stored as folders in a file system. fGDB uses an efficient data structure for high performance and scalability. By default, fGDB files can grow to 1 TB, which can be changed to 4 or 256 TB using a configuration keyword.
 
 #### fGDB Links
-* Learn more [about fGDB](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/types-of-geodatabases.htm)
-* [ESRI File Geodatabase API](https://github.com/Esri/file-geodatabase-api)
-* GDAL documentation for Vector drivers » [ESRI File Geodatabase (FileGDB)](https://gdal.org/drivers/vector/filegdb.html)
-* [Working with File Geodatabases (.GBD) using QGIS and GDAL](https://gis.ucla.edu/node/53), UCLA Geospatial (2015)
+* [Streamlined INSPIRE GDB Templates](https://arcgis-inspire-esri.opendata.arcgis.com/pages/resources) following Alternative Encoding rules documented herein
+* Additional resources about File Geodatabase
+   * Learn more [about fGDB](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/types-of-geodatabases.htm)
+   * [ESRI File Geodatabase API](https://github.com/Esri/file-geodatabase-api)
+   * GDAL documentation for Vector drivers » [ESRI File Geodatabase (FileGDB)](https://gdal.org/drivers/vector/filegdb.html)
+   * [Working with File Geodatabases (.GBD) using QGIS and GDAL](https://gis.ucla.edu/node/53), UCLA Geospatial (2015)
 
 ## INSPIRE Requirements for Encoding Rules
 The Implementing Rules on interoperability of spatial data sets and services (Commission Regulation (EU) No 1089/2010) lays down the following requirements for encoding rules:
