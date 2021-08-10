@@ -1,8 +1,9 @@
 # Streamlined INSPIRE Esri GDB - Alternative Encodings 
 This is a repository for streamlined INSPIRE Esri Geodatabase (GDB) encodings documented according to INSPIRE Implementing Rules (IRs) [Article 7 -- Encodings](#inspire-requirements-for-encoding-rules). This repository provides access to:
-* streamlined fGDB templates
+
 * publicly available encoding rules used to encode spatial data and that explain how (and under which conditions) the encoding meets the requirements of the IRs
-* examples
+* streamlined fGDB templates
+* live [ArcGIS INSPIRE Open Data](https://arcgis-inspire-esri.opendata.arcgis.com/) demonstration Hub
 
 Importantly, data provided in streamlined INSPIRE Esri GDBs can be used as an alternative to (i.e., instead of) the default complex INSPIRE GML encoding or in addition to the default encoding.
 
@@ -18,10 +19,8 @@ This body of work addresses the proposed support for using ESRI Geodatabase (GDB
 
 It references the INSPIRE-MIF Repository for [Action 2017.2 on alternative encodings](https://github.com/INSPIRE-MIF/2017.2), including the [template for Alternative Encodings for INSPIRE Data](https://github.com/INSPIRE-MIF/2017.2/blob/master/template/template.md) and the [glossary of terms](https://github.com/INSPIRE-MIF/2017.2/blob/master/glossary.md).
 
-Openly and publicly available encoding rules under an [Apache license](https://github.com/ArcGIS/inspire_open_data/blob/main/license.txt).
-
 ### Why GDB? 
-In today's IT environment, users expect to share multiple representations and service interfaces (APIs) of the same data resource to target different users and use cases. ArcGIS makes interoperability easy through the application of international open standards and open specifications. With ArcGIS, your GDB data are easily published as GeoServices and shared as GeoJSON, CSV, KML, Shapefile, and fGDB. Optional additional distributions can include OGC WMTS, WFS, GeoPackage, and OGC API-Features.
+In today's IT environment, users expect to share multiple representations and service interfaces (APIs) of the same data resource to target different users and use cases. ArcGIS makes interoperability easy through the application of international open standards and open specifications. With ArcGIS, your GDB data are easily published as GeoServices REST and shared as GeoJSON, CSV, KML, Shapefile, and fGDB. Optional additional distributions including OGC WMTS and OGC API-Features provide your INSPIRE View and Download services.
 
 The geodatabase (GDB) is a "container" used to hold a collection of datasets. File Geodatabase (fGDB) is a subtype of GDB stored as folders in a file system. fGDB uses an efficient data structure for high performance and scalability. By default, fGDB files can grow to 1 TB, which can be changed to 4 or 256 TB using a configuration keyword.
 
@@ -49,7 +48,6 @@ The Implementing Rules on interoperability of spatial data sets and services (Co
 The important thing is a complete mapping from the UML conceptual model to the encoding used and made public, as is done in this repository.
 
 ## Is the Default INSPIRE GML Encoding Still Required?
-
 Data provided through INSPIRE Alternative Encoding can be used *instead of* the default complex INSPIRE GML encoding, or *in addition to* the default encoding.
 
 It depends on the source data whether an encoding can be considered an alternative (or just additional). The default encoding is **not required**, so long as the simplification rules do not lead to information loss from the source data set *as compared with using the default encoding.* If the simplification rules lead to information loss from the source data set, it should be considered an "additional encoding," and the default INSPIRE GML encoding should still be used.
@@ -64,3 +62,26 @@ Alternative encoding should not be used to omit attributes or object types that 
 [3] https://github.com/INSPIRE-MIF/2017.2/blob/master/GeoJSON/geojson-encoding-rule.md
 
 [4] Github Action 2017.2 working space https://github.com/INSPIRE-MIF/2017.2
+
+## Join the Esri Community
+[INSPIRE Esri Community](https://community.esri.com/t5/inspire/ct-p/inspire)
+
+## Contributing
+Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/esri/contributing).
+
+## Licensing
+Copyright 2021 Esri
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+A copy of the license is available in the repository's [license.txt]( https://github.com/ArcGIS/inspire_open_data/blob/main/license.txt) file.
