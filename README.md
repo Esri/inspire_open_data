@@ -1,5 +1,5 @@
 # Streamlined INSPIRE Esri GDB - Alternative Encodings 
-This is a repository for streamlined INSPIRE Esri Geodatabase (GDB) encodings documented according to INSPIRE Implementing Rules (IRs) [Article 7 -- Encodings](#inspire-requirements-for-encoding-rules). This repository provides access to:
+This is a repository for streamlined INSPIRE Esri Geodatabase (GDB) encoding rules documented according to INSPIRE Implementing Rules (IRs) [Article 7 -- Encodings](#inspire-requirements-for-encoding-rules). This repository provides access to:
 
 * publicly available encoding rules used to encode spatial data and that explain how (and under which conditions) the encoding meets the requirements of the IRs
 * [streamlined INSPIRE GDB Templates](https://arcgis-inspire-esri.opendata.arcgis.com/pages/resources) following Alternative Encoding rules documented herein
