@@ -13,7 +13,7 @@
     <li>inspireId_namespace</li>
     <li>name_spelling_text</li>
 </ul>
-<p>This model transformation rule does not handle cardinalities greater than 1; it thus does not introduce any numeric elements into the new property name to account for multiple occurences. It also does not make use of the element names as they would be encoded in XML to keep the resulting proeprty names shorter. In most cases outside the use of substitution groups, this does not lead to issues. These should be resolved using any of the three Transformation Rules that can deal with that ([Primitive Array](./MT002_ExtractPrimitiveArray.md), [Associations to Soft Typed properties](./MT004_AssociatedComponentsSoftType.md), [Associations to Hard Typed properties](./MT003_AssociatedComponentsHardType.md)).</p>
+<p>This model transformation rule does not handle cardinalities greater than 1; it thus does not introduce any numeric elements into the new property name to account for multiple occurences. It also does not make use of the element names as they would be encoded in XML to keep the resulting proeprty names shorter. In most cases outside the use of substitution groups, this does not lead to issues. These should be resolved using any of the three Transformation Rules that can deal with that ([Primitive Array](MT002_ExtractPrimitiveArray.md), [Associations to Soft Typed properties](MT004_AssociatedComponentsSoftType.md), [Associations to Hard Typed properties](MT003_AssociatedComponentsHardType.md)).</p>
 </td>
 </tr>
 <tr>
