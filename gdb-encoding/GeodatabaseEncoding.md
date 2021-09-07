@@ -26,9 +26,9 @@
     * Identifiers
 * [INSPIRE Theme Encoding Rules](#inspire-theme-encoding-rules)
 
-## Preface
+[comment]: <>  (## Preface)
 
-todo
+[comment]: <>  (todo)
 
 
 
@@ -110,7 +110,7 @@ D2.7 also contains a relevant recommendation:
 
 This section contains references to standards documents and related resources.
 
-*To Do: Good Reference for the GDB format* *To Do: REVIEW THIS XX*
+[comment]: <>  (*To Do: Good Reference for the GDB format* *To Do: REVIEW THIS XX*)
 
 * [Sustainability of Digital Formats: Planning for Library of Congress Collections – ESRI Geodatabase XML](https://www.loc.gov/preservation/digital/formats/fdd/fdd000295.shtml)
 * [GeoJSON - IETF RFC 7946](https://tools.ietf.org/html/rfc7946)
