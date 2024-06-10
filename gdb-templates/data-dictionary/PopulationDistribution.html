@@ -1,5 +1,49 @@
-#Population Distribution - demography
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<style type="text/css">
+	body {
+		font-family: Tahoma
+	}
 
+	table {
+		font-size: 90%;
+		vertical-align: top;
+		border-style: solid;
+		border-width: 0px;
+		border-color: gray;
+		border-collapse: collapse;
+		border-spacing: 1pt;
+		background-color: white
+	}
+
+	th {
+		text-align: left;
+		font-family: Verdana;
+		vertical-align: bottom
+	}
+
+	tr {
+		vertical-align: top
+	}
+
+	a {}
+
+	td {
+		border-width: 1px;
+		border-color: black;
+		padding: 2px;
+		border-style: solid;
+		border-collapse: collapse;
+		border-spacing: 1pt;
+		background-color: white
+	}
+
+	hr {
+		color:#3333FF;
+	}
+</style>
+
+<body>
 <br />
 <strong>Geodatabase Documentation</strong>
 <hr />
@@ -116,6 +160,72 @@
       <td />
       <td />
     </tr>
+		<tr>
+      <td width="8%">beginLifespanVersion</td>
+      <td width="8%">Date</td>
+      <td width="3%">8</td>
+      <td width="8%">beginLifespanVersion</td>
+      <td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial
+        data set. </td>
+      <td width="8%"><a href="#Domain" /></td>
+      <td width="8%" />
+      <td width="8%">true</td>
+      <td />
+      <td />
+    </tr>
+    <tr>
+      <td width="8%">endLifespanVersion</td>
+      <td width="8%">Date</td>
+      <td width="3%">8</td>
+      <td width="8%">endLifespanVersion</td>
+      <td width="8%">Date and time at which this version of the spatial object was superseded or retired in the
+        spatial data set. </td>
+      <td width="8%"><a href="#Domain" /></td>
+      <td width="8%" />
+      <td width="8%">true</td>
+      <td />
+      <td />
+    </tr>
+<tr>
+      <td width="8%">inspireId_localId</td>
+      <td width="8%">String</td>
+      <td width="3%">256</td>
+      <td width="8%">inspireId_localId</td>
+      <td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the
+        namespace, that is no other spatial object carries the same unique identifier. </td>
+      <td width="8%"><a href="#Domain" /></td>
+      <td width="8%" />
+      <td width="8%">true</td>
+      <td />
+      <td />
+    </tr>
+    <tr>
+      <td width="8%">inspireId_namespace</td>
+      <td width="8%">String</td>
+      <td width="3%">256</td>
+      <td width="8%">inspireId_namespace</td>
+      <td width="8%">Namespace uniquely identifying the data source of the spatial object. </td>
+      <td width="8%"><a href="#Domain" /></td>
+      <td width="8%" />
+      <td width="8%">true</td>
+      <td />
+      <td />
+    </tr>
+    <tr>
+      <td width="8%">inspireId_versionId</td>
+      <td width="8%">String</td>
+      <td width="3%">256</td>
+      <td width="8%">inspireId_versionId</td>
+      <td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25
+        characters. If the specification of a spatial object type with an external object identifier includes
+        life-cycle information, the version identifier is used to distinguish between the different versions of a
+        spatial object. Within the set of all versions of a spatial object, the version identifier is unique </td>
+      <td width="8%"><a href="#Domain" /></td>
+      <td width="8%" />
+      <td width="8%">true</td>
+      <td />
+      <td />
+    </tr>
     <tr>
       <td width="8%">AgeBy5Years</td>
       <td width="8%">Integer</td>
@@ -131,7 +241,7 @@
     <tr>
       <td width="8%">AgeBy5Years_herf</td>
       <td width="8%">String</td>
-      <td width="3%">254</td>
+      <td width="3%">256</td>
       <td width="8%">AgeBy5Years_herf</td>
       <td width="8%">URI from the INSPIRE code list register - AgeBy5Years - https://inspire.ec.europa.eu/codelist/ClassificationTypeValue/ageBy5Years</td>
       <td width="8%"><a href="#AgeBy5Years" >AgeBy5Years</a></td>
@@ -155,7 +265,7 @@
     <tr>
       <td width="8%">AgeByYear_herf</td>
       <td width="8%">String</td>
-      <td width="3%">254</td>
+      <td width="3%">256</td>
       <td width="8%">AgeByYear_herf</td>
       <td width="8%">URI from the INSPIRE code list register - AgeByYearValue - https://inspire.ec.europa.eu/codelist/ClassificationTypeValue/ageByYear</td>
       <td width="8%"><a href="#AgeByYear" >AgeByYear</a></td>
@@ -179,7 +289,7 @@
     <tr>
       <td width="8%">AgeGroup_herf</td>
       <td width="8%">String</td>
-      <td width="3%">254</td>
+      <td width="3%">256</td>
       <td width="8%">AgeGroup_herf</td>
       <td width="8%">URI from the INSPIRE code list register - AgeGroupValue - http://inspire.ec.europa.eu/codeList/AgeGroupValue</td>
       <td width="8%"><a href="#AgeGroupValue" >AgeGroupValue</a></td>
@@ -203,7 +313,7 @@
     <tr>
       <td width="8%">Gender_herf</td>
       <td width="8%">String</td>
-      <td width="3%">254</td>
+      <td width="3%">256</td>
       <td width="8%">Gender_herf</td>
       <td width="8%">URI from the INSPIRE code list register - Gender - https://inspire.ec.europa.eu/codelist/ClassificationTypeValue/gender</td>
       <td width="8%"><a href="#Gender" >Gender</a></td>
@@ -228,7 +338,7 @@ The economic activity classification NACE Version 2 (Classification of Economic 
     <tr>
       <td width="8%">NACE_href</td>
       <td width="8%">String</td>
-      <td width="3%">254</td>
+      <td width="3%">256</td>
       <td width="8%">NACE_href</td>
       <td width="8%">URI from the INSPIRE code list register - NACE - https://inspire.ec.europa.eu/codelist/ClassificationTypeValue/Nace2</td>
       <td width="8%"><a href="#Domain" />NACE</td>
@@ -264,7 +374,7 @@ The economic activity classification NACE Version 2 (Classification of Economic 
     <tr>
       <td width="8%">SpecialValue_href</td>
       <td width="8%">String</td>
-      <td width="3%">254</td>
+      <td width="3%">256</td>
       <td width="8%">SpecialValue_href</td>
       <td width="8%">URI from the INSPIRE code list register - SpecialValue - http://inspire.ec.europa.eu/codeList/SpecialValue</td>
       <td width="8%"><a href="#Domain" /></td>
@@ -289,7 +399,7 @@ Statistical Value/td>
     <tr>
       <td width="8%">StatisticalValue_href</td>
       <td width="8%">String</td>
-      <td width="3%">254</td>
+      <td width="3%">256</td>
       <td width="8%">StatisticalValue_href</td>
       <td width="8%">URI from the INSPIRE code list register - StatisticalValue - http://inspire.ec.europa.eu/codeList/StatisticsMeasurementMethodValue</td>
       <td width="8%"><a href="#Domain" /></td>
@@ -313,7 +423,7 @@ Statistical Value/td>
     <tr>
       <td width="8%">StatisticalMeasurement_href</td>
       <td width="8%">String</td>
-      <td width="3%">254</td>
+      <td width="3%">256</td>
       <td width="8%">StatisticalMeasurement_href</td>
       <td width="8%">URI from the INSPIRE code list register - StatisticalMeasurement - http://inspire.ec.europa.eu/codeList/StatisticsMeasurementMethodValue</td>
       <td width="8%"><a href="#Domain" /></td>
@@ -662,3 +772,4 @@ Statistical Value/td>
 </table>
 </p>
 </p>
+</p></body></html>
