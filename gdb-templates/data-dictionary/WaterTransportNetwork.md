@@ -1,0 +1,3001 @@
+
+#WaterTransportNetwork
+
+
+<br/>
+<strong>Geodatabase Documentation</strong>
+<hr/>
+<strong>Date: </strong>20250228144323.6614139<br/>
+<hr/>
+<p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 7
+Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">8 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">4 Relationship
+Classes</a><br/><a href="#Domains">4 Domains</a><br/></p>
+<hr/>
+<p><a name="FeatureDatasets"/><strong>Feature Datasets and Child Classes</strong></p><a name="Raster"/>
+<p><strong>Rasters</strong></p><br/>
+<hr/><a name="ObjectClasses"/>
+<p><strong>Workspace-Level Tables and Feature Classes</strong></p>
+    <a href="#FeatureClassBeacon">Beacon - FeatureClass</a><br/><a href="#FeatureClassBuoy">Buoy - FeatureClass</a><br/><a href="#FeatureClassFairwayArea">FairwayArea - FeatureClass</a><br/><a href="#TableFerryCrossing">FerryCrossing - Table</a><br/><a href="#TableFerryCrossing_link">FerryCrossing_link - Table</a><br/><a href="#TableInlandWaterway">InlandWaterway - Table</a><br/><a href="#TableInlandWaterway_link">InlandWaterway_link - Table</a><br/><a href="#TableMarineWaterway">MarineWaterway - Table</a><br/><a href="#TableMarineWaterway_link">MarineWaterway_link - Table</a><br/><a href="#FeatureClassPortArea">PortArea - FeatureClass</a><br/><a href="#FeatureClassPortNode">PortNode - FeatureClass</a><br/><a href="#TableTransportNetwork">TransportNetwork - Table</a><br/><a href="#TableTransportNetwork_elements">TransportNetwork_elements - Table</a><br/><a href="#FeatureClassWaterwayLink">WaterwayLink - FeatureClass</a><br/><a href="#FeatureClassWaterwayNode">WaterwayNode - FeatureClass</a><br/>
+<p/><br/>
+<hr/><a name="RelationshipClasses"/>
+<p><strong>Relationship Classes</strong></p>
+    <a href="#RelationshipClassRelFC_FC_link">RelFC_FC_link</a><br/><a href="#RelationshipClassRelIW_IW_link">RelIW_IW_link</a><br/><a href="#RelationshipClassRelMW_MW_link">RelMW_MW_link</a><br/><a href="#RelationshipClassRelTN_TN_elements">RelTN_TN_elements</a><br/>
+<p/>
+<hr/><br/><a name="Domains"/>
+<p><strong>Domains</strong></p>
+   <a href="#DomainFormOfWaterwayNodeValue">FormOfWaterwayNodeValue</a><br/><a href="#DomainFormOfWaterwayNodeValue_value">FormOfWaterwayNodeValue_value</a><br/><a href="#DomainTransportTypeValue">TransportTypeValue</a><br/><a href="#DomainTransportTypeValue_value">TransportTypeValue_value</a><br/>
+    <p><hr/><br/><a name="FeatureClassBeacon"/>
+<p><strong>Beacon - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">Beacon</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Point</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">Beacon</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">Beacon</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_language</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_language</td>
+<td width="8%">Language of the geographical name.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_name</td>
+<td width="8%">A geographical name that is used to identify the transport network object in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inNetwork</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">inNetwork</td>
+<td width="8%">featureId of the corresponding WaterTransportNetwork</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validFrom</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validFrom</td>
+<td width="8%">The time when the transport property started to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validTo</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validTo</td>
+<td width="8%">The time from which the transport property no longer exists in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassBuoy"/>
+<p><strong>Buoy - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">Buoy</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Point</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">Buoy</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">Buoy</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_language</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_language</td>
+<td width="8%">Language of the geographical name.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_name</td>
+<td width="8%">A geographical name that is used to identify the transport network object in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inNetwork</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">inNetwork</td>
+<td width="8%">featureId of the corresponding WaterTransportNetwork</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validFrom</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validFrom</td>
+<td width="8%">The time when the transport property started to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validTo</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validTo</td>
+<td width="8%">The time from which the transport property no longer exists in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassFairwayArea"/>
+<p><strong>FairwayArea - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">FairwayArea</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polygon</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">FairwayArea</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">FairwayArea</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_language</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_language</td>
+<td width="8%">Language of the geographical name.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_name</td>
+<td width="8%">A geographical name that is used to identify the transport network object in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inNetwork</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">inNetwork</td>
+<td width="8%">featureId of the corresponding WaterTransportNetwork</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validFrom</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validFrom</td>
+<td width="8%">The time when the transport property started to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validTo</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validTo</td>
+<td width="8%">The time from which the transport property no longer exists in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassPortArea"/>
+<p><strong>PortArea - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">PortArea</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polygon</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">PortArea</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">PortArea</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_language</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_language</td>
+<td width="8%">Language of the geographical name.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_name</td>
+<td width="8%">A geographical name that is used to identify the transport network object in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validFrom</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validFrom</td>
+<td width="8%">The time when the transport property started to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validTo</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validTo</td>
+<td width="8%">The time from which the transport property no longer exists in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassPortNode"/>
+<p><strong>PortNode - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">PortNode</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Point</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">PortNode</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">PortNode</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_language</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_language</td>
+<td width="8%">Language of the geographical name.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_name</td>
+<td width="8%">A geographical name that is used to identify the transport network object in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inNetwork</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">inNetwork</td>
+<td width="8%">featureId of the corresponding WaterTransportNetwork</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validFrom</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validFrom</td>
+<td width="8%">The time when the transport property started to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validTo</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validTo</td>
+<td width="8%">The time from which the transport property no longer exists in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassWaterwayLink"/>
+<p><strong>WaterwayLink - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">WaterwayLink</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polyline</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">WaterwayLink</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">WaterwayLink</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endNode</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">endNode</td>
+<td width="8%">featureId of the endNode of this Link.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">fictitious</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">fictitious</td>
+<td width="8%">Indicator that the centreline geometry of the link is a straight line with no intermediate control points – unless the straight line represents the geography in the resolution of the data set appropriately. Value 0 indicates false, Value 1 indicates true.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_language</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_language</td>
+<td width="8%">Language of the geographical name.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_name</td>
+<td width="8%">A geographical name that is used to identify the transport network object in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inNetwork</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">inNetwork</td>
+<td width="8%">RID of the TransportNetwork this element belongs to.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">startNode</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">startNode</td>
+<td width="8%">featureId of the startNode of this Link.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validFrom</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validFrom</td>
+<td width="8%">The time when the transport property started to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validTo</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validTo</td>
+<td width="8%">The time from which the transport property no longer exists in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassWaterwayNode"/>
+<p><strong>WaterwayNode - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">WaterwayNode</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Point</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">WaterwayNode</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">WaterwayNode</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">formOfWaterwayNode</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">formOfWaterwayNode</td>
+<td width="8%">URI from the INSPIRE code list register - FormOfWaterwayNodeValue https://inspire.ec.europa.eu/codelist/FormOfWaterwayNodeValue</td>
+<td width="8%"><a href="#DomainFormOfWaterwayNodeValue_value">FormOfWaterwayNodeValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">formOfWaterwayNode_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">formOfWaterwayNode_href</td>
+<td width="8%">URI from the INSPIRE code list register - FormOfWaterwayNodeValue <a href="https://inspire.ec.europa.eu/codelist/FormOfWaterwayNodeValue">https://inspire.ec.europa.eu/codelist/FormOfWaterwayNodeValue</a></td>
+<td width="8%"><a href="#DomainFormOfWaterwayNodeValue">FormOfWaterwayNodeValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_language</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_language</td>
+<td width="8%">Language of the geographical name.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_name</td>
+<td width="8%">A geographical name that is used to identify the transport network object in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inNetwork</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">inNetwork</td>
+<td width="8%">RID of the TransportNetwork this element belongs to.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validFrom</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validFrom</td>
+<td width="8%">The time when the transport property started to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validTo</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validTo</td>
+<td width="8%">The time from which the transport property no longer exists in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p>
+<p><hr/><a name="TableFerryCrossing"/>
+<p><strong>FerryCrossing - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">FerryCrossing</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">FerryCrossing</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">FerryCrossing</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_language</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_language</td>
+<td width="8%">Language of the geographical name.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_name</td>
+<td width="8%">A geographical name that is used to identify the transport network object in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inNetwork</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">inNetwork</td>
+<td width="8%">featureId of the corresponding WaterTransportNetwork</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validFrom</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validFrom</td>
+<td width="8%">The time when the transport property started to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validTo</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validTo</td>
+<td width="8%">The time from which the transport property no longer exists in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p><p><hr/><a name="TableFerryCrossing_link"/>
+<p><strong>FerryCrossing_link - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">FerryCrossing_link</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">FerryCrossing_link</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">FerryCrossing_link</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">link</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">link</td>
+<td width="8%">Reference to featureId of a 'WaterwayLink' which is part of this FerryCrossing.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">RID</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">RID</td>
+<td width="8%">Reference to featureId field in parent 'FerryCrossing'.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p><p><hr/><a name="TableInlandWaterway"/>
+<p><strong>InlandWaterway - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">InlandWaterway</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">InlandWaterway</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">InlandWaterway</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_language</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_language</td>
+<td width="8%">Language of the geographical name.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_name</td>
+<td width="8%">A geographical name that is used to identify the transport network object in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inNetwork</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">inNetwork</td>
+<td width="8%">featureId of the corresponding WaterTransportNetwork</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validFrom</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validFrom</td>
+<td width="8%">The time when the transport property started to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validTo</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validTo</td>
+<td width="8%">The time from which the transport property no longer exists in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p><p><hr/><a name="TableInlandWaterway_link"/>
+<p><strong>InlandWaterway_link - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">InlandWaterway_link</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">InlandWaterway_link</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">InlandWaterway_link</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">link</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">link</td>
+<td width="8%">Reference to featureId of a 'WaterwayLink' which is part of this InlandWaterway.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">RID</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">RID</td>
+<td width="8%">Reference to featureId field in parent 'InlandWaterway'.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p><p><hr/><a name="TableMarineWaterway"/>
+<p><strong>MarineWaterway - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">MarineWaterway</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">MarineWaterway</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">MarineWaterway</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">deepWaterRoute</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">deepWaterRoute</td>
+<td width="8%">Attribute which indicates if the maritime waterway is a deep water route. Value 0indicates false,  value 1 indicates true.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_language</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_language</td>
+<td width="8%">Language of the geographical name.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_name</td>
+<td width="8%">A geographical name that is used to identify the transport network object in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inNetwork</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">inNetwork</td>
+<td width="8%">featureId of the corresponding WaterTransportNetwork</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validFrom</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validFrom</td>
+<td width="8%">The time when the transport property started to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validTo</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validTo</td>
+<td width="8%">The time from which the transport property no longer exists in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p><p><hr/><a name="TableMarineWaterway_link"/>
+<p><strong>MarineWaterway_link - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">MarineWaterway_link</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">MarineWaterway_link</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">MarineWaterway_link</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">link</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">link</td>
+<td width="8%">Reference to featureId of a 'WaterwayLink' which is part of this MarineWaterway.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">RID</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">RID</td>
+<td width="8%">Reference to featureId field in parent 'MarineWaterway'.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p><p><hr/><a name="TableTransportNetwork"/>
+<p><strong>TransportNetwork - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">TransportNetwork</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">TransportNetwork</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">TransportNetwork</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_language</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_language</td>
+<td width="8%">Language of the geographical name.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">geographicalName_name</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">geographicalName_name</td>
+<td width="8%">A geographical name that is used to identify the transport network object in the real world. It provides a 'key' for implicitly associating different representations of the object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">typeOfTransport</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">typeOfTransport</td>
+<td width="8%">Type of transport network, based on the type of infrastructure the network uses.</td>
+<td width="8%"><a href="#DomainTransportTypeValue_value">TransportTypeValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">typeOfTransport_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">typeOfTransport_href</td>
+<td width="8%">URI from the INSPIRE code list register - TransportTypeValue <a href="https://inspire.ec.europa.eu/codelist/TransportTypeValue">https://inspire.ec.europa.eu/codelist/TransportTypeValue</a></td>
+<td width="8%"><a href="#DomainTransportTypeValue">TransportTypeValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p><p><hr/><a name="TableTransportNetwork_elements"/>
+<p><strong>TransportNetwork_elements - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">TransportNetwork_elements</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">TransportNetwork_elements</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">TransportNetwork_elements</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">elements</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">elements</td>
+<td width="8%">featureId of the referenced network element.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">RID</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">RID</td>
+<td width="8%">Reference to featureId field in parent 'TransportNetwork'.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p>
+    <p><hr/><a name="RelationshipClassRelFC_FC_link"/>
+<p><strong>RelFC_FC_link - RelationshipClass</strong></p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">RelFC_FC_link</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+<td width="*" style="border-color: white">OneToMany</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+<td width="*" style="border-color: white">FerryCrossing_link</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+<td width="*" style="border-color: white">FerryCrossing</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">RelFC_FC_link</td>
+</tr>
+</tbody>
+</table>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+</tr><br/>
+<tr>
+<td width="30%">FerryCrossing</td>
+<td width="30%">featureId</td>
+<td width="30%">RID</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+</tr>
+<tr>
+<td width="30%">FerryCrossing_link</td>
+<td width="30%"/>
+<td width="30%"/>
+</tr>
+</tbody>
+</table></p><p><hr/><a name="RelationshipClassRelIW_IW_link"/>
+<p><strong>RelIW_IW_link - RelationshipClass</strong></p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">RelIW_IW_link</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+<td width="*" style="border-color: white">OneToMany</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+<td width="*" style="border-color: white">InlandWaterway_link</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+<td width="*" style="border-color: white">InlandWaterway</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">RelIW_IW_link</td>
+</tr>
+</tbody>
+</table>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+</tr><br/>
+<tr>
+<td width="30%">InlandWaterway</td>
+<td width="30%">featureId</td>
+<td width="30%">RID</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+</tr>
+<tr>
+<td width="30%">InlandWaterway_link</td>
+<td width="30%"/>
+<td width="30%"/>
+</tr>
+</tbody>
+</table></p><p><hr/><a name="RelationshipClassRelMW_MW_link"/>
+<p><strong>RelMW_MW_link - RelationshipClass</strong></p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">RelMW_MW_link</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+<td width="*" style="border-color: white">OneToMany</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+<td width="*" style="border-color: white">MarineWaterway_link</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+<td width="*" style="border-color: white">MarineWaterway</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">RelMW_MW_link</td>
+</tr>
+</tbody>
+</table>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+</tr><br/>
+<tr>
+<td width="30%">MarineWaterway</td>
+<td width="30%">featureId</td>
+<td width="30%">RID</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+</tr>
+<tr>
+<td width="30%">MarineWaterway_link</td>
+<td width="30%"/>
+<td width="30%"/>
+</tr>
+</tbody>
+</table></p><p><hr/><a name="RelationshipClassRelTN_TN_elements"/>
+<p><strong>RelTN_TN_elements - RelationshipClass</strong></p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">RelTN_TN_elements</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+<td width="*" style="border-color: white">OneToMany</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+<td width="*" style="border-color: white">TransportNetwork_elements</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+<td width="*" style="border-color: white">TransportNetwork</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">RelTN_TN_elements</td>
+</tr>
+</tbody>
+</table>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+</tr><br/>
+<tr>
+<td width="30%">TransportNetwork</td>
+<td width="30%">featureId</td>
+<td width="30%">RID</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+</tr>
+<tr>
+<td width="30%">TransportNetwork_elements</td>
+<td width="30%"/>
+<td width="30%"/>
+</tr>
+</tbody>
+</table></p>
+    <p>
+    <hr/><a name="DomainFormOfWaterwayNodeValue"/>
+<p><strong>FormOfWaterwayNodeValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">FormOfWaterwayNodeValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FormOfWaterwayNodeValue/junctionFork</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FormOfWaterwayNodeValue/junctionFork</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FormOfWaterwayNodeValue/lockComplex</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FormOfWaterwayNodeValue/lockComplex</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FormOfWaterwayNodeValue/movableBridge</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FormOfWaterwayNodeValue/movableBridge</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FormOfWaterwayNodeValue/shipLift</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FormOfWaterwayNodeValue/shipLift</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FormOfWaterwayNodeValue/waterTerminal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FormOfWaterwayNodeValue/waterTerminal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FormOfWaterwayNodeValue/turningBasin</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FormOfWaterwayNodeValue/turningBasin</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainFormOfWaterwayNodeValue_value"/>
+<p><strong>FormOfWaterwayNodeValue_value - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">FormOfWaterwayNodeValue_value</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">junctionFork</td>
+<td width="20%">junctionFork</td>
+</tr><tr>
+<td width="20%">lockComplex</td>
+<td width="20%">lockComplex</td>
+</tr><tr>
+<td width="20%">movableBridge</td>
+<td width="20%">movableBridge</td>
+</tr><tr>
+<td width="20%">shipLift</td>
+<td width="20%">shipLift</td>
+</tr><tr>
+<td width="20%">waterTerminal</td>
+<td width="20%">waterTerminal</td>
+</tr><tr>
+<td width="20%">turningBasin</td>
+<td width="20%">turningBasin</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainTransportTypeValue"/>
+<p><strong>TransportTypeValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">TransportTypeValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/TransportTypeValue/road</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/TransportTypeValue/road</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/TransportTypeValue/air</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/TransportTypeValue/air</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/TransportTypeValue/rail</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/TransportTypeValue/rail</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/TransportTypeValue/water</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/TransportTypeValue/water</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/TransportTypeValue/cable</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/TransportTypeValue/cable</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainTransportTypeValue_value"/>
+<p><strong>TransportTypeValue_value - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">TransportTypeValue_value</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">road</td>
+<td width="20%">road</td>
+</tr><tr>
+<td width="20%">air</td>
+<td width="20%">air</td>
+</tr><tr>
+<td width="20%">rail</td>
+<td width="20%">rail</td>
+</tr><tr>
+<td width="20%">water</td>
+<td width="20%">water</td>
+</tr><tr>
+<td width="20%">cable</td>
+<td width="20%">cable</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
