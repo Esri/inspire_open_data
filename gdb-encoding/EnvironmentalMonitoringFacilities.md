@@ -40,7 +40,10 @@ This section describes which transformation rules with which parameters are appl
 3. Apply the SimplePeriod rule `MT009()`.
 4. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
 5. Apply the High Cardinality Properties to Extra Tables rule to `EnvironmentalMonitoringProgramme`, `EnvironmentalMonitoringFacility` and `EnvironmentalMonitoringNetwork`: `MT011()`. 
-6. Apply Attribute shortening rule for EnvironmentalMonitoringNetwork:
+6. `setUpFor` can be derived as the inverse property of `triggers` from `EnvironmentalMonitoringActivity`.
+7. `involvedIn` can be derived as the inverse property of `uses` from `AbstractMonitoringObject`.
+8. `contains` can be derived as the inverse property of `belongsTo` from `EnvironmentalMonitoringNetwork`.
+9. Apply Attribute shortening rule for EnvironmentalMonitoringNetwork:
 
     |Replace|With|
     |----|----|
@@ -258,14 +261,7 @@ This section describes which transformation rules with which parameters are appl
 |belongsTo|EnvironmentalMonitoringNetwork|RID|Long|
 |||belongsTo|Long|
 
-#### EnvironmentalMonitoringFacility_involvedIn
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|involvedIn|EnvironmentalMonitoringActivity|RID|Long|
-|||involvedIn|Long|
-
-#### EnvironmentalMonitoringNetworkL
+#### EnvironmentalMonitoringNetwork
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
@@ -312,195 +308,7 @@ This section describes which transformation rules with which parameters are appl
 |organisationLevel|LegislationLevelValue|organisationLevel_href|Text|
 |||organisationLevel|Text|
 
-#### EnvironmentalMonitoringNetworkP
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|||featureId|Long|
-|inspireId|Identifier|inspireId_localId|Text|
-|||inspireId_namespace|Text|
-|||inspireId_versionId|Text|
-|thematicId|ThematicIdentifier |thematicId_identifier|Text|
-|||thematicId_identifierScheme|Text|
-|name|CharacterString|name|Text|
-|additionalDescription|CharacterString|additionalDescription|Text|
-|mediaMonitored|MediaValue|mediaMonitored_1_href|Text|
-||MediaValue|mediaMonitored_1|Text|
-||MediaValue|mediaMonitored_2_href|Text|
-||MediaValue|mediaMonitored_2|Text|
-||MediaValue|mediaMonitored_3_href|Text|
-||MediaValue|mediaMonitored_3|Text|
-|legalBackground|LegislationCitation|legalBackground_citationDate|Date|
-|||legalBackground_citationLink|Text|
-|||legalBackground_citationName|Text|
-|||legalBackground_citationLevel|Text|
-|||legalBackground_citationType|Text|
-|responsibleParty|RelatedParty|resParty_individualName|Text|
-|||resParty_organisationName|Text|
-|||resParty_positionName|Text|
-|||resParty_address|Text|
-|||resParty_contactInstructions|Text|
-|||resParty_electronicMailAddress|Text|
-|||resParty_hoursOfService|Text|
-|||resParty_telephoneFacsimile|Text|
-|||resParty_telephoneVoice|Text|
-|||resParty_website|Text|
-|||resParty_role|Text|
-|onlineResource|URL|onlineResource|Text|
-|purpose|PurposeOfCollectionValue|purpose_1_href|Text|
-|||purpose_1|Text|
-||PurposeOfCollectionValue|purpose_2_href|Text|
-|||purpose_2|Text|
-||CI_Citation|legalAct_citationDate|Date|
-|||legalAct_citationLink|Text|
-|||legalAct_citationName|Text|
-|||legalAct_citationLevel|Text|
-|||legalAct_citationType|Text|
-|organisationLevel|LegislationLevelValue|organisationLevel_href|Text|
-|||organisationLevel|Text|
-
-#### EnvironmentalMonitoringNetworkS
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|||featureId|Long|
-|inspireId|Identifier|inspireId_localId|Text|
-|||inspireId_namespace|Text|
-|||inspireId_versionId|Text|
-|thematicId|ThematicIdentifier |thematicId_identifier|Text|
-|||thematicId_identifierScheme|Text|
-|name|CharacterString|name|Text|
-|additionalDescription|CharacterString|additionalDescription|Text|
-|mediaMonitored|MediaValue|mediaMonitored_1_href|Text|
-||MediaValue|mediaMonitored_1|Text|
-||MediaValue|mediaMonitored_2_href|Text|
-||MediaValue|mediaMonitored_2|Text|
-||MediaValue|mediaMonitored_3_href|Text|
-||MediaValue|mediaMonitored_3|Text|
-|legalBackground|LegislationCitation|legalBackground_citationDate|Date|
-|||legalBackground_citationLink|Text|
-|||legalBackground_citationName|Text|
-|||legalBackground_citationLevel|Text|
-|||legalBackground_citationType|Text|
-|responsibleParty|RelatedParty|resParty_individualName|Text|
-|||resParty_organisationName|Text|
-|||resParty_positionName|Text|
-|||resParty_address|Text|
-|||resParty_contactInstructions|Text|
-|||resParty_electronicMailAddress|Text|
-|||resParty_hoursOfService|Text|
-|||resParty_telephoneFacsimile|Text|
-|||resParty_telephoneVoice|Text|
-|||resParty_website|Text|
-|||resParty_role|Text|
-|onlineResource|URL|onlineResource|Text|
-|purpose|PurposeOfCollectionValue|purpose_1_href|Text|
-|||purpose_1|Text|
-||PurposeOfCollectionValue|purpose_2_href|Text|
-|||purpose_2|Text|
-||CI_Citation|legalAct_citationDate|Date|
-|||legalAct_citationLink|Text|
-|||legalAct_citationName|Text|
-|||legalAct_citationLevel|Text|
-|||legalAct_citationType|Text|
-|organisationLevel|LegislationLevelValue|organisationLevel_href|Text|
-|||organisationLevel|Text|
-
-#### EnvironmentalMonitoringNetwork_contains
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|contains|EnvironmentalMonitoringFacility|RID|Long|
-|||contains|Long|
-
-#### EnvironmentalMonitoringNetwork_involvedIn
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-||EnvironmentalMonitoringActivity|RID|Long|
-|||involvedIn|Long|
-
-#### EnvironmentalMonitoringProgrammeL
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|||featureId|Long|
-|inspireId|Identifier|inspireId_localId|Text|
-|||inspireId_namespace|Text|
-|||inspireId_versionId|Text|
-||ThematicIdentifier |thematicId_identifier|Text|
-|||thematicId_identifierScheme|Text|
-||CharacterString|name|Text|
-||CharacterString|additionalDescription|Text|
-|mediaMonitored|MediaValue|mediaMonitored_1_href|Text|
-|||mediaMonitored_1|Text|
-||MediaValue|mediaMonitored_2_href|Text|
-|||mediaMonitored_2|Text|
-||MediaValue|mediaMonitored_3_href|Text|
-|||mediaMonitored_3|Text|
-|legalBackground|LegislationCitation|legalBackground_citationDate|Date|
-|||legalBackground_citationLink|Text|
-|||legalBackground_citationName|Text|
-|||legalBackground_citationLevel|Text|
-|||legalBackground_citationType|Text|
-|responsibleParty|RelatedParty|resParty_individualName|Text|
-|||resParty_organisationName|Text|
-|||resParty_positionName|Text|
-|||resParty_address|Text|
-|||resParty_contactInstructions|Text|
-|||resParty_electronicMailAddress|Text|
-|||resParty_hoursOfService|Text|
-|||resParty_telephoneFacsimile|Text|
-|||resParty_telephoneVoice|Text|
-|||resParty_website|Text|
-|||resParty_role|Text|
-|onlineResource|URL|onlineResource|Text|
-|purpose|PurposeOfCollectionValue|purpose_1_href|Text|
-|||purpose_1|Text|
-||PurposeOfCollectionValue|purpose_2_href|Text|
-|||purpose_2|Text|
-
-#### EnvironmentalMonitoringProgrammeP
-
-|Name|Type|Simplified Name|GDB Type|
-|------|------|------|------|
-|||featureId|Long|
-|inspireId|Identifier|inspireId_localId|Text|
-|||inspireId_namespace|Text|
-|||inspireId_versionId|Text|
-||ThematicIdentifier |thematicId_identifier|Text|
-|||thematicId_identifierScheme|Text|
-||CharacterString|name|Text|
-||CharacterString|additionalDescription|Text|
-|mediaMonitored|MediaValue|mediaMonitored_1_href|Text|
-|||mediaMonitored_1|Text|
-||MediaValue|mediaMonitored_2_href|Text|
-|||mediaMonitored_2|Text|
-||MediaValue|mediaMonitored_3_href|Text|
-|||mediaMonitored_3|Text|
-|legalBackground|LegislationCitation|legalBackground_citationDate|Date|
-|||legalBackground_citationLink|Text|
-|||legalBackground_citationName|Text|
-|||legalBackground_citationLevel|Text|
-|||legalBackground_citationType|Text|
-|responsibleParty|RelatedParty|resParty_individualName|Text|
-|||resParty_organisationName|Text|
-|||resParty_positionName|Text|
-|||resParty_address|Text|
-|||resParty_contactInstructions|Text|
-|||resParty_electronicMailAddress|Text|
-|||resParty_hoursOfService|Text|
-|||resParty_telephoneFacsimile|Text|
-|||resParty_telephoneVoice|Text|
-|||resParty_website|Text|
-|||resParty_role|Text|
-|onlineResource|URL|onlineResource|Text|
-|purpose|PurposeOfCollectionValue|purpose_1_href|Text|
-|||purpose_1|Text|
-||PurposeOfCollectionValue|purpose_2_href|Text|
-|||purpose_2|Text|
-
-#### EnvironmentalMonitoringProgrammeS
+#### EnvironmentalMonitoringProgramme
 
 |Name|Type|Simplified Name|GDB Type|
 |------|------|------|------|
