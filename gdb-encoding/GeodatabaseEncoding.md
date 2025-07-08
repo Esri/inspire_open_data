@@ -65,7 +65,9 @@ Currently these Application Schemas are covered:
 * [`Buildings3D`](Buildings3D.md)
 * [`EnvironmentalManagementFacilities`](EnvironmentalManagementFacilities.md)
 * [`ExistingLandUse`](ExistingLandUse.md)
+* [`NaturalRiskZones`](NaturalRiskZones.md)
 * [`PlannedLandUse`](PlannedLandUse.md)
+* [`ProtectedSites`](ProtectedSites.md)
 * [`SampledLandUse`](SampledLandUse.md)
 
 
