@@ -5,7 +5,7 @@
 
 The Simple ExistingLandUse encoding can be used as an *alternative encoding* for ExistingLandUse data that fulfills the following requirements:
 
-Any Dataset can be used. ( Possible limitations could be on the multiplicity of hilucLandUse and specificLanUSe to be a static number.)
+None
 
 ## Normative References
 
@@ -21,7 +21,7 @@ The Land Use theme has five application schema. This application schema-specific
 This section describes which transformation rules with which parameters are applied to the ExistingLandUse conceptual model before applying the general rules of this encoding rule:
  
 
-1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. (works in GDB)
+1. Substitute all attributes that have a property type with a Codelist Stereotype through an inline codelist reference using `MT008()`. (works in GDB)
 2. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` (works in GDB as ong as not to long)
 
 ToDO: 
@@ -60,6 +60,7 @@ Rule for ExistingLandUseObject_hilucsPresence/ specificPresence is either ordere
 |||inspireId_versionId|Text|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
 |endLifespanVersion|DateTime|endLifespanVersion|Date|
+|||hilucsLandUse|Text|
 |observationDate|Date|observationDate|Date|
 |validFrom|DateTime|validFrom|Date|
 |validTo|DateTime|validTo|Date|

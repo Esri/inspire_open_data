@@ -16,7 +16,7 @@ The Simple Buildings3D encoding can be used as an *alternative encoding* for Bui
 ## Normative References
 
 * [INSPIRE UML-to-Geodatabase encoding rule version 0.2](GeodatabaseEncoding.md)
-* [Data Specification - INSPIRE Addresses version 3.1](https://inspire.ec.europa.eu/Themes/126/2892)
+* [Data Specification - INSPIRE Buildings version 3.1](https://inspire.ec.europa.eu/Themes/126/2892)
 
 ## Conformance Class Buildings3D
 
@@ -26,13 +26,13 @@ The Buildings theme has three application schema. This application schema-specif
 
 This section describes which transformation rules with which parameters are applied to the Buildings3D conceptual model before applying the general rules of this encoding rule:
  
-1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. (works in GDB)
+1. Substitute all attributes that have a property type with a Codelist Stereotype through an inline codelist reference using `MT008()`. (works in GDB)
 2. Limit the Multiplicity for `elevation` for `Building` or `BuildingPart` to 1 through Rule `MT012(3)`
 3. Limit the Multiplicity for `externalReference` for `Building` or `BuildingPart` to 1 through Rule `MT012(3)`
 4. Limit the Multiplicity for `heightAboveGround` for `Building` or `BuildingPart` to 1 through Rule `MT012(3)`
 5. Limit the Multiplicity for `buildingNature` for `Building` or `BuildingPart` to 3 through Rule `MT012(1)`
 6. Limit the Multiplicity for `currentUse` for `Building` or `BuildingPart` to 3 through Rule `MT012(1)`
-7. Substitute all occurences of `GeographicName` with the Simple Geographic Name through Rule `MT005(separator: '_')`.
+7. Substitute all occurrences of `GeographicName` with the Simple Geographic Name through Rule `MT005(separator: '_')`.
 8. Apply MT011 on `part` for `Building`.
 9. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
 
@@ -122,7 +122,7 @@ This section describes which transformation rules with which parameters are appl
 |||lowReference_href|Text|
 |||status|Text|
 |||status_href|Text|
-|||value|Text|
+|||heightAboveGround_value|Text|
 |inspireId|Identifier|inspireId_localId|Text|
 |||inspireId_namespace|Text|
 |||inspireId_versionId|Text|
@@ -174,6 +174,13 @@ This section describes which transformation rules with which parameters are appl
 |currentUse|CurrentUse|currentUse|Text|
 |||currentUse_href|Text|
 |||percentage|Text|
+
+#### Building_part
+
+|Name|Type|Simplified Name|GDB Type|
+|------|------|------|------|
+|part|BuildingPart|RID|Long|
+|||part|Long|
 
 #### Building_terrainIntersection
 

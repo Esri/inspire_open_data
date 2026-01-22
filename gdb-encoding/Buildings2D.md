@@ -26,13 +26,13 @@ The Buildings theme has three application schema. This application schema-specif
 
 This section describes which transformation rules with which parameters are applied to the Buildings2D conceptual model before applying the general rules of this encoding rule:
  
-1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. (works in GDB)
+1. Substitute all attributes that have a property type with a Codelist Stereotype through an inline codelist reference using `MT008()`. (works in GDB)
 2. Limit the Multiplicity for `elevation` for `Building` or `BuildingPart` to 1 through Rule `MT012(3)`
 3. Limit the Multiplicity for `externalReference` for `Building` or `BuildingPart` to 1 through Rule `MT012(3)`
 4. Limit the Multiplicity for `heightAboveGround` for `Building` or `BuildingPart` to 1 through Rule `MT012(3)`
 5. Limit the Multiplicity for `buildingNature` for `Building` or `BuildingPart` to 3 through Rule `MT012(1)`
 6. Limit the Multiplicity for `currentUse` for `Building` or `BuildingPart` to 3 through Rule `MT012(1)`
-7. Substitute all occurences of `GeographicName` with the Simple Geographic Name through Rule `MT005(separator: '_')`.
+7. Substitute all occurrences of `GeographicName` with the Simple Geographic Name through Rule `MT005(separator: '_')`.
 8. Apply MT011 on `part` for `Building`.
 8. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
 

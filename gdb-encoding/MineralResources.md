@@ -1,5 +1,4 @@
-# Geodatabase Encoding Rule for INSPIRE 
-Mineral Resources
+# Geodatabase Encoding Rule for INSPIRE Mineral Resources
 
 `Version: 1.0`
 `Date: 2025-01-19`
@@ -9,15 +8,14 @@ The Simple Mineral Resources encoding can be used as an *alternative encoding* f
 * There is not more than 1 `sourceReference` for `Mine`
 * There is not more than 1 `mineName` for `Mine`
 * There is not more than 1 `relatedMine` for `Mine`
-* There is not more than 1 `sourceReference` for `MineralOccurence`
-* There is not more than 1 `expression` for `MineralOccurence`
-* There is not more than 1 `form` for `MineralOccurence`
-* There is not more than 1 `shape` for `MineralOccurence`
-* There is not more than 1 `endUsePotetial` for `MineralOccurence`
-* There is no  `linearOrientation` for `MineralOccurence`
-* There is no  `planarOrientation` for `MineralOccurence`
-* There is not more than 1 `themeClass` for `MineralOccurence`
-* There is not more than 1 `sourceReference` for `Mine`
+* There is not more than 1 `sourceReference` for `MineralOccurrence`
+* There is not more than 1 `expression` for `MineralOccurrence`
+* There is not more than 1 `form` for `MineralOccurrence`
+* There is not more than 1 `shape` for `MineralOccurrence`
+* There is not more than 1 `endUsePotential` for `MineralOccurrence`
+* There is no  `linearOrientation` for `MineralOccurrence`
+* There is no  `planarOrientation` for `MineralOccurrence`
+* There is not more than 1 `themeClass` for `MineralOccurrence`
 
 
 
@@ -38,12 +36,12 @@ The Mineral Resources theme has one application schema, therefore this theme-spe
 
 This section describes which transformation rules with which parameters are applied to the Mineral Resources conceptual model before applying the general rules of this encoding rule:
  
-1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. 
+1. Substitute all attributes that have a property type with a Codelist Stereotype through an inline codelist reference using `MT008()`. 
 2. Apply the SimpleCitation rule `MT007()`.
 3. Apply the SimplePeriod rule `MT009()`.
 4. Apply the SimpleCategory rule `MT016()`
-4. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
-5. Apply Attribute shortening rule for Mine:
+5. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
+6. Apply Attribute shortening rule for Mine:
 
     |Replace|With|
     |----|----|
@@ -51,19 +49,14 @@ This section describes which transformation rules with which parameters are appl
     |`'reportedTo_legalAct_'`|`'legalAct_' `|
     |`'operationalActivityPeriod_'`|`'opActPeriod_' `|
 
-6. Apply Attribute shortening rule for MineralOccurence:
+7. Apply Attribute shortening rule for MineralOccurrence:
 
     |Replace|With|
     |----|----|
     |`'themeClass_themeClass'`|`'themeClass' `|
     
 
-7. Apply Attribute shortening rule for EnvironmentalMonitoringFacility:
 
-    |Replace|With|
-    |----|----|
-    |`'responsibleParty_'`|`'resParty_' `|
-    
     
 
     

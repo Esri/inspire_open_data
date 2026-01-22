@@ -29,7 +29,7 @@ The Area Management Restriction And Regulation Zones theme has one application s
 This section describes which transformation rules with which parameters are applied to the Area Management Restriction And Regulation Zones conceptual model before applying the general rules of this encoding rule:
  
 
-1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. (works in GDB)
+1. Substitute all attributes that have a property type with a Codelist Stereotype through an inline codelist reference using `MT008()`. (works in GDB)
 2. Limit the Multiplicity for zoneType in ManagementRestrictionOrRegulationZone to 3 through Rule `MT012(3)`
 3. Limit the Multiplicity for environmentalDomain in ManagementRestrictionOrRegulationZone to 3 through Rule `MT012(3)`
 4. Limit the Multiplicity for name in ManagementRestrictionOrRegulationZone to 3 through Rule `MT012(3)`
@@ -121,6 +121,7 @@ This section describes which transformation rules with which parameters are appl
 |||legal_officialDocumentNumber|Text|
 |||legal_dateEnteredIntoForce|Text|
 |||legal_dateRepealed|Date|
+|||legal_level|Text|
 |||legal_level_href|Text|
 |||legal_journal_Identification|Text|
 |||legal_journal_ISSN|Text|
@@ -141,6 +142,7 @@ This section describes which transformation rules with which parameters are appl
 |||plan_officialDocumentNumber|Text|
 |||plan_dateEnteredIntoForce|Text|
 |||plan_dateRepealed|Date|
+|||plan_level|Text|
 |||plan_level_href|Text|
 |||plan_journal_Identification|Text|
 |||plan_journal_ISSN|Text|

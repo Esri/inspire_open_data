@@ -22,8 +22,8 @@ The Addresses theme has one application schema, therefore this theme-specific en
 
 This section describes which transformation rules with which parameters are applied to the Addresses conceptual model before applying the general rules of this encoding rule:
  
-1. Substitute all occurences of `GeographicName` with the Simple Geographic Name through Rule `MT005(separator: '_')`.  
-2. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. 
+1. Substitute all occurrences of `GeographicName` with the Simple Geographic Name through Rule `MT005(separator: '_')`.  
+2. Substitute all attributes that have a property type with a Codelist Stereotype through an inline codelist reference using `MT008()`. 
 3. Inline all `addressComponents` through Rule `MT003(separator: '_', cardinality: { AdminUnitName: 6 })`, using the respective typenames to create unique property names. In addition, define that for `AdminUnitName`, six properties shall be created, one for each `AdministrativeUnitLevel`.
 4. Flatten the Locator/Designator structure through application of `MT004(separator: '_', keyProperty: 'type')` (Flatten aggregated or associated components using codelist values). 
 5. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 

@@ -51,14 +51,14 @@ This section describes which transformation rules with which parameters are appl
     |`'reportedTo_legalAct_'`|`'legalAct_' `|
     |`'operationalActivityPeriod_'`|`'opActPeriod_' `|
 
-7. Apply Attribute shortening rule for EnvironmentalMonitoringProgramme:
+10. Apply Attribute shortening rule for EnvironmentalMonitoringProgramme:
 
     |Replace|With|
     |----|----|
     |`'responsibleParty_'`|`'resParty_' `|
     
 
-8. Apply Attribute shortening rule for EnvironmentalMonitoringFacility:
+11. Apply Attribute shortening rule for EnvironmentalMonitoringFacility:
 
     |Replace|With|
     |----|----|
