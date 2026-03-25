@@ -1,0 +1,5909 @@
+
+#Soil
+
+
+<br/>
+<strong>Geodatabase Documentation</strong>
+<hr/>
+<strong>Date: </strong>20250923140626.4873179<br/>
+<hr/>
+<p><strong>Summary Information and Links</strong><br/><br/><a href="#FeatureDatasets">0 Feature Datasets and 2
+Feature Classes</a><br/>No Topology Datasets<br/>No Geometric Networks<br/>No Rasters<br/><a href="#ObjectClasses">6 Tables (Object Classes)</a><br/><a href="#RelationshipClasses">1 Relationship
+Classes</a><br/><a href="#Domains">16 Domains</a><br/></p>
+<hr/>
+<p><a name="FeatureDatasets"/><strong>Feature Datasets and Child Classes</strong></p><a name="Raster"/>
+<p><strong>Rasters</strong></p><br/>
+<hr/><a name="ObjectClasses"/>
+<p><strong>Workspace-Level Tables and Feature Classes</strong></p>
+    <a href="#TableDerivedSoilProfile">DerivedSoilProfile - Table</a><br/><a href="#TableObservedSoilProfile">ObservedSoilProfile - Table</a><br/><a href="#FeatureClassSoilBody">SoilBody - FeatureClass</a><br/><a href="#TableSoilBody_isDescribed">SoilBody_isDescribed - Table</a><br/><a href="#TableSoilHorizon">SoilHorizon - Table</a><br/><a href="#TableSoilLayer">SoilLayer - Table</a><br/><a href="#TableSoilPlot">SoilPlot - Table</a><br/><a href="#FeatureClassSoilSite">SoilSite - FeatureClass</a><br/>
+<p/><br/>
+<hr/><a name="RelationshipClasses"/>
+<p><strong>Relationship Classes</strong></p>
+    <a href="#RelationshipClassRelSB_SB_isDescribed">RelSB_SB_isDescribed</a><br/>
+<p/>
+<hr/><br/><a name="Domains"/>
+<p><strong>Domains</strong></p>
+   <a href="#DomainEventEnvironmentValue">EventEnvironmentValue</a><br/><a href="#DomainEventEnvironmentValue_value">EventEnvironmentValue_value</a><br/><a href="#DomainEventProcessValue">EventProcessValue</a><br/><a href="#DomainEventProcessValue_value">EventProcessValue_value</a><br/><a href="#DomainFAOHorizonMasterValue">FAOHorizonMasterValue</a><br/><a href="#DomainFAOHorizonMasterValue_value">FAOHorizonMasterValue_value</a><br/><a href="#DomainFAOPrimeValue">FAOPrimeValue</a><br/><a href="#DomainFAOPrimeValue_value">FAOPrimeValue_value</a><br/><a href="#DomainLayerGenesisProcessStateValue">LayerGenesisProcessStateValue</a><br/><a href="#DomainLayerGenesisProcessStateValue_value">LayerGenesisProcessStateValue_value</a><br/><a href="#DomainLayerTypeValue">LayerTypeValue</a><br/><a href="#DomainLayerTypeValue_value">LayerTypeValue_value</a><br/><a href="#DomainLithologyValue">LithologyValue</a><br/><a href="#DomainLithologyValue_value">LithologyValue_value</a><br/><a href="#DomainSoilInvestigationPurposeValue">SoilInvestigationPurposeValue</a><br/><a href="#DomainSoilInvestigationPurposeValue_value">SoilInvestigationPurposeValue_value</a><br/>
+    <p><hr/><br/><a name="FeatureClassSoilBody"/>
+<p><strong>SoilBody - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">SoilBody</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polygon</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">SoilBody</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">SoilBody</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">soilBodyLabel</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">soilBodyLabel</td>
+<td width="8%">-- Name -- soil body label  Label to identify the soil body according to the specified reference framework (metadata).  -- Description -- NOTE in traditional soil maps, this is the identifier for the explanatory text of the mapping unit of the legend.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p><p><hr/><br/><a name="FeatureClassSoilSite"/>
+<p><strong>SoilSite - FeatureClass</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">SoilSite</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+<td width="*" style="border-color: white">Polygon</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+<td width="*" style="border-color: white">Simple</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">SoilSite</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasM</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">SoilSite</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE</td>
+<td width="8%">Geometry</td>
+<td width="3%">0</td>
+<td width="8%">SHAPE</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">soilInvestigationPurpose</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">soilInvestigationPurpose</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainSoilInvestigationPurposeValue_value">SoilInvestigationPurposeValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">soilInvestigationPurpose_href</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">soilInvestigationPurpose_href</td>
+<td width="8%">URI from the INSPIRE code list register - SoilInvestigationPurposeValue <a href="https://inspire.ec.europa.eu/codelist/SoilInvestigationPurposeValue">https://inspire.ec.europa.eu/codelist/SoilInvestigationPurposeValue</a></td>
+<td width="8%"><a href="#DomainSoilInvestigationPurposeValue">SoilInvestigationPurposeValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validFrom</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validFrom</td>
+<td width="8%">Date and time of which this version of the address component was or will be valid in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validTo</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validTo</td>
+<td width="8%">Date and time at which the address component ceased or will cease to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Length</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Length</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">SHAPE_Area</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">SHAPE_Area</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p></p>
+<p><hr/><a name="TableDerivedSoilProfile"/>
+<p><strong>DerivedSoilProfile - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">DerivedSoilProfile</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">DerivedSoilProfile</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">DerivedSoilProfile</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">isDerivedFrom</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">isDerivedFrom</td>
+<td width="8%">featureId of ObservedSoilProfile</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">localIdentifier</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">localIdentifier</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oSN_1_isOriginalClassification</td>
+<td width="8%">SmallInteger</td>
+<td width="3%">2</td>
+<td width="8%">oSN_1_isOriginalClassification</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oSN_1_soilName</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">oSN_1_soilName</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainOtherHorizonNotationTypeValue_value">OtherHorizonNotationTypeValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oSN_1_soilName_href</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">oSN_1_soilName_href</td>
+<td width="8%">URI from the INSPIRE code list register - OtherHorizonNotationTypeValue <a href="https://inspire.ec.europa.eu/codelist/OtherHorizonNotationTypeValue">https://inspire.ec.europa.eu/codelist/OtherHorizonNotationTypeValue</a></td>
+<td width="8%"><a href="#DomainOtherHorizonNotationTypeValue">OtherHorizonNotationTypeValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oSN_2_isOriginalClassification</td>
+<td width="8%">SmallInteger</td>
+<td width="3%">2</td>
+<td width="8%">oSN_2_isOriginalClassification</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oSN_2_soilName</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">oSN_2_soilName</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainOtherHorizonNotationTypeValue_value">OtherHorizonNotationTypeValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oSN_2_soilName_href</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">oSN_2_soilName_href</td>
+<td width="8%">URI from the INSPIRE code list register - OtherHorizonNotationTypeValue <a href="https://inspire.ec.europa.eu/codelist/OtherHorizonNotationTypeValue">https://inspire.ec.europa.eu/codelist/OtherHorizonNotationTypeValue</a></td>
+<td width="8%"><a href="#DomainOtherHorizonNotationTypeValue">OtherHorizonNotationTypeValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validFrom</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validFrom</td>
+<td width="8%">Date and time of which this version of the address component was or will be valid in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validTo</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validTo</td>
+<td width="8%">Date and time at which the address component ceased or will cease to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p><p><hr/><a name="TableObservedSoilProfile"/>
+<p><strong>ObservedSoilProfile - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">ObservedSoilProfile</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">ObservedSoilProfile</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">ObservedSoilProfile</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">localIdentifier</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">localIdentifier</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">location</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">location</td>
+<td width="8%">featureId of the SoilPlot where this Profile is located.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oSN_1_isOriginalClassification</td>
+<td width="8%">SmallInteger</td>
+<td width="3%">2</td>
+<td width="8%">oSN_1_isOriginalClassification</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oSN_1_soilName</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">oSN_1_soilName</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainOtherHorizonNotationTypeValue_value">OtherHorizonNotationTypeValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oSN_1_soilName_href</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">oSN_1_soilName_href</td>
+<td width="8%">URI from the INSPIRE code list register - OtherHorizonNotationTypeValue <a href="https://inspire.ec.europa.eu/codelist/OtherHorizonNotationTypeValue">https://inspire.ec.europa.eu/codelist/OtherHorizonNotationTypeValue</a></td>
+<td width="8%"><a href="#DomainOtherHorizonNotationTypeValue">OtherHorizonNotationTypeValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oSN_2_isOriginalClassification</td>
+<td width="8%">SmallInteger</td>
+<td width="3%">2</td>
+<td width="8%">oSN_2_isOriginalClassification</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oSN_2_soilName</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">oSN_2_soilName</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainOtherHorizonNotationTypeValue_value">OtherHorizonNotationTypeValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oSN_2_soilName_href</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">oSN_2_soilName_href</td>
+<td width="8%">URI from the INSPIRE code list register - OtherHorizonNotationTypeValue <a href="https://inspire.ec.europa.eu/codelist/OtherHorizonNotationTypeValue">https://inspire.ec.europa.eu/codelist/OtherHorizonNotationTypeValue</a></td>
+<td width="8%"><a href="#DomainOtherHorizonNotationTypeValue">OtherHorizonNotationTypeValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validFrom</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validFrom</td>
+<td width="8%">Date and time of which this version of the address component was or will be valid in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">validTo</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">validTo</td>
+<td width="8%">Date and time at which the address component ceased or will cease to exist in the real world.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p><p><hr/><a name="TableSoilBody_isDescribed"/>
+<p><strong>SoilBody_isDescribed - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">SoilBody_isDescribed</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">SoilBody_isDescribed</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">SoilBody_isDescribed</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">isDescribedBy</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">isDescribedBy</td>
+<td width="8%">featureId of the ObservedSoilProfile or DerivedSoilProfile Feature that describes this Soil Body.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">RID</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">RID</td>
+<td width="8%">featureId of the ObservedSoilProfile or DerivedSoilProfile Feature that describes this Soil Body.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p><p><hr/><a name="TableSoilHorizon"/>
+<p><strong>SoilHorizon - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">SoilHorizon</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">SoilHorizon</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">SoilHorizon</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">elementDepthRange_lowerValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">elementDepthRange_lowerValue</td>
+<td width="8%">lower depth of the profile element (layer or horizon) measured from the surface (0 cm) of a soil profile (in cm).</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">elementDepthRange_upperValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">elementDepthRange_upperValue</td>
+<td width="8%">Upper depth of the profile element (layer or horizon) measured from the surface (0 cm) of a soil profile (in cm).</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">FAOHN_FAOHorizonDiscontinuity</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">FAOHN_FAOHorizonDiscontinuity</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">FAOHN_FAOHorizonMaster</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">FAOHN_FAOHorizonMaster</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainFAOHorizonMasterValue_value">FAOHorizonMasterValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">FAOHN_FAOHorizonMaster_href</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">FAOHN_FAOHorizonMaster_href</td>
+<td width="8%">URI from the INSPIRE code list register - FAOHorizonMasterValue <a href="https://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue">https://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue</a></td>
+<td width="8%"><a href="#DomainFAOHorizonMasterValue">FAOHorizonMasterValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">FAOHN_FAOHorizonVertical</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">FAOHN_FAOHorizonVertical</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">FAOHN_FAOPrime</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">FAOHN_FAOPrime</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainFAOPrimeValue_value">FAOPrimeValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">FAOHN_FAOPrime_href</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">FAOHN_FAOPrime_href</td>
+<td width="8%">URI from the INSPIRE code list register - FAOPrimeValue <a href="https://inspire.ec.europa.eu/codelist/FAOPrimeValue">https://inspire.ec.europa.eu/codelist/FAOPrimeValue</a></td>
+<td width="8%"><a href="#DomainFAOPrimeValue">FAOPrimeValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">FAOHN_isOriginalClassification</td>
+<td width="8%">SmallInteger</td>
+<td width="3%">2</td>
+<td width="8%">FAOHN_isOriginalClassification</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">isPartOf_href</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">isPartOf_href</td>
+<td width="8%">featureId of the SoilProfile this Horizon is part of.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oHN_1_horizonNotation</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">oHN_1_horizonNotation</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainOtherHorizonNotationTypeValue_value">OtherHorizonNotationTypeValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oHN_1_horizonNotation_href</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">oHN_1_horizonNotation_href</td>
+<td width="8%">URI from the INSPIRE code list register - OtherHorizonNotationTypeValue <a href="https://inspire.ec.europa.eu/codelist/OtherHorizonNotationTypeValue">https://inspire.ec.europa.eu/codelist/OtherHorizonNotationTypeValue</a></td>
+<td width="8%"><a href="#DomainOtherHorizonNotationTypeValue">OtherHorizonNotationTypeValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oHN_1_isOriginalClassification</td>
+<td width="8%">SmallInteger</td>
+<td width="3%">2</td>
+<td width="8%">oHN_1_isOriginalClassification</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oHN_2_horizonNotation</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">oHN_2_horizonNotation</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainOtherHorizonNotationTypeValue_value">OtherHorizonNotationTypeValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oHN_2_horizonNotation_href</td>
+<td width="8%">String</td>
+<td width="3%">2048</td>
+<td width="8%">oHN_2_horizonNotation_href</td>
+<td width="8%">URI from the INSPIRE code list register - OtherHorizonNotationTypeValue <a href="https://inspire.ec.europa.eu/codelist/OtherHorizonNotationTypeValue">https://inspire.ec.europa.eu/codelist/OtherHorizonNotationTypeValue</a></td>
+<td width="8%"><a href="#DomainOtherHorizonNotationTypeValue">OtherHorizonNotationTypeValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">oHN_2_isOriginalClassification</td>
+<td width="8%">SmallInteger</td>
+<td width="3%">2</td>
+<td width="8%">oHN_2_isOriginalClassification</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_1_fraction_lowerValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_1_fraction_lowerValue</td>
+<td width="8%">lower limit of the particle size of the defined fraction (expressed in µm)</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_1_fraction_upperValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_1_fraction_upperValue</td>
+<td width="8%">upper limit of the particle size of the defined fraction (expressed in µm)</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_1_fractionContent</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_1_fractionContent</td>
+<td width="8%">Percentage of the defined fraction.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_2_fraction_lowerValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_2_fraction_lowerValue</td>
+<td width="8%">lower limit of the particle size of the defined fraction (expressed in µm)</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_2_fraction_upperValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_2_fraction_upperValue</td>
+<td width="8%">upper limit of the particle size of the defined fraction (expressed in µm)</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_2_fractionContent</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_2_fractionContent</td>
+<td width="8%">Percentage of the defined fraction.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_3_fraction_lowerValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_3_fraction_lowerValue</td>
+<td width="8%">lower limit of the particle size of the defined fraction (expressed in µm)</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_3_fraction_upperValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_3_fraction_upperValue</td>
+<td width="8%">upper limit of the particle size of the defined fraction (expressed in µm)</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_3_fractionContent</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_3_fractionContent</td>
+<td width="8%">Percentage of the defined fraction.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p><p><hr/><a name="TableSoilLayer"/>
+<p><strong>SoilLayer - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">SoilLayer</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">SoilLayer</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">SoilLayer</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">elementDepthRange_lowerValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">elementDepthRange_lowerValue</td>
+<td width="8%">lower depth of the profile element (layer or horizon) measured from the surface (0 cm) of a soil profile (in cm).</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">elementDepthRange_upperValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">elementDepthRange_upperValue</td>
+<td width="8%">Upper depth of the profile element (layer or horizon) measured from the surface (0 cm) of a soil profile (in cm).</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">isPartOf</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">isPartOf</td>
+<td width="8%">featureID of the ObservedSoilProfile or DerivedSoilProfile that this SoilLayer is part of.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">layerGenesisEnvironment</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">layerGenesisEnvironment</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainEventEnvironmentValue_value">EventEnvironmentValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">layerGenesisEnvironment_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">layerGenesisEnvironment_href</td>
+<td width="8%">URI from the INSPIRE code list register - EventEnvironmentValue <a href="https://inspire.ec.europa.eu/codelist/EventEnvironmentValue">https://inspire.ec.europa.eu/codelist/EventEnvironmentValue</a></td>
+<td width="8%"><a href="#DomainEventEnvironmentValue">EventEnvironmentValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">layerGenesisProcess</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">layerGenesisProcess</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainLayerGenesisProcessStateValue_value">LayerGenesisProcessStateValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">layerGenesisProcess_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">layerGenesisProcess_href</td>
+<td width="8%">URI from the INSPIRE code list register - LayerGenesisProcessStateValue <a href="https://inspire.ec.europa.eu/codelist/LayerGenesisProcessStateValue">https://inspire.ec.europa.eu/codelist/LayerGenesisProcessStateValue</a></td>
+<td width="8%"><a href="#DomainLayerGenesisProcessStateValue">LayerGenesisProcessStateValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">layerGenesisProcessState</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">layerGenesisProcessState</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainEventProcessValue_value">EventProcessValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">layerGenesisProcessState_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">layerGenesisProcessState_href</td>
+<td width="8%">URI from the INSPIRE code list register - EventProcessValue <a href="https://inspire.ec.europa.eu/codelist/EventProcessValue">https://inspire.ec.europa.eu/codelist/EventProcessValue</a></td>
+<td width="8%"><a href="#DomainEventProcessValue">EventProcessValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">layerRockType_1</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">layerRockType_1</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainLithologyValue_value">LithologyValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">layerRockType_1_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">layerRockType_1_href</td>
+<td width="8%">URI from the INSPIRE code list register - LithologyValue <a href="https://inspire.ec.europa.eu/codelist/LithologyValue">https://inspire.ec.europa.eu/codelist/LithologyValue</a></td>
+<td width="8%"><a href="#DomainLithologyValue">LithologyValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">layerRockType_2</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">layerRockType_2</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainLithologyValue_value">LithologyValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">layerRockType_2_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">layerRockType_2_href</td>
+<td width="8%">URI from the INSPIRE code list register - LithologyValue <a href="https://inspire.ec.europa.eu/codelist/LithologyValue">https://inspire.ec.europa.eu/codelist/LithologyValue</a></td>
+<td width="8%"><a href="#DomainLithologyValue">LithologyValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">layerRockType_3</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">layerRockType_3</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainLithologyValue_value">LithologyValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">layerRockType_3_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">layerRockType_3_href</td>
+<td width="8%">URI from the INSPIRE code list register - LithologyValue <a href="https://inspire.ec.europa.eu/codelist/LithologyValue">https://inspire.ec.europa.eu/codelist/LithologyValue</a></td>
+<td width="8%"><a href="#DomainLithologyValue">LithologyValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">layerType</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">layerType</td>
+<td width="8%"/>
+<td width="8%"><a href="#DomainLayerTypeValue_value">LayerTypeValue_value</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">layerType_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">layerType_href</td>
+<td width="8%">URI from the INSPIRE code list register - LayerTypeValue <a href="https://inspire.ec.europa.eu/codelist/LayerTypeValue">https://inspire.ec.europa.eu/codelist/LayerTypeValue</a></td>
+<td width="8%"><a href="#DomainLayerTypeValue">LayerTypeValue</a></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_1_fraction_lowerValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_1_fraction_lowerValue</td>
+<td width="8%">lower limit of the particle size of the defined fraction (expressed in µm)</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_1_fraction_upperValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_1_fraction_upperValue</td>
+<td width="8%">upper limit of the particle size of the defined fraction (expressed in µm)</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_1_fractionContent</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_1_fractionContent</td>
+<td width="8%">Percentage of the defined fraction.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_2_fraction_lowerValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_2_fraction_lowerValue</td>
+<td width="8%">lower limit of the particle size of the defined fraction (expressed in µm)</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_2_fraction_upperValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_2_fraction_upperValue</td>
+<td width="8%">upper limit of the particle size of the defined fraction (expressed in µm)</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_2_fractionContent</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_2_fractionContent</td>
+<td width="8%">Percentage of the defined fraction.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_3_fraction_lowerValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_3_fraction_lowerValue</td>
+<td width="8%">lower limit of the particle size of the defined fraction (expressed in µm)</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_3_fraction_upperValue</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_3_fraction_upperValue</td>
+<td width="8%">upper limit of the particle size of the defined fraction (expressed in µm)</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">pSF_3_fractionContent</td>
+<td width="8%">Double</td>
+<td width="3%">8</td>
+<td width="8%">pSF_3_fractionContent</td>
+<td width="8%">Percentage of the defined fraction.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p><p><hr/><a name="TableSoilPlot"/>
+<p><strong>SoilPlot - Table</strong></p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">SoilPlot</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+<td width="*" style="border-color: white">SoilPlot</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+<td width="*" style="border-color: white">false</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">SoilPlot</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border:0px">
+<td width="8%" style="border:0px"><strong>Field</strong></td>
+<td width="8%" style="border:0px"><strong>DataType</strong></td>
+<td width="5%" style="border:0px"><strong>Length</strong></td>
+<td width="8%" style="border:0px"><strong>AliasName</strong></td>
+<td width="8%" style="border:0px"><strong>Description</strong></td>
+<td width="8%" style="border:0px"><strong>Domain</strong></td>
+<td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+<td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+<td width="5%" style="border:0px"><strong>Precision</strong></td>
+<td width="5%" style="border:0px"><strong>Scale</strong></td>
+</tr>
+<tr>
+<td width="8%">OBJECTID</td>
+<td width="8%">OID</td>
+<td width="3%">4</td>
+<td width="8%">OBJECTID</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">beginLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date</td>
+<td width="3%">8</td>
+<td width="8%">endLifespanVersion</td>
+<td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">featureId</td>
+<td width="8%">Integer</td>
+<td width="3%">4</td>
+<td width="8%">featureId</td>
+<td width="8%">Identifier, used in references to this object</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_localId</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_localId</td>
+<td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">inspireId_namespace</td>
+<td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">String</td>
+<td width="3%">25</td>
+<td width="8%">inspireId_versionId</td>
+<td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">locatedOn_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">locatedOn_href</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">observedProfile_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">observedProfile_href</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">soilPlotLocation</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">soilPlotLocation</td>
+<td width="8%">-- Name -- soil plot location  a reference to a location on the earth; it can be a point location identified by coordinates or a description of the location using text or an identifier.  -- Description -- EXAMPLE reference to a place name, municipality or</td>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr><tr>
+<td width="8%">soilPlotType_href</td>
+<td width="8%">String</td>
+<td width="3%">254</td>
+<td width="8%">soilPlotType_href</td>
+<td width="8%"/>
+<td width="8%"><a href="#Domain"/></td>
+<td width="8%"/>
+<td width="8%">true</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</p>
+    <p><hr/><a name="RelationshipClassRelSB_SB_isDescribed"/>
+<p><strong>RelSB_SB_isDescribed - RelationshipClass</strong></p>
+<table width="100%">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Name</strong></td>
+<td width="*" style="border-color: white">RelSB_SB_isDescribed</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+<td width="*" style="border-color: white">OneToMany</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+<td width="*" style="border-color: white">False</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+<td width="*" style="border-color: white">SoilBody_isDescribed</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+<td width="*" style="border-color: white">SoilBody</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>Description</strong></td>
+<td width="*" style="border-color: white">RelSB_SB_isDescribed</td>
+</tr>
+</tbody>
+</table>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+</tr><br/>
+<tr>
+<td width="30%">SoilBody</td>
+<td width="30%">featureId</td>
+<td width="30%">RID</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="50%">
+<tbody>
+<tr style="border:0px">
+<td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+<td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+</tr>
+<tr>
+<td width="30%">SoilBody_isDescribed</td>
+<td width="30%"/>
+<td width="30%"/>
+</tr>
+</tbody>
+</table></p>
+    <p>
+    <hr/><a name="DomainEventEnvironmentValue"/>
+<p><strong>EventEnvironmentValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">EventEnvironmentValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/earthInteriorSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/earthInteriorSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/earthSurfaceSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/earthSurfaceSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/extraTerrestrialSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/extraTerrestrialSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tectonicallyDefinedSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tectonicallyDefinedSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/abandonedRiverChannelSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/abandonedRiverChannelSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/aboveCarbonateCompensationDepthSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/aboveCarbonateCompensationDepthSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/abyssalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/abyssalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/activeContinentalMarginSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/activeContinentalMarginSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/activeSpreadingCenterSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/activeSpreadingCenterSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/aeolianProcessSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/aeolianProcessSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/agriculturalAndForestryLandSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/agriculturalAndForestryLandSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/algalFlatSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/algalFlatSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/alluvialFanSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/alluvialFanSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/alluvialPlainSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/alluvialPlainSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/anoxicSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/anoxicSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/aridOrSemiAridEnvironmentSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/aridOrSemiAridEnvironmentSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/backArcSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/backArcSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/backreefSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/backreefSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/barrierBeachSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/barrierBeachSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/barrierIslandCoastlineSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/barrierIslandCoastlineSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/barrierLagoonSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/barrierLagoonSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/basinBogSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/basinBogSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/basinPlainSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/basinPlainSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/bathyalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/bathyalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/beachSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/beachSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/belowCarbonateCompensationDepthSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/belowCarbonateCompensationDepthSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/biologicalReefSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/biologicalReefSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/blanketBog</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/blanketBog</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/bogSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/bogSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/braidedRiverChannelSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/braidedRiverChannelSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/carbonateDominatedShorelineSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/carbonateDominatedShorelineSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/carbonateShelfSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/carbonateShelfSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/caveSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/caveSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/coastalDuneFieldSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/coastalDuneFieldSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/coastalPlainSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/coastalPlainSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/collisionalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/collisionalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/contactMetamorphicSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/contactMetamorphicSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalBorderlandSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalBorderlandSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalCrustalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalCrustalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalRiftSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalRiftSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalShelfSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/continentalShelfSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/crustalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/crustalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/cutoffMeanderSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/cutoffMeanderSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deepSeaTrenchSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deepSeaTrenchSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaDistributaryChannelSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaDistributaryChannelSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaDistributaryMouthSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaDistributaryMouthSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaFrontSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaFrontSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaicSystemSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaicSystemSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaPlainSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaPlainSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaSlopeSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/deltaSlopeSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/dunefieldSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/dunefieldSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/dustAccumulationSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/dustAccumulationSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/dwellingAreaSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/dwellingAreaSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/englacialSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/englacialSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/epicontinentalMarineSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/epicontinentalMarineSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/estuarineDeltaSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/estuarineDeltaSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/estuarineLagoonSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/estuarineLagoonSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/estuarySetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/estuarySetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/extendedTerraneSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/extendedTerraneSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/fanDeltaSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/fanDeltaSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/fastSpreadingCenterSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/fastSpreadingCenterSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/floodplainSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/floodplainSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/forearcSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/forearcSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/forelandSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/forelandSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/forereefSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/forereefSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/foreshore</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/foreshore</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/gibberPlainSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/gibberPlainSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacialOutwashPlainSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacialOutwashPlainSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacierLateralSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacierLateralSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacierRelatedSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacierRelatedSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacierTerminusSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glacierTerminusSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glaciofluvialSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glaciofluvialSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glaciolacustrineSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glaciolacustrineSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glaciomarineSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/glaciomarineSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/graben</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/graben</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hadalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hadalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/halfGraben</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/halfGraben</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/highPressureLowTemperatureEarthInteriorSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/highPressureLowTemperatureEarthInteriorSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hillslopeSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hillslopeSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hinterlandTectonicSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hinterlandTectonicSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hotSpotSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hotSpotSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/humanEnvironmentSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/humanEnvironmentSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/humidTemperateClimaticSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/humidTemperateClimaticSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/humidTropicalClimaticSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/humidTropicalClimaticSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hypabyssalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/hypabyssalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/inactiveSpreadingCenterSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/inactiveSpreadingCenterSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/innerNeriticSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/innerNeriticSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/interdistributaryBaySetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/interdistributaryBaySetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/intertidalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/intertidalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/intracratonicSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/intracratonicSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/intraplateTectonicSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/intraplateTectonicSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lacustrineDeltaSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lacustrineDeltaSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lacustrineSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lacustrineSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lagoonalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lagoonalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/landReclamationSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/landReclamationSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowEnergyShorelineSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowEnergyShorelineSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerBathyalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerBathyalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerContinentalCrustalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerContinentalCrustalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerDeltaPlainSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerDeltaPlainSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerMantleSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerMantleSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerOceanicCrustalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowerOceanicCrustalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowPressureHighTemperatureSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/lowPressureHighTemperatureSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/mantleSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/mantleSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/marginalMarineSabkhaSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/marginalMarineSabkhaSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/marineCarbonatePlatformSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/marineCarbonatePlatformSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/marineSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/marineSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/meanderingRiverChannelSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/meanderingRiverChannelSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/mediumRateSpreadingCenterSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/mediumRateSpreadingCenterSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/middleBathyalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/middleBathyalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/middleContinentalCrustSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/middleContinentalCrustSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/middleNeriticSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/middleNeriticSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/midOceanRidgeSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/midOceanRidgeSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/miningAreaSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/miningAreaSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/mudFlatSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/mudFlatSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/neriticSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/neriticSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/oceanHighlandSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/oceanHighlandSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/oceanicCrustalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/oceanicCrustalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/oceanicPlateauSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/oceanicPlateauSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/outerNeriticSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/outerNeriticSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/passiveContinentalMarginSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/passiveContinentalMarginSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/pedimentSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/pedimentSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/piedmontSlopeSystemSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/piedmontSlopeSystemSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/plateMarginSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/plateMarginSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/plateSpreadingCenterSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/plateSpreadingCenterSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/playaSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/playaSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/polarClimaticSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/polarClimaticSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/prodeltaSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/prodeltaSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/proglacialSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/proglacialSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/reefFlatSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/reefFlatSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/regionalMetamorphicSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/regionalMetamorphicSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/riverChannelSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/riverChannelSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/riverPlainSystemSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/riverPlainSystemSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/rockyCoastSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/rockyCoastSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/saltPan</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/saltPan</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/sandPlainSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/sandPlainSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/seamountSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/seamountSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/shorelineSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/shorelineSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/slopeRiseSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/slopeRiseSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/slowSpreadingCenterSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/slowSpreadingCenterSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/springSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/springSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/strandplainSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/strandplainSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subaerialSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subaerialSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subaqueousSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subaqueousSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subductionZoneSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subductionZoneSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subglacialSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/subglacialSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/submarineFanSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/submarineFanSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/supraglacialSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/supraglacialSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/supratidalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/supratidalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/swampOrMarshSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/swampOrMarshSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/terrestrialSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/terrestrialSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalChannelSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalChannelSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalFlatSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalFlatSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalMarshSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalMarshSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/tidalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/transformPlateBoundarySetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/transformPlateBoundarySetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/transitionalCrustalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/transitionalCrustalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/ultraHighPressureCrustalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/ultraHighPressureCrustalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperBathyalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperBathyalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperContinentalCrustalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperContinentalCrustalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperDeltaPlainSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperDeltaPlainSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperMantleSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperMantleSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperOceanicCrustalSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/upperOceanicCrustalSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/volcanicArcSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/volcanicArcSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/wasteAndMaterialDepositionAreaSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/wasteAndMaterialDepositionAreaSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/wetlandSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/wetlandSetting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/wetToSubHumidSetting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventEnvironmentValue/wetToSubHumidSetting</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainEventEnvironmentValue_value"/>
+<p><strong>EventEnvironmentValue_value - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">EventEnvironmentValue_value</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">earthInteriorSetting</td>
+<td width="20%">earthInteriorSetting</td>
+</tr><tr>
+<td width="20%">earthSurfaceSetting</td>
+<td width="20%">earthSurfaceSetting</td>
+</tr><tr>
+<td width="20%">extraTerrestrialSetting</td>
+<td width="20%">extraTerrestrialSetting</td>
+</tr><tr>
+<td width="20%">tectonicallyDefinedSetting</td>
+<td width="20%">tectonicallyDefinedSetting</td>
+</tr><tr>
+<td width="20%">abandonedRiverChannelSetting</td>
+<td width="20%">abandonedRiverChannelSetting</td>
+</tr><tr>
+<td width="20%">aboveCarbonateCompensationDepthSetting</td>
+<td width="20%">aboveCarbonateCompensationDepthSetting</td>
+</tr><tr>
+<td width="20%">abyssalSetting</td>
+<td width="20%">abyssalSetting</td>
+</tr><tr>
+<td width="20%">activeContinentalMarginSetting</td>
+<td width="20%">activeContinentalMarginSetting</td>
+</tr><tr>
+<td width="20%">activeSpreadingCenterSetting</td>
+<td width="20%">activeSpreadingCenterSetting</td>
+</tr><tr>
+<td width="20%">aeolianProcessSetting</td>
+<td width="20%">aeolianProcessSetting</td>
+</tr><tr>
+<td width="20%">agriculturalAndForestryLandSetting</td>
+<td width="20%">agriculturalAndForestryLandSetting</td>
+</tr><tr>
+<td width="20%">algalFlatSetting</td>
+<td width="20%">algalFlatSetting</td>
+</tr><tr>
+<td width="20%">alluvialFanSetting</td>
+<td width="20%">alluvialFanSetting</td>
+</tr><tr>
+<td width="20%">alluvialPlainSetting</td>
+<td width="20%">alluvialPlainSetting</td>
+</tr><tr>
+<td width="20%">anoxicSetting</td>
+<td width="20%">anoxicSetting</td>
+</tr><tr>
+<td width="20%">aridOrSemiAridEnvironmentSetting</td>
+<td width="20%">aridOrSemiAridEnvironmentSetting</td>
+</tr><tr>
+<td width="20%">backArcSetting</td>
+<td width="20%">backArcSetting</td>
+</tr><tr>
+<td width="20%">backreefSetting</td>
+<td width="20%">backreefSetting</td>
+</tr><tr>
+<td width="20%">barrierBeachSetting</td>
+<td width="20%">barrierBeachSetting</td>
+</tr><tr>
+<td width="20%">barrierIslandCoastlineSetting</td>
+<td width="20%">barrierIslandCoastlineSetting</td>
+</tr><tr>
+<td width="20%">barrierLagoonSetting</td>
+<td width="20%">barrierLagoonSetting</td>
+</tr><tr>
+<td width="20%">basinBogSetting</td>
+<td width="20%">basinBogSetting</td>
+</tr><tr>
+<td width="20%">basinPlainSetting</td>
+<td width="20%">basinPlainSetting</td>
+</tr><tr>
+<td width="20%">bathyalSetting</td>
+<td width="20%">bathyalSetting</td>
+</tr><tr>
+<td width="20%">beachSetting</td>
+<td width="20%">beachSetting</td>
+</tr><tr>
+<td width="20%">belowCarbonateCompensationDepthSetting</td>
+<td width="20%">belowCarbonateCompensationDepthSetting</td>
+</tr><tr>
+<td width="20%">biologicalReefSetting</td>
+<td width="20%">biologicalReefSetting</td>
+</tr><tr>
+<td width="20%">blanketBog</td>
+<td width="20%">blanketBog</td>
+</tr><tr>
+<td width="20%">bogSetting</td>
+<td width="20%">bogSetting</td>
+</tr><tr>
+<td width="20%">braidedRiverChannelSetting</td>
+<td width="20%">braidedRiverChannelSetting</td>
+</tr><tr>
+<td width="20%">carbonateDominatedShorelineSetting</td>
+<td width="20%">carbonateDominatedShorelineSetting</td>
+</tr><tr>
+<td width="20%">carbonateShelfSetting</td>
+<td width="20%">carbonateShelfSetting</td>
+</tr><tr>
+<td width="20%">caveSetting</td>
+<td width="20%">caveSetting</td>
+</tr><tr>
+<td width="20%">coastalDuneFieldSetting</td>
+<td width="20%">coastalDuneFieldSetting</td>
+</tr><tr>
+<td width="20%">coastalPlainSetting</td>
+<td width="20%">coastalPlainSetting</td>
+</tr><tr>
+<td width="20%">collisionalSetting</td>
+<td width="20%">collisionalSetting</td>
+</tr><tr>
+<td width="20%">contactMetamorphicSetting</td>
+<td width="20%">contactMetamorphicSetting</td>
+</tr><tr>
+<td width="20%">continentalBorderlandSetting</td>
+<td width="20%">continentalBorderlandSetting</td>
+</tr><tr>
+<td width="20%">continentalCrustalSetting</td>
+<td width="20%">continentalCrustalSetting</td>
+</tr><tr>
+<td width="20%">continentalRiftSetting</td>
+<td width="20%">continentalRiftSetting</td>
+</tr><tr>
+<td width="20%">continentalShelfSetting</td>
+<td width="20%">continentalShelfSetting</td>
+</tr><tr>
+<td width="20%">crustalSetting</td>
+<td width="20%">crustalSetting</td>
+</tr><tr>
+<td width="20%">cutoffMeanderSetting</td>
+<td width="20%">cutoffMeanderSetting</td>
+</tr><tr>
+<td width="20%">deepSeaTrenchSetting</td>
+<td width="20%">deepSeaTrenchSetting</td>
+</tr><tr>
+<td width="20%">deltaDistributaryChannelSetting</td>
+<td width="20%">deltaDistributaryChannelSetting</td>
+</tr><tr>
+<td width="20%">deltaDistributaryMouthSetting</td>
+<td width="20%">deltaDistributaryMouthSetting</td>
+</tr><tr>
+<td width="20%">deltaFrontSetting</td>
+<td width="20%">deltaFrontSetting</td>
+</tr><tr>
+<td width="20%">deltaicSystemSetting</td>
+<td width="20%">deltaicSystemSetting</td>
+</tr><tr>
+<td width="20%">deltaPlainSetting</td>
+<td width="20%">deltaPlainSetting</td>
+</tr><tr>
+<td width="20%">deltaSlopeSetting</td>
+<td width="20%">deltaSlopeSetting</td>
+</tr><tr>
+<td width="20%">dunefieldSetting</td>
+<td width="20%">dunefieldSetting</td>
+</tr><tr>
+<td width="20%">dustAccumulationSetting</td>
+<td width="20%">dustAccumulationSetting</td>
+</tr><tr>
+<td width="20%">dwellingAreaSetting</td>
+<td width="20%">dwellingAreaSetting</td>
+</tr><tr>
+<td width="20%">englacialSetting</td>
+<td width="20%">englacialSetting</td>
+</tr><tr>
+<td width="20%">epicontinentalMarineSetting</td>
+<td width="20%">epicontinentalMarineSetting</td>
+</tr><tr>
+<td width="20%">estuarineDeltaSetting</td>
+<td width="20%">estuarineDeltaSetting</td>
+</tr><tr>
+<td width="20%">estuarineLagoonSetting</td>
+<td width="20%">estuarineLagoonSetting</td>
+</tr><tr>
+<td width="20%">estuarySetting</td>
+<td width="20%">estuarySetting</td>
+</tr><tr>
+<td width="20%">extendedTerraneSetting</td>
+<td width="20%">extendedTerraneSetting</td>
+</tr><tr>
+<td width="20%">fanDeltaSetting</td>
+<td width="20%">fanDeltaSetting</td>
+</tr><tr>
+<td width="20%">fastSpreadingCenterSetting</td>
+<td width="20%">fastSpreadingCenterSetting</td>
+</tr><tr>
+<td width="20%">floodplainSetting</td>
+<td width="20%">floodplainSetting</td>
+</tr><tr>
+<td width="20%">forearcSetting</td>
+<td width="20%">forearcSetting</td>
+</tr><tr>
+<td width="20%">forelandSetting</td>
+<td width="20%">forelandSetting</td>
+</tr><tr>
+<td width="20%">forereefSetting</td>
+<td width="20%">forereefSetting</td>
+</tr><tr>
+<td width="20%">foreshore</td>
+<td width="20%">foreshore</td>
+</tr><tr>
+<td width="20%">gibberPlainSetting</td>
+<td width="20%">gibberPlainSetting</td>
+</tr><tr>
+<td width="20%">glacialOutwashPlainSetting</td>
+<td width="20%">glacialOutwashPlainSetting</td>
+</tr><tr>
+<td width="20%">glacierLateralSetting</td>
+<td width="20%">glacierLateralSetting</td>
+</tr><tr>
+<td width="20%">glacierRelatedSetting</td>
+<td width="20%">glacierRelatedSetting</td>
+</tr><tr>
+<td width="20%">glacierTerminusSetting</td>
+<td width="20%">glacierTerminusSetting</td>
+</tr><tr>
+<td width="20%">glaciofluvialSetting</td>
+<td width="20%">glaciofluvialSetting</td>
+</tr><tr>
+<td width="20%">glaciolacustrineSetting</td>
+<td width="20%">glaciolacustrineSetting</td>
+</tr><tr>
+<td width="20%">glaciomarineSetting</td>
+<td width="20%">glaciomarineSetting</td>
+</tr><tr>
+<td width="20%">graben</td>
+<td width="20%">graben</td>
+</tr><tr>
+<td width="20%">hadalSetting</td>
+<td width="20%">hadalSetting</td>
+</tr><tr>
+<td width="20%">halfGraben</td>
+<td width="20%">halfGraben</td>
+</tr><tr>
+<td width="20%">highPressureLowTemperatureEarthInteriorSetting</td>
+<td width="20%">highPressureLowTemperatureEarthInteriorSetting</td>
+</tr><tr>
+<td width="20%">hillslopeSetting</td>
+<td width="20%">hillslopeSetting</td>
+</tr><tr>
+<td width="20%">hinterlandTectonicSetting</td>
+<td width="20%">hinterlandTectonicSetting</td>
+</tr><tr>
+<td width="20%">hotSpotSetting</td>
+<td width="20%">hotSpotSetting</td>
+</tr><tr>
+<td width="20%">humanEnvironmentSetting</td>
+<td width="20%">humanEnvironmentSetting</td>
+</tr><tr>
+<td width="20%">humidTemperateClimaticSetting</td>
+<td width="20%">humidTemperateClimaticSetting</td>
+</tr><tr>
+<td width="20%">humidTropicalClimaticSetting</td>
+<td width="20%">humidTropicalClimaticSetting</td>
+</tr><tr>
+<td width="20%">hypabyssalSetting</td>
+<td width="20%">hypabyssalSetting</td>
+</tr><tr>
+<td width="20%">inactiveSpreadingCenterSetting</td>
+<td width="20%">inactiveSpreadingCenterSetting</td>
+</tr><tr>
+<td width="20%">innerNeriticSetting</td>
+<td width="20%">innerNeriticSetting</td>
+</tr><tr>
+<td width="20%">interdistributaryBaySetting</td>
+<td width="20%">interdistributaryBaySetting</td>
+</tr><tr>
+<td width="20%">intertidalSetting</td>
+<td width="20%">intertidalSetting</td>
+</tr><tr>
+<td width="20%">intracratonicSetting</td>
+<td width="20%">intracratonicSetting</td>
+</tr><tr>
+<td width="20%">intraplateTectonicSetting</td>
+<td width="20%">intraplateTectonicSetting</td>
+</tr><tr>
+<td width="20%">lacustrineDeltaSetting</td>
+<td width="20%">lacustrineDeltaSetting</td>
+</tr><tr>
+<td width="20%">lacustrineSetting</td>
+<td width="20%">lacustrineSetting</td>
+</tr><tr>
+<td width="20%">lagoonalSetting</td>
+<td width="20%">lagoonalSetting</td>
+</tr><tr>
+<td width="20%">landReclamationSetting</td>
+<td width="20%">landReclamationSetting</td>
+</tr><tr>
+<td width="20%">lowEnergyShorelineSetting</td>
+<td width="20%">lowEnergyShorelineSetting</td>
+</tr><tr>
+<td width="20%">lowerBathyalSetting</td>
+<td width="20%">lowerBathyalSetting</td>
+</tr><tr>
+<td width="20%">lowerContinentalCrustalSetting</td>
+<td width="20%">lowerContinentalCrustalSetting</td>
+</tr><tr>
+<td width="20%">lowerDeltaPlainSetting</td>
+<td width="20%">lowerDeltaPlainSetting</td>
+</tr><tr>
+<td width="20%">lowerMantleSetting</td>
+<td width="20%">lowerMantleSetting</td>
+</tr><tr>
+<td width="20%">lowerOceanicCrustalSetting</td>
+<td width="20%">lowerOceanicCrustalSetting</td>
+</tr><tr>
+<td width="20%">lowPressureHighTemperatureSetting</td>
+<td width="20%">lowPressureHighTemperatureSetting</td>
+</tr><tr>
+<td width="20%">mantleSetting</td>
+<td width="20%">mantleSetting</td>
+</tr><tr>
+<td width="20%">marginalMarineSabkhaSetting</td>
+<td width="20%">marginalMarineSabkhaSetting</td>
+</tr><tr>
+<td width="20%">marineCarbonatePlatformSetting</td>
+<td width="20%">marineCarbonatePlatformSetting</td>
+</tr><tr>
+<td width="20%">marineSetting</td>
+<td width="20%">marineSetting</td>
+</tr><tr>
+<td width="20%">meanderingRiverChannelSetting</td>
+<td width="20%">meanderingRiverChannelSetting</td>
+</tr><tr>
+<td width="20%">mediumRateSpreadingCenterSetting</td>
+<td width="20%">mediumRateSpreadingCenterSetting</td>
+</tr><tr>
+<td width="20%">middleBathyalSetting</td>
+<td width="20%">middleBathyalSetting</td>
+</tr><tr>
+<td width="20%">middleContinentalCrustSetting</td>
+<td width="20%">middleContinentalCrustSetting</td>
+</tr><tr>
+<td width="20%">middleNeriticSetting</td>
+<td width="20%">middleNeriticSetting</td>
+</tr><tr>
+<td width="20%">midOceanRidgeSetting</td>
+<td width="20%">midOceanRidgeSetting</td>
+</tr><tr>
+<td width="20%">miningAreaSetting</td>
+<td width="20%">miningAreaSetting</td>
+</tr><tr>
+<td width="20%">mudFlatSetting</td>
+<td width="20%">mudFlatSetting</td>
+</tr><tr>
+<td width="20%">neriticSetting</td>
+<td width="20%">neriticSetting</td>
+</tr><tr>
+<td width="20%">oceanHighlandSetting</td>
+<td width="20%">oceanHighlandSetting</td>
+</tr><tr>
+<td width="20%">oceanicCrustalSetting</td>
+<td width="20%">oceanicCrustalSetting</td>
+</tr><tr>
+<td width="20%">oceanicPlateauSetting</td>
+<td width="20%">oceanicPlateauSetting</td>
+</tr><tr>
+<td width="20%">outerNeriticSetting</td>
+<td width="20%">outerNeriticSetting</td>
+</tr><tr>
+<td width="20%">passiveContinentalMarginSetting</td>
+<td width="20%">passiveContinentalMarginSetting</td>
+</tr><tr>
+<td width="20%">pedimentSetting</td>
+<td width="20%">pedimentSetting</td>
+</tr><tr>
+<td width="20%">piedmontSlopeSystemSetting</td>
+<td width="20%">piedmontSlopeSystemSetting</td>
+</tr><tr>
+<td width="20%">plateMarginSetting</td>
+<td width="20%">plateMarginSetting</td>
+</tr><tr>
+<td width="20%">plateSpreadingCenterSetting</td>
+<td width="20%">plateSpreadingCenterSetting</td>
+</tr><tr>
+<td width="20%">playaSetting</td>
+<td width="20%">playaSetting</td>
+</tr><tr>
+<td width="20%">polarClimaticSetting</td>
+<td width="20%">polarClimaticSetting</td>
+</tr><tr>
+<td width="20%">prodeltaSetting</td>
+<td width="20%">prodeltaSetting</td>
+</tr><tr>
+<td width="20%">proglacialSetting</td>
+<td width="20%">proglacialSetting</td>
+</tr><tr>
+<td width="20%">reefFlatSetting</td>
+<td width="20%">reefFlatSetting</td>
+</tr><tr>
+<td width="20%">regionalMetamorphicSetting</td>
+<td width="20%">regionalMetamorphicSetting</td>
+</tr><tr>
+<td width="20%">riverChannelSetting</td>
+<td width="20%">riverChannelSetting</td>
+</tr><tr>
+<td width="20%">riverPlainSystemSetting</td>
+<td width="20%">riverPlainSystemSetting</td>
+</tr><tr>
+<td width="20%">rockyCoastSetting</td>
+<td width="20%">rockyCoastSetting</td>
+</tr><tr>
+<td width="20%">saltPan</td>
+<td width="20%">saltPan</td>
+</tr><tr>
+<td width="20%">sandPlainSetting</td>
+<td width="20%">sandPlainSetting</td>
+</tr><tr>
+<td width="20%">seamountSetting</td>
+<td width="20%">seamountSetting</td>
+</tr><tr>
+<td width="20%">shorelineSetting</td>
+<td width="20%">shorelineSetting</td>
+</tr><tr>
+<td width="20%">slopeRiseSetting</td>
+<td width="20%">slopeRiseSetting</td>
+</tr><tr>
+<td width="20%">slowSpreadingCenterSetting</td>
+<td width="20%">slowSpreadingCenterSetting</td>
+</tr><tr>
+<td width="20%">springSetting</td>
+<td width="20%">springSetting</td>
+</tr><tr>
+<td width="20%">strandplainSetting</td>
+<td width="20%">strandplainSetting</td>
+</tr><tr>
+<td width="20%">subaerialSetting</td>
+<td width="20%">subaerialSetting</td>
+</tr><tr>
+<td width="20%">subaqueousSetting</td>
+<td width="20%">subaqueousSetting</td>
+</tr><tr>
+<td width="20%">subductionZoneSetting</td>
+<td width="20%">subductionZoneSetting</td>
+</tr><tr>
+<td width="20%">subglacialSetting</td>
+<td width="20%">subglacialSetting</td>
+</tr><tr>
+<td width="20%">submarineFanSetting</td>
+<td width="20%">submarineFanSetting</td>
+</tr><tr>
+<td width="20%">supraglacialSetting</td>
+<td width="20%">supraglacialSetting</td>
+</tr><tr>
+<td width="20%">supratidalSetting</td>
+<td width="20%">supratidalSetting</td>
+</tr><tr>
+<td width="20%">swampOrMarshSetting</td>
+<td width="20%">swampOrMarshSetting</td>
+</tr><tr>
+<td width="20%">terrestrialSetting</td>
+<td width="20%">terrestrialSetting</td>
+</tr><tr>
+<td width="20%">tidalChannelSetting</td>
+<td width="20%">tidalChannelSetting</td>
+</tr><tr>
+<td width="20%">tidalFlatSetting</td>
+<td width="20%">tidalFlatSetting</td>
+</tr><tr>
+<td width="20%">tidalMarshSetting</td>
+<td width="20%">tidalMarshSetting</td>
+</tr><tr>
+<td width="20%">tidalSetting</td>
+<td width="20%">tidalSetting</td>
+</tr><tr>
+<td width="20%">transformPlateBoundarySetting</td>
+<td width="20%">transformPlateBoundarySetting</td>
+</tr><tr>
+<td width="20%">transitionalCrustalSetting</td>
+<td width="20%">transitionalCrustalSetting</td>
+</tr><tr>
+<td width="20%">ultraHighPressureCrustalSetting</td>
+<td width="20%">ultraHighPressureCrustalSetting</td>
+</tr><tr>
+<td width="20%">upperBathyalSetting</td>
+<td width="20%">upperBathyalSetting</td>
+</tr><tr>
+<td width="20%">upperContinentalCrustalSetting</td>
+<td width="20%">upperContinentalCrustalSetting</td>
+</tr><tr>
+<td width="20%">upperDeltaPlainSetting</td>
+<td width="20%">upperDeltaPlainSetting</td>
+</tr><tr>
+<td width="20%">upperMantleSetting</td>
+<td width="20%">upperMantleSetting</td>
+</tr><tr>
+<td width="20%">upperOceanicCrustalSetting</td>
+<td width="20%">upperOceanicCrustalSetting</td>
+</tr><tr>
+<td width="20%">volcanicArcSetting</td>
+<td width="20%">volcanicArcSetting</td>
+</tr><tr>
+<td width="20%">wasteAndMaterialDepositionAreaSetting</td>
+<td width="20%">wasteAndMaterialDepositionAreaSetting</td>
+</tr><tr>
+<td width="20%">wetlandSetting</td>
+<td width="20%">wetlandSetting</td>
+</tr><tr>
+<td width="20%">wetToSubHumidSetting</td>
+<td width="20%">wetToSubHumidSetting</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainEventProcessValue"/>
+<p><strong>EventProcessValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">EventProcessValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/bolideImpact</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/bolideImpact</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/deepWaterOxygenDepletion</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/deepWaterOxygenDepletion</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/deformation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/deformation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/diageneticProcess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/diageneticProcess</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/extinction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/extinction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/geomagneticProcess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/geomagneticProcess</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/humanActivity</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/humanActivity</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/magmaticProcess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/magmaticProcess</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/metamorphicProcess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/metamorphicProcess</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/seaLevelChange</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/seaLevelChange</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/sedimentaryProcess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/sedimentaryProcess</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/speciation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/speciation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/tectonicProcess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/tectonicProcess</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/weathering</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/weathering</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/accretion</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/accretion</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/alteration</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/alteration</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/biologicalPrecipitation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/biologicalPrecipitation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/biologicalWeathering</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/biologicalWeathering</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/casting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/casting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/chemicalPrecipitation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/chemicalPrecipitation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/chemicalWeathering</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/chemicalWeathering</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/cometaryImpact</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/cometaryImpact</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/contactMetamorphism</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/contactMetamorphism</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/continentalBreakup</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/continentalBreakup</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/continentalCollision</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/continentalCollision</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/cryoturbation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/cryoturbation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/debrisFlowDeposition</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/debrisFlowDeposition</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/deepPloughing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/deepPloughing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/deformationTwinning</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/deformationTwinning</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/deluviation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/deluviation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/deposition</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/deposition</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/depositionByOrFromMovingIce</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/depositionByOrFromMovingIce</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/depositionFromAir</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/depositionFromAir</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/depositionFromFluid</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/depositionFromFluid</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/depositionFromMovingFluid</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/depositionFromMovingFluid</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/depositionFromWater</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/depositionFromWater</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/diffusionCreep</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/diffusionCreep</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/digging</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/digging</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/dislocationMetamorphism</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/dislocationMetamorphism</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/dissolution</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/dissolution</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/dissolutionCreep</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/dissolutionCreep</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/ductileFlow</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/ductileFlow</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/dumping</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/dumping</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/effusiveEruption</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/effusiveEruption</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/erosion</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/erosion</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/eruption</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/eruption</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/excavation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/excavation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/faulting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/faulting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/folding</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/folding</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/fracturing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/fracturing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/frostShattering</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/frostShattering</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/geologicProcess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/geologicProcess</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/grading</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/grading</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/haloclasty</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/haloclasty</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/hawaiianEruption</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/hawaiianEruption</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/hydration</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/hydration</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/hydrolysis</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/hydrolysis</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/iceErosion</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/iceErosion</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/inSituOrganismicGrowth</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/inSituOrganismicGrowth</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/intrusion</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/intrusion</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/magmaticCrystallisation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/magmaticCrystallisation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/magneticFieldReversal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/magneticFieldReversal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/massWasting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/massWasting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/massWastingDeposition</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/massWastingDeposition</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/materialTransportAndDeposition</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/materialTransportAndDeposition</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/mechanicalDeposition</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/mechanicalDeposition</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/melting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/melting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/meteoriteImpact</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/meteoriteImpact</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/microfracturing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/microfracturing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/mixing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/mixing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/obduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/obduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/organicAccumulation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/organicAccumulation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/orogenicProcess</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/orogenicProcess</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/oxidation</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/oxidation</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/partialMelting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/partialMelting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/physicalWeathering</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/physicalWeathering</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/plinianEruption</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/plinianEruption</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/polarWander</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/polarWander</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/pressureReleaseWeathering</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/pressureReleaseWeathering</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/pyroclasticEruption</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/pyroclasticEruption</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/reworking</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/reworking</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/rifting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/rifting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/seaLevelFall</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/seaLevelFall</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/seaLevelRise</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/seaLevelRise</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/sealing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/sealing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/shearing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/shearing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/spreading</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/spreading</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/strombolianEruption</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/strombolianEruption</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/subduction</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/subduction</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/thermalShockWeathering</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/thermalShockWeathering</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/transformFaulting</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/transformFaulting</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/turbidityCurrentDeposition</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/turbidityCurrentDeposition</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/vulcanianEruption</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/vulcanianEruption</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/waterErosion</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/waterErosion</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/windErosion</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/EventProcessValue/windErosion</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainEventProcessValue_value"/>
+<p><strong>EventProcessValue_value - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">EventProcessValue_value</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">bolideImpact</td>
+<td width="20%">bolideImpact</td>
+</tr><tr>
+<td width="20%">deepWaterOxygenDepletion</td>
+<td width="20%">deepWaterOxygenDepletion</td>
+</tr><tr>
+<td width="20%">deformation</td>
+<td width="20%">deformation</td>
+</tr><tr>
+<td width="20%">diageneticProcess</td>
+<td width="20%">diageneticProcess</td>
+</tr><tr>
+<td width="20%">extinction</td>
+<td width="20%">extinction</td>
+</tr><tr>
+<td width="20%">geomagneticProcess</td>
+<td width="20%">geomagneticProcess</td>
+</tr><tr>
+<td width="20%">humanActivity</td>
+<td width="20%">humanActivity</td>
+</tr><tr>
+<td width="20%">magmaticProcess</td>
+<td width="20%">magmaticProcess</td>
+</tr><tr>
+<td width="20%">metamorphicProcess</td>
+<td width="20%">metamorphicProcess</td>
+</tr><tr>
+<td width="20%">seaLevelChange</td>
+<td width="20%">seaLevelChange</td>
+</tr><tr>
+<td width="20%">sedimentaryProcess</td>
+<td width="20%">sedimentaryProcess</td>
+</tr><tr>
+<td width="20%">speciation</td>
+<td width="20%">speciation</td>
+</tr><tr>
+<td width="20%">tectonicProcess</td>
+<td width="20%">tectonicProcess</td>
+</tr><tr>
+<td width="20%">weathering</td>
+<td width="20%">weathering</td>
+</tr><tr>
+<td width="20%">accretion</td>
+<td width="20%">accretion</td>
+</tr><tr>
+<td width="20%">alteration</td>
+<td width="20%">alteration</td>
+</tr><tr>
+<td width="20%">biologicalPrecipitation</td>
+<td width="20%">biologicalPrecipitation</td>
+</tr><tr>
+<td width="20%">biologicalWeathering</td>
+<td width="20%">biologicalWeathering</td>
+</tr><tr>
+<td width="20%">casting</td>
+<td width="20%">casting</td>
+</tr><tr>
+<td width="20%">chemicalPrecipitation</td>
+<td width="20%">chemicalPrecipitation</td>
+</tr><tr>
+<td width="20%">chemicalWeathering</td>
+<td width="20%">chemicalWeathering</td>
+</tr><tr>
+<td width="20%">cometaryImpact</td>
+<td width="20%">cometaryImpact</td>
+</tr><tr>
+<td width="20%">contactMetamorphism</td>
+<td width="20%">contactMetamorphism</td>
+</tr><tr>
+<td width="20%">continentalBreakup</td>
+<td width="20%">continentalBreakup</td>
+</tr><tr>
+<td width="20%">continentalCollision</td>
+<td width="20%">continentalCollision</td>
+</tr><tr>
+<td width="20%">cryoturbation</td>
+<td width="20%">cryoturbation</td>
+</tr><tr>
+<td width="20%">debrisFlowDeposition</td>
+<td width="20%">debrisFlowDeposition</td>
+</tr><tr>
+<td width="20%">deepPloughing</td>
+<td width="20%">deepPloughing</td>
+</tr><tr>
+<td width="20%">deformationTwinning</td>
+<td width="20%">deformationTwinning</td>
+</tr><tr>
+<td width="20%">deluviation</td>
+<td width="20%">deluviation</td>
+</tr><tr>
+<td width="20%">deposition</td>
+<td width="20%">deposition</td>
+</tr><tr>
+<td width="20%">depositionByOrFromMovingIce</td>
+<td width="20%">depositionByOrFromMovingIce</td>
+</tr><tr>
+<td width="20%">depositionFromAir</td>
+<td width="20%">depositionFromAir</td>
+</tr><tr>
+<td width="20%">depositionFromFluid</td>
+<td width="20%">depositionFromFluid</td>
+</tr><tr>
+<td width="20%">depositionFromMovingFluid</td>
+<td width="20%">depositionFromMovingFluid</td>
+</tr><tr>
+<td width="20%">depositionFromWater</td>
+<td width="20%">depositionFromWater</td>
+</tr><tr>
+<td width="20%">diffusionCreep</td>
+<td width="20%">diffusionCreep</td>
+</tr><tr>
+<td width="20%">digging</td>
+<td width="20%">digging</td>
+</tr><tr>
+<td width="20%">dislocationMetamorphism</td>
+<td width="20%">dislocationMetamorphism</td>
+</tr><tr>
+<td width="20%">dissolution</td>
+<td width="20%">dissolution</td>
+</tr><tr>
+<td width="20%">dissolutionCreep</td>
+<td width="20%">dissolutionCreep</td>
+</tr><tr>
+<td width="20%">ductileFlow</td>
+<td width="20%">ductileFlow</td>
+</tr><tr>
+<td width="20%">dumping</td>
+<td width="20%">dumping</td>
+</tr><tr>
+<td width="20%">effusiveEruption</td>
+<td width="20%">effusiveEruption</td>
+</tr><tr>
+<td width="20%">erosion</td>
+<td width="20%">erosion</td>
+</tr><tr>
+<td width="20%">eruption</td>
+<td width="20%">eruption</td>
+</tr><tr>
+<td width="20%">excavation</td>
+<td width="20%">excavation</td>
+</tr><tr>
+<td width="20%">faulting</td>
+<td width="20%">faulting</td>
+</tr><tr>
+<td width="20%">folding</td>
+<td width="20%">folding</td>
+</tr><tr>
+<td width="20%">fracturing</td>
+<td width="20%">fracturing</td>
+</tr><tr>
+<td width="20%">frostShattering</td>
+<td width="20%">frostShattering</td>
+</tr><tr>
+<td width="20%">geologicProcess</td>
+<td width="20%">geologicProcess</td>
+</tr><tr>
+<td width="20%">grading</td>
+<td width="20%">grading</td>
+</tr><tr>
+<td width="20%">haloclasty</td>
+<td width="20%">haloclasty</td>
+</tr><tr>
+<td width="20%">hawaiianEruption</td>
+<td width="20%">hawaiianEruption</td>
+</tr><tr>
+<td width="20%">hydration</td>
+<td width="20%">hydration</td>
+</tr><tr>
+<td width="20%">hydrolysis</td>
+<td width="20%">hydrolysis</td>
+</tr><tr>
+<td width="20%">iceErosion</td>
+<td width="20%">iceErosion</td>
+</tr><tr>
+<td width="20%">inSituOrganismicGrowth</td>
+<td width="20%">inSituOrganismicGrowth</td>
+</tr><tr>
+<td width="20%">intrusion</td>
+<td width="20%">intrusion</td>
+</tr><tr>
+<td width="20%">magmaticCrystallisation</td>
+<td width="20%">magmaticCrystallisation</td>
+</tr><tr>
+<td width="20%">magneticFieldReversal</td>
+<td width="20%">magneticFieldReversal</td>
+</tr><tr>
+<td width="20%">massWasting</td>
+<td width="20%">massWasting</td>
+</tr><tr>
+<td width="20%">massWastingDeposition</td>
+<td width="20%">massWastingDeposition</td>
+</tr><tr>
+<td width="20%">materialTransportAndDeposition</td>
+<td width="20%">materialTransportAndDeposition</td>
+</tr><tr>
+<td width="20%">mechanicalDeposition</td>
+<td width="20%">mechanicalDeposition</td>
+</tr><tr>
+<td width="20%">melting</td>
+<td width="20%">melting</td>
+</tr><tr>
+<td width="20%">meteoriteImpact</td>
+<td width="20%">meteoriteImpact</td>
+</tr><tr>
+<td width="20%">microfracturing</td>
+<td width="20%">microfracturing</td>
+</tr><tr>
+<td width="20%">mixing</td>
+<td width="20%">mixing</td>
+</tr><tr>
+<td width="20%">obduction</td>
+<td width="20%">obduction</td>
+</tr><tr>
+<td width="20%">organicAccumulation</td>
+<td width="20%">organicAccumulation</td>
+</tr><tr>
+<td width="20%">orogenicProcess</td>
+<td width="20%">orogenicProcess</td>
+</tr><tr>
+<td width="20%">oxidation</td>
+<td width="20%">oxidation</td>
+</tr><tr>
+<td width="20%">partialMelting</td>
+<td width="20%">partialMelting</td>
+</tr><tr>
+<td width="20%">physicalWeathering</td>
+<td width="20%">physicalWeathering</td>
+</tr><tr>
+<td width="20%">plinianEruption</td>
+<td width="20%">plinianEruption</td>
+</tr><tr>
+<td width="20%">polarWander</td>
+<td width="20%">polarWander</td>
+</tr><tr>
+<td width="20%">pressureReleaseWeathering</td>
+<td width="20%">pressureReleaseWeathering</td>
+</tr><tr>
+<td width="20%">pyroclasticEruption</td>
+<td width="20%">pyroclasticEruption</td>
+</tr><tr>
+<td width="20%">reworking</td>
+<td width="20%">reworking</td>
+</tr><tr>
+<td width="20%">rifting</td>
+<td width="20%">rifting</td>
+</tr><tr>
+<td width="20%">seaLevelFall</td>
+<td width="20%">seaLevelFall</td>
+</tr><tr>
+<td width="20%">seaLevelRise</td>
+<td width="20%">seaLevelRise</td>
+</tr><tr>
+<td width="20%">sealing</td>
+<td width="20%">sealing</td>
+</tr><tr>
+<td width="20%">shearing</td>
+<td width="20%">shearing</td>
+</tr><tr>
+<td width="20%">spreading</td>
+<td width="20%">spreading</td>
+</tr><tr>
+<td width="20%">strombolianEruption</td>
+<td width="20%">strombolianEruption</td>
+</tr><tr>
+<td width="20%">subduction</td>
+<td width="20%">subduction</td>
+</tr><tr>
+<td width="20%">thermalShockWeathering</td>
+<td width="20%">thermalShockWeathering</td>
+</tr><tr>
+<td width="20%">transformFaulting</td>
+<td width="20%">transformFaulting</td>
+</tr><tr>
+<td width="20%">turbidityCurrentDeposition</td>
+<td width="20%">turbidityCurrentDeposition</td>
+</tr><tr>
+<td width="20%">vulcanianEruption</td>
+<td width="20%">vulcanianEruption</td>
+</tr><tr>
+<td width="20%">waterErosion</td>
+<td width="20%">waterErosion</td>
+</tr><tr>
+<td width="20%">windErosion</td>
+<td width="20%">windErosion</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainFAOHorizonMasterValue"/>
+<p><strong>FAOHorizonMasterValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">FAOHorizonMasterValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/L</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/L</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/R</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/R</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/A</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/A</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/H</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/H</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/W</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/W</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/I</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/I</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/E</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/E</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/C</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/C</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/O</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/O</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/B</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue/B</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainFAOHorizonMasterValue_value"/>
+<p><strong>FAOHorizonMasterValue_value - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">FAOHorizonMasterValue_value</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">L</td>
+<td width="20%">L</td>
+</tr><tr>
+<td width="20%">R</td>
+<td width="20%">R</td>
+</tr><tr>
+<td width="20%">A</td>
+<td width="20%">A</td>
+</tr><tr>
+<td width="20%">H</td>
+<td width="20%">H</td>
+</tr><tr>
+<td width="20%">W</td>
+<td width="20%">W</td>
+</tr><tr>
+<td width="20%">I</td>
+<td width="20%">I</td>
+</tr><tr>
+<td width="20%">E</td>
+<td width="20%">E</td>
+</tr><tr>
+<td width="20%">C</td>
+<td width="20%">C</td>
+</tr><tr>
+<td width="20%">O</td>
+<td width="20%">O</td>
+</tr><tr>
+<td width="20%">B</td>
+<td width="20%">B</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainFAOPrimeValue"/>
+<p><strong>FAOPrimeValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">FAOPrimeValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOPrimeValue/3</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOPrimeValue/3</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOPrimeValue/2</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOPrimeValue/2</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOPrimeValue/0</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOPrimeValue/0</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOPrimeValue/1</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/FAOPrimeValue/1</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainFAOPrimeValue_value"/>
+<p><strong>FAOPrimeValue_value - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">FAOPrimeValue_value</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">3</td>
+<td width="20%">3</td>
+</tr><tr>
+<td width="20%">2</td>
+<td width="20%">2</td>
+</tr><tr>
+<td width="20%">0</td>
+<td width="20%">0</td>
+</tr><tr>
+<td width="20%">1</td>
+<td width="20%">1</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainLayerGenesisProcessStateValue"/>
+<p><strong>LayerGenesisProcessStateValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">LayerGenesisProcessStateValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LayerGenesisProcessStateValue/ongoing</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LayerGenesisProcessStateValue/ongoing</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LayerGenesisProcessStateValue/terminated</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LayerGenesisProcessStateValue/terminated</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainLayerGenesisProcessStateValue_value"/>
+<p><strong>LayerGenesisProcessStateValue_value - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">LayerGenesisProcessStateValue_value</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">ongoing</td>
+<td width="20%">ongoing</td>
+</tr><tr>
+<td width="20%">terminated</td>
+<td width="20%">terminated</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainLayerTypeValue"/>
+<p><strong>LayerTypeValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">LayerTypeValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LayerTypeValue/depthInterval</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LayerTypeValue/depthInterval</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LayerTypeValue/geogenic</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LayerTypeValue/geogenic</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LayerTypeValue/subSoil</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LayerTypeValue/subSoil</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LayerTypeValue/topSoil</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LayerTypeValue/topSoil</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainLayerTypeValue_value"/>
+<p><strong>LayerTypeValue_value - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">LayerTypeValue_value</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">depthInterval</td>
+<td width="20%">depthInterval</td>
+</tr><tr>
+<td width="20%">geogenic</td>
+<td width="20%">geogenic</td>
+</tr><tr>
+<td width="20%">subSoil</td>
+<td width="20%">subSoil</td>
+</tr><tr>
+<td width="20%">topSoil</td>
+<td width="20%">topSoil</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainLithologyValue"/>
+<p><strong>LithologyValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">LithologyValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/compoundMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/compoundMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/anthropogenicMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/anthropogenicMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/anthropogenicConsolidatedMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/anthropogenicConsolidatedMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/anthropogenicUnconsolidatedMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/anthropogenicUnconsolidatedMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/breccia</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/breccia</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/compositeGenesisMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/compositeGenesisMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/compositeGenesisRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/compositeGenesisRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/faultRelatedMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/faultRelatedMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impaceu-technicaleneratedMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impaceu-technicaleneratedMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/materialFormedInSurficialEnvironment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/materialFormedInSurficialEnvironment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/rock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/rock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/aphanite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/aphanite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sedimentaryRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sedimentaryRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tuffite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tuffite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sedimentaryMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateSedimentaryMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/chemicalSedimentaryMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/chemicalSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSedimentaryMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/nonClasticSiliceousSedimentaryMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/nonClasticSiliceousSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/organicRichSedimentaryMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/organicRichSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/igneousMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/igneousMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/fragmentalIgneousMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/fragmentalIgneousMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/acidicIgneousMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/acidicIgneousMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/basicIgneousMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/basicIgneousMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/igneousRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/igneousRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/intermediateCompositionIgneousMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/intermediateCompositionIgneousMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/unconsolidatedMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/unconsolidatedMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/naturalUnconsolidatedMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/naturalUnconsolidatedMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/acidicIgneousRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/acidicIgneousRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparGranite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparGranite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparRhyolite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparRhyolite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparSyenite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparSyenite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparSyeniticRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparSyeniticRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparTrachyte</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparTrachyte</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparTrachyticRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparTrachyticRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliOlivineBasalt</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliOlivineBasalt</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/amphibolite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/amphibolite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/andesite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/andesite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/anorthosite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/anorthosite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/anorthositicRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/anorthositicRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/anthrazit</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/anthrazit</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/aplite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/aplite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/arenit</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/arenit</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ashAndLapilli</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ashAndLapilli</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ashBrecciaBombOrBlockTephra</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ashBrecciaBombOrBlockTephra</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ashTuffLapillistoneAndLapilliTuff</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ashTuffLapillistoneAndLapilliTuff</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/basalt</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/basalt</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/basanite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/basanite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/basaniticFoidite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/basaniticFoidite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/basicIgneousRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/basicIgneousRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/bauxite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/bauxite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/biogenicSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/biogenicSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/biogenicSilicaSedimentaryRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/biogenicSilicaSedimentaryRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/bitumen</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/bitumen</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/bituminousCoal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/bituminousCoal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/boninite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/boninite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/boulderGravelSizeSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/boulderGravelSizeSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/boundstone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/boundstone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/brecciaGougeSeries</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/brecciaGougeSeries</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/buildingRubble</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/buildingRubble</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/calcareousCarbonateSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/calcareousCarbonateSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/calcareousCarbonateSedimentaryMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/calcareousCarbonateSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/calcareousCarbonateSedimentaryRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/calcareousCarbonateSedimentaryRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateMud</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateMud</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateMudstone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateMudstone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateOoze</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateOoze</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateRichMud</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateRichMud</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateRichMudstone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateRichMudstone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateSedimentaryRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateSedimentaryRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateWackestone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateWackestone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonatite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/carbonatite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/cataclasiteSeries</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/cataclasiteSeries</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/chalk</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/chalk</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/chloriteActinoliteEpidoteMetamorphicRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/chloriteActinoliteEpidoteMetamorphicRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSedimentaryRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSedimentaryRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/clay</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/clay</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/claystone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/claystone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/cobbleGravelSizeSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/cobbleGravelSizeSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/concrete</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/concrete</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/conglomerate</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/conglomerate</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/crystallineCarbonate</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/crystallineCarbonate</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/dacite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/dacite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/diamictite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/diamictite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/diamicton</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/diamicton</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/diorite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/diorite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/dioriticRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/dioriticRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/dioritoid</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/dioritoid</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/doleriticRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/doleriticRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/dolomite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/dolomite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/dolomiticOrMagnesianSedimentaryMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/dolomiticOrMagnesianSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/dolomiticOrMagnesianSedimentaryRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/dolomiticOrMagnesianSedimentaryRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/dolomiticSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/dolomiticSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/duricrust</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/duricrust</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/eclogite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/eclogite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/evaporite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/evaporite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/exoticAlkalineRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/exoticAlkalineRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/exoticCompositionIgneousRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/exoticCompositionIgneousRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/exoticEvaporite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/exoticEvaporite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/fineGrainedIgneousRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/fineGrainedIgneousRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingAlkaliFeldsparSyenite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingAlkaliFeldsparSyenite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingAlkaliFeldsparTrachyte</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingAlkaliFeldsparTrachyte</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingAnorthosite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingAnorthosite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingDiorite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingDiorite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingGabbro</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingGabbro</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingLatite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingLatite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingMonzodiorite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingMonzodiorite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingMonzogabbro</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingMonzogabbro</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingMonzonite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingMonzonite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingSyenite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingSyenite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingTrachyte</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidBearingTrachyte</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidDiorite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidDiorite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidDioritoid</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidDioritoid</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidGabbro</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidGabbro</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidGabbroid</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidGabbroid</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidMonzodiorite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidMonzodiorite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidMonzogabbro</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidMonzogabbro</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidMonzosyenite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidMonzosyenite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidSyenite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidSyenite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidSyenitoid</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidSyenitoid</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foiditoid</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foiditoid</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidolite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foidolite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foliatedMetamorphicRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/foliatedMetamorphicRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/fragmentalIgneousRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/fragmentalIgneousRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/framestone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/framestone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/gabbro</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/gabbro</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/gabbroicRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/gabbroicRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/gabbroid</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/gabbroid</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/genericConglomerate</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/genericConglomerate</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/genericMudstone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/genericMudstone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/genericSandstone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/genericSandstone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/glassRichIgneousRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/glassRichIgneousRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/glassyIgneousRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/glassyIgneousRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/glaukophanschiefer</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/glaukophanschiefer</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/gneiss</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/gneiss</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/grainstone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/grainstone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/granite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/granite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/granitoid</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/granitoid</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/granodiorite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/granodiorite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/granofels</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/granofels</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/granulite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/granulite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/gravel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/gravel</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/gravelSizeSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/gravelSizeSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/gypsumOrAnhydrite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/gypsumOrAnhydrite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/highMagnesiumFineGrainedIgneousRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/highMagnesiumFineGrainedIgneousRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/hornblendite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/hornblendite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/hornfels</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/hornfels</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/hybridSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/hybridSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/hybridSedimentaryRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/hybridSedimentaryRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impureCalcareousCarbonateSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impureCalcareousCarbonateSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impureCarbonateSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impureCarbonateSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impureCarbonateSedimentaryRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impureCarbonateSedimentaryRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impureDolomite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impureDolomite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impureDolomiticSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impureDolomiticSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impureLimestone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impureLimestone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/intermediateCompositionIgneousRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/intermediateCompositionIgneousRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ironRichSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ironRichSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ironRichSedimentaryMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ironRichSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ironRichSedimentaryRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ironRichSedimentaryRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/kalsiliticAndMeliliticRocks</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/kalsiliticAndMeliliticRocks</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/coal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/coal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/komatiiticRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/komatiiticRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/latite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/latite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/latiticRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/latiticRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/lignite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/lignite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/limestone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/limestone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/marble</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/marble</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/metamorphicRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/metamorphicRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/metasomaticRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/metasomaticRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/micaSchist</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/micaSchist</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/migmatite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/migmatite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/mineDumpMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/mineDumpMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/monzodiorite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/monzodiorite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/monzodioriticRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/monzodioriticRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/monzogabbro</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/monzogabbro</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/monzogabbroicRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/monzogabbroicRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/monzogranite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/monzogranite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/monzonite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/monzonite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/monzoniticRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/monzoniticRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/mud</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/mud</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/mudSizeSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/mudSizeSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/mudstone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/mudstone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/myloniticRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/myloniticRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/nonClasticSiliceousSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/nonClasticSiliceousSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/nonClasticSiliceousSedimentaryRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/nonClasticSiliceousSedimentaryRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ooze</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ooze</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/organicBearingMudstone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/organicBearingMudstone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/organicRichSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/organicRichSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/organicRichSedimentaryRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/organicRichSedimentaryRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/orthogneiss</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/orthogneiss</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/packstone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/packstone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/paragneiss</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/paragneiss</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/peat</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/peat</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pebbleGravelSizeSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pebbleGravelSizeSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pegmatite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pegmatite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/peridotite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/peridotite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phaneriticIgneousRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phaneriticIgneousRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phonolite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phonolite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phonoliticBasanite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phonoliticBasanite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phonoliticFoidite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phonoliticFoidite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phonoliticTephrite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phonoliticTephrite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phonolitoid</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phonolitoid</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phosphateRichSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phosphateRichSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phosphateRichSedimentaryMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phosphateRichSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phosphorite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phosphorite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phyllite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phyllite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phyllonite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/phyllonite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/porphyry</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/porphyry</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pureCalcareousCarbonateSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pureCalcareousCarbonateSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pureCarbonateMudstone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pureCarbonateMudstone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pureCarbonateSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pureCarbonateSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pureCarbonateSedimentaryRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pureCarbonateSedimentaryRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pureDolomiticSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pureDolomiticSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pyroclasticMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pyroclasticMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pyroclasticRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pyroclasticRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pyroxenite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/pyroxenite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzAlkaliFeldsparSyenite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzAlkaliFeldsparSyenite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzAlkaliFeldsparTrachyte</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzAlkaliFeldsparTrachyte</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzAnorthosite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzAnorthosite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzDiorite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzDiorite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzGabbro</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzGabbro</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzLatite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzLatite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzMonzodiorite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzMonzodiorite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzMonzogabbro</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzMonzogabbro</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzMonzonite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzMonzonite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzRichIgneousRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzRichIgneousRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzSyenite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzSyenite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzTrachyte</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzTrachyte</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/quartzite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/residualMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/residualMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/rhyolite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/rhyolite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/rhyolitoid</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/rhyolitoid</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/rockSalt</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/rockSalt</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sand</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sand</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sandSizeSediment</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sandSizeSediment</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sandstone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sandstone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sapropel</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sapropel</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/schist</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/schist</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/serpentinite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/serpentinite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sewageSludge</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sewageSludge</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/shale</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/shale</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/silicateMud</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/silicateMud</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/silicateMudstone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/silicateMudstone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/siliceousOoze</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/siliceousOoze</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/silt</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/silt</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/siltstone</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/siltstone</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/skarn</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/skarn</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/slag</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/slag</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/slate</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/slate</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sludge</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/sludge</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/soilImprover</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/soilImprover</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/spilite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/spilite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/syenite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/syenite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/syeniticRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/syeniticRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/syenitoid</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/syenitoid</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/syenogranite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/syenogranite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tephra</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tephra</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tephrite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tephrite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tephriticFoidite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tephriticFoidite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tephriticPhonolite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tephriticPhonolite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tephritoid</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tephritoid</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tholeiiticBasalt</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tholeiiticBasalt</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tonalite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tonalite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/topsoil</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/topsoil</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/trachyte</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/trachyte</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/trachyticRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/trachyticRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/trachytoid</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/trachytoid</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/travertine</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/travertine</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tuffBrecciaAgglomerateOrPyroclasticBreccia</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/tuffBrecciaAgglomerateOrPyroclasticBreccia</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ultrabasicIgneousRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ultrabasicIgneousRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ultramaficIgneousRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/ultramaficIgneousRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/wacke</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/wacke</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/waste</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/waste</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impactgeneratedMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impactgeneratedMaterial</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/anthraciteCoal</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/anthraciteCoal</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/arenite</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/arenite</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/glaucophaneLawsoniteEpidoteMetamorphicRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/glaucophaneLawsoniteEpidoteMetamorphicRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/kalsiliticAndMeliliticRock</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/kalsiliticAndMeliliticRock</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impactGeneratedMaterial</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/LithologyValue/impactGeneratedMaterial</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainLithologyValue_value"/>
+<p><strong>LithologyValue_value - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">LithologyValue_value</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">compoundMaterial</td>
+<td width="20%">compoundMaterial</td>
+</tr><tr>
+<td width="20%">anthropogenicMaterial</td>
+<td width="20%">anthropogenicMaterial</td>
+</tr><tr>
+<td width="20%">anthropogenicConsolidatedMaterial</td>
+<td width="20%">anthropogenicConsolidatedMaterial</td>
+</tr><tr>
+<td width="20%">anthropogenicUnconsolidatedMaterial</td>
+<td width="20%">anthropogenicUnconsolidatedMaterial</td>
+</tr><tr>
+<td width="20%">breccia</td>
+<td width="20%">breccia</td>
+</tr><tr>
+<td width="20%">compositeGenesisMaterial</td>
+<td width="20%">compositeGenesisMaterial</td>
+</tr><tr>
+<td width="20%">compositeGenesisRock</td>
+<td width="20%">compositeGenesisRock</td>
+</tr><tr>
+<td width="20%">faultRelatedMaterial</td>
+<td width="20%">faultRelatedMaterial</td>
+</tr><tr>
+<td width="20%">impaceu-technicaleneratedMaterial</td>
+<td width="20%">impaceu-technicaleneratedMaterial</td>
+</tr><tr>
+<td width="20%">materialFormedInSurficialEnvironment</td>
+<td width="20%">materialFormedInSurficialEnvironment</td>
+</tr><tr>
+<td width="20%">rock</td>
+<td width="20%">rock</td>
+</tr><tr>
+<td width="20%">aphanite</td>
+<td width="20%">aphanite</td>
+</tr><tr>
+<td width="20%">sedimentaryRock</td>
+<td width="20%">sedimentaryRock</td>
+</tr><tr>
+<td width="20%">tuffite</td>
+<td width="20%">tuffite</td>
+</tr><tr>
+<td width="20%">sedimentaryMaterial</td>
+<td width="20%">sedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">carbonateSedimentaryMaterial</td>
+<td width="20%">carbonateSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">chemicalSedimentaryMaterial</td>
+<td width="20%">chemicalSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">clasticSedimentaryMaterial</td>
+<td width="20%">clasticSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">nonClasticSiliceousSedimentaryMaterial</td>
+<td width="20%">nonClasticSiliceousSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">organicRichSedimentaryMaterial</td>
+<td width="20%">organicRichSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">igneousMaterial</td>
+<td width="20%">igneousMaterial</td>
+</tr><tr>
+<td width="20%">fragmentalIgneousMaterial</td>
+<td width="20%">fragmentalIgneousMaterial</td>
+</tr><tr>
+<td width="20%">acidicIgneousMaterial</td>
+<td width="20%">acidicIgneousMaterial</td>
+</tr><tr>
+<td width="20%">basicIgneousMaterial</td>
+<td width="20%">basicIgneousMaterial</td>
+</tr><tr>
+<td width="20%">igneousRock</td>
+<td width="20%">igneousRock</td>
+</tr><tr>
+<td width="20%">intermediateCompositionIgneousMaterial</td>
+<td width="20%">intermediateCompositionIgneousMaterial</td>
+</tr><tr>
+<td width="20%">unconsolidatedMaterial</td>
+<td width="20%">unconsolidatedMaterial</td>
+</tr><tr>
+<td width="20%">naturalUnconsolidatedMaterial</td>
+<td width="20%">naturalUnconsolidatedMaterial</td>
+</tr><tr>
+<td width="20%">sediment</td>
+<td width="20%">sediment</td>
+</tr><tr>
+<td width="20%">acidicIgneousRock</td>
+<td width="20%">acidicIgneousRock</td>
+</tr><tr>
+<td width="20%">alkaliFeldsparGranite</td>
+<td width="20%">alkaliFeldsparGranite</td>
+</tr><tr>
+<td width="20%">alkaliFeldsparRhyolite</td>
+<td width="20%">alkaliFeldsparRhyolite</td>
+</tr><tr>
+<td width="20%">alkaliFeldsparSyenite</td>
+<td width="20%">alkaliFeldsparSyenite</td>
+</tr><tr>
+<td width="20%">alkaliFeldsparSyeniticRock</td>
+<td width="20%">alkaliFeldsparSyeniticRock</td>
+</tr><tr>
+<td width="20%">alkaliFeldsparTrachyte</td>
+<td width="20%">alkaliFeldsparTrachyte</td>
+</tr><tr>
+<td width="20%">alkaliFeldsparTrachyticRock</td>
+<td width="20%">alkaliFeldsparTrachyticRock</td>
+</tr><tr>
+<td width="20%">alkaliOlivineBasalt</td>
+<td width="20%">alkaliOlivineBasalt</td>
+</tr><tr>
+<td width="20%">amphibolite</td>
+<td width="20%">amphibolite</td>
+</tr><tr>
+<td width="20%">andesite</td>
+<td width="20%">andesite</td>
+</tr><tr>
+<td width="20%">anorthosite</td>
+<td width="20%">anorthosite</td>
+</tr><tr>
+<td width="20%">anorthositicRock</td>
+<td width="20%">anorthositicRock</td>
+</tr><tr>
+<td width="20%">anthrazit</td>
+<td width="20%">anthrazit</td>
+</tr><tr>
+<td width="20%">aplite</td>
+<td width="20%">aplite</td>
+</tr><tr>
+<td width="20%">arenit</td>
+<td width="20%">arenit</td>
+</tr><tr>
+<td width="20%">ashAndLapilli</td>
+<td width="20%">ashAndLapilli</td>
+</tr><tr>
+<td width="20%">ashBrecciaBombOrBlockTephra</td>
+<td width="20%">ashBrecciaBombOrBlockTephra</td>
+</tr><tr>
+<td width="20%">ashTuffLapillistoneAndLapilliTuff</td>
+<td width="20%">ashTuffLapillistoneAndLapilliTuff</td>
+</tr><tr>
+<td width="20%">basalt</td>
+<td width="20%">basalt</td>
+</tr><tr>
+<td width="20%">basanite</td>
+<td width="20%">basanite</td>
+</tr><tr>
+<td width="20%">basaniticFoidite</td>
+<td width="20%">basaniticFoidite</td>
+</tr><tr>
+<td width="20%">basicIgneousRock</td>
+<td width="20%">basicIgneousRock</td>
+</tr><tr>
+<td width="20%">bauxite</td>
+<td width="20%">bauxite</td>
+</tr><tr>
+<td width="20%">biogenicSediment</td>
+<td width="20%">biogenicSediment</td>
+</tr><tr>
+<td width="20%">biogenicSilicaSedimentaryRock</td>
+<td width="20%">biogenicSilicaSedimentaryRock</td>
+</tr><tr>
+<td width="20%">bitumen</td>
+<td width="20%">bitumen</td>
+</tr><tr>
+<td width="20%">bituminousCoal</td>
+<td width="20%">bituminousCoal</td>
+</tr><tr>
+<td width="20%">boninite</td>
+<td width="20%">boninite</td>
+</tr><tr>
+<td width="20%">boulderGravelSizeSediment</td>
+<td width="20%">boulderGravelSizeSediment</td>
+</tr><tr>
+<td width="20%">boundstone</td>
+<td width="20%">boundstone</td>
+</tr><tr>
+<td width="20%">brecciaGougeSeries</td>
+<td width="20%">brecciaGougeSeries</td>
+</tr><tr>
+<td width="20%">buildingRubble</td>
+<td width="20%">buildingRubble</td>
+</tr><tr>
+<td width="20%">calcareousCarbonateSediment</td>
+<td width="20%">calcareousCarbonateSediment</td>
+</tr><tr>
+<td width="20%">calcareousCarbonateSedimentaryMaterial</td>
+<td width="20%">calcareousCarbonateSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">calcareousCarbonateSedimentaryRock</td>
+<td width="20%">calcareousCarbonateSedimentaryRock</td>
+</tr><tr>
+<td width="20%">carbonateMud</td>
+<td width="20%">carbonateMud</td>
+</tr><tr>
+<td width="20%">carbonateMudstone</td>
+<td width="20%">carbonateMudstone</td>
+</tr><tr>
+<td width="20%">carbonateOoze</td>
+<td width="20%">carbonateOoze</td>
+</tr><tr>
+<td width="20%">carbonateRichMud</td>
+<td width="20%">carbonateRichMud</td>
+</tr><tr>
+<td width="20%">carbonateRichMudstone</td>
+<td width="20%">carbonateRichMudstone</td>
+</tr><tr>
+<td width="20%">carbonateSediment</td>
+<td width="20%">carbonateSediment</td>
+</tr><tr>
+<td width="20%">carbonateSedimentaryRock</td>
+<td width="20%">carbonateSedimentaryRock</td>
+</tr><tr>
+<td width="20%">carbonateWackestone</td>
+<td width="20%">carbonateWackestone</td>
+</tr><tr>
+<td width="20%">carbonatite</td>
+<td width="20%">carbonatite</td>
+</tr><tr>
+<td width="20%">cataclasiteSeries</td>
+<td width="20%">cataclasiteSeries</td>
+</tr><tr>
+<td width="20%">chalk</td>
+<td width="20%">chalk</td>
+</tr><tr>
+<td width="20%">chloriteActinoliteEpidoteMetamorphicRock</td>
+<td width="20%">chloriteActinoliteEpidoteMetamorphicRock</td>
+</tr><tr>
+<td width="20%">clasticSediment</td>
+<td width="20%">clasticSediment</td>
+</tr><tr>
+<td width="20%">clasticSedimentaryRock</td>
+<td width="20%">clasticSedimentaryRock</td>
+</tr><tr>
+<td width="20%">clay</td>
+<td width="20%">clay</td>
+</tr><tr>
+<td width="20%">claystone</td>
+<td width="20%">claystone</td>
+</tr><tr>
+<td width="20%">cobbleGravelSizeSediment</td>
+<td width="20%">cobbleGravelSizeSediment</td>
+</tr><tr>
+<td width="20%">concrete</td>
+<td width="20%">concrete</td>
+</tr><tr>
+<td width="20%">conglomerate</td>
+<td width="20%">conglomerate</td>
+</tr><tr>
+<td width="20%">crystallineCarbonate</td>
+<td width="20%">crystallineCarbonate</td>
+</tr><tr>
+<td width="20%">dacite</td>
+<td width="20%">dacite</td>
+</tr><tr>
+<td width="20%">diamictite</td>
+<td width="20%">diamictite</td>
+</tr><tr>
+<td width="20%">diamicton</td>
+<td width="20%">diamicton</td>
+</tr><tr>
+<td width="20%">diorite</td>
+<td width="20%">diorite</td>
+</tr><tr>
+<td width="20%">dioriticRock</td>
+<td width="20%">dioriticRock</td>
+</tr><tr>
+<td width="20%">dioritoid</td>
+<td width="20%">dioritoid</td>
+</tr><tr>
+<td width="20%">doleriticRock</td>
+<td width="20%">doleriticRock</td>
+</tr><tr>
+<td width="20%">dolomite</td>
+<td width="20%">dolomite</td>
+</tr><tr>
+<td width="20%">dolomiticOrMagnesianSedimentaryMaterial</td>
+<td width="20%">dolomiticOrMagnesianSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">dolomiticOrMagnesianSedimentaryRock</td>
+<td width="20%">dolomiticOrMagnesianSedimentaryRock</td>
+</tr><tr>
+<td width="20%">dolomiticSediment</td>
+<td width="20%">dolomiticSediment</td>
+</tr><tr>
+<td width="20%">duricrust</td>
+<td width="20%">duricrust</td>
+</tr><tr>
+<td width="20%">eclogite</td>
+<td width="20%">eclogite</td>
+</tr><tr>
+<td width="20%">evaporite</td>
+<td width="20%">evaporite</td>
+</tr><tr>
+<td width="20%">exoticAlkalineRock</td>
+<td width="20%">exoticAlkalineRock</td>
+</tr><tr>
+<td width="20%">exoticCompositionIgneousRock</td>
+<td width="20%">exoticCompositionIgneousRock</td>
+</tr><tr>
+<td width="20%">exoticEvaporite</td>
+<td width="20%">exoticEvaporite</td>
+</tr><tr>
+<td width="20%">fineGrainedIgneousRock</td>
+<td width="20%">fineGrainedIgneousRock</td>
+</tr><tr>
+<td width="20%">foidBearingAlkaliFeldsparSyenite</td>
+<td width="20%">foidBearingAlkaliFeldsparSyenite</td>
+</tr><tr>
+<td width="20%">foidBearingAlkaliFeldsparTrachyte</td>
+<td width="20%">foidBearingAlkaliFeldsparTrachyte</td>
+</tr><tr>
+<td width="20%">foidBearingAnorthosite</td>
+<td width="20%">foidBearingAnorthosite</td>
+</tr><tr>
+<td width="20%">foidBearingDiorite</td>
+<td width="20%">foidBearingDiorite</td>
+</tr><tr>
+<td width="20%">foidBearingGabbro</td>
+<td width="20%">foidBearingGabbro</td>
+</tr><tr>
+<td width="20%">foidBearingLatite</td>
+<td width="20%">foidBearingLatite</td>
+</tr><tr>
+<td width="20%">foidBearingMonzodiorite</td>
+<td width="20%">foidBearingMonzodiorite</td>
+</tr><tr>
+<td width="20%">foidBearingMonzogabbro</td>
+<td width="20%">foidBearingMonzogabbro</td>
+</tr><tr>
+<td width="20%">foidBearingMonzonite</td>
+<td width="20%">foidBearingMonzonite</td>
+</tr><tr>
+<td width="20%">foidBearingSyenite</td>
+<td width="20%">foidBearingSyenite</td>
+</tr><tr>
+<td width="20%">foidBearingTrachyte</td>
+<td width="20%">foidBearingTrachyte</td>
+</tr><tr>
+<td width="20%">foidDiorite</td>
+<td width="20%">foidDiorite</td>
+</tr><tr>
+<td width="20%">foidDioritoid</td>
+<td width="20%">foidDioritoid</td>
+</tr><tr>
+<td width="20%">foidGabbro</td>
+<td width="20%">foidGabbro</td>
+</tr><tr>
+<td width="20%">foidGabbroid</td>
+<td width="20%">foidGabbroid</td>
+</tr><tr>
+<td width="20%">foidMonzodiorite</td>
+<td width="20%">foidMonzodiorite</td>
+</tr><tr>
+<td width="20%">foidMonzogabbro</td>
+<td width="20%">foidMonzogabbro</td>
+</tr><tr>
+<td width="20%">foidMonzosyenite</td>
+<td width="20%">foidMonzosyenite</td>
+</tr><tr>
+<td width="20%">foidSyenite</td>
+<td width="20%">foidSyenite</td>
+</tr><tr>
+<td width="20%">foidSyenitoid</td>
+<td width="20%">foidSyenitoid</td>
+</tr><tr>
+<td width="20%">foidite</td>
+<td width="20%">foidite</td>
+</tr><tr>
+<td width="20%">foiditoid</td>
+<td width="20%">foiditoid</td>
+</tr><tr>
+<td width="20%">foidolite</td>
+<td width="20%">foidolite</td>
+</tr><tr>
+<td width="20%">foliatedMetamorphicRock</td>
+<td width="20%">foliatedMetamorphicRock</td>
+</tr><tr>
+<td width="20%">fragmentalIgneousRock</td>
+<td width="20%">fragmentalIgneousRock</td>
+</tr><tr>
+<td width="20%">framestone</td>
+<td width="20%">framestone</td>
+</tr><tr>
+<td width="20%">gabbro</td>
+<td width="20%">gabbro</td>
+</tr><tr>
+<td width="20%">gabbroicRock</td>
+<td width="20%">gabbroicRock</td>
+</tr><tr>
+<td width="20%">gabbroid</td>
+<td width="20%">gabbroid</td>
+</tr><tr>
+<td width="20%">genericConglomerate</td>
+<td width="20%">genericConglomerate</td>
+</tr><tr>
+<td width="20%">genericMudstone</td>
+<td width="20%">genericMudstone</td>
+</tr><tr>
+<td width="20%">genericSandstone</td>
+<td width="20%">genericSandstone</td>
+</tr><tr>
+<td width="20%">glassRichIgneousRock</td>
+<td width="20%">glassRichIgneousRock</td>
+</tr><tr>
+<td width="20%">glassyIgneousRock</td>
+<td width="20%">glassyIgneousRock</td>
+</tr><tr>
+<td width="20%">glaukophanschiefer</td>
+<td width="20%">glaukophanschiefer</td>
+</tr><tr>
+<td width="20%">gneiss</td>
+<td width="20%">gneiss</td>
+</tr><tr>
+<td width="20%">grainstone</td>
+<td width="20%">grainstone</td>
+</tr><tr>
+<td width="20%">granite</td>
+<td width="20%">granite</td>
+</tr><tr>
+<td width="20%">granitoid</td>
+<td width="20%">granitoid</td>
+</tr><tr>
+<td width="20%">granodiorite</td>
+<td width="20%">granodiorite</td>
+</tr><tr>
+<td width="20%">granofels</td>
+<td width="20%">granofels</td>
+</tr><tr>
+<td width="20%">granulite</td>
+<td width="20%">granulite</td>
+</tr><tr>
+<td width="20%">gravel</td>
+<td width="20%">gravel</td>
+</tr><tr>
+<td width="20%">gravelSizeSediment</td>
+<td width="20%">gravelSizeSediment</td>
+</tr><tr>
+<td width="20%">gypsumOrAnhydrite</td>
+<td width="20%">gypsumOrAnhydrite</td>
+</tr><tr>
+<td width="20%">highMagnesiumFineGrainedIgneousRock</td>
+<td width="20%">highMagnesiumFineGrainedIgneousRock</td>
+</tr><tr>
+<td width="20%">hornblendite</td>
+<td width="20%">hornblendite</td>
+</tr><tr>
+<td width="20%">hornfels</td>
+<td width="20%">hornfels</td>
+</tr><tr>
+<td width="20%">hybridSediment</td>
+<td width="20%">hybridSediment</td>
+</tr><tr>
+<td width="20%">hybridSedimentaryRock</td>
+<td width="20%">hybridSedimentaryRock</td>
+</tr><tr>
+<td width="20%">impureCalcareousCarbonateSediment</td>
+<td width="20%">impureCalcareousCarbonateSediment</td>
+</tr><tr>
+<td width="20%">impureCarbonateSediment</td>
+<td width="20%">impureCarbonateSediment</td>
+</tr><tr>
+<td width="20%">impureCarbonateSedimentaryRock</td>
+<td width="20%">impureCarbonateSedimentaryRock</td>
+</tr><tr>
+<td width="20%">impureDolomite</td>
+<td width="20%">impureDolomite</td>
+</tr><tr>
+<td width="20%">impureDolomiticSediment</td>
+<td width="20%">impureDolomiticSediment</td>
+</tr><tr>
+<td width="20%">impureLimestone</td>
+<td width="20%">impureLimestone</td>
+</tr><tr>
+<td width="20%">intermediateCompositionIgneousRock</td>
+<td width="20%">intermediateCompositionIgneousRock</td>
+</tr><tr>
+<td width="20%">ironRichSediment</td>
+<td width="20%">ironRichSediment</td>
+</tr><tr>
+<td width="20%">ironRichSedimentaryMaterial</td>
+<td width="20%">ironRichSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">ironRichSedimentaryRock</td>
+<td width="20%">ironRichSedimentaryRock</td>
+</tr><tr>
+<td width="20%">kalsiliticAndMeliliticRocks</td>
+<td width="20%">kalsiliticAndMeliliticRocks</td>
+</tr><tr>
+<td width="20%">coal</td>
+<td width="20%">coal</td>
+</tr><tr>
+<td width="20%">komatiiticRock</td>
+<td width="20%">komatiiticRock</td>
+</tr><tr>
+<td width="20%">latite</td>
+<td width="20%">latite</td>
+</tr><tr>
+<td width="20%">latiticRock</td>
+<td width="20%">latiticRock</td>
+</tr><tr>
+<td width="20%">lignite</td>
+<td width="20%">lignite</td>
+</tr><tr>
+<td width="20%">limestone</td>
+<td width="20%">limestone</td>
+</tr><tr>
+<td width="20%">marble</td>
+<td width="20%">marble</td>
+</tr><tr>
+<td width="20%">metamorphicRock</td>
+<td width="20%">metamorphicRock</td>
+</tr><tr>
+<td width="20%">metasomaticRock</td>
+<td width="20%">metasomaticRock</td>
+</tr><tr>
+<td width="20%">micaSchist</td>
+<td width="20%">micaSchist</td>
+</tr><tr>
+<td width="20%">migmatite</td>
+<td width="20%">migmatite</td>
+</tr><tr>
+<td width="20%">mineDumpMaterial</td>
+<td width="20%">mineDumpMaterial</td>
+</tr><tr>
+<td width="20%">monzodiorite</td>
+<td width="20%">monzodiorite</td>
+</tr><tr>
+<td width="20%">monzodioriticRock</td>
+<td width="20%">monzodioriticRock</td>
+</tr><tr>
+<td width="20%">monzogabbro</td>
+<td width="20%">monzogabbro</td>
+</tr><tr>
+<td width="20%">monzogabbroicRock</td>
+<td width="20%">monzogabbroicRock</td>
+</tr><tr>
+<td width="20%">monzogranite</td>
+<td width="20%">monzogranite</td>
+</tr><tr>
+<td width="20%">monzonite</td>
+<td width="20%">monzonite</td>
+</tr><tr>
+<td width="20%">monzoniticRock</td>
+<td width="20%">monzoniticRock</td>
+</tr><tr>
+<td width="20%">mud</td>
+<td width="20%">mud</td>
+</tr><tr>
+<td width="20%">mudSizeSediment</td>
+<td width="20%">mudSizeSediment</td>
+</tr><tr>
+<td width="20%">mudstone</td>
+<td width="20%">mudstone</td>
+</tr><tr>
+<td width="20%">myloniticRock</td>
+<td width="20%">myloniticRock</td>
+</tr><tr>
+<td width="20%">nonClasticSiliceousSediment</td>
+<td width="20%">nonClasticSiliceousSediment</td>
+</tr><tr>
+<td width="20%">nonClasticSiliceousSedimentaryRock</td>
+<td width="20%">nonClasticSiliceousSedimentaryRock</td>
+</tr><tr>
+<td width="20%">ooze</td>
+<td width="20%">ooze</td>
+</tr><tr>
+<td width="20%">organicBearingMudstone</td>
+<td width="20%">organicBearingMudstone</td>
+</tr><tr>
+<td width="20%">organicRichSediment</td>
+<td width="20%">organicRichSediment</td>
+</tr><tr>
+<td width="20%">organicRichSedimentaryRock</td>
+<td width="20%">organicRichSedimentaryRock</td>
+</tr><tr>
+<td width="20%">orthogneiss</td>
+<td width="20%">orthogneiss</td>
+</tr><tr>
+<td width="20%">packstone</td>
+<td width="20%">packstone</td>
+</tr><tr>
+<td width="20%">paragneiss</td>
+<td width="20%">paragneiss</td>
+</tr><tr>
+<td width="20%">peat</td>
+<td width="20%">peat</td>
+</tr><tr>
+<td width="20%">pebbleGravelSizeSediment</td>
+<td width="20%">pebbleGravelSizeSediment</td>
+</tr><tr>
+<td width="20%">pegmatite</td>
+<td width="20%">pegmatite</td>
+</tr><tr>
+<td width="20%">peridotite</td>
+<td width="20%">peridotite</td>
+</tr><tr>
+<td width="20%">phaneriticIgneousRock</td>
+<td width="20%">phaneriticIgneousRock</td>
+</tr><tr>
+<td width="20%">phonolite</td>
+<td width="20%">phonolite</td>
+</tr><tr>
+<td width="20%">phonoliticBasanite</td>
+<td width="20%">phonoliticBasanite</td>
+</tr><tr>
+<td width="20%">phonoliticFoidite</td>
+<td width="20%">phonoliticFoidite</td>
+</tr><tr>
+<td width="20%">phonoliticTephrite</td>
+<td width="20%">phonoliticTephrite</td>
+</tr><tr>
+<td width="20%">phonolitoid</td>
+<td width="20%">phonolitoid</td>
+</tr><tr>
+<td width="20%">phosphateRichSediment</td>
+<td width="20%">phosphateRichSediment</td>
+</tr><tr>
+<td width="20%">phosphateRichSedimentaryMaterial</td>
+<td width="20%">phosphateRichSedimentaryMaterial</td>
+</tr><tr>
+<td width="20%">phosphorite</td>
+<td width="20%">phosphorite</td>
+</tr><tr>
+<td width="20%">phyllite</td>
+<td width="20%">phyllite</td>
+</tr><tr>
+<td width="20%">phyllonite</td>
+<td width="20%">phyllonite</td>
+</tr><tr>
+<td width="20%">porphyry</td>
+<td width="20%">porphyry</td>
+</tr><tr>
+<td width="20%">pureCalcareousCarbonateSediment</td>
+<td width="20%">pureCalcareousCarbonateSediment</td>
+</tr><tr>
+<td width="20%">pureCarbonateMudstone</td>
+<td width="20%">pureCarbonateMudstone</td>
+</tr><tr>
+<td width="20%">pureCarbonateSediment</td>
+<td width="20%">pureCarbonateSediment</td>
+</tr><tr>
+<td width="20%">pureCarbonateSedimentaryRock</td>
+<td width="20%">pureCarbonateSedimentaryRock</td>
+</tr><tr>
+<td width="20%">pureDolomiticSediment</td>
+<td width="20%">pureDolomiticSediment</td>
+</tr><tr>
+<td width="20%">pyroclasticMaterial</td>
+<td width="20%">pyroclasticMaterial</td>
+</tr><tr>
+<td width="20%">pyroclasticRock</td>
+<td width="20%">pyroclasticRock</td>
+</tr><tr>
+<td width="20%">pyroxenite</td>
+<td width="20%">pyroxenite</td>
+</tr><tr>
+<td width="20%">quartzAlkaliFeldsparSyenite</td>
+<td width="20%">quartzAlkaliFeldsparSyenite</td>
+</tr><tr>
+<td width="20%">quartzAlkaliFeldsparTrachyte</td>
+<td width="20%">quartzAlkaliFeldsparTrachyte</td>
+</tr><tr>
+<td width="20%">quartzAnorthosite</td>
+<td width="20%">quartzAnorthosite</td>
+</tr><tr>
+<td width="20%">quartzDiorite</td>
+<td width="20%">quartzDiorite</td>
+</tr><tr>
+<td width="20%">quartzGabbro</td>
+<td width="20%">quartzGabbro</td>
+</tr><tr>
+<td width="20%">quartzLatite</td>
+<td width="20%">quartzLatite</td>
+</tr><tr>
+<td width="20%">quartzMonzodiorite</td>
+<td width="20%">quartzMonzodiorite</td>
+</tr><tr>
+<td width="20%">quartzMonzogabbro</td>
+<td width="20%">quartzMonzogabbro</td>
+</tr><tr>
+<td width="20%">quartzMonzonite</td>
+<td width="20%">quartzMonzonite</td>
+</tr><tr>
+<td width="20%">quartzRichIgneousRock</td>
+<td width="20%">quartzRichIgneousRock</td>
+</tr><tr>
+<td width="20%">quartzSyenite</td>
+<td width="20%">quartzSyenite</td>
+</tr><tr>
+<td width="20%">quartzTrachyte</td>
+<td width="20%">quartzTrachyte</td>
+</tr><tr>
+<td width="20%">quartzite</td>
+<td width="20%">quartzite</td>
+</tr><tr>
+<td width="20%">residualMaterial</td>
+<td width="20%">residualMaterial</td>
+</tr><tr>
+<td width="20%">rhyolite</td>
+<td width="20%">rhyolite</td>
+</tr><tr>
+<td width="20%">rhyolitoid</td>
+<td width="20%">rhyolitoid</td>
+</tr><tr>
+<td width="20%">rockSalt</td>
+<td width="20%">rockSalt</td>
+</tr><tr>
+<td width="20%">sand</td>
+<td width="20%">sand</td>
+</tr><tr>
+<td width="20%">sandSizeSediment</td>
+<td width="20%">sandSizeSediment</td>
+</tr><tr>
+<td width="20%">sandstone</td>
+<td width="20%">sandstone</td>
+</tr><tr>
+<td width="20%">sapropel</td>
+<td width="20%">sapropel</td>
+</tr><tr>
+<td width="20%">schist</td>
+<td width="20%">schist</td>
+</tr><tr>
+<td width="20%">serpentinite</td>
+<td width="20%">serpentinite</td>
+</tr><tr>
+<td width="20%">sewageSludge</td>
+<td width="20%">sewageSludge</td>
+</tr><tr>
+<td width="20%">shale</td>
+<td width="20%">shale</td>
+</tr><tr>
+<td width="20%">silicateMud</td>
+<td width="20%">silicateMud</td>
+</tr><tr>
+<td width="20%">silicateMudstone</td>
+<td width="20%">silicateMudstone</td>
+</tr><tr>
+<td width="20%">siliceousOoze</td>
+<td width="20%">siliceousOoze</td>
+</tr><tr>
+<td width="20%">silt</td>
+<td width="20%">silt</td>
+</tr><tr>
+<td width="20%">siltstone</td>
+<td width="20%">siltstone</td>
+</tr><tr>
+<td width="20%">skarn</td>
+<td width="20%">skarn</td>
+</tr><tr>
+<td width="20%">slag</td>
+<td width="20%">slag</td>
+</tr><tr>
+<td width="20%">slate</td>
+<td width="20%">slate</td>
+</tr><tr>
+<td width="20%">sludge</td>
+<td width="20%">sludge</td>
+</tr><tr>
+<td width="20%">soilImprover</td>
+<td width="20%">soilImprover</td>
+</tr><tr>
+<td width="20%">spilite</td>
+<td width="20%">spilite</td>
+</tr><tr>
+<td width="20%">syenite</td>
+<td width="20%">syenite</td>
+</tr><tr>
+<td width="20%">syeniticRock</td>
+<td width="20%">syeniticRock</td>
+</tr><tr>
+<td width="20%">syenitoid</td>
+<td width="20%">syenitoid</td>
+</tr><tr>
+<td width="20%">syenogranite</td>
+<td width="20%">syenogranite</td>
+</tr><tr>
+<td width="20%">tephra</td>
+<td width="20%">tephra</td>
+</tr><tr>
+<td width="20%">tephrite</td>
+<td width="20%">tephrite</td>
+</tr><tr>
+<td width="20%">tephriticFoidite</td>
+<td width="20%">tephriticFoidite</td>
+</tr><tr>
+<td width="20%">tephriticPhonolite</td>
+<td width="20%">tephriticPhonolite</td>
+</tr><tr>
+<td width="20%">tephritoid</td>
+<td width="20%">tephritoid</td>
+</tr><tr>
+<td width="20%">tholeiiticBasalt</td>
+<td width="20%">tholeiiticBasalt</td>
+</tr><tr>
+<td width="20%">tonalite</td>
+<td width="20%">tonalite</td>
+</tr><tr>
+<td width="20%">topsoil</td>
+<td width="20%">topsoil</td>
+</tr><tr>
+<td width="20%">trachyte</td>
+<td width="20%">trachyte</td>
+</tr><tr>
+<td width="20%">trachyticRock</td>
+<td width="20%">trachyticRock</td>
+</tr><tr>
+<td width="20%">trachytoid</td>
+<td width="20%">trachytoid</td>
+</tr><tr>
+<td width="20%">travertine</td>
+<td width="20%">travertine</td>
+</tr><tr>
+<td width="20%">tuffBrecciaAgglomerateOrPyroclasticBreccia</td>
+<td width="20%">tuffBrecciaAgglomerateOrPyroclasticBreccia</td>
+</tr><tr>
+<td width="20%">ultrabasicIgneousRock</td>
+<td width="20%">ultrabasicIgneousRock</td>
+</tr><tr>
+<td width="20%">ultramaficIgneousRock</td>
+<td width="20%">ultramaficIgneousRock</td>
+</tr><tr>
+<td width="20%">wacke</td>
+<td width="20%">wacke</td>
+</tr><tr>
+<td width="20%">waste</td>
+<td width="20%">waste</td>
+</tr><tr>
+<td width="20%">impactgeneratedMaterial</td>
+<td width="20%">impactgeneratedMaterial</td>
+</tr><tr>
+<td width="20%">anthraciteCoal</td>
+<td width="20%">anthraciteCoal</td>
+</tr><tr>
+<td width="20%">arenite</td>
+<td width="20%">arenite</td>
+</tr><tr>
+<td width="20%">glaucophaneLawsoniteEpidoteMetamorphicRock</td>
+<td width="20%">glaucophaneLawsoniteEpidoteMetamorphicRock</td>
+</tr><tr>
+<td width="20%">kalsiliticAndMeliliticRock</td>
+<td width="20%">kalsiliticAndMeliliticRock</td>
+</tr><tr>
+<td width="20%">impactGeneratedMaterial</td>
+<td width="20%">impactGeneratedMaterial</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainSoilInvestigationPurposeValue"/>
+<p><strong>SoilInvestigationPurposeValue - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">SoilInvestigationPurposeValue</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SoilInvestigationPurposeValue/generalSoilSurvey</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SoilInvestigationPurposeValue/generalSoilSurvey</td>
+</tr><tr>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SoilInvestigationPurposeValue/specificSoilSurvey</td>
+<td width="20%">http://inspire.ec.europa.eu/codelist/SoilInvestigationPurposeValue/specificSoilSurvey</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p><p>
+    <hr/><a name="DomainSoilInvestigationPurposeValue_value"/>
+<p><strong>SoilInvestigationPurposeValue_value - Domain</strong></p>
+<p>
+<table width="100%" style="border-color: white">
+<tbody>
+<tr>
+<td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+<td width="*" style="border-color: white">SoilInvestigationPurposeValue_value</td>
+</tr>
+<tr>
+<td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+<td width="*" style="border-color: white">String</td>
+</tr>
+<tr>
+<td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+<td width="*%" style="border-color: white">CodedValue</td>
+</tr>
+</tbody>
+</table><br/>
+<table width="100%">
+<tbody>
+<tr style="border-width:0px"><strong>
+<td width="10%" style="border-width:0px"><strong>Code</strong></td>
+</strong>
+<td width="20%" style="border-width:0px"><strong>Name</strong></td>
+</tr>
+<tr>
+<tr>
+<td width="20%">generalSoilSurvey</td>
+<td width="20%">generalSoilSurvey</td>
+</tr><tr>
+<td width="20%">specificSoilSurvey</td>
+<td width="20%">specificSoilSurvey</td>
+</tr>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
