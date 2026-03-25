@@ -6,7 +6,7 @@
 The Simple Natural Risk Zones encoding can be used as an *alternative encoding* for Natural Risk Zone data that fulfills the following requirements:
 
 * There is not Coverage data.
-* There is not more than 1 `validtiyPeriod` per `RiskZone`
+* There is not more than 1 `validityPeriod` per `RiskZone`
 * There is not more than 1 `assessmentOfVulnerability` per `ExposedElement`
 * There is not more than 1 `magnitudeOrIntensity` per `HazardArea`
 * There is not more than 1 `magnitudeOrIntensity` per `ObservedEvent`
@@ -28,11 +28,11 @@ The Natural Risk Zones theme has one application schema, therefore this theme-sp
 
 This section describes which transformation rules with which parameters are applied to the Natural Risk Zones conceptual model before applying the general rules of this encoding rule:
  
-1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. 
+1. Substitute all attributes that have a property type with a Codelist Stereotype through an inline codelist reference using `MT008()`. 
 2. Apply the SimpleCitation rule `MT007()`.
 3. Apply the SimplePeriod rule `MT009()`.
 4. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
-5. Limit the Multiplicity for `validtiyPeriod` for `RiskZone` to 1 through Rule `MT012(1)`
+5. Limit the Multiplicity for `validityPeriod` for `RiskZone` to 1 through Rule `MT012(1)`
 6. Limit the Multiplicity for `assessmentOfVulnerability` for `ExposedElement` to 1 through Rule `MT012(1)`
 7. Limit the Multiplicity for `magnitudeOrIntensity` for `HazardArea` to 1 through Rule `MT012(1)`
 8. Limit the Multiplicity for `magnitudeOrIntensity` for `ObservedEvent` to 1 through Rule `MT012(1)`
@@ -42,7 +42,7 @@ This section describes which transformation rules with which parameters are appl
     |----|----|
     |`'sourceOfRisk_'`|`'sOR_' `|
     |`'assessmentMethod_'`|`'method_' `|
-    |`'levelOfRisk_'`|`'lOR__' `|
+    |`'levelOfRisk_'`|`'lOR_' `|
 
 10. Apply Attribute shortening rule for ExposedElement:
 

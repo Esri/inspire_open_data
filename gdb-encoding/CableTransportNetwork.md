@@ -24,7 +24,7 @@ The Transport Networks theme has five application schemas. This application sche
 
 This section describes which transformation rules with which parameters are applied to the Cable Transport Network conceptual model before applying the general rules of this encoding rule:
  
-1. Substitute all attributes that have a property type with a Codelist Stereotype through a inline codelist reference using `MT008()`. 
+1. Substitute all attributes that have a property type with a Codelist Stereotype through an inline codelist reference using `MT008()`. 
 2. Substitute all occurrences of `GeographicName` with the Simple Geographic Name through Rule `MT005(separator: '_')`.
 3. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')`.
 4. `spokeStart` and `spokeEnd` on `CablewayNode` can be derived as the inverse properties of `startNode` and `endNode` from `CablewayLink`.

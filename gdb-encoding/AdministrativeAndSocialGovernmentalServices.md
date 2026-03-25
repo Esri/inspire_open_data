@@ -1,9 +1,9 @@
-# Geodatabase Encoding Rule for INSPIRE AdministrativeAndSocialGovermentalServices
+# Geodatabase Encoding Rule for INSPIRE AdministrativeAndSocialGovernmentalServices
 
 `Version: 0.5`
 `Date: 2021-05-31`
 
-The Simple AdministrativeAndSocialGovermentalServices encoding can be used as an *alternative encoding* for AdministrativeAndSocialGovermentalServices data that fulfills the following requirements:
+The Simple Administrative And Social Governmental Services encoding can be used as an *alternative encoding* for AdministrativeAndSocialGovermentalServices data that fulfills the following requirements:
 
 * It is sufficient to provide the `AreaOfResponsibility` by Polygon. 
 * It is sufficient to provide the `ServiceLocation` by Geometry.  
@@ -26,11 +26,11 @@ The Utility and governmental services theme has 3 application schema. This appli
 This section describes which transformation rules with which parameters are applied to the Administrative And SocialGovermental Services conceptual model before applying the general rules of this encoding rule:
  
 
-1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. 
+1. Substitute all attributes that have a property type with a Codelist Stereotype through an inline codelist reference using `MT008()`. 
 2. Limit the Multiplicity for role in pointOfContact to 1 through Rule `MT012(1)` 
 3. Limit the Multiplicity for telephoneVoice in Contact to 1 through Rule `MT012(1)`
 4. Limit the Multiplicity for telephoneFax in Contact to 1 through Rule `MT012(1)`
-5. Fan-out GM_Object to seperate Tables for Point, Lines and Areas through Rule `MT016(1)`
+5. Fan-out GM_Object to separate Tables for Point, Lines and Areas through Rule `MT016(1)`
 6. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
 7. Apply Attribute shortening rule for AdministrativeAndSocialGovermentalServices:
 

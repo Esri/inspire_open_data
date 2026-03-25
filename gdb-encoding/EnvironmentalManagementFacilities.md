@@ -1,37 +1,37 @@
-# Geodatabase Encoding Rule for INSPIRE Environmental Managemment Facilities
+# Geodatabase Encoding Rule for INSPIRE Environmental Management Facilities
 
 `Version: 0.5`
 `Date: 2021-05-31`
 
-The Simple EnvironmentalManagemmentFacility encoding can be used as an *alternative encoding* for Environmental Managemment Facilities data that fulfills the following requirements:
+The Simple EnvironmentalManagementFacility encoding can be used as an *alternative encoding* for Environmental Management Facilities data that fulfills the following requirements:
 
 * It is sufficient to provide the `activity` for the `Function` in function. 
 * It is sufficient to provide the `activity` for the `Capacity` in physicalCapacity.  
 * There is no information on permittedCapacity for Permissions.
-* There is not more than one thematicId per EnvironmentalManagemmentFacility
+* There is not more than one thematicId per EnvironmentalManagementFacility
 
 ## Normative References
 
 * [INSPIRE UML-to-Geodatabase encoding rule version 0.2](GeodatabaseEncoding.md)
 * [Data Specification - INSPIRE Utility and governmental services version 3.1](https://inspire.ec.europa.eu/Themes/136/2892)
 
-## Conformance Class Environmental Managemment Facilities
+## Conformance Class Environmental Management Facilities
 
-The Utility and governmental services theme has 3 application schema. This application schema-specific encoding rule defines a conformance class for the schema Environmental Managemment Facilities.
+The Utility and governmental services theme has 3 application schema. This application schema-specific encoding rule defines a conformance class for the schema Environmental Management Facilities.
 
 ### Model Transformation
 
-This section describes which transformation rules with which parameters are applied to the Environmental Managemment Facilities conceptual model before applying the general rules of this encoding rule:
+This section describes which transformation rules with which parameters are applied to the Environmental Management Facilities conceptual model before applying the general rules of this encoding rule:
  
 
-1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. (works in GDB)
+1. Substitute all attributes that have a property type with a Codelist Stereotype through an inline codelist reference using `MT008()`. (works in GDB)
 2. Apply MT011 on capacity, permission and parentFacility.
-3. Limit the Multiplicity for type in EnvironmentalManagemmentFacility to 3 through Rule `MT012(3)`
+3. Limit the Multiplicity for type in EnvironmentalManagementFacility to 3 through Rule `MT012(3)`
 4. Limit the Multiplicity for telephoneVoice in Contact to 1 through Rule `MT012(1)`
 5. Limit the Multiplicity for telephoneFax in Contact to 1 through Rule `MT012(1)`
 6. Limit the Multiplicity for role in RelatedParty to 1 through Rule `MT012(1)`
 7. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
-8. Apply Attribute shortening rules for EnvironmentalManagemmentFacility:
+8. Apply Attribute shortening rules for EnvironmentalManagementFacility:
 
     |Replace|With|
     |----|----|
@@ -56,6 +56,8 @@ This section describes which transformation rules with which parameters are appl
 |thematicId|ThematicIdentifier|thematicId_identifier|Text|
 |||thematicId_identifierScheme|Text|
 |||name|Text|
+|||function_activity|Text|
+|||function_activity_href|Text|
 |validFrom|DateTime|validFrom|Date|
 |validTo|DateTime|validTo|Date|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
@@ -99,6 +101,8 @@ This section describes which transformation rules with which parameters are appl
 |thematicId|ThematicIdentifier|thematicId_identifier|Text|
 |||thematicId_identifierScheme|Text|
 |||name|Text|
+|||function_activity|Text|
+|||function_activity_href|Text|
 |validFrom|DateTime|validFrom|Date|
 |validTo|DateTime|validTo|Date|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|
@@ -142,6 +146,8 @@ This section describes which transformation rules with which parameters are appl
 |thematicId|ThematicIdentifier|thematicId_identifier|Text|
 |||thematicId_identifierScheme|Text|
 |||name|Text|
+|||function_activity|Text|
+|||function_activity_href|Text|
 |validFrom|DateTime|validFrom|Date|
 |validTo|DateTime|validTo|Date|
 |beginLifespanVersion|DateTime|beginLifespanVersion|Date|

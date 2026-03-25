@@ -5,8 +5,8 @@
 
 The Simple AdministrativeUnits encoding can be used as an *alternative encoding* for Administrative Units data that fulfills the following requirements:
 
-* There are not more than three values for `nationalLevelName` in `AdministrtiveUnit`. 
-* There are not more than three values for `name` in `AdministrtiveUnit`.  
+* There are not more than three values for `nationalLevelName` in `AdministrativeUnit`. 
+* There are not more than three values for `name` in `AdministrativeUnit`.  
 * There is no Condominium in the Dataset.
 
 
@@ -24,13 +24,13 @@ The Administrative Units theme has two application schema. This application sche
 This section describes which transformation rules with which parameters are applied to the Administrative Units conceptual model before applying the general rules of this encoding rule:
  
 
-1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`.
+1. Substitute all attributes that have a property type with a Codelist Stereotype through an inline codelist reference using `MT008()`.
 2. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
-3. Substitute all occurences of `GeographicName` with the Simple Geographic Name through Rule `MT005(separator: '_')`.
+3. Substitute all occurrences of `GeographicName` with the Simple Geographic Name through Rule `MT005(separator: '_')`.
 4. Limit the Multiplicity for nationalLevelName in AdministrativeUnit to 3 through Rule `MT012(3)`
 5. Limit the Multiplicity for name in AdministrativeUnit to 3 through Rule `MT012(3)`
 6. Represent the Relationships AdminstrativeUnit.boundary and AdminstrativeBoundary.admUnit in a Relationship Table: `MT013`
-7. Fan-out the AdministrytiveUnits by nationalLevel: `MT015`
+7. Fan-out the AdministrytiveUnits by nationalLevel: `MT015()`
 
 
 

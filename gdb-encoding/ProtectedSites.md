@@ -24,14 +24,14 @@ The Protected Sites theme has one application schema, therefore this theme-speci
 
 This section describes which transformation rules with which parameters are applied to the Protected Sites conceptual model before applying the general rules of this encoding rule:
  
-1. Substitute all occurences of `GeographicName` with the Simple Geographic Name through Rule `MT005(separator: '_')`.  
-2. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. 
-4. Apply the SimpleCitation rule `MT007()`.
-3. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
-4. Limit the Multiplicity for `siteDesignation` for `ProtectedSite` to 3 through Rule `MT012(3)`
-5. Limit the Multiplicity for `siteName` for `ProtectedSite` to 3 through Rule `MT012(3)`
-6. Limit the Multiplicity for `siteProtectionClassification` for `ProtectedSite` to 3 through Rule `MT012(3)`
-7. Apply Attribute shortening rule for ProtectedSite:
+1. Substitute all occurrences of `GeographicName` with the Simple Geographic Name through Rule `MT005(separator: '_')`.  
+2. Substitute all attributes that have a property type with a Codelist Stereotype through an inline codelist reference using `MT008()`. 
+3. Apply the SimpleCitation rule `MT007()`.
+4. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')` 
+5. Limit the Multiplicity for `siteDesignation` for `ProtectedSite` to 3 through Rule `MT012(3)`
+6. Limit the Multiplicity for `siteName` for `ProtectedSite` to 3 through Rule `MT012(3)`
+7. Limit the Multiplicity for `siteProtectionClassification` for `ProtectedSite` to 3 through Rule `MT012(3)`
+8. Apply Attribute shortening rule for ProtectedSite:
 
     |Replace|With|
     |----|----|
@@ -74,6 +74,17 @@ This section describes which transformation rules with which parameters are appl
 |||d_2_legalDoc_citationName|Text|
 |||d_2_legalDoc_citationLevel|Text|
 |||d_2_legalDoc_citationType|Text|
+|||d_3_designation|Text|
+|||d_3_designation_href|Text|
+|||d_3_designationScheme|Text|
+|||d_3_designationScheme_href|Text|
+|||d_3_percentageUnderDesignation|Text|
+|||d_3_legalFoundationDate|Date|
+|||d_3_legalDoc_citationDate|Date|
+|||d_3_legalDoc_citationLink|Text|
+|||d_3_legalDoc_citationName|Text|
+|||d_3_legalDoc_citationLevel|Text|
+|||d_3_legalDoc_citationType|Text|
 |siteName|GeographicalName |siteName_name_1|Text|
 |||siteName_name_1_lang|Text|
 |||siteName_name_2|Text|
@@ -119,6 +130,17 @@ This section describes which transformation rules with which parameters are appl
 |||d_2_legalDoc_citationName|Text|
 |||d_2_legalDoc_citationLevel|Text|
 |||d_2_legalDoc_citationType|Text|
+|||d_3_designation|Text|
+|||d_3_designation_href|Text|
+|||d_3_designationScheme|Text|
+|||d_3_designationScheme_href|Text|
+|||d_3_percentageUnderDesignation|Text|
+|||d_3_legalFoundationDate|Date|
+|||d_3_legalDoc_citationDate|Date|
+|||d_3_legalDoc_citationLink|Text|
+|||d_3_legalDoc_citationName|Text|
+|||d_3_legalDoc_citationLevel|Text|
+|||d_3_legalDoc_citationType|Text|
 |siteName|GeographicalName |siteName_name_1|Text|
 |||siteName_name_1_lang|Text|
 |||siteName_name_2|Text|
@@ -164,6 +186,17 @@ This section describes which transformation rules with which parameters are appl
 |||d_2_legalDoc_citationName|Text|
 |||d_2_legalDoc_citationLevel|Text|
 |||d_2_legalDoc_citationType|Text|
+|||d_3_designation|Text|
+|||d_3_designation_href|Text|
+|||d_3_designationScheme|Text|
+|||d_3_designationScheme_href|Text|
+|||d_3_percentageUnderDesignation|Text|
+|||d_3_legalFoundationDate|Date|
+|||d_3_legalDoc_citationDate|Date|
+|||d_3_legalDoc_citationLink|Text|
+|||d_3_legalDoc_citationName|Text|
+|||d_3_legalDoc_citationLevel|Text|
+|||d_3_legalDoc_citationType|Text|
 |siteName|GeographicalName |siteName_name_1|Text|
 |||siteName_name_1_lang|Text|
 |||siteName_name_2|Text|

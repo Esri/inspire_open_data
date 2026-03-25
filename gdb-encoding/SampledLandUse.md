@@ -23,7 +23,7 @@ The Land Use theme has five application schema. This application schema-specific
 This section describes which transformation rules with which parameters are applied to the Sampled Land Use conceptual model before applying the general rules of this encoding rule:
  
 
-1. Subsitute all attributes that have a property type with a Codelist Sterotype through a inline codelist reference using `MT008()`. 
+1. Substitute all attributes that have a property type with a Codelist Stereotype through an inline codelist reference using `MT008()`. 
 2. Apply the General Flattening rule to simplify the remaining properties: `MT001(separator: '_')`
 
 
