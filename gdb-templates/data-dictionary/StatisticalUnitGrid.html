@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<style type="text/css">
+  body {
+    font-family: Tahoma
+  }
+
+  table {
+    font-size: 90%;
+    vertical-align: top;
+    border-style: solid;
+    border-width: 0px;
+    border-color: gray;
+    border-collapse: collapse;
+    border-spacing: 1pt;
+    background-color: white
+  }
+
+  th {
+    text-align: left;
+    font-family: Verdana;
+    vertical-align: bottom
+  }
+
+  tr {
+    vertical-align: top
+  }
+
+  a {}
+
+  td {
+    border-width: 1px;
+    border-color: black;
+    padding: 2px;
+    border-style: solid;
+    border-collapse: collapse;
+    border-spacing: 1pt;
+    background-color: white
+  }
+
+  hr {
+    color: #3333FF;
+  }
+</style>
+
+<body>
+  <br />
+  <strong>Geodatabase Documentation</strong>
+  <hr />
+  <strong>Date: </strong>20240530100000.000000<br />
+  <hr />
+  <p><strong>Summary Information and Links</strong><br /><br />
+    <a href="#FeatureDatasets">0 Feature Datasets and 1 Feature Classes</a><br />
+    No Topology Datasets<br />
+    No Geometric Networks<br />
+    No Rasters<br />
+    <a href="#ObjectClasses">0 Tables (Object Classes)</a><br />
+    <a href="#RelationshipClasses">0 Relationship Classes</a><br />
+    <a href="#Domains">0 Domains</a><br />
+  </p>
+  <hr />
+  <p><a name="FeatureDatasets" /><strong>Feature Datasets and Child Classes</strong></p><a name="Raster" />
+  <p><strong>Rasters</strong></p><br />
+  <hr /><a name="ObjectClasses" />
+  <p><strong>Workspace-Level Tables and Feature Classes</strong></p>
+
+  <a href="#FeatureClassAddress">StatisticalUnitGrid - FeatureClass</a><br />
+
+  <p /><br />
+  <hr /><a name="RelationshipClasses" />
+  <p><strong>Relationship Classes</strong></p>
+  <p />
+  <hr /><br />
+
+  <a name="Domains" />
+  <p><strong>Domains</strong></p>
+  <a href="#DomainStatusValue">StatusValue</a><br />
+  <a href="#DomainGeometrySpecificationValue">GeometrySpecificationValue</a><br />
+  <a href="#DomainGeometryMethodValue">GeometryMethodValue</a><br /><a
+    href="#DomainLocatorLevelValue">LocatorLevelValue</a><br />
+  <p>
+    <hr /><br /><a name="FeatureClassAddress" />
+  <p><strong>PopulationDistribution - FeatureClass</strong></p>
+  <p>
+  <table width="100%" style="border-color: white">
+    <tbody>
+      <tr>
+        <td width="12%" style="border-color: white"><strong>Name</strong></td>
+        <td width="*" style="border-color: white">StatisticalUnitGrid</td>
+      </tr>
+      <tr>
+        <td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+        <td width="*" style="border-color: white">Polygon</td>
+      </tr>
+      <tr>
+        <td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+        <td width="*" style="border-color: white">Simple</td>
+      </tr>
+      <tr>
+        <td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+        <td width="*" style="border-color: white">StatisticalUnitGrid</td>
+      </tr>
+      <tr>
+        <td width="12%" style="border-color: white"><strong>HasM</strong></td>
+        <td width="*" style="border-color: white">false</td>
+      </tr>
+      <tr>
+        <td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+        <td width="*" style="border-color: white">false</td>
+      </tr>
+      <tr>
+        <td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+        <td width="*" style="border-color: white">false</td>
+      </tr>
+    </tbody>
+  </table>
+  <table width="100%" style="border-color: white">
+    <tbody>
+      <tr>
+        <td width="12%" style="border-color: white"><strong>Description</strong></td>
+        <td width="*" style="border-color: white">Statistical UnitGrid</td>
+      </tr>
+    </tbody>
+  </table><br />
+  <table width="100%">
+    <tbody>
+      <tr style="border:0px">
+        <td width="8%" style="border:0px"><strong>Field</strong></td>
+        <td width="8%" style="border:0px"><strong>DataType</strong></td>
+        <td width="5%" style="border:0px"><strong>Length</strong></td>
+        <td width="8%" style="border:0px"><strong>AliasName</strong></td>
+        <td width="8%" style="border:0px"><strong>Description</strong></td>
+        <td width="8%" style="border:0px"><strong>Domain</strong></td>
+        <td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+        <td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+        <td width="5%" style="border:0px"><strong>Precision</strong></td>
+        <td width="5%" style="border:0px"><strong>Scale</strong></td>
+      </tr>
+      <tr>
+        <td width="8%">OBJECTID</td>
+        <td width="8%">OID</td>
+        <td width="3%">4</td>
+        <td width="8%">OBJECTID</td>
+        <td width="8%" />
+        <td width="8%"><a href="#Domain" /></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">SHAPE</td>
+        <td width="8%">Geometry</td>
+        <td width="3%">0</td>
+        <td width="8%">SHAPE</td>
+        <td width="8%" />
+        <td width="8%"><a href="#Domain" /></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">BeginLifespanVersion</td>
+        <td width="8%">Date</td>
+        <td width="3%">8</td>
+        <td width="8%">BeginLifespanVersion</td>
+        <td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial
+          data set. </td>
+        <td width="8%"><a href="#Domain" /></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">EndLifespanVersion</td>
+        <td width="8%">Date</td>
+        <td width="3%">8</td>
+        <td width="8%">EndLifespanVersion</td>
+        <td width="8%">Date and time at which this version of the spatial object was superseded or retired in the
+          spatial data set. </td>
+        <td width="8%"><a href="#Domain" /></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">InspireId_LocalId</td>
+        <td width="8%">String</td>
+        <td width="3%">256</td>
+        <td width="8%">InspireId_LocalId</td>
+        <td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the
+          namespace, that is no other spatial object carries the same unique identifier. </td>
+        <td width="8%"><a href="#Domain" /></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">InspireId_Namespace</td>
+        <td width="8%">String</td>
+        <td width="3%">256</td>
+        <td width="8%">InspireId_Namespace</td>
+        <td width="8%">Namespace uniquely identifying the data source of the spatial object. </td>
+        <td width="8%"><a href="#Domain" /></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">InspireId_VersionId</td>
+        <td width="8%">String</td>
+        <td width="3%">256</td>
+        <td width="8%">InspireId_VersionId</td>
+        <td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25
+          characters. If the specification of a spatial object type with an external object identifier includes
+          life-cycle information, the version identifier is used to distinguish between the different versions of a
+          spatial object. Within the set of all versions of a spatial object, the version identifier is unique </td>
+        <td width="8%"><a href="#Domain" /></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">GridPosition_x</td>
+        <td width="8%">Integer</td>
+        <td width="3%">4</td>
+        <td width="8%">GridPosition_x</td>
+        <td width="8%">The position of the cell on the horizontal axis, starting from the left side, toward the right,
+          from 0 to the grid width -1.</td>
+        <td width="8%"><a href="#Domain" /></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">GridPosition_y</td>
+        <td width="8%">Integer</td>
+        <td width="3%">4</td>
+        <td width="8%">GridPosition_y</td>
+        <td width="8%">The position of the cell on the vertical axis, starting from the bottom toward the top, from 0 to
+          the grid height -1.</td>
+        <td width="8%"></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">StatisticalGrid_Inspire_ID</td>
+        <td width="8%">Bin Integer</td>
+        <td width="3%">8</td>
+        <td width="8%">StatisticalGrid_Inspire_ID</td>
+        <td width="8%">Such grid is associated with an upper grid, that has a bigger resolution, and a lower grid that
+          has a lower resolution. Some statistical grids are organised into a hierarchy of grids with different
+          resolutions. The cells composing two linked grids have to satisfy some topological constraints: each cell of
+          the upper grid should be the aggregation of cells of the lower grid.
+          EXAMPLE The hierarchical structure is a quadtree if the grids are composed of quadrilateral cells and each
+          cell is composed of less than four cells of the lower level.<br><br>
+        </td>
+        <td width="8%"><a href="#Domain" /></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">StatisticalGrid_EPSGCode</td>
+        <td width="8%">String</td>
+        <td width="3%">256</td>
+        <td width="8%">StatisticalGrid_EPSGCode</td>
+        <td width="8%">The EPSG code to identify the grid Coordinate Referencing System.</td>
+        <td width="8%"><a href="#AgeByYear">AgeByYear</a></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">StatisticalGrid_Resolution_Length</td>
+        <td width="8%">decimal</td>
+        <td width="3%">8</td>
+        <td width="8%">StatisticalGrid_Resolution_Length</td>
+        <td width="8%">A distance resolution</td>
+        <td width="8%"><a href="#Domain" /></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">StatisticalGrid_Resolution_Angle</td>
+        <td width="8%">decimal</td>
+        <td width="3%">8</td>
+        <td width="8%">StatisticalGrid_Resolution_Angle</td>
+        <td width="8%">An angle resolution</td>
+        <td width="8%"><a href="#AgeGroupValue">AgeGroupValue</a></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      <tr>
+        <td width="8%">StatisticalGrid_GeographicalPosition</td>
+        <td width="8%">String</td>
+        <td width="3%">256</td>
+        <td width="8%">StatisticalGrid_GeographicalPosition</td>
+        <td width="8%">The grid cell lower left corner geographical position.</td>
+        <td width="8%"><a href="#Domain" /></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      </tr>
+      <tr>
+        <td width="8%">StatisticalGrid_Width</td>
+        <td width="8%">String</td>
+        <td width="3%">256</td>
+        <td width="8%">StatisticalGrid_Width</td>
+        <td width="8%">The grid width, in cell number (if defined).
+        </td>
+        <td width="8%"><a href="#Gender">Gender</a></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">StatisticalGrid_Height</td>
+        <td width="8%">string</td>
+        <td width="3%">256</td>
+        <td width="8%">StatisticalGrid_Height</td>
+        <td width="8%">
+          The grid height, in cell number (if defined).
+        <td width="8%"><a href="#Domain" /></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">StatisicatlCell_Code</td>
+        <td width="8%">String</td>
+        <td width="3%">256</td>
+        <td width="8%">StatisicatlCell_Code</td>
+        <td width="8%">A statistical grid cell is associated with:
+          <br>- the unique statistical grid cell of its upper level (if any) it is covered by,
+          <br>- the statistical grid cells of its lower level (if any) it covers.
+        </td>
+        <td width="8%"><a href="#Domain" />NACE</td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">StatisticalCell_GridPosition_X</td>
+        <td width="8%">integer</td>
+        <td width="3%">4</td>
+        <td width="8%">StatisticalCell_GridPosition_X</td>
+        <td width="8%">The grid cell position within the grid based on the grid coordinates.</td>
+        <td width="8%"><a href="#Domain" /></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">StatisticalCell_GridPosition_Y</td>
+        <td width="8%">string</td>
+        <td width="3%">256</td>
+        <td width="8%">StatisticalCell_GridPosition_Y</td>
+        <td width="8%">The grid cell position within the grid based on the grid coordinates.</td>
+        <td width="8%"><a href="#Domain" /></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td width="8%">StatisticalCell_Dimension</td>
+        <td width="8%">String</td>
+        <td width="3%">256</td>
+        <td width="8%">StatisticalCell_Dimension</td>
+        <td width="8%">DirectPosition object data types (Figure 14) hold the coordinates for a position within some
+          coordinate reference system. The coordinate reference system is described in ISO 19111. Since DirectPositions,
+          as data types, will often be included in larger objects (such as GM_Objects) that have references to
+          ISO19111::SC_CRS, the DirectPosition::cordinateReferenceSystem may be left NULL if this particular
+          DirectPosition is included in a larger object with such a reference to a SC_CRS. In this case, the
+          DirectPosition::cordinateReferenceSystem is implicitly assumed to take on the value of the containing object's
+          SC_CRS.</td>
+        <td width="8%"><a href="#Domain" /></td>
+        <td width="8%" />
+        <td width="8%">true</td>
+        <td />
+        <td />
+      </tr>
+    </tbody>
+  </table>
+  </p>
+  </p>
+  <p>
+
+
+    <hr /><a name="AgeGroupValue" />
+  <p><strong>AgeGroupValue - Domain</strong></p>
+  <p>
+  <table width="100%" style="border-color: white">
+    <tbody>
+      <tr>
+        <td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+        <td width="*" style="border-color: white">AgeGroupValue</td>
+      </tr>
+      <tr>
+        <td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+        <td width="*" style="border-color: white">String</td>
+      </tr>
+      <tr>
+        <td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+        <td width="*%" style="border-color: white">CodedValue</td>
+      </tr>
+    </tbody>
+  </table><br />
+  <table width="100%">
+    <tbody>
+      <tr style="border-width:0px"><strong>
+          <td width="10%" style="border-width:0px"><strong>Code</strong></td>
+        </strong>
+        <td width="20%" style="border-width:0px"><strong>Name</strong></td>
+      </tr>
+      <tr>
+      <tr>
+        <td width="20%">0_15</td>
+        <td width="20%">http://inspire.ec.europa.eu/codelist/AgeGroupValue/0_15</td>
+      </tr>
+      <tr>
+        <td width="20%">15_65</td>
+        <td width="20%">http://inspire.ec.europa.eu/codelist/AgeGroupValue/15_65</td>
+      </tr>
+      <tr>
+        <td width="20%">65+</td>
+        <td width="20%">http://inspire.ec.europa.eu/codelist/AgeGroupValue/65+</td>
+      </tr>
+      </tr>
+    </tbody>
+  </table>
+  </p>
+  </p>
+  <p>
+</body>
+
+</html>
