@@ -1,4 +1,4 @@
-# Streamlined INSPIRE Esri GDB - Alternative Encodings 
+# EU Open Data High-Value Datasets (HVD) Esri GDB templates aligned to INSPIRE Alternative Encodings 
 This is a repository for streamlined INSPIRE Esri Geodatabase (GDB) encoding rules documented according to INSPIRE Implementing Rules (IRs) [Article 7 -- Encodings](#inspire-requirements-for-encoding-rules). This repository provides access to:
 
 * publicly available encoding rules used to encode spatial data and that explain how (and under which conditions) the encoding meets the requirements of the IRs
@@ -8,7 +8,7 @@ This is a repository for streamlined INSPIRE Esri Geodatabase (GDB) encoding rul
 Importantly, data provided in streamlined INSPIRE Esri GDBs can be used as an alternative to (i.e., instead of) the default complex INSPIRE GML encoding or in addition to the default encoding.
 
 ## Why would you want to use alternative encodings? 
-For many use cases, streamlined INSPIRE data are easier to create, use, and share. The default encoding for INSPIRE is highly structured complex GML. It is widely recognized that due to complex data structures, the consumption of INSPIRE data is not easy.[[1]](#references) By applying Alternative Encoding rules, the complex data structures are simplified and flattened, resulting in streamlined INSPIRE data (also referred to as simplified INSPIRE data). Streamlined INSPIRE data have great potential to improve interoperability and ease of use within mainstream ICT and GIS applications.
+For many use cases, high-value datasets are easier to create, use, and share. The default encoding for INSPIRE is highly structured complex GML. It is widely recognized that due to complex data structures, the consumption of INSPIRE data is not easy.[[1]](#references) By applying Alternative Encoding rules, the complex data structures are simplified and flattened, resulting in streamlined INSPIRE data (also referred to as simplified INSPIRE data). Streamlined INSPIRE data have great potential to improve interoperability and ease of use within mainstream ICT and GIS applications.
 
 INSPIRE Action 2017.2 Maintenance and Implementation Group (MIG) work programme [[2]](#referencees) laid the groundwork for Alternative Encoding by defining documentation templates and providing guidance and examples for developing alternative encodings. 
 
@@ -20,7 +20,7 @@ This body of work addresses the proposed support for using ESRI Geodatabase (GDB
 It references the INSPIRE-MIF Repository for [Action 2017.2 on alternative encodings](https://github.com/INSPIRE-MIF/2017.2), including the [template for Alternative Encodings for INSPIRE Data](https://github.com/INSPIRE-MIF/2017.2/blob/master/template/template.md) and the [glossary of terms](https://github.com/INSPIRE-MIF/2017.2/blob/master/glossary.md).
 
 ### Why GDB? 
-In today's IT environment, users expect to share multiple representations and service interfaces (APIs) of the same data resource to target different users and use cases. ArcGIS makes interoperability easy through the application of international open standards and open specifications. With ArcGIS, your GDB data are easily published as GeoServices REST and shared as GeoJSON, CSV, KML, Shapefile, and fGDB. Optional additional distributions including OGC WMTS and OGC API-Features provide your INSPIRE View and Download services.
+In today's IT environment, users expect to share multiple representations and service interfaces (APIs) of the same data resource to target different users and use cases. ArcGIS makes interoperability easy through the application of international open standards and open specifications. With ArcGIS, your GDB data are easily published as GeoServices REST and shared as GeoJSON, CSV, KML, Shapefile, and fGDB. Optional additional distributions are available, including GeoPackage, OGC WMTS, and OGC API-Features (simple features).
 
 The geodatabase (GDB) is a "container" used to hold a collection of datasets. File Geodatabase (fGDB) is a subtype of GDB stored as folders in a file system. fGDB uses an efficient data structure for high performance and scalability. By default, fGDB files can grow to 1 TB, which can be changed to 4 or 256 TB using a configuration keyword.
 
@@ -62,7 +62,7 @@ Alternative encoding should not be used to omit attributes or object types that 
 [4] Github Action 2017.2 working space https://github.com/INSPIRE-MIF/2017.2
 
 ## Join the Esri Community
-[INSPIRE Esri Community](https://community.esri.com/t5/inspire/ct-p/inspire)
+[EU Open Data Esri Community](https://community.esri.com/t5/inspire/ct-p/inspire)
 
 ## Contributing
 Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/esri/contributing).
