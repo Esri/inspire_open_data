@@ -1,6 +1,4 @@
-
 #SampledLandUse
-
 
 <br/>
 <strong>Geodatabase Documentation</strong>
