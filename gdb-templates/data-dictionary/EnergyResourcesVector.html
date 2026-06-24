@@ -1,0 +1,3270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<style type="text/css">
+    body {
+        font-family: Tahoma
+    }
+
+    table {
+        font-size: 90%;
+        vertical-align: top;
+        border-style: solid;
+        border-width: 0px;
+        border-color: gray;
+        border-collapse: collapse;
+        border-spacing: 1pt;
+        background-color: white
+    }
+
+    th {
+        text-align: left;
+        font-family: Verdana;
+        vertical-align: bottom
+    }
+
+    tr {
+        vertical-align: top
+    }
+
+    a {}
+
+    td {
+        border-width: 1px;
+        border-color: black;
+        padding: 2px;
+        border-style: solid;
+        border-collapse: collapse;
+        border-spacing: 1pt;
+        background-color: white
+    }
+
+    hr {
+        color=#3333FF;
+    }
+</style>
+
+<body>
+    <br />
+    <strong>Geodatabase Documentation</strong>
+    <hr />
+    <strong>Date: </strong>Tuesday, August 12, 2025<br /><strong>Time: </strong>2:40:40 PM<br />
+    <hr />
+    <p><strong>Summary Information and Links</strong><br /><br /><a href="#FeatureDatasets">0 Feature Datasets and 6 Feature Classes</a><br />No Topology Datasets<br />No Geometric Networks<br />No Rasters<br /><a href="#ObjectClasses">1 Table (Object Class)</a><br /><a href="#RelationshipClasses">3 Relationship Classes</a><br /><a href="#Domains">10 Domains</a><br /></p>
+    <hr />
+    <p><a name="FeatureDatasets" /><strong>Feature Datasets and Child Classes</strong></p><a name="Raster" />
+    <p><strong>Rasters</strong></p><br />
+    <hr /><a name="ObjectClasses" />
+    <p><strong>Workspace-Level Tables and Feature Classes</strong></p><a href="#TableFossilFuelResource_type">FossilFuelResource_type - Table</a><br /><a href="#FeatureClassFossilFuelResourceL">FossilFuelResourceL - Feature Class</a><br /><a href="#FeatureClassFossilFuelResourceP">FossilFuelResourceP - Feature Class</a><br /><a href="#FeatureClassFossilFuelResourceS">FossilFuelResourceS - Feature Class</a><br /><a href="#FeatureClassRenewableAndWasteResourceP">RenewableAndWasteResourceP - Feature Class</a><br /><a href="#FeatureClassRenewableAndWasteResourceS">RenewableAndWasteResourceS - Feature Class</a><br /><a href="#FeatureClassRenewableAndWasteRessourceL">RenewableAndWasteRessourceL - Feature Class</a><br />
+    <p /><br />
+    <hr /><a name="RelationshipClasses" />
+    <p><strong>Relationship Classes</strong></p><a href="#RelationshipClassRelFossilFuelResourceL_Resource_type">RelFossilFuelResourceL_Resource_type</a><br /><a href="#RelationshipClassRelFossilFuelResourceP_Resource_type">RelFossilFuelResourceP_Resource_type</a><br /><a href="#RelationshipClassRelFossilFuelResourceS_Resource_type">RelFossilFuelResourceS_Resource_type</a><br />
+    <p />
+    <hr /><br /><a name="Domains" />
+    <p><strong>Domains</strong></p><a href="#DomaindClassAndQuantFramework">dClassAndQuantFramework</a><br /><a href="#DomaindClassAndQuantFramework_href">dClassAndQuantFramework_href</a><br /><a href="#DomaindFossilFuelClassValue">dFossilFuelClassValue</a><br /><a href="#DomaindFossilFuelClassValue_href">dFossilFuelClassValue_href</a><br /><a href="#DomaindFossilFuelValue">dFossilFuelValue</a><br /><a href="#DomaindFossilFuelValue_href">dFossilFuelValue_href</a><br /><a href="#DomaindRenewAndWasteValue">dRenewAndWasteValue</a><br /><a href="#DomaindRenewAndWasteValue_href">dRenewAndWasteValue_href</a><br /><a href="#DomaindVerticalRefValue">dVerticalRefValue</a><br /><a href="#DomaindVerticalRefValue_href">dVerticalRefValue_href</a><br />
+    <p />
+    <hr /><br /><a name="FeatureClassFossilFuelResourceL" />
+    <p><strong>FossilFuelResourceL - FeatureClass</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Name</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResourceL</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+                <td width="*" style="border-color: white">Polyline</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+                <td width="*" style="border-color: white">Simple</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResourceL</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasM</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResourceL</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border:0px">
+                <td width="8%" style="border:0px"><strong>Field</strong></td>
+                <td width="8%" style="border:0px"><strong>DataType</strong></td>
+                <td width="5%" style="border:0px"><strong>Length</strong></td>
+                <td width="8%" style="border:0px"><strong>AliasName</strong></td>
+                <td width="8%" style="border:0px"><strong>Description</strong></td>
+                <td width="8%" style="border:0px"><strong>Domain</strong></td>
+                <td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+                <td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+                <td width="5%" style="border:0px"><strong>Precision</strong></td>
+                <td width="5%" style="border:0px"><strong>Scale</strong></td>
+            </tr>
+            <tr>
+                <td width="8%">beginLifespanVersion</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">beginLifespanVersion</td>
+                <td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_contact</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">repAuthority_contact</td>
+                <td width="8%">Reporting authority Contact. Organisation responsible for reporting on the estimated and produced energy resources.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_individualName</td>
+                <td width="8%">String</td>
+                <td width="3%">100</td>
+                <td width="8%">repAuthority_individualName</td>
+                <td width="8%">Name of the related person at the Reporting authority.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_organisationName</td>
+                <td width="8%">String</td>
+                <td width="3%">100</td>
+                <td width="8%">repAuthority_organisationName</td>
+                <td width="8%">Name of the related organisation at the Reporting authority.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_positionName</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">repAuthority_positionName</td>
+                <td width="8%">Position of the party in relation to a resource, such as head of department.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_role</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">repAuthority_role</td>
+                <td width="8%">Role(s) of the party in relation to a resource, such as owner.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">resName</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">resName</td>
+                <td width="8%">The name of the energy resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">resName_lang</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">resName_lang</td>
+                <td width="8%">Resource name Language.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">cqFramework</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">cqFramework</td>
+                <td width="8%">A generic classification of Classification and quantification framework Value.A reference classification scheme to classify and quantify energy resources.</td>
+                <td width="8%"><a href="#DomaindClassAndQuantFramework">dClassAndQuantFramework</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">cqFramework_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">cqFramework_href</td>
+                <td width="8%">URI from the INSPIRE code list register - ClassificationAndQuantificationFrameworkValue <a href="https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue</a></td>
+                <td width="8%"><a href="#DomaindClassAndQuantFramework_href">dClassAndQuantFramework_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">endLifespanVersion</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">endLifespanVersion</td>
+                <td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">expPeriod_beginTime</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">expPeriod_beginTime</td>
+                <td width="8%">The exploitationPeriod defines the start date of the application.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">expPeriod_endTime</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">expPeriod_endTime</td>
+                <td width="8%">The exploitationPeriod defines the end date of the application.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_lowerBound</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_lowerBound</td>
+                <td width="8%">Value indicating the lower bound of the depth range of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_upperBound</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_upperBound</td>
+                <td width="8%">Value indicating the lower bound of the height range of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_scalar</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_scalar</td>
+                <td width="8%">Number representing the height or depth of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_Reference</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">vExt_scalar</td>
+                <td width="8%">A generic classification of Reference levels chosen to determine the vertical height/depth.</td>
+                <td width="8%"><a href="#DomaindVerticalRefValue">dVerticalRefValue</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_Reference_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">vertExt_Reference_href</td>
+                <td width="8%">URI from the INSPIRE code list register - VerticalReferenceValue <a href="https://inspire.ec.europa.eu/codelist/VerticalReferenceValue">https://inspire.ec.europa.eu/codelist/VerticalReferenceValue</a></td>
+                <td width="8%"><a href="#DomaindVerticalRefValue_href">dVerticalRefValue_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">dateOfDiscovery</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">dateOfDiscovery</td>
+                <td width="8%">dateOfDiscovery</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_localId</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_localId</td>
+                <td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_namespace</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_namespace</td>
+                <td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_versionId</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_versionId</td>
+                <td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">featureId</td>
+                <td width="8%">Integer</td>
+                <td width="3%">4</td>
+                <td width="8%">featureId</td>
+                <td width="8%">Identifier, used in references to this object.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr /><a name="FeatureClassFossilFuelResourceP" />
+    <p><strong>FossilFuelResourceP - FeatureClass</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Name</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResourceP</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+                <td width="*" style="border-color: white">Point</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+                <td width="*" style="border-color: white">Simple</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResourceP</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasM</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResourceP</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border:0px">
+                <td width="8%" style="border:0px"><strong>Field</strong></td>
+                <td width="8%" style="border:0px"><strong>DataType</strong></td>
+                <td width="5%" style="border:0px"><strong>Length</strong></td>
+                <td width="8%" style="border:0px"><strong>AliasName</strong></td>
+                <td width="8%" style="border:0px"><strong>Description</strong></td>
+                <td width="8%" style="border:0px"><strong>Domain</strong></td>
+                <td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+                <td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+                <td width="5%" style="border:0px"><strong>Precision</strong></td>
+                <td width="5%" style="border:0px"><strong>Scale</strong></td>
+            </tr>
+            <tr>
+                <td width="8%">beginLifespanVersion</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">beginLifespanVersion</td>
+                <td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_contact</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">repAuthority_contact</td>
+                <td width="8%">Reporting authority Contact. Organisation responsible for reporting on the estimated and produced energy resources.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_individualName</td>
+                <td width="8%">String</td>
+                <td width="3%">100</td>
+                <td width="8%">repAuthority_individualName</td>
+                <td width="8%">Name of the related person at the Reporting authority.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_organisationName</td>
+                <td width="8%">String</td>
+                <td width="3%">100</td>
+                <td width="8%">repAuthority_organisationName</td>
+                <td width="8%">Name of the related organisation at the Reporting authority.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_positionName</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">repAuthority_positionName</td>
+                <td width="8%">Position of the party in relation to a resource, such as head of department.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_role</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">repAuthority_role</td>
+                <td width="8%">Role(s) of the party in relation to a resource, such as owner.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">resName</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">resName</td>
+                <td width="8%">The name of the energy resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">resName_lang</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">resName_lang</td>
+                <td width="8%">Resource name Language.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">cqFramework</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">cqFramework</td>
+                <td width="8%">A generic classification of Classification and quantification framework Value.A reference classification scheme to classify and quantify energy resources.</td>
+                <td width="8%"><a href="#DomaindClassAndQuantFramework">dClassAndQuantFramework</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">cqFramework_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">cqFramework_href</td>
+                <td width="8%">URI from the INSPIRE code list register - ClassificationAndQuantificationFrameworkValue <a href="https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue</a></td>
+                <td width="8%"><a href="#DomaindClassAndQuantFramework_href">dClassAndQuantFramework_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">endLifespanVersion</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">endLifespanVersion</td>
+                <td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">expPeriod_beginTime</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">expPeriod_beginTime</td>
+                <td width="8%">The exploitationPeriod defines the start date of the application.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">expPeriod_endTime</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">expPeriod_endTime</td>
+                <td width="8%">The exploitationPeriod defines the end date of the application.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_lowerBound</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_lowerBound</td>
+                <td width="8%">Value indicating the lower bound of the depth range of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_upperBound</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_upperBound</td>
+                <td width="8%">Value indicating the lower bound of the height range of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_scalar</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_scalar</td>
+                <td width="8%">Number representing the height or depth of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_Reference</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">vExt_scalar</td>
+                <td width="8%">A generic classification of Reference levels chosen to determine the vertical height/depth.</td>
+                <td width="8%"><a href="#DomaindVerticalRefValue">dVerticalRefValue</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_Reference_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">vertExt_Reference_href</td>
+                <td width="8%">URI from the INSPIRE code list register - VerticalReferenceValue <a href="https://inspire.ec.europa.eu/codelist/VerticalReferenceValue">https://inspire.ec.europa.eu/codelist/VerticalReferenceValue</a></td>
+                <td width="8%"><a href="#DomaindVerticalRefValue_href">dVerticalRefValue_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">dateOfDiscovery</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">dateOfDiscovery</td>
+                <td width="8%">dateOfDiscovery</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_localId</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_localId</td>
+                <td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_namespace</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_namespace</td>
+                <td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_versionId</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_versionId</td>
+                <td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">featureId</td>
+                <td width="8%">Integer</td>
+                <td width="3%">4</td>
+                <td width="8%">featureId</td>
+                <td width="8%">Identifier, used in references to this object.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr /><a name="FeatureClassFossilFuelResourceS" />
+    <p><strong>FossilFuelResourceS - FeatureClass</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Name</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResourceS</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+                <td width="*" style="border-color: white">Polygon</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+                <td width="*" style="border-color: white">Simple</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResourceS</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasM</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResourceS</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border:0px">
+                <td width="8%" style="border:0px"><strong>Field</strong></td>
+                <td width="8%" style="border:0px"><strong>DataType</strong></td>
+                <td width="5%" style="border:0px"><strong>Length</strong></td>
+                <td width="8%" style="border:0px"><strong>AliasName</strong></td>
+                <td width="8%" style="border:0px"><strong>Description</strong></td>
+                <td width="8%" style="border:0px"><strong>Domain</strong></td>
+                <td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+                <td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+                <td width="5%" style="border:0px"><strong>Precision</strong></td>
+                <td width="5%" style="border:0px"><strong>Scale</strong></td>
+            </tr>
+            <tr>
+                <td width="8%">beginLifespanVersion</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">beginLifespanVersion</td>
+                <td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_contact</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">repAuthority_contact</td>
+                <td width="8%">Reporting authority Contact. Organisation responsible for reporting on the estimated and produced energy resources.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_individualName</td>
+                <td width="8%">String</td>
+                <td width="3%">100</td>
+                <td width="8%">repAuthority_individualName</td>
+                <td width="8%">Name of the related person at the Reporting authority.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_organisationName</td>
+                <td width="8%">String</td>
+                <td width="3%">100</td>
+                <td width="8%">repAuthority_organisationName</td>
+                <td width="8%">Name of the related organisation at the Reporting authority.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_positionName</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">repAuthority_positionName</td>
+                <td width="8%">Position of the party in relation to a resource, such as head of department.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_role</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">repAuthority_role</td>
+                <td width="8%">Role(s) of the party in relation to a resource, such as owner.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">resName</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">resName</td>
+                <td width="8%">The name of the energy resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">resName_lang</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">resName_lang</td>
+                <td width="8%">Resource name Language.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">cqFramework</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">cqFramework</td>
+                <td width="8%">A generic classification of Classification and quantification framework Value.A reference classification scheme to classify and quantify energy resources.</td>
+                <td width="8%"><a href="#DomaindClassAndQuantFramework">dClassAndQuantFramework</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">cqFramework_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">cqFramework_href</td>
+                <td width="8%">URI from the INSPIRE code list register - ClassificationAndQuantificationFrameworkValue <a href="https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue</a></td>
+                <td width="8%"><a href="#DomaindClassAndQuantFramework_href">dClassAndQuantFramework_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">endLifespanVersion</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">endLifespanVersion</td>
+                <td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">expPeriod_beginTime</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">expPeriod_beginTime</td>
+                <td width="8%">The exploitationPeriod defines the start date of the application.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">expPeriod_endTime</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">expPeriod_endTime</td>
+                <td width="8%">The exploitationPeriod defines the end date of the application.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_lowerBound</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_lowerBound</td>
+                <td width="8%">Value indicating the lower bound of the depth range of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_upperBound</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_upperBound</td>
+                <td width="8%">Value indicating the lower bound of the height range of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_scalar</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_scalar</td>
+                <td width="8%">Number representing the height or depth of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_Reference</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">vExt_scalar</td>
+                <td width="8%">A generic classification of Reference levels chosen to determine the vertical height/depth.</td>
+                <td width="8%"><a href="#DomaindVerticalRefValue">dVerticalRefValue</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_Reference_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">vertExt_Reference_href</td>
+                <td width="8%">URI from the INSPIRE code list register - VerticalReferenceValue <a href="https://inspire.ec.europa.eu/codelist/VerticalReferenceValue">https://inspire.ec.europa.eu/codelist/VerticalReferenceValue</a></td>
+                <td width="8%"><a href="#DomaindVerticalRefValue_href">dVerticalRefValue_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">dateOfDiscovery</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">dateOfDiscovery</td>
+                <td width="8%">dateOfDiscovery</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_localId</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_localId</td>
+                <td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_namespace</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_namespace</td>
+                <td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_versionId</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_versionId</td>
+                <td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">featureId</td>
+                <td width="8%">Integer</td>
+                <td width="3%">4</td>
+                <td width="8%">featureId</td>
+                <td width="8%">Identifier, used in references to this object.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr /><a name="FeatureClassRenewableAndWasteResourceP" />
+    <p><strong>RenewableAndWasteResourceP - FeatureClass</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Name</strong></td>
+                <td width="*" style="border-color: white">RenewableAndWasteResourceP</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+                <td width="*" style="border-color: white">Point</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+                <td width="*" style="border-color: white">Simple</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+                <td width="*" style="border-color: white">RenewableAndWasteResourceP</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasM</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">RenewableAndWasteResourceP</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border:0px">
+                <td width="8%" style="border:0px"><strong>Field</strong></td>
+                <td width="8%" style="border:0px"><strong>DataType</strong></td>
+                <td width="5%" style="border:0px"><strong>Length</strong></td>
+                <td width="8%" style="border:0px"><strong>AliasName</strong></td>
+                <td width="8%" style="border:0px"><strong>Description</strong></td>
+                <td width="8%" style="border:0px"><strong>Domain</strong></td>
+                <td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+                <td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+                <td width="5%" style="border:0px"><strong>Precision</strong></td>
+                <td width="5%" style="border:0px"><strong>Scale</strong></td>
+            </tr>
+            <tr>
+                <td width="8%">beginLifespanVersion</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">beginLifespanVersion</td>
+                <td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_contact</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">repAuthority_contact</td>
+                <td width="8%">Reporting authority Contact. Organisation responsible for reporting on the estimated and produced energy resources.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_individualName</td>
+                <td width="8%">String</td>
+                <td width="3%">100</td>
+                <td width="8%">repAuthority_individualName</td>
+                <td width="8%">Name of the related person at the Reporting authority.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_organisationName</td>
+                <td width="8%">String</td>
+                <td width="3%">100</td>
+                <td width="8%">repAuthority_organisationName</td>
+                <td width="8%">Name of the related organisation at the Reporting authority.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_positionName</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">repAuthority_positionName</td>
+                <td width="8%">Position of the party in relation to a resource, such as head of department.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_role</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">repAuthority_role</td>
+                <td width="8%">Role(s) of the party in relation to a resource, such as owner.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">resName</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">resName</td>
+                <td width="8%">The name of the energy resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">resName_lang</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">resName_lang</td>
+                <td width="8%">Resource name Language.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">cqFramework</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">cqFramework</td>
+                <td width="8%">A generic classification of Classification and quantification framework Value.A reference classification scheme to classify and quantify energy resources.</td>
+                <td width="8%"><a href="#DomaindClassAndQuantFramework">dClassAndQuantFramework</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">cqFramework_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">cqFramework_href</td>
+                <td width="8%">URI from the INSPIRE code list register - ClassificationAndQuantificationFrameworkValue <a href="https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue</a></td>
+                <td width="8%"><a href="#DomaindClassAndQuantFramework_href">dClassAndQuantFramework_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">endLifespanVersion</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">endLifespanVersion</td>
+                <td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">expPeriod_beginTime</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">expPeriod_beginTime</td>
+                <td width="8%">The exploitationPeriod defines the start date of the application.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">expPeriod_endTime</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">expPeriod_endTime</td>
+                <td width="8%">The exploitationPeriod defines the end date of the application.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_lowerBound</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_lowerBound</td>
+                <td width="8%">Value indicating the lower bound of the depth range of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_upperBound</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_upperBound</td>
+                <td width="8%">Value indicating the lower bound of the height range of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_scalar</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_scalar</td>
+                <td width="8%">Number representing the height or depth of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_Reference</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">vExt_scalar</td>
+                <td width="8%">A generic classification of Reference levels chosen to determine the vertical height/depth.</td>
+                <td width="8%"><a href="#DomaindVerticalRefValue">dVerticalRefValue</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_Reference_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">vertExt_Reference_href</td>
+                <td width="8%">URI from the INSPIRE code list register - VerticalReferenceValue <a href="https://inspire.ec.europa.eu/codelist/VerticalReferenceValue">https://inspire.ec.europa.eu/codelist/VerticalReferenceValue</a></td>
+                <td width="8%"><a href="#DomaindVerticalRefValue_href">dVerticalRefValue_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">dateOfDetermination</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">dateOfDetermination</td>
+                <td width="8%">Date of determination.Date on which the capacity of the resource has been determined.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_localId</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_localId</td>
+                <td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_namespace</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_namespace</td>
+                <td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_versionId</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_versionId</td>
+                <td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">featureId</td>
+                <td width="8%">Integer</td>
+                <td width="3%">4</td>
+                <td width="8%">featureId</td>
+                <td width="8%">Identifier, used in references to this object.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">capacity</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">capacity</td>
+                <td width="8%">Energy capacity of a renewable energy resource within the spatial object.NOTE the unit of measure to be used is MWe for electrical generation capacity and MWt for heat generation capacity.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">capacity_uom</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">capacity_uom</td>
+                <td width="8%">Unit of Measure for the capacity.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">typeOfResource</td>
+                <td width="8%">String</td>
+                <td width="3%">100</td>
+                <td width="8%">typeOfResource</td>
+                <td width="8%">A generic classification of types of renewable energy or waste resource.</td>
+                <td width="8%"><a href="#DomaindRenewAndWasteValue">dRenewAndWasteValue</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">typeOfResource_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">typeOfResource_href</td>
+                <td width="8%">URI from the INSPIRE code list register - RenewableAndWasteValue <a href="https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue</a></td>
+                <td width="8%"><a href="#DomaindRenewAndWasteValue_href">dRenewAndWasteValue_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr /><a name="FeatureClassRenewableAndWasteResourceS" />
+    <p><strong>RenewableAndWasteResourceS - FeatureClass</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Name</strong></td>
+                <td width="*" style="border-color: white">RenewableAndWasteResourceS</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+                <td width="*" style="border-color: white">Polygon</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+                <td width="*" style="border-color: white">Simple</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+                <td width="*" style="border-color: white">RenewableAndWasteResourceS</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasM</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">RenewableAndWasteResourceS</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border:0px">
+                <td width="8%" style="border:0px"><strong>Field</strong></td>
+                <td width="8%" style="border:0px"><strong>DataType</strong></td>
+                <td width="5%" style="border:0px"><strong>Length</strong></td>
+                <td width="8%" style="border:0px"><strong>AliasName</strong></td>
+                <td width="8%" style="border:0px"><strong>Description</strong></td>
+                <td width="8%" style="border:0px"><strong>Domain</strong></td>
+                <td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+                <td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+                <td width="5%" style="border:0px"><strong>Precision</strong></td>
+                <td width="5%" style="border:0px"><strong>Scale</strong></td>
+            </tr>
+            <tr>
+                <td width="8%">beginLifespanVersion</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">beginLifespanVersion</td>
+                <td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_contact</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">repAuthority_contact</td>
+                <td width="8%">Reporting authority Contact. Organisation responsible for reporting on the estimated and produced energy resources.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_individualName</td>
+                <td width="8%">String</td>
+                <td width="3%">100</td>
+                <td width="8%">repAuthority_individualName</td>
+                <td width="8%">Name of the related person at the Reporting authority.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_organisationName</td>
+                <td width="8%">String</td>
+                <td width="3%">100</td>
+                <td width="8%">repAuthority_organisationName</td>
+                <td width="8%">Name of the related organisation at the Reporting authority.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_positionName</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">repAuthority_positionName</td>
+                <td width="8%">Position of the party in relation to a resource, such as head of department.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_role</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">repAuthority_role</td>
+                <td width="8%">Role(s) of the party in relation to a resource, such as owner.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">resName</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">resName</td>
+                <td width="8%">The name of the energy resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">resName_lang</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">resName_lang</td>
+                <td width="8%">Resource name Language.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">cqFramework</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">cqFramework</td>
+                <td width="8%">A generic classification of Classification and quantification framework Value.A reference classification scheme to classify and quantify energy resources.</td>
+                <td width="8%"><a href="#DomaindClassAndQuantFramework">dClassAndQuantFramework</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">cqFramework_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">cqFramework_href</td>
+                <td width="8%">URI from the INSPIRE code list register - ClassificationAndQuantificationFrameworkValue <a href="https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue</a></td>
+                <td width="8%"><a href="#DomaindClassAndQuantFramework_href">dClassAndQuantFramework_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">endLifespanVersion</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">endLifespanVersion</td>
+                <td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">expPeriod_beginTime</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">expPeriod_beginTime</td>
+                <td width="8%">The exploitationPeriod defines the start date of the application.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">expPeriod_endTime</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">expPeriod_endTime</td>
+                <td width="8%">The exploitationPeriod defines the end date of the application.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_lowerBound</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_lowerBound</td>
+                <td width="8%">Value indicating the lower bound of the depth range of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_upperBound</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_upperBound</td>
+                <td width="8%">Value indicating the lower bound of the height range of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_scalar</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_scalar</td>
+                <td width="8%">Number representing the height or depth of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_Reference</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">vExt_scalar</td>
+                <td width="8%">A generic classification of Reference levels chosen to determine the vertical height/depth.</td>
+                <td width="8%"><a href="#DomaindVerticalRefValue">dVerticalRefValue</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_Reference_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">vertExt_Reference_href</td>
+                <td width="8%">URI from the INSPIRE code list register - VerticalReferenceValue <a href="https://inspire.ec.europa.eu/codelist/VerticalReferenceValue">https://inspire.ec.europa.eu/codelist/VerticalReferenceValue</a></td>
+                <td width="8%"><a href="#DomaindVerticalRefValue_href">dVerticalRefValue_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">dateOfDetermination</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">dateOfDetermination</td>
+                <td width="8%">Date of determination.Date on which the capacity of the resource has been determined.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_localId</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_localId</td>
+                <td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_namespace</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_namespace</td>
+                <td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_versionId</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_versionId</td>
+                <td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">featureId</td>
+                <td width="8%">Integer</td>
+                <td width="3%">4</td>
+                <td width="8%">featureId</td>
+                <td width="8%">Identifier, used in references to this object.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">capacity</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">capacity</td>
+                <td width="8%">Energy capacity of a renewable energy resource within the spatial object.NOTE the unit of measure to be used is MWe for electrical generation capacity and MWt for heat generation capacity.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">capacity_uom</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">capacity_uom</td>
+                <td width="8%">Unit of Measure for the capacity.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">typeOfResource</td>
+                <td width="8%">String</td>
+                <td width="3%">100</td>
+                <td width="8%">typeOfResource</td>
+                <td width="8%">A generic classification of types of renewable energy or waste resource.</td>
+                <td width="8%"><a href="#DomaindRenewAndWasteValue">dRenewAndWasteValue</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">typeOfResource_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">typeOfResource_href</td>
+                <td width="8%">URI from the INSPIRE code list register - RenewableAndWasteValue <a href="https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue</a></td>
+                <td width="8%"><a href="#DomaindRenewAndWasteValue_href">dRenewAndWasteValue_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr /><a name="FeatureClassRenewableAndWasteRessourceL" />
+    <p><strong>RenewableAndWasteRessourceL - FeatureClass</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Name</strong></td>
+                <td width="*" style="border-color: white">RenewableAndWasteRessourceL</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>ShapeType</strong></td>
+                <td width="*" style="border-color: white">Polyline</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FeatureType</strong></td>
+                <td width="*" style="border-color: white">Simple</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+                <td width="*" style="border-color: white">RenewableAndWasteRessourceL</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasM</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasZ</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">RenewableAndWasteRessourceL</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border:0px">
+                <td width="8%" style="border:0px"><strong>Field</strong></td>
+                <td width="8%" style="border:0px"><strong>DataType</strong></td>
+                <td width="5%" style="border:0px"><strong>Length</strong></td>
+                <td width="8%" style="border:0px"><strong>AliasName</strong></td>
+                <td width="8%" style="border:0px"><strong>Description</strong></td>
+                <td width="8%" style="border:0px"><strong>Domain</strong></td>
+                <td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+                <td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+                <td width="5%" style="border:0px"><strong>Precision</strong></td>
+                <td width="5%" style="border:0px"><strong>Scale</strong></td>
+            </tr>
+            <tr>
+                <td width="8%">beginLifespanVersion</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">beginLifespanVersion</td>
+                <td width="8%">Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_contact</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">repAuthority_contact</td>
+                <td width="8%">Reporting authority Contact. Organisation responsible for reporting on the estimated and produced energy resources.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_individualName</td>
+                <td width="8%">String</td>
+                <td width="3%">100</td>
+                <td width="8%">repAuthority_individualName</td>
+                <td width="8%">Name of the related person at the Reporting authority.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_organisationName</td>
+                <td width="8%">String</td>
+                <td width="3%">100</td>
+                <td width="8%">repAuthority_organisationName</td>
+                <td width="8%">Name of the related organisation at the Reporting authority.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_positionName</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">repAuthority_positionName</td>
+                <td width="8%">Position of the party in relation to a resource, such as head of department.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">repAuthority_role</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">repAuthority_role</td>
+                <td width="8%">Role(s) of the party in relation to a resource, such as owner.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">resName</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">resName</td>
+                <td width="8%">The name of the energy resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">resName_lang</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">resName_lang</td>
+                <td width="8%">Resource name Language.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">cqFramework</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">cqFramework</td>
+                <td width="8%">A generic classification of Classification and quantification framework Value.A reference classification scheme to classify and quantify energy resources.</td>
+                <td width="8%"><a href="#DomaindClassAndQuantFramework">dClassAndQuantFramework</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">cqFramework_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">cqFramework_href</td>
+                <td width="8%">URI from the INSPIRE code list register - ClassificationAndQuantificationFrameworkValue <a href="https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue</a></td>
+                <td width="8%"><a href="#DomaindClassAndQuantFramework_href">dClassAndQuantFramework_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">endLifespanVersion</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">endLifespanVersion</td>
+                <td width="8%">Date and time at which this version of the spatial object was superseded or retired in the spatial data set.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">expPeriod_beginTime</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">expPeriod_beginTime</td>
+                <td width="8%">The exploitationPeriod defines the start date of the application.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">expPeriod_endTime</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">expPeriod_endTime</td>
+                <td width="8%">The exploitationPeriod defines the end date of the application.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_lowerBound</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_lowerBound</td>
+                <td width="8%">Value indicating the lower bound of the depth range of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_upperBound</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_upperBound</td>
+                <td width="8%">Value indicating the lower bound of the height range of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_scalar</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">vertExt_scalar</td>
+                <td width="8%">Number representing the height or depth of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_Reference</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">vExt_scalar</td>
+                <td width="8%">A generic classification of Reference levels chosen to determine the vertical height/depth.</td>
+                <td width="8%"><a href="#DomaindVerticalRefValue">dVerticalRefValue</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">vertExt_Reference_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">vertExt_Reference_href</td>
+                <td width="8%">URI from the INSPIRE code list register - VerticalReferenceValue <a href="https://inspire.ec.europa.eu/codelist/VerticalReferenceValue">https://inspire.ec.europa.eu/codelist/VerticalReferenceValue</a></td>
+                <td width="8%"><a href="#DomaindVerticalRefValue_href">dVerticalRefValue_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">dateOfDetermination</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">dateOfDetermination</td>
+                <td width="8%">Date of determination.Date on which the capacity of the resource has been determined.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_localId</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_localId</td>
+                <td width="8%">A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_namespace</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_namespace</td>
+                <td width="8%">Namespace uniquely identifying the data source of the spatial object.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">inspireId_versionId</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">inspireId_versionId</td>
+                <td width="8%">The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">featureId</td>
+                <td width="8%">Integer</td>
+                <td width="3%">4</td>
+                <td width="8%">featureId</td>
+                <td width="8%">Identifier, used in references to this object.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">capacity</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">capacity</td>
+                <td width="8%">Energy capacity of a renewable energy resource within the spatial object.NOTE the unit of measure to be used is MWe for electrical generation capacity and MWt for heat generation capacity.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">capacity_uom</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">capacity_uom</td>
+                <td width="8%">Unit of Measure for the capacity.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">typeOfResource</td>
+                <td width="8%">String</td>
+                <td width="3%">100</td>
+                <td width="8%">typeOfResource</td>
+                <td width="8%">A generic classification of types of renewable energy or waste resource.</td>
+                <td width="8%"><a href="#DomaindRenewAndWasteValue">dRenewAndWasteValue</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">typeOfResource_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">typeOfResource_href</td>
+                <td width="8%">URI from the INSPIRE code list register - RenewableAndWasteValue <a href="https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue</a></td>
+                <td width="8%"><a href="#DomaindRenewAndWasteValue_href">dRenewAndWasteValue_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr /><a name="TableFossilFuelResource_type" />
+    <p><strong>FossilFuelResource_type - Table</strong></p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Name</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResource_type</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>AliasName</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResource_type</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>HasAttachments</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResource_type</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border:0px">
+                <td width="8%" style="border:0px"><strong>Field</strong></td>
+                <td width="8%" style="border:0px"><strong>DataType</strong></td>
+                <td width="5%" style="border:0px"><strong>Length</strong></td>
+                <td width="8%" style="border:0px"><strong>AliasName</strong></td>
+                <td width="8%" style="border:0px"><strong>Description</strong></td>
+                <td width="8%" style="border:0px"><strong>Domain</strong></td>
+                <td width="8%" style="border:0px"><strong>DefaultValue</strong></td>
+                <td width="8%" style="border:0px"><strong>IsNullable</strong></td>
+                <td width="5%" style="border:0px"><strong>Precision</strong></td>
+                <td width="5%" style="border:0px"><strong>Scale</strong></td>
+            </tr>
+            <tr>
+                <td width="8%">featureId</td>
+                <td width="8%">Integer</td>
+                <td width="3%">4</td>
+                <td width="8%">featureId</td>
+                <td width="8%">Identifier, used in references to this object.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">res_calRange_lower</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">res_calRange_lower</td>
+                <td width="8%">The lower value range of calorific values describing the calorific value of an Energy Resource. Each fossil fuel resource is characterised by its own calorific value, i.e. the quantity of energy available in a unit of mass. </td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">res_calRange_lower_uom</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">res_calRange_lower_uom</td>
+                <td width="8%">Unit of Measure for Calorific range (lower).</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">res_calRange_upper</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">res_calRange_upper</td>
+                <td width="8%">The upper value range of calorific values describing the calorific value of an Energy Resource. Each fossil fuel resource is characterised by its own calorific value, i.e. the quantity of energy available in a unit of mass.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">res_calRange_upper_uom</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">res_calRange_upper_uom</td>
+                <td width="8%">Unit of Measure for Calorific range (upper).</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">res_calScalar</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">res_calScalar</td>
+                <td width="8%">Measure quantifying the calorific property of an Energy Resource.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">res_calScalar_uom</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">res_calScalar_uom</td>
+                <td width="8%">Unit of Measure for calorific Scalar.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">res_quant_amount</td>
+                <td width="8%">Double</td>
+                <td width="3%">8</td>
+                <td width="8%">res_quant_amount</td>
+                <td width="8%">Amount of resource according to the specific categorisation.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">res_quant_amount_uom</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">res_quant_amount_uom</td>
+                <td width="8%">Unit of Measure for quantity amount.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">res_quant_dateOfDeterm</td>
+                <td width="8%">Date</td>
+                <td width="3%">8</td>
+                <td width="8%">res_quant_dateOfDeterm</td>
+                <td width="8%">Date on which the resource was quantified.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">res_quant_resourceClass</td>
+                <td width="8%">String</td>
+                <td width="3%">50</td>
+                <td width="8%">res_quant_resourceClass</td>
+                <td width="8%">Category indicating the different confidence levels of fossil fuel resources for distinguishing real from potential or expected amount of fossil fuels.</td>
+                <td width="8%"><a href="#DomaindFossilFuelClassValue">dFossilFuelClassValue</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">res_typeOfResource</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">res_typeOfRes</td>
+                <td width="8%">A generic classification of the types of fossil fuel resource.</td>
+                <td width="8%"><a href="#DomaindFossilFuelValue">dFossilFuelValue</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">res_typeOfResource_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">res_typeOfResource_href</td>
+                <td width="8%">URI from the INSPIRE code list register - FossilFuelValue <a href="https://inspire.ec.europa.eu/codelist/FossilFuelValue">https://inspire.ec.europa.eu/codelist/FossilFuelValue</a></td>
+                <td width="8%"><a href="#DomaindFossilFuelValue_href">dFossilFuelValue_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">RID</td>
+                <td width="8%">Integer</td>
+                <td width="3%">4</td>
+                <td width="8%">RID</td>
+                <td width="8%">Reference to featureId field in parent FossilFuelResourceS, FossilFuelResourceL, FossilFuelResourceP.</td>
+                <td width="8%"><a href="#Domain"></a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+            <tr>
+                <td width="8%">res_quant_resourceClass_href</td>
+                <td width="8%">String</td>
+                <td width="3%">255</td>
+                <td width="8%">res_quant_resourceClass_href</td>
+                <td width="8%">URI from the INSPIRE code list register - FossilFuelClassValue <a href="https://inspire.ec.europa.eu/codelist/FossilFuelClassValue">https://inspire.ec.europa.eu/codelist/FossilFuelClassValue</a></td>
+                <td width="8%"><a href="#DomaindFossilFuelClassValue_href">dFossilFuelClassValue_href</a></td>
+                <td width="8%"></td>
+                <td width="8%">true</td>
+                <td />
+                <td />
+            </tr>
+        </tbody>
+    </table>
+    <hr /><a name="RelationshipClassRelFossilFuelResourceL_Resource_type" />
+    <p><strong>RelFossilFuelResourceL_Resource_type - RelationshipClass</strong></p>
+    <table width="100%">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Name</strong></td>
+                <td width="*" style="border-color: white">RelFossilFuelResourceL_Resource_type</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+                <td width="*" style="border-color: white">OneToMany</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResource_type</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResourceL</td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">RelFossilFuelResourceL_Resource_type</td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="50%">
+        <tbody>
+            <tr style="border:0px">
+                <td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+                <td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+                <td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+            </tr><br />
+            <tr>
+                <td width="30%">FossilFuelResourceL</td>
+                <td width="30%">featureId</td>
+                <td width="30%">RID</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="50%">
+        <tbody>
+            <tr style="border:0px">
+                <td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+                <td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+                <td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+            </tr>
+            <tr>
+                <td width="30%">FossilFuelResource_type</td>
+                <td width="30%"></td>
+                <td width="30%"></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr /><a name="RelationshipClassRelFossilFuelResourceP_Resource_type" />
+    <p><strong>RelFossilFuelResourceP_Resource_type - RelationshipClass</strong></p>
+    <table width="100%">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Name</strong></td>
+                <td width="*" style="border-color: white">RelFossilFuelResourceP_Resource_type</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+                <td width="*" style="border-color: white">OneToMany</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResource_type</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResourceP</td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">RelFossilFuelResourceP_Resource_type</td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="50%">
+        <tbody>
+            <tr style="border:0px">
+                <td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+                <td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+                <td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+            </tr><br />
+            <tr>
+                <td width="30%">FossilFuelResourceP</td>
+                <td width="30%">featureId</td>
+                <td width="30%">RID</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="50%">
+        <tbody>
+            <tr style="border:0px">
+                <td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+                <td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+                <td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+            </tr>
+            <tr>
+                <td width="30%">FossilFuelResource_type</td>
+                <td width="30%"></td>
+                <td width="30%"></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr /><a name="RelationshipClassRelFossilFuelResourceS_Resource_type" />
+    <p><strong>RelFossilFuelResourceS_Resource_type - RelationshipClass</strong></p>
+    <table width="100%">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Name</strong></td>
+                <td width="*" style="border-color: white">RelFossilFuelResourceS_Resource_type</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Cardinality</strong></td>
+                <td width="*" style="border-color: white">OneToMany</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>IsAttributed</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>IsComposite</strong></td>
+                <td width="*" style="border-color: white">false</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>ForwardPathLabel</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResource_type</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>BackwardPathLabel</strong></td>
+                <td width="*" style="border-color: white">FossilFuelResourceS</td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">RelFossilFuelResourceS_Resource_type</td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="50%">
+        <tbody>
+            <tr style="border:0px">
+                <td width="30%" style="border:0px"><strong>Origin Class Name</strong></td>
+                <td width="30%" style="border:0px"><strong>Origin Primary Key</strong></td>
+                <td width="30%" style="border:0px"><strong>Origin Foreign Key</strong></td>
+            </tr><br />
+            <tr>
+                <td width="30%">FossilFuelResourceS</td>
+                <td width="30%">featureId</td>
+                <td width="30%">RID</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="50%">
+        <tbody>
+            <tr style="border:0px">
+                <td width="30%" style="border:0px"><strong>Destination Class Name</strong></td>
+                <td width="30%" style="border:0px"><strong>Destination Primary Key</strong></td>
+                <td width="30%" style="border:0px"><strong>Destination Foreign Key</strong></td>
+            </tr>
+            <tr>
+                <td width="30%">FossilFuelResource_type</td>
+                <td width="30%"></td>
+                <td width="30%"></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr /><a name="DomaindClassAndQuantFramework" />
+    <p><strong>dClassAndQuantFramework - Domain</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+                <td width="*" style="border-color: white">dClassAndQuantFramework</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">Values for the most widely used classification schemes to classify and quantify energy resources. NOTE Most of the listed classification frameworks only focus on fossil fuels.</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+                <td width="*" style="border-color: white">String</td>
+            </tr>
+            <tr>
+                <td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+                <td width="*%" style="border-color: white">CodedValue</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border-width:0px"><strong>
+                    <td width="10%" style="border-width:0px"><strong>Code</strong></td>
+                </strong>
+                <td width="20%" style="border-width:0px"><strong>Name</strong></td>
+            </tr>
+            <tr>
+            <tr>
+                <td width="20%">PERC</td>
+                <td width="20%">Pan-European Code for Reporting of Exploration Results, Mineral Resources and Reserves (PERC).</td>
+            </tr>
+            <tr>
+                <td width="20%">PRMS</td>
+                <td width="20%">Petroleum Resources Management System</td>
+            </tr>
+            <tr>
+                <td width="20%">RSG</td>
+                <td width="20%">Russian reserve guidelines.</td>
+            </tr>
+            <tr>
+                <td width="20%">UNFC-1997</td>
+                <td width="20%">United Nations Framework Classification (1997).</td>
+            </tr>
+            <tr>
+                <td width="20%">UNFC-2004</td>
+                <td width="20%">United Nations Framework Classification (2004).</td>
+            </tr>
+            <tr>
+                <td width="20%">UNFC-2009</td>
+                <td width="20%">United Nations Framework Classification (2009).</td>
+            </tr>
+            <tr>
+                <td width="20%">USGS</td>
+                <td width="20%">United States Geological Survey</td>
+            </tr>
+            <tr>
+                <td width="20%">NPD-2001</td>
+                <td width="20%">Norwegian Petroleum Directorate classification (NPD-2001)</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr /><a name="DomaindClassAndQuantFramework_href" />
+    <p><strong>dClassAndQuantFramework_href - Domain</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+                <td width="*" style="border-color: white">dClassAndQuantFramework_href</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">Values for the most widely used classification schemes to classify and quantify energy resources. NOTE Most of the listed classification frameworks only focus on fossil fuels.</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+                <td width="*" style="border-color: white">String</td>
+            </tr>
+            <tr>
+                <td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+                <td width="*%" style="border-color: white">CodedValue</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border-width:0px"><strong>
+                    <td width="10%" style="border-width:0px"><strong>Code</strong></td>
+                </strong>
+                <td width="20%" style="border-width:0px"><strong>Name</strong></td>
+            </tr>
+            <tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/PERC</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/PERC</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/SPE-WPC-AAPG-PRMS</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/SPE-WPC-AAPG-PRMS</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/RF</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/RF</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/UNFC1997</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/UNFC1997</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/UNFC2004</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/UNFC2004</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/UNFC2009</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/UNFC2009</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/USGS</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/USGS</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/NPD</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/ClassificationAndQuantificationFrameworkValue/NPD</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr /><a name="DomaindFossilFuelClassValue" />
+    <p><strong>dFossilFuelClassValue - Domain</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+                <td width="*" style="border-color: white">dFossilFuelClassValue</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">Values indicating the various levels of fossil fuel resources.</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+                <td width="*" style="border-color: white">String</td>
+            </tr>
+            <tr>
+                <td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+                <td width="*%" style="border-color: white">CodedValue</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border-width:0px"><strong>
+                    <td width="10%" style="border-width:0px"><strong>Code</strong></td>
+                </strong>
+                <td width="20%" style="border-width:0px"><strong>Name</strong></td>
+            </tr>
+            <tr>
+            <tr>
+                <td width="20%">provenreserves</td>
+                <td width="20%">proven reserves</td>
+            </tr>
+            <tr>
+                <td width="20%">resourcesinitiallyinplace</td>
+                <td width="20%">resources initially in place</td>
+            </tr>
+            <tr>
+                <td width="20%">contingentresources</td>
+                <td width="20%">contingent resources</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr /><a name="DomaindFossilFuelClassValue_href" />
+    <p><strong>dFossilFuelClassValue_href - Domain</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+                <td width="*" style="border-color: white">dFossilFuelClassValue_href</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">Values indicating the various levels of fossil fuel resources.</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+                <td width="*" style="border-color: white">String</td>
+            </tr>
+            <tr>
+                <td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+                <td width="*%" style="border-color: white">CodedValue</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border-width:0px"><strong>
+                    <td width="10%" style="border-width:0px"><strong>Code</strong></td>
+                </strong>
+                <td width="20%" style="border-width:0px"><strong>Name</strong></td>
+            </tr>
+            <tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelClassValue/provenReserves</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelClassValue/provenReserves</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelClassValue/resourcesInitiallyInPlace</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelClassValue/resourcesInitiallyInPlace</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelClassValue/contingentResources</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelClassValue/contingentResources</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr /><a name="DomaindFossilFuelValue" />
+    <p><strong>dFossilFuelValue - Domain</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+                <td width="*" style="border-color: white">dFossilFuelValue</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">Types of fossil fuels.</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+                <td width="*" style="border-color: white">String</td>
+            </tr>
+            <tr>
+                <td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+                <td width="*%" style="border-color: white">CodedValue</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border-width:0px"><strong>
+                    <td width="10%" style="border-width:0px"><strong>Code</strong></td>
+                </strong>
+                <td width="20%" style="border-width:0px"><strong>Name</strong></td>
+            </tr>
+            <tr>
+            <tr>
+                <td width="20%">hardcoal</td>
+                <td width="20%">hard coal</td>
+            </tr>
+            <tr>
+                <td width="20%">lowrankcoal</td>
+                <td width="20%">low-rank coal</td>
+            </tr>
+            <tr>
+                <td width="20%">naturalgas</td>
+                <td width="20%">natural gas</td>
+            </tr>
+            <tr>
+                <td width="20%">naturalgasliquids</td>
+                <td width="20%">natural gas liquids</td>
+            </tr>
+            <tr>
+                <td width="20%">oilsands</td>
+                <td width="20%">oil sands</td>
+            </tr>
+            <tr>
+                <td width="20%">oilshales</td>
+                <td width="20%">oil shales</td>
+            </tr>
+            <tr>
+                <td width="20%">peat</td>
+                <td width="20%">peat</td>
+            </tr>
+            <tr>
+                <td width="20%">crudeoil</td>
+                <td width="20%">crude oil</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr /><a name="DomaindFossilFuelValue_href" />
+    <p><strong>dFossilFuelValue_href - Domain</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+                <td width="*" style="border-color: white">dFossilFuelValue_href</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">Types of fossil fuels.</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+                <td width="*" style="border-color: white">String</td>
+            </tr>
+            <tr>
+                <td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+                <td width="*%" style="border-color: white">CodedValue</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border-width:0px"><strong>
+                    <td width="10%" style="border-width:0px"><strong>Code</strong></td>
+                </strong>
+                <td width="20%" style="border-width:0px"><strong>Name</strong></td>
+            </tr>
+            <tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/hardCoal</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/hardCoal</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/lowRankCoal</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/lowRankCoal</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/naturalGas</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/naturalGas</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/naturalGasLiquids</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/naturalGasLiquids</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/oilSands</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/oilSands</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/oilShales</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/oilShales</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/peat</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/peat</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/crudeOil</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/FossilFuelValue/crudeOil</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr /><a name="DomaindRenewAndWasteValue" />
+    <p><strong>dRenewAndWasteValue - Domain</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+                <td width="*" style="border-color: white">dRenewAndWasteValue</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">Types of renewable and waste resources. NOTE Waste values have been included in this code list to simplify the code lists rather than to imply that only renewable waste is included.</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+                <td width="*" style="border-color: white">String</td>
+            </tr>
+            <tr>
+                <td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+                <td width="*%" style="border-color: white">CodedValue</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border-width:0px"><strong>
+                    <td width="10%" style="border-width:0px"><strong>Code</strong></td>
+                </strong>
+                <td width="20%" style="border-width:0px"><strong>Name</strong></td>
+            </tr>
+            <tr>
+            <tr>
+                <td width="20%">geothermal</td>
+                <td width="20%">geothermal</td>
+            </tr>
+            <tr>
+                <td width="20%">hydropower</td>
+                <td width="20%">hydro power</td>
+            </tr>
+            <tr>
+                <td width="20%">industrialwaste</td>
+                <td width="20%">industrial waste</td>
+            </tr>
+            <tr>
+                <td width="20%">liquidbiofuels</td>
+                <td width="20%">liquid biofuels</td>
+            </tr>
+            <tr>
+                <td width="20%">municipalsolidwaste</td>
+                <td width="20%">municipal solid waste</td>
+            </tr>
+            <tr>
+                <td width="20%">solarphotovoltaic</td>
+                <td width="20%">solar photovoltaic</td>
+            </tr>
+            <tr>
+                <td width="20%">solarthermal</td>
+                <td width="20%">solar thermal</td>
+            </tr>
+            <tr>
+                <td width="20%">solidbiomass</td>
+                <td width="20%">solid biomass</td>
+            </tr>
+            <tr>
+                <td width="20%">tidewaveocean</td>
+                <td width="20%">tide, wave, ocean</td>
+            </tr>
+            <tr>
+                <td width="20%">wind</td>
+                <td width="20%">wind</td>
+            </tr>
+            <tr>
+                <td width="20%">biogas</td>
+                <td width="20%">biogas</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr /><a name="DomaindRenewAndWasteValue_href" />
+    <p><strong>dRenewAndWasteValue_href - Domain</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+                <td width="*" style="border-color: white">dRenewAndWasteValue_href</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">Types of renewable and waste resources. NOTE Waste values have been included in this code list to simplify the code lists rather than to imply that only renewable waste is included.</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+                <td width="*" style="border-color: white">String</td>
+            </tr>
+            <tr>
+                <td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+                <td width="*%" style="border-color: white">CodedValue</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border-width:0px"><strong>
+                    <td width="10%" style="border-width:0px"><strong>Code</strong></td>
+                </strong>
+                <td width="20%" style="border-width:0px"><strong>Name</strong></td>
+            </tr>
+            <tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/biogas</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/biogas</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/geothermal</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/geothermal</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/hydro</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/hydro</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/industrialWaste</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/industrialWaste</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/liquidBiofuels</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/liquidBiofuels</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/municipalSolidWaste</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/municipalSolidWaste</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/solarPhotovoltaic</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/solarPhotovoltaic</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/solarThermal</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/solarThermal</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/solidBiomass</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/solidBiomass</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/tideWaveOcean</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/tideWaveOcean</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/wind</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/RenewableAndWasteValue/wind</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr /><a name="DomaindVerticalRefValue" />
+    <p><strong>dVerticalRefValue - Domain</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+                <td width="*" style="border-color: white">dVerticalRefValue</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">Values indicating the reference level of the vertical extent.</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+                <td width="*" style="border-color: white">String</td>
+            </tr>
+            <tr>
+                <td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+                <td width="*%" style="border-color: white">CodedValue</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border-width:0px"><strong>
+                    <td width="10%" style="border-width:0px"><strong>Code</strong></td>
+                </strong>
+                <td width="20%" style="border-width:0px"><strong>Name</strong></td>
+            </tr>
+            <tr>
+            <tr>
+                <td width="20%">lowestastronomicaltide</td>
+                <td width="20%">lowest astronomical tide</td>
+            </tr>
+            <tr>
+                <td width="20%">meansealevel</td>
+                <td width="20%">mean sea level</td>
+            </tr>
+            <tr>
+                <td width="20%">seafloor</td>
+                <td width="20%">seafloor</td>
+            </tr>
+            <tr>
+                <td width="20%">groundlevel</td>
+                <td width="20%">ground level</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr /><a name="DomaindVerticalRefValue_href" />
+    <p><strong>dVerticalRefValue_href - Domain</strong></p>
+    <p>
+    <table width="100%" style="border-color: white">
+        <tbody>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>DomainName</strong></td>
+                <td width="*" style="border-color: white">dVerticalRefValue_href</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>Description</strong></td>
+                <td width="*" style="border-color: white">Values indicating the reference level of the vertical extent.</td>
+            </tr>
+            <tr>
+                <td width="12%" style="border-color: white"><strong>FieldType</strong></td>
+                <td width="*" style="border-color: white">String</td>
+            </tr>
+            <tr>
+                <td width="20%" style="border-color: white"><strong>Domain Type</strong></td>
+                <td width="*%" style="border-color: white">CodedValue</td>
+            </tr>
+        </tbody>
+    </table><br />
+    <table width="100%">
+        <tbody>
+            <tr style="border-width:0px"><strong>
+                    <td width="10%" style="border-width:0px"><strong>Code</strong></td>
+                </strong>
+                <td width="20%" style="border-width:0px"><strong>Name</strong></td>
+            </tr>
+            <tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/VerticalReferenceValue/groundLevel</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/VerticalReferenceValue/groundLevel</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/VerticalReferenceValue/lowestAstronomicalTide</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/VerticalReferenceValue/lowestAstronomicalTide</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/VerticalReferenceValue/meanSeaLevel</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/VerticalReferenceValue/meanSeaLevel</td>
+            </tr>
+            <tr>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/VerticalReferenceValue/seafloor</td>
+                <td width="20%">https://inspire.ec.europa.eu/codelist/VerticalReferenceValue/seafloor</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr />
+</body>
+
+</html>
