@@ -10,5 +10,5 @@ Templates put the Alternative Encodings into action. Following the [Model Transf
 
 The following INSPIRE Streamlined GDB Templates are available for download from the ArcGIS INSPIRE Open Data demonstration hub Resources:
 - [Go to the Resources download page](https://arcgis-inspire-esri.opendata.arcgis.com/pages/resources)
-![INSPIRE Open Data themes](https://user-images.githubusercontent.com/49758885/128555056-3a096be7-867e-4bc1-9a7c-d86a0475e2b1.png)
+
 
