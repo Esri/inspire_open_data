@@ -1,19 +1,18 @@
-## MT015: Fan Out Feature Type By Codelist Property
+# MT015: Fan Out Feature Type By Codelist Property
 
-<table>
-<tr>
-<td>Category</td>
-<td>Alternate Structures for specific types or type hierarchies</td>
-</tr>
-<tr>
-<td>Description</td>
-<td><p>This rule is used to fan-out features by the value of a codelist property into separate attributes. </p> 
-</p>
-</td>
-</tr>
-<tr>
-<td>Original instance in default encoding:</td>
-<td>
+> **Not yet applied.** MT015 is catalogued but not used by the theme encodings; no
+> current theme fans a feature type out by a codelist value. Listed here so the
+> catalogue stays complete.
+
+## Category
+
+Alternate Structures for specific types or type hierarchies
+
+## Description
+
+This rule is used to fan-out features by the value of a codelist property into separate attributes.
+
+## Original instance (example)
 
 ```xml
 	<gml:featureMember>
@@ -36,12 +35,8 @@
 		</au:AdministrativeUnit>
 	</gml:featureMember>
 ```
-   
-</td>
-</tr>
-<tr>
-<td>Transformed instance in default encoding:</td>
-<td>
+
+## Transformed instance (example)
 
 ```xml
 	<gml:featureMember>
@@ -66,36 +61,26 @@
 
 ``` 
 
-</td>
-</tr>
-<tr>
-<td>Model transformation rule: </td>
-<td>
-    <p>Create a copy of the original feature class for each codelist value. Add the value CodelistValue as a Suffix.</p>
-</td>
-</tr>
-<tr>
-<td>Instance transformation rule:</td>
-<td>
-	<ul>
-		<li>Copy the features to a feature class depending on the property that was used for the fan-out.</li>
-		</ul>
-</td>
-</tr>
-<tr>
-<td>Solves usability issues:</td>
-<td>None</td>
-</tr>
-<tr>
-<td>Known usability issues:</td>
-<td>Long Codelists can resolve in a big number of extra Feature Classes.</td>
-</tr>
-<tr>
-<td>INSPIRE Compliance:</td>
-<td>No issues.</td>
-</tr>
-</table>
+## Model transformation rule
 
-Notes:
+Create a copy of the original feature class for each codelist value. Add the value CodelistValue as a Suffix.
 
- * None.
+## Instance transformation rule
+
+- Copy the features to a feature class depending on the property that was used for the fan-out.
+
+## Solves usability issues
+
+None
+
+## Known usability issues
+
+Long Codelists can resolve in a big number of extra Feature Classes.
+
+## INSPIRE compliance
+
+No issues.
+
+## Notes
+
+- Not part of the original INSPIRE MIF 2017.2 catalogue (MT001–MT009); added in this project.

@@ -1,42 +1,13 @@
 # INSPIRE UML-to-Geodatabase encoding rule
 
-`Version: 0.1`
-`Date: 2021-03-01`
-
-## Table of Contents
-
-* [Preface](#preface)
-* [Introduction](#introduction)
-* [Scope](#scope)
-    * Use Cases
-	* Themes
-    * Technical Issues
-    * Technical Limitations
-	* Cross-cutting INSPIRE requirements
-* [Normative References](#normative-references)
-* [Terms and Definitions](#terms-and-definitions)
-* [Schema Conversion Rules](#schema-conversion-rules)
-    * Types
-    * Properties
-    * Associations
-* [Instance Encoding Rules](#instance-encoding-rules)
-    * Requirements and Recommendations
-    * Mapping from Conceptual Model to GeoJSON Logical Model
-    * Alternative Coordinate Reference Systems
-    * Identifiers
-* [INSPIRE Theme Encoding Rules](#inspire-theme-encoding-rules)
-
-[comment]: <>  (## Preface)
-
-[comment]: <>  (todo)
-
-
+`Version: 1.2.0`
+`Date: 2026-09-03`
 
 ## Introduction
 
 This section describes what this document contains and what the high-level objective of this encoding is.
 
-ESRI Geodatabase (GDB) is a format designed for geospatial data. It provides data structures such as feature datasets, feature classes, and associated tables. The database can be stored in a folder based structure (File Geodatabase) or in Spatial Relational Database (Enterprise Geodatabase).  
+ESRI Geodatabase (GDB) is a format designed for geospatial data. It provides data structures such as feature datasets, feature classes, and associated tables. The database can be stored in a folder based structure (File Geodatabase) or in Spatial Relational Database (Enterprise Geodatabase).
 
 Within INSPIRE, this encoding rule can used be to encode data from several themes, with a focus on usability of the data in GIS desktop and web clients such as ArcPro, ArcMap, ArcGIS Online, QGIS, FME, and hale studio. It can serve as an *Alternative Encoding* that can be used instead of the default encoding for data, where there is no information loss. In other cases, this Geodatabase encoding may serve as an *Additional Encoding* only.
 
@@ -48,29 +19,9 @@ This sections describes the scope of the INSPIRE UML-to-Geodatabase encoding rul
 
 This encoding rule specifically addresses data usability in web and desktop client software, such as ArcGIS Pro, ArcMap, ArcGIS Online, and QGIS. It optimizes usage of INSPIRE data for mapping and geoprocessing in such applications.
 
-The encoding rule is developed with the Internet Engineering Task Force (IETF) [GeoJSON](https://geojson.org) and the Open Web Foundation [GeoServices](http://geoservices.github.io) specifications in mind, for which it can be used in web and desktop client software, such as ArcGIS Pro, ArcMap, ArcGIS Online, and QGIS. 
+The encoding rule is developed with the Internet Engineering Task Force (IETF) [GeoJSON](https://geojson.org) and the Open Web Foundation [GeoServices](http://geoservices.github.io) specifications in mind, for which it can be used in web and desktop client software, such as ArcGIS Pro, ArcMap, ArcGIS Online, and QGIS.
 
-The encoding rule is also developed with the [OGC API Features standard] (https://www.ogc.org/standards/ogcapi-features) in mind, for which it should provide a storage format that can be used in applications like ArcGIS Online to enable data excahnge via OGC API-Features based on the Geodatabase. 
-
-### Coverage of INSPIRE Themes
-
-For each Application Schema to be covered, a specific Geodatabase Encoding Rule is provided. 
-Currently these Application Schemas are covered:
-
-* [`Addresses`](Addresses.md)
-* [`AdministrativeAndSocialGovernmentalServices`](AdministrativeAndSocialGovernmentalServices.md)
-* [`AdministrativeUnits`](AdministrativeUnits.md)
-* [`AreaManagementRestrictionAndRegulationZones`](AreaManagementRestrictionAndRegulationZones.md)
-* [`Buildings2D`](Buildings2D.md)
-* [`Buildings3D`](Buildings3D.md)
-* [`EnvironmentalManagementFacilities`](EnvironmentalManagementFacilities.md)
-* [`ExistingLandUse`](ExistingLandUse.md)
-* [`NaturalRiskZones`](NaturalRiskZones.md)
-* [`PlannedLandUse`](PlannedLandUse.md)
-* [`ProtectedSites`](ProtectedSites.md)
-* [`SampledLandUse`](SampledLandUse.md)
-
-
+The encoding rule is also developed with the [OGC API Features standard] (https://www.ogc.org/standards/ogcapi-features) in mind, for which it should provide a storage format that can be used in applications like ArcGIS Online to enable data excahnge via OGC API-Features based on the Geodatabase.
 
 ### Technical Issues
 
@@ -95,10 +46,8 @@ The Implementing Rules (IRs) on interoperability of spatial data sets and servic
 > **Article 7 -- Encoding**
 >
 > 1. Every encoding rule used to encode spatial data shall conform to EN ISO 19118. In particular, it shall specify schema
-> conversion rules for all spatial object types and all attributes and association roles and the output data structure used. 
+> conversion rules for all spatial object types and all attributes and association roles and the output data structure used.
 > 2. Every encoding rule used to encode spatial data shall be made available.
-
-*To Do: Doesit matter that GDB is not utf-8 encoded?* *To Do: REVIEW THIS XX*
 
 D2.7 specifies more detailed requirements and recommendations for encoding rules. The following list lists the requirements from that document and shows which ones are also met in this encoding rule:
 
@@ -112,15 +61,13 @@ D2.7 also contains a relevant recommendation:
 
 This section contains references to standards documents and related resources.
 
-[comment]: <>  (*To Do: Good Reference for the GDB format* *To Do: REVIEW THIS XX*)
-
 * [Sustainability of Digital Formats: Planning for Library of Congress Collections – ESRI Geodatabase XML](https://www.loc.gov/preservation/digital/formats/fdd/fdd000295.shtml)
 * [GeoJSON - IETF RFC 7946](https://tools.ietf.org/html/rfc7946)
 * [INSPIRE Drafting Team Data Specifications. D2.7: Guidelines for the encoding of spatial data, Version 3.3](http://inspire.ec.europa.eu/documents/guidelines-encoding-spatial-data)
 
 ## Terms and Definitions
 
-Terms and Definitions can be found in the [Glossary](Glossary.md) document.
+Terms and Definitions can be found in the [Glossary](glossary.md) document.
 
 ## Schema Conversion Rules
 
@@ -130,11 +77,11 @@ In this Encoding Rule, we take a two-step approach, where we apply model transfo
 
 ### Types
 
-#### Feature types 
+#### Feature types
 
-All types that have the stereotype `<<featureType>>` are converted to Geodatabase feature classes if the type has a geometry. If the type has no geometry it is converted to a table. The typenames remain as they are. 
+All types that have the stereotype `<<featureType>>` are converted to Geodatabase feature classes if the type has a geometry. If the type has no geometry it is converted to a table. The typenames remain as they are.
 
-Where a class has one attribute with a geometry type, this attribute will be mapped to the geometry of the feature class, while all other properties will be mapped to attributes of the same feature class. Where a class has more than one Geometry property, a theme-specific profile has to define which geometry property is the "default" geometry that should be mapped to as the geometry of the feature class. Additional geometry properties can be mapped to additional feature classes.  
+Where a class has one attribute with a geometry type, this attribute will be mapped to the geometry of the feature class, while all other properties will be mapped to attributes of the same feature class. Where a class has more than one Geometry property, a theme-specific profile has to define which geometry property is the "default" geometry that should be mapped to as the geometry of the feature class. Additional geometry properties can be mapped to additional feature classes.
 
 #### Data Types
 
@@ -144,7 +91,7 @@ All data types are mapped to JSON objects, where properties of the type are dire
 
 All property types are transformed to the simple types that JSON knows about: Number, String, Boolean and Object. The exact mapping from the UML model to the JSON datatypes is outlined in the following table:
 
-| UML Model property type | Geodatabase datatype | Conversion Notes | 
+| UML Model property type | Geodatabase datatype | Conversion Notes |
 | ------ | ----- | ----- |
 | CharacterString | Text |  |
 | LocalisedCharacterString | Text | `LanguageCode` is added as a separate property. |
@@ -163,11 +110,11 @@ Any other UML Model property type are to be mapped to `Text`, with specific rule
 
 #### ISO 19107 - Geometry types
 
-ISO 19107 defines a set of Geometry types, which need to be mapped to the types available in Geodatabase. 
+ISO 19107 defines a set of Geometry types, which need to be mapped to the types available in Geodatabase.
 
 NOTE Not all types can be mapped to Geodatabase; if a data set requires such a type, it cannot use this encoding rule as an Alternative Encoding rule.
 
-| ISO 19107 type | Geodatabase datatype | Conversion Notes | 
+| ISO 19107 type | Geodatabase datatype | Conversion Notes |
 | ------ | ----- | ----- |
 | GM_Aggregate      | not supported | Limitations apply as to which types in the collection can be included. |
 | GM_Curve          | Line | In GML, Curves can also be nonlinear segments or arcs. |
@@ -185,11 +132,11 @@ NOTE Not all types can be mapped to Geodatabase; if a data set requires such a t
 
 #### ISO 19108 - Temporal types
 
-For types from ISO 19108 used in INSPIRE schemas, suitable mappings need to be found on a case-by-case basis. The default should be to use the [Simple Period](/model-transformations/SimplePeriod.md) substitution rule.
+For types from ISO 19108 used in INSPIRE schemas, suitable mappings need to be found on a case-by-case basis. The default should be to use the [Simple Period](../model-transformations/MT009_SimplePeriod.md) substitution rule.
 
 #### ISO 19115 - Metadata types
 
-For types from ISO 19115 used in INSPIRE schemas, suitable mappings need to be found on a case-by-case basis. For `CI_Citation`, the [Simple Citation](/model-transformations/SimpleCitation.md) substitution rule can be applied.
+For types from ISO 19115 used in INSPIRE schemas, suitable mappings need to be found on a case-by-case basis. For `CI_Citation`, the [Simple Citation](../model-transformations/MT007_SimpleCitation.md) substitution rule can be applied.
 
 #### Abstract Types as property types
 
@@ -211,10 +158,9 @@ NOTE The INSPIRE Registry can provide the JSON representation of the code list a
 
 Property names remain as they are.
 
-*To Do: REVIEW THIS XX*
-If a property has a cardinality > 1, a suitable mapping needs to be found on a case-by-case basis. There is a [model transformation rule](/model-transformations/ExtraTablesMultiplicity.md) that describes how an extra table/featurclass can be used if the number of occurences of such a property can be very high. 
+If a property has a cardinality > 1, a suitable mapping needs to be found on a case-by-case basis. There is a [model transformation rule](../model-transformations/MT011_HighCardinalityPropertiesToExtraTables.md) that describes how an extra table/featurclass can be used if the number of occurrences of such a property can be very high.
 
-Properties that represent values from code lists are encoded using the `SimpleCodelistReference` [rule described here](/model-transformations/SimpleCodelistReference.md).
+Properties that represent values from code lists are encoded using the `SimpleCodelistReference` [rule described here](../model-transformations/MT008_SimpleCodelistReference.md).
 
 NOTE Namespace prefixes, as used in the default encoding, are not used in the Geodatabase encoding rule.
 
@@ -228,17 +174,17 @@ The stereotype `<<voidable>>` is not converted. If a property has no value, it m
 
 ### Association Roles
 
-Association roles are retained as they are, if they are not transformed using a profile-specific rule, such as [Inline associated or aggregated components using type names](../model-transformation/AssociatedComponentsHardType).
+Association roles are retained as they are, if they are not transformed using a profile-specific rule, such as [Inline associated or aggregated components using type names](../model-transformations/MT003_AssociatedComponentsHardType.md).
 
 ## Instance Encoding Rules
 
 This section describes how the encoding is derived from the converted conceptual model, and describes which common rules have to be applied for this encoding rule.
 
 ### Character Encoding
-*To Do: REVIEW THIS XX*
+
 The character encoding of all data encoding in Geodatabase shall be UTF-8.
 
-### Coordinate Reference Systems 
+### Coordinate Reference Systems
 
 The geodatabase format supports all mandated coordinate systems. As INSPIRE mandates the use of the European Terrestrial Reference System 1989 (ETRS89, see [Requirement 1](https://inspire.ec.europa.eu/reports/ImplementingRules/DataSpecifications/INSPIRE_Specification_CRS_v2.0.pdf)) for the areas within the geographical scope of ETRS89 we encourage ETRS89 to be used.
 
@@ -258,7 +204,7 @@ A spatial object encoded using the default encoding rule may have several proper
 
 These properties are mapped to the encoded Geodatabase object as follows:
 
-| Default Encoding property | Property Type | Geodatabase Property | Property Type | Conversion Notes | 
+| Default Encoding property | Property Type | Geodatabase Property | Property Type | Conversion Notes |
 | ------ | ----- | ----- | ----- | ----- |
 | `gml:id` | ID | `featureId` | integer | new technical identifier, that replaces the string based gml:id |
 | `gml:identifier` | CodeWithAuthorityType | `identifier` | string | Can be omitted if empty in the source object. |
@@ -266,8 +212,73 @@ These properties are mapped to the encoded Geodatabase object as follows:
 |  |  | `inspireId_namespace` | string |  |
 |  |  | `inspireId_versionId` | string | Can be omitted if empty in the source object. |
 
+## Serialization to File Geodatabase
+
+*Not part of the original encoding rule; added in this project.* The rules above convert the
+conceptual model. This section describes how the converted model is serialized to a File
+Geodatabase, and states the two deviations from *ISO 19103 - Basic types* that the theme encodings
+apply.
+
+The simplification is target-neutral: after the model transformations, a field carries a **logical
+type** and a feature class an **abstract geometry**. Only the serializer turns these into
+Geodatabase types, so the same converted model also serves other target formats.
+
+### Field types
+
+| Logical type | Geodatabase datatype | Conversion Notes |
+| ------ | ----- | ----- |
+| string | Text | text, codelist value, `xlink:href` reference |
+| integer | Long |  |
+| double | Float | **Deviation:** *ISO 19103 - Basic types* specifies `Double` for `Real`, `Decimal` and `Measure`. The theme field lists use `Float`, which is retained for compatibility with the published encodings. |
+| boolean | Short | **Deviation:** written as `Short` (Short Integer), carrying `0` / `1`. |
+| date | Date |  |
+| datetime | Date | Geodatabase has a single `Date` type covering both. |
+| time | Text | Geodatabase has no time-only type. |
+| id | Long | `featureId` and every foreign key referencing it (see *Identifiers*). |
+
+Any property type not covered by the conversion rules is mapped to `Text`.
+
+### Geometry types
+
+| Abstract geometry | Geodatabase geometry | Conversion Notes |
+| ------ | ----- | ----- |
+| Point | Point |  |
+| Line | Polyline |  |
+| Surface | Polygon |  |
+| Solid | Multipatch | 3D solids and polyhedral surfaces (see *ISO 19107 - Geometry types*). |
+| Geometry | Geometry (any Geodatabase geometry type) | The conceptual model does not fix the geometry kind (`GM_Object`, or several concrete types). |
+| *none* | Geometry | A feature type **without** a geometry property is kept as a feature class carrying the generic geometry placeholder, not as a table, so that a feature type of the application schema stays a feature class in the geodatabase. |
+
+Where a feature type permits several geometry types and a theme encoding rule fans it out into one
+feature class per geometry type, the resulting feature classes are named with the suffix `P`
+(Point), `L` (Polyline) or `S` (Polygon).
+
+### Code list domains
+
+For a code list valued property, a coded value domain holding the code list's known values can be
+assigned to the value field, so that client applications can offer them as a pick list.
+
+Such a domain shall not be read as a closed value set. Most INSPIRE code lists are extensible and
+their published values are in large part not final, so values outside the domain do occur in real
+data and have to be accepted: the domain is a list of suggested values, not a constraint. Where a
+client would reject a value outside the assigned domain, the domain should be omitted instead. The
+authoritative value is in any case the code list URI carried in the companion `_href` field.
+
+### Tables and relationship classes
+
+A property extracted into its own table by a theme's model transformation is keyed by an `RID` Long
+foreign key. In the geodatabase, a relationship class is created for each such table, relating the
+child rows' `RID` to the parent object's `featureId`, so that the values can be reached from the
+feature in a client application.
+
+### Name length
+
+Field, feature class and table names are limited to **30 characters**. Where a flattened property
+name exceeds the limit, the theme encoding rule declares the name shortenings to apply; they are
+listed in that theme's Model Transformation section.
+
 ## INSPIRE Theme Encoding Rules
 
-This document does not contain specific rules for each INSPIRE theme. These are maintained in separate documents to facilitate loosely coupled development cycles and groups.
+This document does not contain specific rules for each INSPIRE theme. These are maintained in separate documents to facilitate loosely coupled development cycles and groups. For each application schema covered, a specific Geodatabase Encoding Rule is provided; those theme documents are published alongside this document.
 
-Each of the theme-specific Encoding Rules defines at least one conformance class. Any conformance class in a theme Encoding Rule may define a number of Model Transformation rules that need to be applied before the encoding process. These transformations are documented in the [Model Transformation Rules](../model-transformations/TransformationRules.md) paper. They serve the purpose of adapting the conceptual model (UML) to better match the logical model of the target platform.
+Each of the theme-specific Encoding Rules defines at least one conformance class. Any conformance class in a theme Encoding Rule may define a number of Model Transformation rules that need to be applied before the encoding process. These transformations are documented in the [Model Transformation Rules](../model-transformations/README.md) paper. They serve the purpose of adapting the conceptual model (UML) to better match the logical model of the target platform.

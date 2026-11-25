@@ -1,19 +1,19 @@
-## MT014: One Feature Class Per Geometry Type
+# MT014: One Feature Class Per Geometry Type
 
-<table>
-<tr>
-<td>Category</td>
-<td>Alternate Structures for specific types or type hierarchies</td>
-</tr>
-<tr>
-<td>Description</td>
-<td><p>The encoding in GML allows mixing geometry properties with diferent data types in the same file/structure. This is not possible in some GIS Databases. Therefore with this rule one Feature Class per geometry type is used to seperate heterogenious geometry types into tables. A suffix is used to indicate which type of Geometry is stored in each table. **P** for Point geometries, **L** for Line and **S** for Area geeometries.</p> 
-</p>
-</td>
-</tr>
-<tr>
-<td>Original instance in default encoding:</td>
-<td>
+> **Implementation note.** As applied in the theme encodings, the rule
+> takes **`geometryTypes`** — a subset of
+> `Point` | `Line` | `Surface`. The feature type is fanned out into one feature class
+> per listed geometry, suffixed `P` / `L` / `S` (e.g. `…ZoneP` / `…ZoneL` / `…ZoneS`).
+
+## Category
+
+Alternate Structures for specific types or type hierarchies
+
+## Description
+
+The encoding in GML allows mixing geometry properties with different data types in the same file/structure. This is not possible in some GIS Databases. Therefore with this rule one Feature Class per geometry type is used to separate heterogeneous geometry types into tables. A suffix is used to indicate which type of Geometry is stored in each table. **P** for Point geometries, **L** for Line and **S** for Area geometries.
+
+## Original instance (example)
 
 ```xml
 	<gml:featureMember>
@@ -45,12 +45,8 @@
 		<!-- ... -->
 	</gml:featureMember>
 ```
-   
-</td>
-</tr>
-<tr>
-<td>Transformed instance in default encoding:</td>
-<td>
+
+## Transformed instance (example)
 
 ```xml
 <gml:featureMember>
@@ -85,38 +81,28 @@
 
 ``` 
 
-</td>
-</tr>
-<tr>
-<td>Model transformation rule: </td>
-<td>
-    <p>Store each object in table according to its geometry type.</p>
-</td>
-</tr>
-<tr>
-<td>Instance transformation rule:</td>
-<td>
-	<ul>
-		<li>If the geometry is a point geometry copy the object into the FeatureClass ending with P</li>
-		<li>If the geometry is a line geometry copy the object into the FeatureClass ending with L.</li>
-        	<li>If the geometry is a area geometry copy the object into the FeatureClass ending with S.</li>
-		</ul>
-</td>
-</tr>
-<tr>
-<td>Solves usability issues:</td>
-<td>The transformed data structure can easily be read and edited in desktop GIS and web GIS software.</td>
-</tr>
-<tr>
-<td>Known usability issues:</td>
-<td>There are at maximum 3 instead of one table in the target structure.</td>
-</tr>
-<tr>
-<td>INSPIRE Compliance:</td>
-<td>No issues.</td>
-</tr>
-</table>
+## Model transformation rule
 
-Notes:
+Store each object in table according to its geometry type.
 
- * None.
+## Instance transformation rule
+
+- If the geometry is a point geometry copy the object into the FeatureClass ending with P
+- If the geometry is a line geometry copy the object into the FeatureClass ending with L.
+- If the geometry is an area geometry copy the object into the FeatureClass ending with S.
+
+## Solves usability issues
+
+The transformed data structure can easily be read and edited in desktop GIS and web GIS software.
+
+## Known usability issues
+
+There are at maximum 3 instead of one table in the target structure.
+
+## INSPIRE compliance
+
+No issues.
+
+## Notes
+
+- Not part of the original INSPIRE MIF 2017.2 catalogue (MT001–MT009); added in this project.

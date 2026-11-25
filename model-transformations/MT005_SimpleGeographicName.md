@@ -1,24 +1,32 @@
-## MT005: Simplified Geographical Name
+# MT005: Simplified Geographical Name
 
-<table>
-<tr>
-<td>Category</td>
-<td>Alternate Structures for specific types or type hierarchies</td>
-</tr>
-<tr>
-<td>Description</td>
-<td><p>Geographical Names are re-used throughout more than 20 INSPIRE themes overall, ranging from Cardastral Parcels and Addresses to Statistical Units. For many existing data sets, the <code>GeographicalName</code> type is overspecified, with very little information being unique to each instance. For cases where only minimal information on names is available, this simplifed structure can be used. One key use case that is quite frequent however is to have names in more than one language. There are multiple official languages in more than half of the countries affected by INSPIRE.</p> 
-<p>The simplified name consists of one property per language, which will contain the <code>spelling.text</code> subproperty value of the original property:</p>
-<ul>
-    <li><code>name_deu</code></li>
-	<li><code>name_fra</code></li>
-</ul>
-<p>For other properties of the original <code>GeographicalName</code>, such as <code>nameStatus</code> and <code>nativeness</code>, defaults may be documented in the dataset metadata.</p>
-</td>
-</tr>
-<tr>
-<td>Original instance in default encoding:</td>
-<td>
+> **Implementation note.** `MT005` as applied in the theme encodings differs from the
+> original MIG description below: instead of one field per language (`name_deu`/`name_eng`), it
+> collapses each `GeographicalName` to **one Text name value** (dropping nativeness,
+> nameStatus, spelling, pronunciation, grammatical*, and by default language).
+> Optional parameters:
+> - `language: true` — also keep a single `<name>_language` companion. **This
+>   subsumes the former standalone *SimpleGeographicNamePlusLanguage* rule**, which was
+>   merged into MT005; the ~10 themes that used it now use `MT005` with `language: true`.
+> - `nameLeaf: true` — carry the value in a `name` child so flattening yields
+>   `<property>_name` (the published Esri form) instead of `<property>`.
+
+## Category
+
+Alternate Structures for specific types or type hierarchies
+
+## Description
+
+Geographical Names are re-used throughout more than 20 INSPIRE themes overall, ranging from Cadastral Parcels and Addresses to Statistical Units. For many existing data sets, the `GeographicalName` type is overspecified, with very little information being unique to each instance. For cases where only minimal information on names is available, this simplified structure can be used. One key use case that is quite frequent however is to have names in more than one language. There are multiple official languages in more than half of the countries affected by INSPIRE.
+
+The simplified name consists of one property per language, which will contain the `spelling.text` subproperty value of the original property:
+
+- `name_deu`
+- `name_fra`
+
+For other properties of the original `GeographicalName`, such as `nameStatus` and `nativeness`, defaults may be documented in the dataset metadata.
+
+## Original instance (example)
 
 ```xml
 <gn:NamedPlace gml:id="MIG20172_example_NamedPlace">
@@ -68,12 +76,8 @@
 	<gn:type xsi:nil="true"/>
 </gn:NamedPlace>
 ```
-   
-</td>
-</tr>
-<tr>
-<td>Transformed instance in default encoding:</td>
-<td>
+
+## Transformed instance (example)
 
 ```xml
 <gns:NamedPlace gml:id="MIG20172_example_NamedPlace">
@@ -94,41 +98,35 @@
 	<gns:name_eng>Munich</gns:name_eng>
 	<gns:type xsi:nil="true"/>
 </gns:NamedPlace>
-``` 
+```
 
-</td>
-</tr>
-<tr>
-<td>Model transformation rule: </td>
-<td>
-    <p>Parameters:</p> 
-    <ul>
-        <li><code>separator</code>: The character to use to separate the original property name from the ISO 693-3 or ISO 693-5 language codes.</li>
-		<li><code>languageCodes</code>: A List of ISO 693-3 or ISO 693-5 codes for which to create the specific proeprties.</li>
-    </ul>
-    <p>Create a new property for every language given as a parameter. Give each property as name the concatenation of "name", the value of the separator parameter and the ISO 693-3 or ISO 693-5 code of the language.</p>
-</td>
-</tr>
-<tr>
-<td>Instance transformation rule:</td>
-<td>
-	<p>Copy the value of the <code>spelling.text</code> to the new property.</p>
-</td>
-</tr>
-<tr>
-<td>Solves usability issues:</td>
-<td>The transformed data structure can easily be edited, filtered and symbolized in desktop GIS and web GIS software. This transformation also reduced data volume significantly in datasets that use in-place encoding of <code>GeographicalNames</code>.</td>
-</tr>
-<tr>
-<td>Known usability issues:</td>
-<td>None.</td>
-</tr>
-<tr>
-<td>INSPIRE Compliance:</td>
-<td>This rule discards individual metadata about geographical names, such as the name status and its nativeness. If this information is homogeneous, it should be documented in the dataset metadata. If it is heterogeneous, this transformation will result in a loss of information.</td>
-</tr>
-</table>
+## Model transformation rule
 
-Notes:
+**Parameters:**
+
+- `separator`: The character to use to separate the original property name from the ISO 693-3 or ISO 693-5 language codes.
+- `languageCodes`: A List of ISO 693-3 or ISO 693-5 codes for which to create the specific properties.
+
+Create a new property for every language given as a parameter. Give each property as name the concatenation of "name", the value of the separator parameter and the ISO 693-3 or ISO 693-5 code of the language.
+
+## Instance transformation rule
+
+Copy the value of the `spelling.text` to the new property.
+
+## Solves usability issues
+
+The transformed data structure can easily be edited, filtered and symbolized in desktop GIS and web GIS software. This transformation also reduced data volume significantly in datasets that use in-place encoding of `GeographicalNames`.
+
+## Known usability issues
+
+None.
+
+## INSPIRE compliance
+
+This rule discards individual metadata about geographical names, such as the name status and its nativeness. If this information is homogeneous, it should be documented in the dataset metadata. If it is heterogeneous, this transformation will result in a loss of information.
+
+**Reversibility (as applied here).** Beyond the MIG rule, `MT005` as applied in the theme encodings reduces each feature to a **single** name value and, unless `language` is set, drops the language as well as any additional name variants. It is a conformant INSPIRE encoding *on its own* only where the feature carries a single name and the dropped attributes (language, nameStatus, nativeness, sourceOfName, pronunciation, spelling metadata, additional names) are void — or homogeneous and documented in the dataset metadata, so the default encoding is recoverable. Otherwise it is conformant only as an *additional* encoding alongside the default GML.
+
+## Notes
 
 - This rule may be enhanced by storing additional properties that were present on the original name in "subfields" such as `name.deu.nativeness`.
