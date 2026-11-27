@@ -1,25 +1,30 @@
-## MT008: Simplified Codelist Reference
+# MT008: Simplified Codelist Reference
 
-<table>
-<tr>
-<td>Category</td>
-<td>Alternate Structures for specific types or type hierarchies</td>
-</tr>
-<tr>
-<td>Description</td>
-<td><p>References to codelists are one of the ubiquitous characteristics of the INSPIRE data specifications. They are usually encoded using a <code>ReferenceType, which is derived from an <code>xlink</code>. In the conceptual model, they are represented using property types that point to classes with a <code>&lt;&lt;Codelist&gt;&gt;</code> stereotype.</p> 
-<p>The main usability issue with ReferenceTypes is that they encode all relevant information in the xlink attributes of the element. In particular, the actual external link is encoded in the <code>xlink:href</code> attribute, while additional informaiton may be encoded in attributes such as <code>xlink:title</code>. An additional issue is that the actual, full codelist URLs are unwieldy to use for styling and filtering in most GIS. It would be much preferable to use the local codelist values. There is a recommendation to encode these using the mentioned <code>xlink:title</code>, but no strict requirement.</p>
-<p>This simplified codelist reference takes the property name and uses it to encode the title directly, while all othe properties are modelled as "subproperties":</p>
-<ul>
-    <li><code>reference</code></li>
-	  <li><code>reference.href</code></li>
-</ul>
-<p>Both of these properties are mandatory in the <code>SimpleCitation</code>, while extra properties such as <code>arcRole</code>, <code>owns</code> and <code>type</code> are optional..</p>
-</td>
-</tr>
-<tr>
-<td>Original instance in default encoding:</td>
-<td>
+> **Implementation note.** As applied in the theme encodings, the rule
+> takes **`codelistAttributes`** — a list of
+> selectors (bare name = all occurrences, `/`-path = one location) of the reference
+> properties to treat as codelists. Each marked reference is flattened by MT001 into
+> two Text fields, `<prop>_href` (the `xlink:href`) followed by `<prop>` (the
+> `xlink:title`), in that order.
+
+## Category
+
+Alternate Structures for specific types or type hierarchies
+
+## Description
+
+References to codelists are one of the ubiquitous characteristics of the INSPIRE data specifications. They are usually encoded using a `ReferenceType`, which is derived from an `xlink`. In the conceptual model, they are represented using property types that point to classes with a `<<Codelist>>` stereotype.
+
+The main usability issue with ReferenceTypes is that they encode all relevant information in the xlink attributes of the element. In particular, the actual external link is encoded in the `xlink:href` attribute, while additional information may be encoded in attributes such as `xlink:title`. An additional issue is that the actual, full codelist URLs are unwieldy to use for styling and filtering in most GIS. It would be much preferable to use the local codelist values. There is a recommendation to encode these using the mentioned `xlink:title`, but no strict requirement.
+
+This simplified codelist reference takes the property name and uses it to encode the title directly, while all other properties are modelled as "subproperties":
+
+- `reference`
+- `reference.href`
+
+Both of these properties are mandatory in the `SimpleCodelistReference`, while extra properties such as `arcRole`, `owns` and `type` are optional.
+
+## Original instance (example)
 
 ```xml
 <ad:Address gml:id="MIG20172_example_Address">
@@ -30,57 +35,43 @@
   <!-- ... -->
 </ad:Address>
 ```
-   
-</td>
-</tr>
-<tr>
-<td>Transformed instance in default encoding:</td>
-<td>
+
+## Transformed instance (example)
 
 ```xml
 <ads:Address gml:id="MIG20172_example_Address">
   <!-- ... -->
-  <simple:status>current</ads:status>
-  <simple:status.href>http://inspire.ec.europa.eu/codelist/StatusValue/current</ads:status.href>
+  <simple:status>current</simple:status>
+  <simple:status.href>http://inspire.ec.europa.eu/codelist/StatusValue/current</simple:status.href>
   <!-- ... -->
 </ads:Address>
-``` 
+```
 
-</td>
-</tr>
-<tr>
-<td>Model transformation rule: </td>
-<td>
-    <p>Parameters:</p> 
-    <ul>
-      <li><code>type</code>: The property for which the ReferenceType is to be substituted, e.g. <code>status</code>.</li>
-    </ul>
-    <p>Substitute existing <code>ReferenceType</code> on the <code>type</code> property with this SimpleReference type.</p>
-</td>
-</tr>
-<tr>
-<td>Instance transformation rule:</td>
-<td>
-	<ul>
-		<li>Copy the value of the <code>xlink:title</code> attribute to the property with the name of the <code>type</code> parameter.</li>
-		<li>Copy the value of the <code>xlink:href</code> attribute to the property with the name of the <code>type.href</code> parameter.</li>
-	</ul>
-</td>
-</tr>
-<tr>
-<td>Solves usability issues:</td>
-<td>The transformed data structure can easily be edited, filtered and symbolized in desktop GIS and web GIS software.</td>
-</tr>
-<tr>
-<td>Known usability issues:</td>
-<td>None.</td>
-</tr>
-<tr>
-<td>INSPIRE Compliance:</td>
-<td>Fully compliant.</td>
-</tr>
-</table>
+## Model transformation rule
 
-Notes:
+**Parameters:**
+
+- `type`: The property for which the ReferenceType is to be substituted, e.g. `status`.
+
+Substitute existing `ReferenceType` on the `type` property with this SimpleReference type.
+
+## Instance transformation rule
+
+- Copy the value of the `xlink:title` attribute to the property with the name of the `type` parameter.
+- Copy the value of the `xlink:href` attribute to the property with the name of the `type.href` parameter.
+
+## Solves usability issues
+
+The transformed data structure can easily be edited, filtered and symbolized in desktop GIS and web GIS software.
+
+## Known usability issues
+
+None.
+
+## INSPIRE compliance
+
+Fully compliant.
+
+## Notes
 
  * None.

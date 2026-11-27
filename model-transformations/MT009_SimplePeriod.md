@@ -1,24 +1,28 @@
-## MT009: Simplified Period
+# MT009: Simplified Period
 
-<table>
-<tr>
-<td>Category</td>
-<td>Alternate Structures for specific types or type hierarchies</td>
-</tr>
-<tr>
-<td>Description</td>
-<td><p>XML has primitive types for times and dates that are well supported through most software. In INSPIRE and the related ISO standards, a more powerful but also highly complex model is available that allows to precisely specify time-related information. This model allows any subtype of <code>AbstractTimeObject</code>, which can include <code>TimeEdge</code>, <code>TimeInstant</code>, <code>TimeNode</code> and <code>TimePeriods</code>. In several themes, such as EMF, other types buld on top of this model, such as <code>ef:OperationalActivityPeriod</code>. Alltogether, this means that relatively important information tends to be nested very deep in a structure, making it harder to create and to process.</p> 
-<p>Within this rule, we substitute these complex structures through a very simple structure with just two properties:</p>
-<ul>
-    <li>beginPosition</li>
-    <li>endPosition</li>
-</ul>
-<p>Both of these are to use teh same definitions for these two properties as in the original structure. Note that the <code>endPosition</code> is optional, so the simple type can also be used for periods that haven't ended yet.</p>
-</td>
-</tr>
-<tr>
-<td>Original instance in default encoding:</td>
-<td>
+> **Implementation note.** As applied in the theme encodings, the rule
+> collapses a period property to two datetime leaves, `<prop>_beginPosition` /
+> `<prop>_endPosition`. It matches a property whose data type is a period type
+> (`OperationalActivityPeriod`, `TM_Period`, or a `gml:TimePeriod` wrapper) or any
+> type listed in the optional **`types`** parameter; a `gml:TimePeriod` wrapper is
+> detected automatically.
+
+## Category
+
+Alternate Structures for specific types or type hierarchies
+
+## Description
+
+XML has primitive types for times and dates that are well supported through most software. In INSPIRE and the related ISO standards, a more powerful but also highly complex model is available that allows to precisely specify time-related information. This model allows any subtype of `AbstractTimeObject`, which can include `TimeEdge`, `TimeInstant`, `TimeNode` and `TimePeriods`. In several themes, such as EMF, other types build on top of this model, such as `ef:OperationalActivityPeriod`. Altogether, this means that relatively important information tends to be nested very deep in a structure, making it harder to create and to process.
+
+Within this rule, we substitute these complex structures through a very simple structure with just two properties:
+
+- beginPosition
+- endPosition
+
+Both of these are to use the same definitions for these two properties as in the original structure. Note that the `endPosition` is optional, so the simple type can also be used for periods that haven't ended yet.
+
+## Original instance (example)
 
 ```xml
 <ef:EnvironmentalMonitoringFacility>
@@ -36,12 +40,8 @@
   <!-- ... -->
 </ef:EnvironmentalMonitoringFacility>
 ```
-   
-</td>
-</tr>
-<tr>
-<td>Transformed instance in default encoding:</td>
-<td>
+
+## Transformed instance (example)
 
 ```xml
 <efs:EnvironmentalMonitoringFacility>
@@ -54,43 +54,33 @@
   </efs:operationalActivityPeriod>
   <!-- ... -->
 </efs:EnvironmentalMonitoringFacility>
-``` 
+```
 
-</td>
-</tr>
-<tr>
-<td>Model transformation rule: </td>
-<td>
-    <p>Parameters:</p> 
-    <ul>
-      <li><code>type</code>: The type to be substituted, e.g. <code>OperationalActivityPeriod</code>.</li>
-    </ul>
-    <p>Substitute existing type as indicated by the <code>type</code> parameter with this <code>SimplePeriod</code> type.</p>
-</td>
-</tr>
-<tr>
-<td>Instance transformation rule:</td>
-<td>
-	<ul>
-		<li>Copy the value of <code>gml:beginPosition</code> to the property <code>gml:beginPosition</code>.</li>
-		<li>Copy the value of <code>gml:endPosition</code> to the property <code>gml:endPosition</code>.</li>
-	</ul>
-</td>
-</tr>
-<tr>
-<td>Solves usability issues:</td>
-<td>The transformed data structure can easily be edited, filtered and symbolized in desktop GIS and web GIS software. This transformation also reduces data volume in datasets.</td>
-</tr>
-<tr>
-<td>Known usability issues:</td>
-<td>None.</td>
-</tr>
-<tr>
-<td>INSPIRE Compliance:</td>
-<td>This rule works only with one external link, and it removed finer grained information about dates. It can be combined with the [Property Composition to Association](./PropertyCompositiontoAssociation.md) rule to add more information from an external register.</td>
-</tr>
-</table>
+## Model transformation rule
 
-Notes:
+**Parameters:**
+
+- `type`: The type to be substituted, e.g. `OperationalActivityPeriod`.
+
+Substitute existing type as indicated by the `type` parameter with this `SimplePeriod` type.
+
+## Instance transformation rule
+
+- Copy the value of `gml:beginPosition` to the property `gml:beginPosition`.
+- Copy the value of `gml:endPosition` to the property `gml:endPosition`.
+
+## Solves usability issues
+
+The transformed data structure can easily be edited, filtered and symbolized in desktop GIS and web GIS software. This transformation also reduces data volume in datasets.
+
+## Known usability issues
+
+None.
+
+## INSPIRE compliance
+
+This rule keeps only the begin and end positions and discards the richer temporal model (other `AbstractTimeObject` subtypes, indeterminate positions, calendar/reference-system detail). It is compliant where the period is a simple begin/end interval; time information expressed only through the fuller model is lost. Where that fuller information is present, the simplified form is conformant only as an *additional* encoding alongside the default GML.
+
+## Notes
 
  * None.

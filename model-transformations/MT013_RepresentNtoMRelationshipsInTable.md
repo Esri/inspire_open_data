@@ -1,19 +1,14 @@
-## MT013: Represent n:m Relationships in Table
+# MT013: Represent n:m Relationships in Table
 
-<table>
-<tr>
-<td>Category</td>
-<td>Alternate Structures for specific types or type hierarchies</td>
-</tr>
-<tr>
-<td>Description</td>
-<td><p>Relationships between Features can be represented in a Table structur by providing the IDs of corresponding objects in a table. Each Table row represents a Relationship in both directions. If the relationship is only onedirectional this rule should not be used</p> 
-</p>
-</td>
-</tr>
-<tr>
-<td>Original instance in default encoding:</td>
-<td>
+## Category
+
+Alternate Structures for specific types or type hierarchies
+
+## Description
+
+Relationships between Features can be represented in a Table structure by providing the IDs of corresponding objects in a table. Each Table row represents a Relationship in both directions. If the relationship is only one-directional this rule should not be used
+
+## Original instance (example)
 
 ```xml
 <au:AdministrativeUnit gml:id="AdminUnit_1">
@@ -32,12 +27,8 @@
 <!--... -->
 </au:AdministrativeBoundary>
 ```
-   
-</td>
-</tr>
-<tr>
-<td>Transformed instance encoded in a table:</td>
-<td>
+
+## Transformed instance (example, database table)
 
 Table: AdministrativeUnit
 |featureId|...|
@@ -50,7 +41,7 @@ Table: AdministrativeBoundary
 |1|...|
 
 Table: AdministrativeUnit_AdministrativeBoundary
-|AdmminUnit_ID|AdminBoundary_ID|
+|AdminUnit_ID|AdminBoundary_ID|
 |------|------|
 |1|1|
 |1|2|
@@ -58,35 +49,34 @@ Table: AdministrativeUnit_AdministrativeBoundary
 |2|1|
 |3|1|
 
+## Model transformation rule
 
-</td>
-</tr>
-<tr>
-<td>Model transformation rule: </td>
-<td>
-    <p>Represent all existing References with by Rows in the Reference table.</p>
-</td>
-</tr>
-<tr>
-<td>Instance transformation rule:</td>
-<td>
-	Copy the value of the ID of the source of the relationship to ID1 in the Relationship table and the ID of the target of the relationship to ID2 in the relationship table.
-</td>
-</tr>
-<tr>
-<td>Solves usability issues:</td>
-<td>The transformed data structure can easily be read and edited in desktop GIS and web GIS software and allows direct joins of related objects in RDBMS.  This transformation also reduces the number of necessary tables as both directions are stored in one table.</td>
-</tr>
-<tr>
-<td>Known usability issues:</td>
-<td></td>
-</tr>
-<tr>
-<td>INSPIRE Compliance:</td>
-<td></td>
-</tr>
-</table>
+Represent all existing References by Rows in the Reference table.
 
-Notes:
+## Instance transformation rule
 
- * None.
+Copy the value of the ID of the source of the relationship to ID1 in the Relationship table and the ID of the target of the relationship to ID2 in the relationship table.
+
+## Solves usability issues
+
+The transformed data structure can easily be read and edited in desktop GIS and web GIS software and allows direct joins of related objects in RDBMS.  This transformation also reduces the number of necessary tables as both directions are stored in one table.
+
+## Known usability issues
+
+Neither feature class carries the related IDs inline: navigating the relationship (in either direction) requires a join through the junction table. A consumer that expects a foreign key on the feature itself will not find one.
+
+## INSPIRE compliance
+
+Compliant — no information is lost. Every relationship instance is stored once as an ID pair and remains navigable in both directions; only the representation changes (a shared table instead of two inline association ends).
+
+## Notes
+
+- Implementation: applied after MT001. Parameters: `tableName`; `left`/`right` each `{featureType, path, column?}`
+  (`column` = the Long featureId FK column name, default `<path>Id`). On the `left`
+  feature type the junction table is created (two Long FK columns) and the association
+  field is dropped; on the `right` feature type only the association field is dropped (the
+  table is created once, from the left side). Both columns carry the logical `id` type →
+  GDB `Long` / GeoJSON `integer`.
+- Used by: AdministrativeUnits (`AdministrativeUnit.boundary` ↔ `AdministrativeBoundary.admUnit`
+  → `Relation_Unit_Boundary` with columns `boundaryId`, `unitId`).
+- Not part of the original INSPIRE MIF 2017.2 catalogue (MT001–MT009); added in this project.

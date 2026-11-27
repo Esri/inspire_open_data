@@ -1,27 +1,33 @@
-## MT007: Simplified Citation
+# MT007: Simplified Citation
 
-<table>
-<tr>
-<td>Category</td>
-<td>Alternate Structures for specific types or type hierarchies</td>
-</tr>
-<tr>
-<td>Description</td>
-<td><p>Citations are another element type that is used in many different places throughout the INSPIRE data specifications. ISO 19115 defines <code>CI_Citation</code>, which has a very deep structure that tend to bury key information, creating a lot of overhead. INSPIRE introduced two base types to simplify citations, <code>LegislationCitation</code> and <code>DocumentCitation</code>. However, in many places, <code>CI_Citation</code> is in use. This rule proposes a simplified alternative representation for <code>CI_Citation</code>. For consistency, it can also be used as a substitute to <code>LegislationCitation</code> and <code>DocumentCitation</code> when no external register is available.</p> 
-<p>The simplified citation is based on a link to an external publication and adds minimal information with four properties:</p>
-<ul>
-    <li>citationDate</li>
-    <li>citationLink</li>
-    <li>citationName</li>
-    <li>citationLevel</li>
-    <li>citationType</li>
-</ul>
-<p>Each of these properties maps directly to an existing property of the original citation types. The <code>citationType</code> property can be used to indicate what kind of citation is represented by this object; its values can be taken from the original type name, or can be based on a codelist.</p>
-</td>
-</tr>
-<tr>
-<td>Original instance in default encoding:</td>
-<td>
+> **Implementation note.** As applied in the theme encodings, the rule
+> collapses a citation to five flat fields — `<prop>_citationDate`, `_citationLink`,
+> `_citationName`, `_citationLevel`, `_citationType` (MT019 may shorten the prefix).
+> Parameters: **`types`** — extra data-type names treated as citations;
+> **`properties`** — property names to treat as citations (needed for by-reference
+> citations that carry no inline citation type, e.g. `legalFoundationDocument`);
+> **`levelAsCodelist`** — encode `citationLevel` as a value + `_href` codelist pair
+> (default: a plain value).
+
+## Category
+
+Alternate Structures for specific types or type hierarchies
+
+## Description
+
+Citations are another element type that is used in many different places throughout the INSPIRE data specifications. ISO 19115 defines `CI_Citation`, which has a very deep structure that tend to bury key information, creating a lot of overhead. INSPIRE introduced two base types to simplify citations, `LegislationCitation` and `DocumentCitation`. However, in many places, `CI_Citation` is in use. This rule proposes a simplified alternative representation for `CI_Citation`. For consistency, it can also be used as a substitute to `LegislationCitation` and `DocumentCitation` when no external register is available.
+
+The simplified citation is based on a link to an external publication and adds minimal information with five properties:
+
+- citationDate
+- citationLink
+- citationName
+- citationLevel
+- citationType
+
+Each of these properties maps directly to an existing property of the original citation types. The `citationType` property can be used to indicate what kind of citation is represented by this object; its values can be taken from the original type name, or can be based on a codelist.
+
+## Original instance (example)
 
 ```xml
 <am:ManagementRestrictionOrRegulationZone>
@@ -51,18 +57,14 @@
   <!-- ... -->
 </am:ManagementRestrictionOrRegulationZone>
 ```
-   
-</td>
-</tr>
-<tr>
-<td>Transformed instance in default encoding:</td>
-<td>
+
+## Transformed instance (example)
 
 ```xml
 <ems:EnvironmentalMonitoringFacility>
   <!-- ... -->
   <ems:legalBackground>
-    <simple:SimpleCitiation>
+    <simple:SimpleCitation>
       <simple:name>Bekendtgørelse af lov om skove</simple:name>
       <simple:type>LegislationCitation</simple:type>
       <simple:date>2017-01-26</simple:date>
@@ -72,42 +74,32 @@
   </ems:legalBackground>
   <!-- ... -->
 </ems:EnvironmentalMonitoringFacility>
-``` 
+```
 
-</td>
-</tr>
-<tr>
-<td>Model transformation rule: </td>
-<td>
-    <p>Substitute existing <code>LegislationCitation</code> and <code>CI_Citation</code> types with this SimpleCitation type.</p>
-</td>
-</tr>
-<tr>
-<td>Instance transformation rule:</td>
-<td>
-	<ul>
-		<li>Copy the value of <code>base2:dateEnteredIntoForce</code> to the property <code>simple:date</code>.</li>
-		<li>Copy the value of <code>base2:name</code> to the property <code>simple:name</code>.</li>
-		<li>Copy the value of <code>base2:dateEnteredIntoForce</code> to the property <code>simple:date</code>.</li>
-		<li>Copy the value(s) of <code>base2:level</code> to the property <code>simple:level</code>. Note that only one link may be present in the data.</li>
-		<li>Insert the element name <code>LegislationCitation</code> to the property <code>simple:type</code>.</li>
-	</ul>
-</td>
-</tr>
-<tr>
-<td>Solves usability issues:</td>
-<td>The transformed data structure can easily be edited, filtered and symbolized in desktop GIS and web GIS software. This transformation also reduces data volume.</td>
-</tr>
-<tr>
-<td>Known usability issues:</td>
-<td>None.</td>
-</tr>
-<tr>
-<td>INSPIRE Compliance:</td>
-<td>This rule works only with one external link, and it removed finer grained information about dates. It can be combined with the [Property Composition to Association](./PropertyCompositiontoAssociation.md) rule to add more information from an external register.</td>
-</tr>
-</table>
+## Model transformation rule
 
-Notes:
+Substitute existing `LegislationCitation` and `CI_Citation` types with this SimpleCitation type.
+
+## Instance transformation rule
+
+- Copy the value of `base2:date` (`gmd:CI_Date`) to the property `simple:date`.
+- Copy the value of `base2:name` to the property `simple:name`.
+- Copy the value of `base2:link` to the property `simple:link`.
+- Copy the value(s) of `base2:level` to the property `simple:level`. Note that only one link may be present in the data.
+- Insert the element name `LegislationCitation` into the property `simple:type`.
+
+## Solves usability issues
+
+The transformed data structure can easily be edited, filtered and symbolized in desktop GIS and web GIS software. This transformation also reduces data volume.
+
+## Known usability issues
+
+None.
+
+## INSPIRE compliance
+
+This rule works only with one external link, and it removes finer-grained information about dates. Beyond name, date, link, level and type, the source citation types (`LegislationCitation` / `DocumentCitation` / `CI_Citation`) carry further attributes (e.g. shortName, identifiers, additional dates such as `dateEnteredIntoForce`, responsibleParty) that the five SimpleCitation fields do not retain. The simplified form is therefore a conformant INSPIRE encoding *on its own* only where those attributes are void for the dataset (or homogeneous and documented in metadata); otherwise it is conformant only as an *additional* encoding alongside the default GML. It can be combined with the [Property Composition to Association](./MT006_PropertyCompositionToAssociation.md) rule to add more information from an external register.
+
+## Notes
 
  * None.
